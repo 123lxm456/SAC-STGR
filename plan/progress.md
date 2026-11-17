@@ -1,0 +1,96 @@
+# 研究进度
+
+## 2026-11-17 P0 本地准备
+
+- 按用户提供的服务器依赖版本生成 `plan/p0/requirements-server.txt`；原始 `references/` 保持不变。
+- `scripts/p0_snapshot.py` 对保护清单中的 23 个原项目文件逐个核对 SHA-256，创建逐字节一致的 `src/sac_rwb/` 工作副本，并生成 `plan/p0/snapshot.json`。原论文另由保护清单记录。
+- 静态解析场景：6 条 route、6 条 flow、30,502 条显式 vehicle；四个目标路口在路网中均存在。工作副本 23 对文件哈希一致。
+- 应用户要求，不再由助手发起 SSH。Linux + RTX 4090 版本清单和原系统短运行仍待用户在远端执行，P0 尚未验收；未进入 P1。
+- 用户在 Ubuntu 22.04.4、RTX 4090、SUMO 1.12.0、Python 3.7.12 的 `SAC_RWB` 环境中运行 P0 探针；首次环境检查因探针使用了 Python 3.8 才内置的 `importlib.metadata` 失败。已修正为 Python 3.7 兼容写法，等待用户更新远端脚本并重跑。该失败未进入输入校验或仿真短运行。
+- 用户报告修正后的服务器脚本返回 `Training smoke exit code: 0`。按脚本控制流，这意味着环境检查和输入哈希校验均已返回 0；远端日志尚未复制回本项目，实际版本清单、训练步数和日志内容仍待核对，P0 暂不标记通过。
+- 用户已复制回 `plan/p0/remote-run/` 的环境、输入与训练日志。三个退出码均为 0；远端 23 对 SHA-256 校验通过；原训练入口完成 1 个 episode、100 步，训练日志未见 traceback。环境为 Ubuntu 22.04.4、RTX 4090、驱动 555.42.06、SUMO 1.12.0、Python 3.7.12、PyTorch 1.13.1+cu117/CUDA 11.7。实际 gym、imageio、Pillow 版本分别为 0.21.0、2.9.0、8.2.0，与用户提供清单不同；`work/sumolog` 未带回，细节见 `plan/p0/README.md`。P0 最低验收通过，等待用户确认后才进入 P1。
+- 用户再次复制回 `remote-run/work/sumolog`，可核对 SUMO 于仿真时间 133.00 秒因 TraCI 请求正常终止。回传工作目录的两份大型 XML 均截断至 2,359,296 字节，不能作为复现输入；运行前的远端哈希检查和本地 `references/`、`src/sac_rwb/` 正本均保持通过。P0 仍按原始短运行日志通过，复制限制已记入 `plan/p0/README.md`。
+- 用户重新复制完整的 `remote-run/work/`；复核其中 23 个参考工作文件均存在且 SHA-256 与 `snapshot.json` 一致。此前两份大型 XML 的回传截断问题已消除，`sumolog` 与三个退出码仍在。P0 证据现已完整，继续等待用户确认是否进入 P1。
+
+## 2026-11-12 精简稿 Word 文件统一
+
+- 旧 Word 的占用已解除；删除旧版本，将修订版更名为 `chapters/03_methods_experiments_brief.docx`。当前简版 Markdown 仅对应这一份 Word。
+
+## 2026-11-12 精简稿独立方法表述
+
+- 将 `chapters/03_methods_experiments_brief.md` 的 3.1–3.3 改为独立方法叙述，按聚合观测、空间编码、逐位置时间编码、末步读出、风险奖励与真实结局监督的顺序组织，保留必要公式与未校准风险分数的解释边界。
+- 用户重申 3.4 不得修改；已恢复并核对其 SHA-256 与保护基线一致。3.4 内既有文献姓名和消融文字因此仍保留，不能将整份精简稿描述为完全不提及来源。
+- 原同名 Word 被另一进程占用，当前内容导出为 `chapters/03_methods_experiments_brief_revised.docx`；旧 Word 仍为 11 月 11 日版本。DOCX 可解析并含 Word 公式节点；页面渲染因缺少 `pdf2image` 未完成。
+- 运行 `scripts/verify_plan.py`：全部静态检查通过，`references/` 哈希与两份 3.4 哈希保持不变。
+
+### Capability-use audit
+
+- Required skills: paper-orchestration, writing-chapters, writing-core, experiment-results-planning, verification, documents.
+- Skills actually used: 已读取上述技能并执行方法流检查、实验边界检查、静态验证与 Word 结构检查。
+- Inputs consumed: 精简稿、完整版、项目概览、大纲、实验协议、验证脚本与保护基线。
+- Artifacts produced: 精简稿 3.1–3.3、修订版 Word、任务包、直接依赖的项目说明与进度记录。
+- Verification run: 禁用来源叙述扫描、3.4 哈希比对、`scripts/verify_plan.py`、DOCX OOXML 检查。
+- Remaining risk: 3.4 按用户要求保持原文，现有实验描述与 3.1–3.3 的完整空间 Transformer 架构并不完全对应；模型效果尚待实验验证。
+
+## 2026-11-11 删除旧导出目录
+
+- 用户明确要求删除 `E:\SUMO\output`；执行前已核对绝对路径位于工作区、目标为非重解析目录，删除后确认目录不存在。
+- 之前的 `plan/review/protected-integrity.json` 保留为历史快照；当前静态检查仅核对 `references/` 的原文件哈希、两份章节 3.4 原文及 `output/` 不存在。
+- README 与实施规范已更新。后续若需要 Word 导出，应从 `chapters/` 当前 Markdown 重新生成。
+
+## 2026-11-11 空间与时间 Transformer 方案重构
+
+- 用户确认以九 token 空间 Transformer、逐位置共享时间 Transformer 和末步自车读出作为当前待实施方案；此处仅完成文档重构，不代表训练或性能验证。
+- 完整阅读两份第三章、README、实施方案、阶段和追踪文档，并核对参考源码中的 98 维状态、十步历史、近期偏置、奖励接口、组别旋转及伪安全标签。
+- 重写两份章节的 3.1–3.3；两份 3.4 原文按 SHA-256 检查保持不变。曾增加的 3.5 后按用户要求删除，扩展消融保留在独立实验协议中。技术规范、README、阶段门槛和追踪矩阵同步更新。
+- `references/` 与 `output/` 的逐文件保护基线记录在 `plan/review/protected-integrity.json`；既有 Word 导出未更新，不能作为当前 Markdown 的等价版本。
+- 清理了仅用于旧 Word 提取、无项目文档或脚本引用的 `tmp/docx_extracted.txt` 与 `tmp/docx_media/` 五个临时文件；没有清理任何参考资料或导出稿。
+- 当前未实现：新模型源码、真实结局标签协议、SUMO 运行、风险预测指标、闭环性能和论文结果。后续从 P0 开始。
+
+## 2026-11-11 删除章节 3.5
+
+- 按用户要求从两份 `chapters/` 稿件移除 3.5；3.4 原文的两项 SHA-256 核查仍通过。扩展消融留在 `plan/experiment-protocol.md`，README、实施规范、大纲和静态检查已同步。
+- 只读保护目录复核发现基线清单中的 `output/刘雪梅第三章.docx` 当前不存在；本轮没有对 `output/` 执行写入或删除，原因未确认。故本轮 `verify_plan.py` 的整体保护检查未通过，不能声称 `output/` 当前与既有基线完全一致。
+
+### Capability-use audit
+
+- Required skills: research writing orchestration, methods chapter writing, experiment planning, verification.
+- Skills actually used: paper-orchestration, writing-chapters, writing-core, experiment-results-planning, verification; prior会话中的文献核验与本轮原始论文页面复核。
+- Inputs consumed: 两份章节、README、实施方案、计划与追踪文档、参考源码、Scene Transformer、AgentFormer、Set Transformer、Wayformer 原始来源。
+- Inputs not used and why: `output/` 只核对文件清单与哈希；用户禁止更改导出，内容不能作为新方案正本。
+- Artifacts produced: 两份章节、实施规范、README、项目概览、大纲、任务包、证据映射、实验协议、阶段与追踪文档、静态检查脚本。
+- Verification run: `python scripts/verify_plan.py`；保护目录与 3.4 节哈希、术语及本地链接已核查。
+- Remaining risk: 标签定义、伪安全样本、组别旋转及闭环效果均待实施验证。
+
+## 2026-11-02 两份第三章 Word 输出
+
+- 从 `chapters/03_methods_experiments.md` 和 `chapters/03_methods_experiments_brief.md` 分别生成 `output/` 中的完整版与精简版 Word；两份均设置 A4 和 20 mm 页边距。
+- DOCX 压缩包、正文关键词、公式节点和页面设置已检查。本环境未完成 Word 原生页面渲染，不能据此断言 Word 的实际页数；未运行 SUMO 或实验。
+
+## 2026-11-02 删除重复输出与架构图
+
+- 按用户要求，精简稿仅保留 `chapters/03_methods_experiments_brief.md`；删除与之逐字相同的 `output/` 副本。
+- 删除不再需要的 `output/diagrams/`，同步更新 README 和静态检查。较完整第三章的 Word/PDF 继续保留。
+
+## 2026-11-02 第三章独立精简稿
+
+- 新增 `chapters/03_methods_experiments_brief.md` 和 `output/03_methods_experiments_brief.md`，两份字节一致；精简稿只介绍当前方案，不叙述来源、旧方案或修改过程。
+- 按 A4、20 mm 页边距、11 磅、1.15 行距排版为 2 页；逐页检查无截断。该检查是文档排版验证，不代表模型、仿真或实验已完成。
+
+## 2026-11-02 题目统一
+
+- 项目与第三章采用《时空风险引导的无信号交叉口决策》。时间部分沿用原风险器，空间部分为待实现的八组聚合车流注意力；“社交注意力”可能暗示逐车交互，故不作为题目。
+- 同步 README、实施方案、输出文件名与链接；补回缺失的架构图。此次仅调整题目和文档引用，不代表模型已实现。
+
+## 2026-11-02 方案统一
+
+- 用户确认采用近期讨论的**单模块方案**，替换旧文档中的单自车、逐车时空注意力、离线冻结风险器和 SB3 路线。
+- 已核对原论文与 `references/SAC-RWB-main/` 的核心入口：多车共享 SAC、98 维聚合状态、10 步风险序列、时间 Transformer、两池在线训练、风险奖励。
+- 本轮仅整理设计文档、章节、架构图和静态检查；参考论文及源码保持原样。新模块源码、SUMO 实验、权重和性能结果不存在。
+- 源码问题待在未来工作副本统一处理：八组旋转索引重复/遗漏、replay 终止标志恒真、SAC 训练循环提前返回，以及碰撞动作改写得到的伪安全标签。伪标签的敏感性分析要对所有模型同一处理。
+- 当前各阶段状态见 [stage-gates.md](stage-gates.md)。下一步从 P0 开始。文件同步和引用核查结果由 `scripts/verify_plan.py` 生成。
+- 静态检查通过；新 PDF 为 2 页 A4，已逐页查看文字与公式。DOCX 已验证 ZIP/OOXML 可解析、正文与公式存在、A4/20 mm 页面设置正确；本机缺少 LibreOffice，未完成 DOCX 的页面渲染检查。
+
+## 历史说明
+
+旧 `core-v2/spec-r3` 设计曾把任务改为单自车、另建逐车时空风险器、离线校准并冻结及 SB3 训练。它与 2026-11-02 确认的最小改单模块方案不相容，现不再作为当前技术路线。历史审查和重复产物经引用核查后移除；需要追溯时以原论文、原源码及本条记录区分阶段。研究写作所用能力为本地源码审查、PDF/Word 输出和静态一致性检查；没有调用训练能力。

@@ -1,0 +1,157 @@
+{
+  "scope": "P0 reference and work-copy inventory; no simulation run",
+  "work_copy_file_count": 23,
+  "copy_matches_reference": true,
+  "files": [
+    {
+      "source": "references/SAC-RWB-main/Env.py",
+      "copy": "src/sac_rwb/Env.py",
+      "sha256": "e44cc73f6d693d0b8cbce574742ad26f1747ea4c17e1da72c48501f8d8325445",
+      "bytes": 42820
+    },
+    {
+      "source": "references/SAC-RWB-main/README.md",
+      "copy": "src/sac_rwb/README.md",
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529",
+      "bytes": 1177
+    },
+    {
+      "source": "references/SAC-RWB-main/requirements.txt",
+      "copy": "src/sac_rwb/requirements.txt",
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6",
+      "bytes": 238
+    },
+    {
+      "source": "references/SAC-RWB-main/test_sac.py",
+      "copy": "src/sac_rwb/test_sac.py",
+      "sha256": "53a3c17f2e5866747dd5a8a93411b9c7b19f5deff7b95d9ac93eecb1acc3c49b",
+      "bytes": 4269
+    },
+    {
+      "source": "references/SAC-RWB-main/train_sac.py",
+      "copy": "src/sac_rwb/train_sac.py",
+      "sha256": "9d69c712d565b28a3b388885ca7378d451a5704ec16744c5facc557b533c14b0",
+      "bytes": 12739
+    },
+    {
+      "source": "references/SAC-RWB-main/algos/transformer_risk_model.py",
+      "copy": "src/sac_rwb/algos/transformer_risk_model.py",
+      "sha256": "689840af50afc0e4c7ec3f9122ac1c40a073fe54e6e1bb75c2aafcf945855740",
+      "bytes": 12465
+    },
+    {
+      "source": "references/SAC-RWB-main/algos/__init__.py",
+      "copy": "src/sac_rwb/algos/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "references/SAC-RWB-main/core/control_agent.py",
+      "copy": "src/sac_rwb/core/control_agent.py",
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212",
+      "bytes": 3135
+    },
+    {
+      "source": "references/SAC-RWB-main/core/costomized_data_structures.py",
+      "copy": "src/sac_rwb/core/costomized_data_structures.py",
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815",
+      "bytes": 5139
+    },
+    {
+      "source": "references/SAC-RWB-main/core/custom_logger.py",
+      "copy": "src/sac_rwb/core/custom_logger.py",
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b",
+      "bytes": 2530
+    },
+    {
+      "source": "references/SAC-RWB-main/core/monitor.py",
+      "copy": "src/sac_rwb/core/monitor.py",
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09",
+      "bytes": 6227
+    },
+    {
+      "source": "references/SAC-RWB-main/core/NetMap.py",
+      "copy": "src/sac_rwb/core/NetMap.py",
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73",
+      "bytes": 19116
+    },
+    {
+      "source": "references/SAC-RWB-main/core/sumo_interface.py",
+      "copy": "src/sac_rwb/core/sumo_interface.py",
+      "sha256": "ca4668389b31c28c1e71de0977479c9039c8461db70c75fa3ed1736dddd68c45",
+      "bytes": 7263
+    },
+    {
+      "source": "references/SAC-RWB-main/core/utils.py",
+      "copy": "src/sac_rwb/core/utils.py",
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a",
+      "bytes": 9094
+    },
+    {
+      "source": "references/SAC-RWB-main/core/__init__.py",
+      "copy": "src/sac_rwb/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "references/SAC-RWB-main/real_data/CSeditClean_1.net_threelegs.xml",
+      "copy": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml",
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4",
+      "bytes": 14636514
+    },
+    {
+      "source": "references/SAC-RWB-main/real_data/newroute1220_start0.xml",
+      "copy": "src/sac_rwb/real_data/newroute1220_start0.xml",
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5",
+      "bytes": 11595038
+    },
+    {
+      "source": "references/SAC-RWB-main/real_data/osm.sumocfg",
+      "copy": "src/sac_rwb/real_data/osm.sumocfg",
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f",
+      "bytes": 971
+    },
+    {
+      "source": "references/SAC-RWB-main/real_data/osm.view.xml",
+      "copy": "src/sac_rwb/real_data/osm.view.xml",
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459",
+      "bytes": 88
+    },
+    {
+      "source": "references/SAC-RWB-main/sac/main.py",
+      "copy": "src/sac_rwb/sac/main.py",
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f",
+      "bytes": 5952
+    },
+    {
+      "source": "references/SAC-RWB-main/sac/SAC.py",
+      "copy": "src/sac_rwb/sac/SAC.py",
+      "sha256": "0cc6c052967af3c15aebf586078e3b57bf8c332e63780d145d318c8b267041e5",
+      "bytes": 6040
+    },
+    {
+      "source": "references/SAC-RWB-main/sac/utils.py",
+      "copy": "src/sac_rwb/sac/utils.py",
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3",
+      "bytes": 3629
+    },
+    {
+      "source": "references/SAC-RWB-main/sac/__init__.py",
+      "copy": "src/sac_rwb/sac/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "route_counts": {
+    "route": 6,
+    "flow": 6,
+    "vehicle": 30502
+  },
+  "target_junction_types": {
+    "229": "traffic_light",
+    "499": "traffic_light",
+    "332": "traffic_light",
+    "334": "traffic_light"
+  },
+  "requirements_overlay": "plan/p0/requirements-server.txt"
+}

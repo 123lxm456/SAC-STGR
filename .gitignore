@@ -1,0 +1,30 @@
+# Local reference copies and remote P0 run artifacts
+/references/
+/plan/p0/remote-run/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Training artifacts and model weights
+**/tensorboard_logs/
+**/Train_logs/
+*.tfevents.*
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

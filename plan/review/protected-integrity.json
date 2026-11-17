@@ -1,0 +1,124 @@
+{
+  "captured": "2026-11-11",
+  "scope": "Read-only references/ and output/ inventory; original 27 visible entries captured before document edits; two pre-existing hidden Word lockfiles (timestamps 2026-11-02) added during force-inclusive verification",
+  "chapter34": "7932abc866f9bbf85cff61e474740658fc22157dfab8b685ccb3b827f24e612e",
+  "brief34": "ccb3cbbc4adfbf781ad3ac9f352b607586c74f4cef55371566bbe68bb0c97605",
+  "files": [
+    {
+      "path": "references/Dong_Guo_Biased_Attention_Risk_Prediction.pdf",
+      "sha256": "efd0b0f7a19369d5152f030d809d3aaef88ce83ee4053a81f9bb7992e195c4b9"
+    },
+    {
+      "path": "references/SAC-RWB-main/Env.py",
+      "sha256": "e44cc73f6d693d0b8cbce574742ad26f1747ea4c17e1da72c48501f8d8325445"
+    },
+    {
+      "path": "references/SAC-RWB-main/README.md",
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "references/SAC-RWB-main/requirements.txt",
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "references/SAC-RWB-main/test_sac.py",
+      "sha256": "53a3c17f2e5866747dd5a8a93411b9c7b19f5deff7b95d9ac93eecb1acc3c49b"
+    },
+    {
+      "path": "references/SAC-RWB-main/train_sac.py",
+      "sha256": "9d69c712d565b28a3b388885ca7378d451a5704ec16744c5facc557b533c14b0"
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/transformer_risk_model.py",
+      "sha256": "689840af50afc0e4c7ec3f9122ac1c40a073fe54e6e1bb75c2aafcf945855740"
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/control_agent.py",
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/costomized_data_structures.py",
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/custom_logger.py",
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/monitor.py",
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/NetMap.py",
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/sumo_interface.py",
+      "sha256": "ca4668389b31c28c1e71de0977479c9039c8461db70c75fa3ed1736dddd68c45"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/utils.py",
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/CSeditClean_1.net_threelegs.xml",
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/newroute1220_start0.xml",
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.sumocfg",
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.view.xml",
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/main.py",
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/SAC.py",
+      "sha256": "0cc6c052967af3c15aebf586078e3b57bf8c332e63780d145d318c8b267041e5"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/utils.py",
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/刘雪梅第三章.docx",
+      "sha256": "e9f62c9bd6d49bc730dff1ba5f0806c1b81df509c9d485a05ae2c3b5d7aa4b53"
+    },
+    {
+      "path": "output/第三章_时空风险引导的无信号交叉口决策_完整版.docx",
+      "sha256": "01ae72b5244e78c5ad39f5a7c9f75b2584a44e1b6deb1db783648f7718470cbc"
+    },
+    {
+      "path": "output/第三章_时空风险引导的无信号交叉口决策_精简版_更新.docx",
+      "sha256": "996e16237cb66b23b15f61f08cbf34ee5cfc9ebb203024d5cf7916c56a0b198a"
+    },
+    {
+      "path": "output/~$章_时空风险引导的无信号交叉口决策_完整版.docx",
+      "sha256": "ffec01bb3e3ec7c32bf2b3c4b5c447bd605365ba1ca66563a1a343eefcf5da93"
+    },
+    {
+      "path": "output/~$章_时空风险引导的无信号交叉口决策_精简版.docx",
+      "sha256": "1f75f2b4ec4df9502cd79a55c627e3310917fc08ff6959a241b3a73fe95b0a73"
+    }
+  ]
+}
