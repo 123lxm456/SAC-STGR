@@ -44,7 +44,9 @@ parser.add_argument('--adaptive_alpha', type=str2bool, default=True, help='Use a
 parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--max_e_steps', type=int, default=1000)
 
-parser.add_argument('--test_logs_path', type="str", help='Test save path')
+parser.add_argument('--test_logs_path', type=str, default='test_results.pkl', help='Test save path')
+parser.add_argument('--run_num', type=int, required=True, help='SAC checkpoint run number')
+parser.add_argument('--timestep', type=int, required=True, help='SAC checkpoint timestep suffix')
 
 opt = parser.parse_args()
 opt.dvc = torch.device(opt.dvc) # from str to torch.device
@@ -52,6 +54,11 @@ print(opt)
 
 def main():
     env_name = "unsignalizedIntersections"
+
+    torch.manual_seed(opt.seed)
+    torch.cuda.manual_seed(opt.seed)
+    random.seed(opt.seed)
+    np.random.seed(opt.seed)
 
     env = Env({
         "junction_list": ['229', '499', '332', '334'],  #
@@ -68,11 +75,12 @@ def main():
         },
         # 风险预测模型
         "use_safety_predictor": False,
+        "sumo_seed": opt.seed,
     })
 
-
-    torch.manual_seed(opt.seed)
-    torch.cuda.manual_seed(opt.seed)
+    opt.state_dim = env.n_obs
+    opt.action_dim = env.n_action
+    opt.max_action = env.max_acc
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     print("Random Seed: {}".format(opt.seed))
@@ -80,9 +88,7 @@ def main():
     # load model
     agent = SAC_countinuous(**vars(opt))
 
-    run_num = 36
-    timestep = 500
-    agent.load(env_name,timestep=timestep, run_num=run_num)
+    agent.load(env_name, timestep=opt.timestep, run_num=opt.run_num)
 
     state, _ = env.reset()
     for _ in range(1, opt.max_e_steps + 1):
@@ -102,7 +108,7 @@ def main():
             if done:
                 state.pop(key)
 
-    env.monitor.evaluate()
+    env.monitor.evaluate(min_step=0, max_step=min(opt.max_e_steps, 1000))
     env.monitor.save_to_pickle(file_name=opt.test_logs_path)
 
     env.close()

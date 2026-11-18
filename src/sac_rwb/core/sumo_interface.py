@@ -26,11 +26,12 @@ class SubscribeDef:
 
 
 class SUMO(object):
-    def __init__(self, cfg, render=False):
+    def __init__(self, cfg, render=False, seed=1):
         self.print_debug = False
         self.tc = None    
         self.cfg = cfg
         self.render  = render
+        self.seed = seed
         self.sim_step = 1
         self.sumo_cmd = self.generate_sumo()
         self.tc = self.start_sumo(self.tc)    
@@ -72,7 +73,7 @@ class SUMO(object):
             'configuration-file': self.cfg,
             'step-length': self.sim_step,
             'log': 'sumolog',
-            'seed': 1
+            'seed': self.seed
         }
         cmd = ['sumo-gui' if self.render else 'sumo']
         for k, v in sumo_args.items():
@@ -203,4 +204,4 @@ if __name__ == "__main__":
     while True:
         sumo_connection.tc.simulationStep()
         res = sumo_connection.get_sim_info()
-        
+

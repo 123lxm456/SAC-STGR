@@ -2,6 +2,7 @@ from sac.utils import str2bool, evaluate_policy, Action_adapter, Action_adapter_
 from datetime import datetime
 from sac.SAC import SAC_countinuous
 import os, shutil
+import random
 import argparse
 import torch
 from Env import Env
@@ -43,6 +44,10 @@ print(opt)
 
 def main():
     env_name = "unsignalizedIntersections"
+    torch.manual_seed(opt.seed)
+    torch.cuda.manual_seed(opt.seed)
+    random.seed(opt.seed)
+    np.random.seed(opt.seed)
     # 创建风险预测模型保存目录
     risk_model_dir = "risk_model/"
     if not os.path.exists(risk_model_dir):
@@ -82,14 +87,13 @@ def main():
             "disable_light_start": 0
         },
         "use_safety_predictor": True,
+        "sumo_seed": opt.seed,
         "risk_predictor": risk_predictor
     })
     opt.state_dim = env.n_obs
     opt.action_dim = env.n_action
     opt.max_action = env.max_acc   #remark: action space【-max,max】
     # Seed Everything
-    torch.manual_seed(opt.seed)
-    torch.cuda.manual_seed(opt.seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     print("Random Seed: {}".format(opt.seed))
@@ -123,9 +127,12 @@ def main():
     writer = SummaryWriter(writepath)
     print("tensorboard logging at : " + tensorboard_dir + f'run_{run_num}')
     total_steps = 0
+    sac_update_total = 0
+    risk_update_total = 0
     cur_time = time.localtime()
     print("start time: %02d:%02d:%02d" % (cur_time.tm_hour, cur_time.tm_min, cur_time.tm_sec))
     for i_episode in range(opt.epochs):
+        risk_predictor.buffer.clear_pending()
         state, _ = env.reset()
         stime = time.time()
         current_ep_reward = 0
@@ -157,6 +164,7 @@ def main():
             safe_reward_dict = {}
             state_batch_for_risk = []
             action_batch_for_risk = []
+            mask_batch_for_risk = []
             key_list = []
             action_dict = dict(zip(state.keys(), action))
             a_dict = dict(zip(state.keys(), a))
@@ -167,21 +175,25 @@ def main():
             if env.use_safety_predictor:
                 for key in state.keys():
                     veh_id = env.convert_virtual_id_to_real_id(key)
-                    s_seq, a_seq = risk_predictor.buffer.get_sequence(veh_id)
+                    s_seq, a_seq, valid_mask = risk_predictor.buffer.get_sequence(veh_id)
                     if s_seq is not None:
                         state_batch_for_risk.append(s_seq)
                         action_batch_for_risk.append(a_seq)
+                        mask_batch_for_risk.append(valid_mask)
                         key_list.append(key)
             if state_batch_for_risk:
                 s_tensor = torch.tensor(np.concatenate(state_batch_for_risk), dtype=torch.float32).to(opt.dvc)
                 a_tensor = torch.tensor(np.concatenate(action_batch_for_risk), dtype=torch.float32).to(opt.dvc)
+                mask_tensor = torch.tensor(np.concatenate(mask_batch_for_risk), dtype=torch.bool).to(opt.dvc)
+                risk_predictor.eval()
                 with torch.no_grad():
-                    risk_scores = risk_predictor(s_tensor, a_tensor).cpu().numpy().flatten()
+                    risk_scores = risk_predictor(s_tensor, a_tensor, mask_tensor).cpu().numpy().flatten()
                     for idx, key in enumerate(key_list):
                         safe_reward_dict[key] = risk_scores[idx] # risk_score 在 [0, 1] 之间
             next_state, reward, is_terminal, truncated, info, new_state = env.step(action_dict, safe_reward_dict)
             for i, veh_id in enumerate(reward.keys()):
-                agent.replay_buffer.add(state[veh_id], np.array(a_dict[veh_id]), reward[veh_id], new_state[veh_id], True)
+                agent.replay_buffer.add(state[veh_id], np.array(a_dict[veh_id]), reward[veh_id],
+                                        new_state[veh_id], bool(is_terminal.get(veh_id, False)))
             for key, done in is_terminal.items():
                 if done:
                     next_state.pop(key)
@@ -194,15 +206,23 @@ def main():
                     current_ep_efficiency_reward += env.reward_record[veh_id]['efficiency']
                     current_ep_safety_reward += env.reward_record[veh_id]['safety']
             '''train if it's time'''
-            if total_steps % (0.2*opt.max_e_steps) == 0:
+            if total_steps % max(1, opt.update_every) == 0 and agent.replay_buffer.size >= opt.batch_size:
                 losses = agent.train()
+                sac_update_total += losses['updates']
                 writer.add_scalar('Loss/q_loss', losses['q_loss'], total_steps)
                 writer.add_scalar('Loss/a_loss', losses['a_loss'], total_steps)
-                writer.add_scalar('Loss/alpha_loss', losses['alpha_loss'], total_steps)
+                if losses['alpha_loss'] is not None:
+                    writer.add_scalar('Loss/alpha_loss', losses['alpha_loss'], total_steps)
+                writer.add_scalar('Updates/SAC', sac_update_total, total_steps)
 
-                if env.use_safety_predictor and len(risk_predictor.buffer.active_buffer) >= 64:
+                if (env.use_safety_predictor and len(risk_predictor.buffer.active_buffer) >= 64
+                        and len(risk_predictor.buffer.risk_active_buffer) >= 64):
                     loss = risk_predictor.train_model(batch_size=128, epochs=3, lr=1e-5, device=opt.dvc)
-                    writer.add_scalar('Loss/Risk_Model_Loss', loss, total_steps)
+                    risk_update_total += risk_predictor.last_train_updates
+                    if risk_predictor.last_train_updates:
+                        writer.add_scalar('Loss/Risk_Model_Loss', loss, total_steps)
+                    writer.add_scalar('Updates/Risk', risk_update_total, total_steps)
+                    risk_predictor.eval()
 
             '''save model'''
             if total_steps % opt.save_interval == 0:
@@ -216,6 +236,9 @@ def main():
         print(f"\n{'=' * 100}\n"
               f"Episode: {i_episode:<10} | Timestep: {total_steps:<10} | Average Reward: {current_ep_reward:<10.2f} | Episode Time: {round((etime - stime), 2):<10.2f}\n"
               f"{'=' * 100}")
+        print(f"Optimizer updates: SAC={sac_update_total}, risk={risk_update_total}; "
+              f"risk pools: safe={len(risk_predictor.buffer.active_buffer)}, "
+              f"collision={len(risk_predictor.buffer.risk_active_buffer)}")
         # 记录奖励指标
         writer.add_scalar('Reward/Total', current_ep_reward, i_episode)
         writer.add_scalar('Reward/Efficiency', current_ep_efficiency_reward, i_episode)

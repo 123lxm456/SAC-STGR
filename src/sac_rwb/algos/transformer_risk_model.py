@@ -35,6 +35,23 @@ class RiskExperienceBuffer:
         self.to_use_buffer[vehicle_id]["state_seq"].append(state)
         self.to_use_buffer[vehicle_id]["action_seq"].append(action)
 
+    def clear_pending(self):
+        """Discard unfinished histories when SUMO starts a new episode."""
+        self.to_use_buffer.clear()
+
+    @staticmethod
+    def pad_sequence(state_seq, action_seq):
+        valid_count = len(state_seq)
+        valid_mask = np.zeros(SEQUENCE_LENGTH, dtype=np.bool_)
+        valid_mask[-valid_count:] = True
+        state_dim = len(state_seq[0])
+        action_dim = len(action_seq[0])
+        missing = SEQUENCE_LENGTH - valid_count
+        states = [np.zeros(state_dim, dtype=np.float32) for _ in range(missing)] + state_seq
+        actions = [np.zeros(action_dim, dtype=np.float32) for _ in range(missing)] + action_seq
+        return (np.asarray(states, dtype=np.float32),
+                np.asarray(actions, dtype=np.float32), valid_mask)
+
     def update_data(self, vehicle_id, label):
         if vehicle_id in self.to_use_buffer:
             sample_queues = self.to_use_buffer.pop(vehicle_id)
@@ -44,20 +61,12 @@ class RiskExperienceBuffer:
             if not state_seq:
                 return
 
-            state_dim = len(state_seq[0])
-            action_dim = len(action_seq[0])
-            zero_state = np.zeros(state_dim, dtype=np.float32)
-            zero_action = np.zeros(action_dim, dtype=np.float32)
-            while len(state_seq) < SEQUENCE_LENGTH:
-                state_seq.insert(0, zero_state)
-                action_seq.insert(0, zero_action)
-
-            original_state_seq = np.array(state_seq, dtype=np.float32)
-            original_action_seq = np.array(action_seq, dtype=np.float32)
+            original_state_seq, original_action_seq, valid_mask = self.pad_sequence(state_seq, action_seq)
 
             original_data = {
                 "state_seq": original_state_seq,
                 "action_seq": original_action_seq,
+                "valid_mask": valid_mask,
                 "label": label
             }
 
@@ -66,24 +75,10 @@ class RiskExperienceBuffer:
             else:
                 self.active_buffer.append(original_data)
 
-            if label == 1:
-                augmented_action_seq = np.copy(original_action_seq)
-
-                augmented_action_seq[-1] = -3
-
-                augmented_data = {
-                    "state_seq": original_state_seq,  # 
-                    "action_seq": augmented_action_seq,
-                    "label": 0
-                }
-
-                self.active_buffer.append(augmented_data)
-
-
     def sample(self, batch_size):
         # 确保有足够的数据可供采样
         if len(self.active_buffer) < batch_size // 2 or len(self.risk_active_buffer) < batch_size // 2:
-            return None, None, None
+            return None, None, None, None
 
         # 平衡采样
         risk_batch = random.sample(self.risk_active_buffer, batch_size // 2)
@@ -95,9 +90,10 @@ class RiskExperienceBuffer:
         # 使用np.stack可以直接将样本列表转换为一个批次
         state_batch = np.stack([item['state_seq'] for item in batch])
         action_batch = np.stack([item['action_seq'] for item in batch])
+        mask_batch = np.stack([item['valid_mask'] for item in batch])
         label_batch = np.array([item['label'] for item in batch], dtype=np.float32)
 
-        return state_batch, action_batch, label_batch
+        return state_batch, action_batch, mask_batch, label_batch
 
     def __len__(self):
         return len(self.active_buffer) + len(self.risk_active_buffer)
@@ -105,20 +101,16 @@ class RiskExperienceBuffer:
     def get_sequence(self, vehicle_id):
         """为奖励计算提供获取当前序列的接口"""
         if vehicle_id not in self.to_use_buffer:
-            return None, None
+            return None, None, None
         
         state_seq = list(self.to_use_buffer[vehicle_id]["state_seq"])
         action_seq = list(self.to_use_buffer[vehicle_id]["action_seq"])
 
         if not state_seq:
-            return None, None
+            return None, None, None
         
-        # 同样进行填充
-        while len(state_seq) < SEQUENCE_LENGTH:
-            state_seq.insert(0, state_seq[0])
-            action_seq.insert(0, action_seq[0])
-            
-        return np.array([state_seq]), np.array([action_seq]) # 返回批次大小为1的序列
+        states, actions, valid_mask = self.pad_sequence(state_seq, action_seq)
+        return states[None, ...], actions[None, ...], valid_mask[None, ...]
 
 
 class PositionalEncoding(nn.Module):
@@ -175,6 +167,8 @@ class TransformerRiskPredictor(nn.Module):
         )
 
         self.buffer = RiskExperienceBuffer(max_size=buffer_size)
+        self.optimizer = torch.optim.AdamW(self.parameters(), lr=1e-5, weight_decay=1e-5)
+        self.last_train_updates = 0
 
         # --- 新增代码：创建并注册注意力偏置 ---
         # register_buffer将张量注册为模型的一部分，它会被.to(device)移动，但不会被视为可训练参数
@@ -200,7 +194,7 @@ class TransformerRiskPredictor(nn.Module):
         # print(f"创建的注意力偏置 (Attention Bias) 示例 (第一行): {bias_matrix[0].numpy()}")
         return bias_matrix
 
-    def forward(self, state_seq, action_seq):
+    def forward(self, state_seq, action_seq, valid_mask=None):
         try:
             # 输入已经是 [batch_size, seq_len, feature_dim]
             # 连接状态和动作
@@ -215,7 +209,9 @@ class TransformerRiskPredictor(nn.Module):
             x = x.permute(1, 0, 2)  # (N, S, E) 换为 (S, N, E)
             
             # Transformer编码器
-            x = self.transformer(x, mask=self.attention_bias)  # [batch_size, seq_len, d_model]
+            padding_mask = None if valid_mask is None else ~valid_mask.bool()
+            x = self.transformer(x, mask=self.attention_bias,
+                                 src_key_padding_mask=padding_mask)
 
             x = x.permute(1, 0, 2) # (N, S, E)
             
@@ -238,8 +234,9 @@ class TransformerRiskPredictor(nn.Module):
                 raise
 
     def train_model(self, batch_size=128, epochs=3, lr=1e-5, device='cpu', save_path='risk_model.pt'):
-        # optimizer = torch.optim.Adam(self.parameters(), lr=lr)
-        optimizer = torch.optim.AdamW(self.parameters(), lr=lr, weight_decay=1e-5)
+        self.last_train_updates = 0
+        for group in self.optimizer.param_groups:
+            group['lr'] = lr
         criterion = nn.BCELoss()
         
         total_loss = 0.0
@@ -252,7 +249,7 @@ class TransformerRiskPredictor(nn.Module):
             num_batches = max(1, len(self.buffer) // batch_size)
 
             for _ in range(num_batches):
-                state_batch, action_batch, label_batch = self.buffer.sample(batch_size)
+                state_batch, action_batch, mask_batch, label_batch = self.buffer.sample(batch_size)
                 if state_batch is None:
                     continue
                     
@@ -260,27 +257,29 @@ class TransformerRiskPredictor(nn.Module):
                     # 转换为tensor并移动到设备
                     s = torch.tensor(state_batch, dtype=torch.float32).to(device)
                     a = torch.tensor(action_batch, dtype=torch.float32).to(device)
+                    mask = torch.tensor(mask_batch, dtype=torch.bool).to(device)
                     y = torch.tensor(label_batch, dtype=torch.float32).to(device)
 
                     # 前向传播
-                    preds = self.forward(s, a)
+                    preds = self.forward(s, a, mask)
                     loss = criterion(preds, y)
 
                     # 反向传播
-                    optimizer.zero_grad()
+                    self.optimizer.zero_grad()
                     loss.backward()
                     
                     # 梯度裁剪，防止梯度爆炸
                     torch.nn.utils.clip_grad_norm_(self.parameters(), max_norm=1.0)
                     
-                    optimizer.step()
+                    self.optimizer.step()
+                    self.last_train_updates += 1
 
                     batch_loss = loss.item() * s.size(0)
                     epoch_loss += batch_loss
                     epoch_batches += 1
                     
                     # 清理内存
-                    del s, a, y, preds, loss
+                    del s, a, mask, y, preds, loss
                     if torch.cuda.is_available():
                         torch.cuda.empty_cache()
                         

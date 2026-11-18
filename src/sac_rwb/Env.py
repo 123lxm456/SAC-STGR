@@ -50,7 +50,8 @@ class Env(gym.Env):
         self.traffic_light_program = self.config['traffic_light_program']
 
         self.junction_list = self.config['junction_list']
-        self.sumo_interface = SUMO(self.cfg, render=self.config['render'])
+        self.sumo_interface = SUMO(self.cfg, render=self.config['render'],
+                                   seed=self.config.get('sumo_seed', 1))
         self.map = NetMap(self.map_xml, self.junction_list)
 
         self.spawn_rl_prob = config['spawn_rl_prob']
@@ -239,7 +240,7 @@ class Env(gym.Env):
                     index = self.keywords_order.index(ego_keyword)
                     rotated_keyword = []
                     for i in range(len(self.keywords_order)):
-                        rotated_keyword.extend([self.keywords_order[(i + index) % (len(self.keywords_order) - 1)]])
+                        rotated_keyword.extend([self.keywords_order[(i + index) % len(self.keywords_order)]])
                     return rotated_keyword
         else:
             for ind in range(len(veh.road_id)):
@@ -256,7 +257,7 @@ class Env(gym.Env):
                 index = self.keywords_order.index(ego_keyword)
                 rotated_keyword = []
                 for i in range(len(self.keywords_order)):
-                    rotated_keyword.extend([self.keywords_order[(i + index) % (len(self.keywords_order) - 1)]])
+                    rotated_keyword.extend([self.keywords_order[(i + index) % len(self.keywords_order)]])
                 return rotated_keyword
 
     def change_conflict_mechanism_type(self, new_type):

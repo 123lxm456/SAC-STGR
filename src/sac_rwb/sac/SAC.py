@@ -39,7 +39,8 @@ class SAC_countinuous():
 		return a.cpu().numpy()[0]
 
 	def train(self,):
-		for _ in range(5):
+		updates = 5
+		for _ in range(updates):
 			s, a, r, s_next, dw = self.replay_buffer.sample(self.batch_size)
 
 			#----------------------------- ↓↓↓↓↓ Update Q Net ↓↓↓↓↓ ------------------------------#
@@ -89,11 +90,12 @@ class SAC_countinuous():
 			a_loss_value = a_loss.item()
 			alpha_loss_value = alpha_loss.item() if self.adaptive_alpha else None
 
-			return {
-				"q_loss": q_loss_value,
-				"a_loss": a_loss_value,
-				"alpha_loss": alpha_loss_value
-			}
+		return {
+			"q_loss": q_loss_value,
+			"a_loss": a_loss_value,
+			"alpha_loss": alpha_loss_value,
+			"updates": updates
+		}
 
 	def save(self, EnvName, timestep, run_num):
 		save_dir = f"./model/SAC_model_{run_num}"
