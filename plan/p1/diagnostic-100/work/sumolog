@@ -1,0 +1,1034 @@
+***Starting server on port 43907 ***
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (560ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.49s
+ TraCI-Duration: 0.48s
+ Real time factor: 2.05761
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 168.61s
+ TraCI-Duration: 153.50s
+ Real time factor: 6.13857
+ UPS: 7154.703866
+Vehicles: 
+ Inserted: 3640 (Loaded: 9679)
+ Running: 2285
+ Waiting: 4685
+Teleports: 328 (Collisions: 328)
+Statistics (avg):
+ RouteLength: 1182.77
+ Speed: 7.78
+ Duration: 166.81
+ WaitingTime: 28.83
+ TimeLoss: 48.55
+ DepartDelay: 17.74
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1032.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 185.70s
+ TraCI-Duration: 171.21s
+ Real time factor: 5.55741
+ UPS: 6878.835529
+Vehicles: 
+ Inserted: 3322 (Loaded: 9679)
+ Running: 2192
+ Waiting: 4981
+Teleports: 330 (Collisions: 330)
+Statistics (avg):
+ RouteLength: 927.29
+ Speed: 7.04
+ Duration: 180.34
+ WaitingTime: 65.53
+ TimeLoss: 87.77
+ DepartDelay: 45.58
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1027.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 256.72s
+ TraCI-Duration: 241.78s
+ Real time factor: 4.00047
+ UPS: 5302.247585
+Vehicles: 
+ Inserted: 3172 (Loaded: 9679)
+ Running: 2455
+ Waiting: 5090
+Teleports: 54 (Collisions: 54)
+Statistics (avg):
+ RouteLength: 839.19
+ Speed: 8.04
+ Duration: 125.40
+ WaitingTime: 27.70
+ TimeLoss: 41.18
+ DepartDelay: 15.57
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1027.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 169.51s
+ TraCI-Duration: 153.27s
+ Real time factor: 6.05857
+ UPS: 7240.012506
+Vehicles: 
+ Inserted: 3336 (Loaded: 9679)
+ Running: 2083
+ Waiting: 4926
+Teleports: 159 (Collisions: 159)
+Statistics (avg):
+ RouteLength: 995.11
+ Speed: 7.47
+ Duration: 175.46
+ WaitingTime: 55.94
+ TimeLoss: 75.82
+ DepartDelay: 25.03
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (518ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 157.59s
+ TraCI-Duration: 143.86s
+ Real time factor: 6.56763
+ UPS: 7195.017482
+Vehicles: 
+ Inserted: 3630 (Loaded: 9679)
+ Running: 1879
+ Waiting: 4695
+Teleports: 418 (Collisions: 418)
+Statistics (avg):
+ RouteLength: 1069.00
+ Speed: 7.28
+ Duration: 187.61
+ WaitingTime: 53.88
+ TimeLoss: 80.78
+ DepartDelay: 29.28
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 157.33s
+ TraCI-Duration: 141.69s
+ Real time factor: 6.57853
+ UPS: 7561.780970
+Vehicles: 
+ Inserted: 3548 (Loaded: 9679)
+ Running: 2085
+ Waiting: 4777
+Teleports: 296 (Collisions: 296)
+Statistics (avg):
+ RouteLength: 1065.73
+ Speed: 8.23
+ Duration: 143.03
+ WaitingTime: 19.49
+ TimeLoss: 36.51
+ DepartDelay: 45.24
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 165.88s
+ TraCI-Duration: 149.76s
+ Real time factor: 6.24552
+ UPS: 7235.834554
+Vehicles: 
+ Inserted: 3585 (Loaded: 9679)
+ Running: 2040
+ Waiting: 4746
+Teleports: 380 (Collisions: 380)
+Statistics (avg):
+ RouteLength: 1273.24
+ Speed: 7.98
+ Duration: 174.34
+ WaitingTime: 25.08
+ TimeLoss: 47.00
+ DepartDelay: 34.60
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 192.35s
+ TraCI-Duration: 174.69s
+ Real time factor: 5.38093
+ UPS: 6423.684402
+Vehicles: 
+ Inserted: 3499 (Loaded: 9679)
+ Running: 2162
+ Waiting: 4826
+Teleports: 37 (Collisions: 37)
+Statistics (avg):
+ RouteLength: 1158.90
+ Speed: 8.18
+ Duration: 152.77
+ WaitingTime: 18.91
+ TimeLoss: 36.47
+ DepartDelay: 20.05
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 227.26s
+ TraCI-Duration: 213.16s
+ Real time factor: 4.55428
+ UPS: 4690.291694
+Vehicles: 
+ Inserted: 3772 (Loaded: 9679)
+ Running: 1908
+ Waiting: 4553
+Teleports: 276 (Collisions: 276)
+Statistics (avg):
+ RouteLength: 1238.30
+ Speed: 7.42
+ Duration: 187.14
+ WaitingTime: 40.24
+ TimeLoss: 63.15
+ DepartDelay: 25.74
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (532ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 298.88s
+ TraCI-Duration: 280.70s
+ Real time factor: 3.46963
+ UPS: 3845.907541
+Vehicles: 
+ Inserted: 3610 (Loaded: 9679)
+ Running: 2038
+ Waiting: 4731
+Teleports: 270 (Collisions: 270)
+Statistics (avg):
+ RouteLength: 1249.83
+ Speed: 7.74
+ Duration: 180.87
+ WaitingTime: 34.93
+ TimeLoss: 55.79
+ DepartDelay: 24.13
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (554ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 325.81s
+ TraCI-Duration: 305.19s
+ Real time factor: 3.18287
+ UPS: 3846.587090
+Vehicles: 
+ Inserted: 3539 (Loaded: 9679)
+ Running: 2191
+ Waiting: 4802
+Teleports: 47 (Collisions: 47)
+Statistics (avg):
+ RouteLength: 1231.24
+ Speed: 8.23
+ Duration: 161.26
+ WaitingTime: 17.31
+ TimeLoss: 37.73
+ DepartDelay: 19.97
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (625ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 321.70s
+ TraCI-Duration: 304.07s
+ Real time factor: 3.21731
+ UPS: 3654.025372
+Vehicles: 
+ Inserted: 3647 (Loaded: 9679)
+ Running: 2021
+ Waiting: 4678
+Teleports: 322 (Collisions: 322)
+Statistics (avg):
+ RouteLength: 1332.45
+ Speed: 8.08
+ Duration: 177.24
+ WaitingTime: 22.01
+ TimeLoss: 43.98
+ DepartDelay: 34.44
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (672ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 326.70s
+ TraCI-Duration: 308.59s
+ Real time factor: 3.17114
+ UPS: 3469.549673
+Vehicles: 
+ Inserted: 3654 (Loaded: 9679)
+ Running: 2044
+ Waiting: 4677
+Teleports: 229 (Collisions: 229)
+Statistics (avg):
+ RouteLength: 1264.46
+ Speed: 7.81
+ Duration: 177.62
+ WaitingTime: 30.20
+ TimeLoss: 51.02
+ DepartDelay: 37.59
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (570ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 335.60s
+ TraCI-Duration: 318.88s
+ Real time factor: 3.08998
+ UPS: 3376.750963
+Vehicles: 
+ Inserted: 3718 (Loaded: 9679)
+ Running: 2001
+ Waiting: 4623
+Teleports: 288 (Collisions: 288)
+Statistics (avg):
+ RouteLength: 1262.87
+ Speed: 7.59
+ Duration: 189.38
+ WaitingTime: 40.01
+ TimeLoss: 63.00
+ DepartDelay: 22.80
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (573ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 307.56s
+ TraCI-Duration: 288.43s
+ Real time factor: 3.3684
+ UPS: 3988.334135
+Vehicles: 
+ Inserted: 3624 (Loaded: 9679)
+ Running: 2142
+ Waiting: 4707
+Teleports: 253 (Collisions: 253)
+Statistics (avg):
+ RouteLength: 1203.89
+ Speed: 8.24
+ Duration: 155.13
+ WaitingTime: 16.71
+ TimeLoss: 34.61
+ DepartDelay: 41.39
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (533ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 214.39s
+ TraCI-Duration: 199.44s
+ Real time factor: 4.83241
+ UPS: 5397.045516
+Vehicles: 
+ Inserted: 3648 (Loaded: 9679)
+ Running: 2040
+ Waiting: 4683
+Teleports: 288 (Collisions: 288)
+Statistics (avg):
+ RouteLength: 1313.82
+ Speed: 7.98
+ Duration: 179.27
+ WaitingTime: 27.40
+ TimeLoss: 47.85
+ DepartDelay: 44.65
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 228.15s
+ TraCI-Duration: 211.16s
+ Real time factor: 4.5452
+ UPS: 5561.859805
+Vehicles: 
+ Inserted: 3545 (Loaded: 9679)
+ Running: 2263
+ Waiting: 4796
+Teleports: 73 (Collisions: 73)
+Statistics (avg):
+ RouteLength: 1180.42
+ Speed: 8.25
+ Duration: 154.49
+ WaitingTime: 18.31
+ TimeLoss: 36.07
+ DepartDelay: 23.11
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 217.68s
+ TraCI-Duration: 202.49s
+ Real time factor: 4.75932
+ UPS: 5362.673306
+Vehicles: 
+ Inserted: 3647 (Loaded: 9679)
+ Running: 2049
+ Waiting: 4684
+Teleports: 201 (Collisions: 201)
+Statistics (avg):
+ RouteLength: 1621.50
+ Speed: 7.84
+ Duration: 223.18
+ WaitingTime: 31.39
+ TimeLoss: 60.84
+ DepartDelay: 22.65
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 224.37s
+ TraCI-Duration: 208.44s
+ Real time factor: 4.62175
+ UPS: 5441.022578
+Vehicles: 
+ Inserted: 3701 (Loaded: 9679)
+ Running: 2072
+ Waiting: 4640
+Teleports: 257 (Collisions: 257)
+Statistics (avg):
+ RouteLength: 1223.96
+ Speed: 7.21
+ Duration: 210.37
+ WaitingTime: 61.65
+ TimeLoss: 87.85
+ DepartDelay: 45.51
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 208.70s
+ TraCI-Duration: 195.58s
+ Real time factor: 4.96876
+ UPS: 5270.459598
+Vehicles: 
+ Inserted: 3745 (Loaded: 9679)
+ Running: 1914
+ Waiting: 4596
+Teleports: 304 (Collisions: 304)
+Statistics (avg):
+ RouteLength: 1168.62
+ Speed: 7.25
+ Duration: 187.74
+ WaitingTime: 46.49
+ TimeLoss: 70.73
+ DepartDelay: 30.70
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1037.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 255.30s
+ TraCI-Duration: 239.46s
+ Real time factor: 4.06189
+ UPS: 4679.475127
+Vehicles: 
+ Inserted: 3576 (Loaded: 9679)
+ Running: 1994
+ Waiting: 4765
+Teleports: 233 (Collisions: 233)
+Statistics (avg):
+ RouteLength: 1577.55
+ Speed: 7.94
+ Duration: 207.52
+ WaitingTime: 26.49
+ TimeLoss: 49.69
+ DepartDelay: 22.00
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (542ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 335.16s
+ TraCI-Duration: 320.37s
+ Real time factor: 3.09107
+ UPS: 3312.129467
+Vehicles: 
+ Inserted: 3707 (Loaded: 9679)
+ Running: 1849
+ Waiting: 4624
+Teleports: 463 (Collisions: 463)
+Statistics (avg):
+ RouteLength: 1221.74
+ Speed: 7.21
+ Duration: 195.89
+ WaitingTime: 46.78
+ TimeLoss: 73.72
+ DepartDelay: 36.13
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (531ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 334.68s
+ TraCI-Duration: 319.09s
+ Real time factor: 3.09254
+ UPS: 3413.949611
+Vehicles: 
+ Inserted: 3717 (Loaded: 9679)
+ Running: 2016
+ Waiting: 4608
+Teleports: 280 (Collisions: 280)
+Statistics (avg):
+ RouteLength: 1177.58
+ Speed: 7.24
+ Duration: 197.82
+ WaitingTime: 52.44
+ TimeLoss: 79.97
+ DepartDelay: 23.03
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 337.74s
+ TraCI-Duration: 322.48s
+ Real time factor: 3.06746
+ UPS: 3222.846636
+Vehicles: 
+ Inserted: 3627 (Loaded: 9679)
+ Running: 1886
+ Waiting: 4704
+Teleports: 243 (Collisions: 243)
+Statistics (avg):
+ RouteLength: 1463.26
+ Speed: 7.69
+ Duration: 201.81
+ WaitingTime: 32.99
+ TimeLoss: 55.33
+ DepartDelay: 28.99
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (537ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 344.60s
+ TraCI-Duration: 327.86s
+ Real time factor: 3.00638
+ UPS: 3373.473593
+Vehicles: 
+ Inserted: 3647 (Loaded: 9679)
+ Running: 2079
+ Waiting: 4684
+Teleports: 279 (Collisions: 279)
+Statistics (avg):
+ RouteLength: 1235.28
+ Speed: 7.96
+ Duration: 171.25
+ WaitingTime: 27.54
+ TimeLoss: 47.65
+ DepartDelay: 43.62
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 346.20s
+ TraCI-Duration: 330.15s
+ Real time factor: 2.99249
+ UPS: 3396.048527
+Vehicles: 
+ Inserted: 3632 (Loaded: 9679)
+ Running: 1979
+ Waiting: 4699
+Teleports: 389 (Collisions: 389)
+Statistics (avg):
+ RouteLength: 1175.46
+ Speed: 7.29
+ Duration: 199.57
+ WaitingTime: 58.18
+ TimeLoss: 82.07
+ DepartDelay: 33.15
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (547ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 343.64s
+ TraCI-Duration: 327.19s
+ Real time factor: 3.01481
+ UPS: 3330.933514
+Vehicles: 
+ Inserted: 3687 (Loaded: 9679)
+ Running: 2073
+ Waiting: 4644
+Teleports: 296 (Collisions: 296)
+Statistics (avg):
+ RouteLength: 1101.66
+ Speed: 7.46
+ Duration: 177.38
+ WaitingTime: 44.14
+ TimeLoss: 67.18
+ DepartDelay: 23.79
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 340.18s
+ TraCI-Duration: 324.94s
+ Real time factor: 3.04546
+ UPS: 3308.690425
+Vehicles: 
+ Inserted: 3710 (Loaded: 9679)
+ Running: 2020
+ Waiting: 4621
+Teleports: 405 (Collisions: 405)
+Statistics (avg):
+ RouteLength: 1103.15
+ Speed: 7.83
+ Duration: 156.18
+ WaitingTime: 23.95
+ TimeLoss: 45.93
+ DepartDelay: 42.33
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (534ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 336.07s
+ TraCI-Duration: 320.63s
+ Real time factor: 3.08267
+ UPS: 3403.321312
+Vehicles: 
+ Inserted: 3607 (Loaded: 9679)
+ Running: 1939
+ Waiting: 4724
+Teleports: 415 (Collisions: 415)
+Statistics (avg):
+ RouteLength: 1547.44
+ Speed: 7.50
+ Duration: 222.25
+ WaitingTime: 41.83
+ TimeLoss: 67.61
+ DepartDelay: 38.27
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (548ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 390.25s
+ TraCI-Duration: 370.61s
+ Real time factor: 2.65469
+ UPS: 3115.947859
+Vehicles: 
+ Inserted: 3564 (Loaded: 9679)
+ Running: 2176
+ Waiting: 4767
+Teleports: 255 (Collisions: 255)
+Statistics (avg):
+ RouteLength: 1076.09
+ Speed: 7.38
+ Duration: 183.43
+ WaitingTime: 55.54
+ TimeLoss: 75.80
+ DepartDelay: 37.65
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 383.22s
+ TraCI-Duration: 365.14s
+ Real time factor: 2.70341
+ UPS: 3096.388497
+Vehicles: 
+ Inserted: 3596 (Loaded: 9679)
+ Running: 2152
+ Waiting: 4735
+Teleports: 216 (Collisions: 216)
+Statistics (avg):
+ RouteLength: 1197.15
+ Speed: 8.14
+ Duration: 162.95
+ WaitingTime: 24.31
+ TimeLoss: 43.10
+ DepartDelay: 26.08
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (589ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 393.61s
+ TraCI-Duration: 372.70s
+ Real time factor: 2.62953
+ UPS: 3223.944188
+Vehicles: 
+ Inserted: 3638 (Loaded: 9679)
+ Running: 2372
+ Waiting: 4687
+Teleports: 36 (Collisions: 36)
+Statistics (avg):
+ RouteLength: 1057.85
+ Speed: 7.97
+ Duration: 143.24
+ WaitingTime: 20.72
+ TimeLoss: 37.04
+ DepartDelay: 23.04
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (542ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 379.03s
+ TraCI-Duration: 360.21s
+ Real time factor: 2.73063
+ UPS: 3107.323109
+Vehicles: 
+ Inserted: 3620 (Loaded: 9679)
+ Running: 2052
+ Waiting: 4705
+Teleports: 278 (Collisions: 278)
+Statistics (avg):
+ RouteLength: 1113.64
+ Speed: 7.74
+ Duration: 165.44
+ WaitingTime: 34.62
+ TimeLoss: 54.04
+ DepartDelay: 43.60
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 388.97s
+ TraCI-Duration: 370.88s
+ Real time factor: 2.66087
+ UPS: 3040.069825
+Vehicles: 
+ Inserted: 3730 (Loaded: 9679)
+ Running: 2045
+ Waiting: 4595
+Teleports: 130 (Collisions: 130)
+Statistics (avg):
+ RouteLength: 1189.07
+ Speed: 7.26
+ Duration: 193.46
+ WaitingTime: 50.69
+ TimeLoss: 74.28
+ DepartDelay: 30.16
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (543ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 383.26s
+ TraCI-Duration: 365.26s
+ Real time factor: 2.70055
+ UPS: 3105.498950
+Vehicles: 
+ Inserted: 3722 (Loaded: 9679)
+ Running: 2028
+ Waiting: 4603
+Teleports: 125 (Collisions: 125)
+Statistics (avg):
+ RouteLength: 1293.19
+ Speed: 6.95
+ Duration: 219.99
+ WaitingTime: 61.35
+ TimeLoss: 90.36
+ DepartDelay: 16.47
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (537ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 379.98s
+ TraCI-Duration: 362.78s
+ Real time factor: 2.72384
+ UPS: 3108.522072
+Vehicles: 
+ Inserted: 3595 (Loaded: 9679)
+ Running: 2139
+ Waiting: 4730
+Teleports: 230 (Collisions: 230)
+Statistics (avg):
+ RouteLength: 1155.41
+ Speed: 8.14
+ Duration: 151.12
+ WaitingTime: 18.89
+ TimeLoss: 35.47
+ DepartDelay: 17.36
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (567ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 375.28s
+ TraCI-Duration: 358.80s
+ Real time factor: 2.75797
+ UPS: 3066.028736
+Vehicles: 
+ Inserted: 3751 (Loaded: 9679)
+ Running: 2020
+ Waiting: 4574
+Teleports: 257 (Collisions: 257)
+Statistics (avg):
+ RouteLength: 1085.37
+ Speed: 7.06
+ Duration: 190.41
+ WaitingTime: 56.58
+ TimeLoss: 81.67
+ DepartDelay: 21.65
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (581ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 389.90s
+ TraCI-Duration: 372.51s
+ Real time factor: 2.65713
+ UPS: 3031.723926
+Vehicles: 
+ Inserted: 3698 (Loaded: 9679)
+ Running: 1930
+ Waiting: 4633
+Teleports: 191 (Collisions: 191)
+Statistics (avg):
+ RouteLength: 1461.77
+ Speed: 6.76
+ Duration: 252.19
+ WaitingTime: 73.55
+ TimeLoss: 105.78
+ DepartDelay: 22.90
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (539ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 401.11s
+ TraCI-Duration: 378.71s
+ Real time factor: 2.58035
+ UPS: 3213.475639
+Vehicles: 
+ Inserted: 3435 (Loaded: 9679)
+ Running: 2255
+ Waiting: 4890
+Teleports: 113 (Collisions: 113)
+Statistics (avg):
+ RouteLength: 1100.99
+ Speed: 8.16
+ Duration: 149.71
+ WaitingTime: 23.07
+ TimeLoss: 39.35
+ DepartDelay: 18.76
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (534ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 410.06s
+ TraCI-Duration: 390.97s
+ Real time factor: 2.52404
+ UPS: 3295.832043
+Vehicles: 
+ Inserted: 3516 (Loaded: 9679)
+ Running: 2422
+ Waiting: 4809
+Teleports: 20 (Collisions: 20)
+Statistics (avg):
+ RouteLength: 1075.49
+ Speed: 8.12
+ Duration: 145.31
+ WaitingTime: 20.07
+ TimeLoss: 37.33
+ DepartDelay: 24.59
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (583ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 384.81s
+ TraCI-Duration: 368.01s
+ Real time factor: 2.68963
+ UPS: 3015.948047
+Vehicles: 
+ Inserted: 3692 (Loaded: 9679)
+ Running: 2021
+ Waiting: 4633
+Teleports: 250 (Collisions: 250)
+Statistics (avg):
+ RouteLength: 1312.75
+ Speed: 7.09
+ Duration: 219.43
+ WaitingTime: 57.84
+ TimeLoss: 88.01
+ DepartDelay: 36.09
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (584ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 402.12s
+ TraCI-Duration: 380.22s
+ Real time factor: 2.57383
+ UPS: 3169.992341
+Vehicles: 
+ Inserted: 3625 (Loaded: 9679)
+ Running: 2233
+ Waiting: 4700
+Teleports: 236 (Collisions: 236)
+Statistics (avg):
+ RouteLength: 1338.05
+ Speed: 7.79
+ Duration: 182.92
+ WaitingTime: 26.11
+ TimeLoss: 48.89
+ DepartDelay: 43.61
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (577ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1035.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 395.47s
+ TraCI-Duration: 374.48s
+ Real time factor: 2.61717
+ UPS: 3278.651009
+Vehicles: 
+ Inserted: 3555 (Loaded: 9679)
+ Running: 2298
+ Waiting: 4770
+Teleports: 31 (Collisions: 31)
+Statistics (avg):
+ RouteLength: 1312.48
+ Speed: 7.84
+ Duration: 183.69
+ WaitingTime: 29.28
+ TimeLoss: 52.02
+ DepartDelay: 22.88
+
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1036.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 394.06s
+ TraCI-Duration: 375.60s
+ Real time factor: 2.62907
+ UPS: 3086.807679
+Vehicles: 
+ Inserted: 3602 (Loaded: 9679)
+ Running: 2194
+ Waiting: 4729
+Teleports: 288 (Collisions: 288)
+Statistics (avg):
+ RouteLength: 1061.34
+ Speed: 8.27
+ Duration: 137.69
+ WaitingTime: 15.63
+ TimeLoss: 31.58
+ DepartDelay: 48.44
