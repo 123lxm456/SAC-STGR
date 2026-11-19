@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np  # Import before torch on the local Windows test environment.
 import torch
@@ -82,6 +83,16 @@ class P2Tests(unittest.TestCase):
             changed_actions[~mask] = -1000.0
             after = model(changed_states, changed_actions, mask)
         self.assertTrue(torch.allclose(before, after, atol=1e-6))
+
+    def test_padding_mask_uses_bool_required_by_locked_torch(self):
+        model = self.make_model().eval()
+        mask = torch.tensor([[False] * 9 + [True]])
+        original = model.temporal_encoder.forward
+        with patch.object(model.temporal_encoder, "forward", wraps=original) as called:
+            with torch.no_grad():
+                model(torch.zeros(1, 10, 98), torch.zeros(1, 10, 1), mask)
+        self.assertEqual(called.call_args[1]["src_key_padding_mask"].dtype,
+                         torch.bool)
 
     def test_current_action_and_each_encoder_have_gradient(self):
         torch.manual_seed(7)

@@ -132,13 +132,11 @@ class SpatioTemporalRiskPredictor(nn.Module):
             batch * token_count, steps, width,
         )
         sequences = sequences + self.temporal_position[None, :, :]
-        invalid_steps = (~valid_mask[:, None, :]).expand(
+        padding_mask = (~valid_mask[:, None, :]).expand(
             batch, token_count, steps,
         ).reshape(batch * token_count, steps)
-        # Match the additive recency mask's floating dtype for PyTorch 1.13+
-        # and exclude padded positions from every temporal query.
-        padding_mask = torch.zeros_like(invalid_steps, dtype=sequences.dtype)
-        padding_mask = padding_mask.masked_fill(invalid_steps, float("-inf"))
+        # PyTorch 1.13 requires a boolean key-padding mask when an additive
+        # attention bias is supplied. True excludes that historical key.
         encoded = self.temporal_encoder(
             sequences, mask=self.temporal_attention_bias,
             src_key_padding_mask=padding_mask,
