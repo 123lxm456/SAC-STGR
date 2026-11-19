@@ -16,12 +16,6 @@ venv/
 
 # Training artifacts and model weights
 
-*.tfevents.*
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
 
 # Temporary files
 *.tmp
