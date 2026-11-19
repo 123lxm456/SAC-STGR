@@ -15,8 +15,7 @@ venv/
 !.env.example
 
 # Training artifacts and model weights
-**/tensorboard_logs/
-**/Train_logs/
+
 *.tfevents.*
 *.pt
 *.pth
@@ -26,6 +25,6 @@ venv/
 
 # Temporary files
 *.tmp
-*.log
+
 .DS_Store
 Thumbs.db

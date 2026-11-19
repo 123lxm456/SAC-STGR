@@ -1,0 +1,41 @@
+***Starting server on port 36803 ***
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (578ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.54s
+ TraCI-Duration: 0.53s
+ Real time factor: 1.8622
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=256, buffer_size=10000, c_lr=0.0003, d_model=128, dvc=device(type='cuda'), epochs=1, eval_interval=2500, gamma=0.99, load_risk_model=0, max_e_steps=100, net_width=256, nhead=4, num_layers=2, render=False, risk_model_path='risk_model/risk_pretrained.pth', save_interval=100, seed=0, update_every=50)
+Not loading pre trained risk prediction models, training will start from scratch
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '0', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '0', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Random Seed: 0
+current logging run number for unsignalizedIntersections :  0
+logging at : Train_logs/unsignalizedIntersections/SAC_unsignalizedIntersections_log_0.csv
+tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
+start time: 15:25:33
+save model
+Model saved to risk_model/risk_unsignalizedIntersections_0_0_0.pth
+
+====================================================================================================
+Episode: 0          | Timestep: 100        | Average Reward: -592.52    | Episode Time: 4.04      
+====================================================================================================
+Optimizer updates: SAC=5, risk=0; risk pools: safe=34, collision=0

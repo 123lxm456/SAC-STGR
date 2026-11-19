@@ -1,0 +1,241 @@
+***Starting server on port 43907 ***
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (560ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.49s
+ TraCI-Duration: 0.48s
+ Real time factor: 2.05761
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=256, buffer_size=10000, c_lr=0.0003, d_model=128, dvc=device(type='cuda'), epochs=100, eval_interval=2500, gamma=0.99, load_risk_model=0, max_e_steps=1000, net_width=256, nhead=4, num_layers=2, render=False, risk_model_path='risk_model/risk_pretrained.pth', save_interval=10000, seed=0, update_every=50)
+Not loading pre trained risk prediction models, training will start from scratch
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '0', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '0', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Random Seed: 0
+current logging run number for unsignalizedIntersections :  0
+logging at : Train_logs/unsignalizedIntersections/SAC_unsignalizedIntersections_log_0.csv
+tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
+start time: 15:56:08
+
+====================================================================================================
+Episode: 0          | Timestep: 1000       | Average Reward: -271388.04 | Episode Time: 168.39    
+====================================================================================================
+Optimizer updates: SAC=95, risk=0; risk pools: safe=623, collision=31
+
+====================================================================================================
+Episode: 1          | Timestep: 2000       | Average Reward: -1087315.01 | Episode Time: 185.47    
+====================================================================================================
+Optimizer updates: SAC=195, risk=0; risk pools: safe=911, collision=33
+
+====================================================================================================
+Episode: 2          | Timestep: 3000       | Average Reward: -979895.98 | Episode Time: 256.47    
+====================================================================================================
+Optimizer updates: SAC=295, risk=0; risk pools: safe=1168, collision=34
+
+====================================================================================================
+Episode: 3          | Timestep: 4000       | Average Reward: -129991.81 | Episode Time: 169.30    
+====================================================================================================
+Optimizer updates: SAC=395, risk=0; risk pools: safe=1708, collision=36
+
+====================================================================================================
+Episode: 4          | Timestep: 5000       | Average Reward: 269657.76  | Episode Time: 157.39    
+====================================================================================================
+Optimizer updates: SAC=495, risk=0; risk pools: safe=2510, collision=44
+
+====================================================================================================
+Episode: 5          | Timestep: 6000       | Average Reward: 297717.08  | Episode Time: 157.12    
+====================================================================================================
+Optimizer updates: SAC=595, risk=0; risk pools: safe=3326, collision=56
+
+====================================================================================================
+Episode: 6          | Timestep: 7000       | Average Reward: 330043.24  | Episode Time: 165.66    
+====================================================================================================
+Optimizer updates: SAC=695, risk=573; risk pools: safe=4184, collision=72
+
+====================================================================================================
+Episode: 7          | Timestep: 8000       | Average Reward: 338813.67  | Episode Time: 192.13    
+====================================================================================================
+Optimizer updates: SAC=795, risk=2736; risk pools: safe=5082, collision=88
+
+====================================================================================================
+Episode: 8          | Timestep: 9000       | Average Reward: 411943.00  | Episode Time: 227.01    
+====================================================================================================
+Optimizer updates: SAC=895, risk=5322; risk pools: safe=5955, collision=106
+save model
+Model saved to risk_model/risk_unsignalizedIntersections_0_9_0.pth
+
+====================================================================================================
+Episode: 9          | Timestep: 10000      | Average Reward: 354075.31  | Episode Time: 298.59    
+====================================================================================================
+Optimizer updates: SAC=995, risk=8328; risk pools: safe=6783, collision=123
+
+====================================================================================================
+Episode: 10         | Timestep: 11000      | Average Reward: 379830.94  | Episode Time: 325.55    
+====================================================================================================
+Optimizer updates: SAC=1095, risk=11733; risk pools: safe=7633, collision=149
+
+====================================================================================================
+Episode: 11         | Timestep: 12000      | Average Reward: 398607.80  | Episode Time: 321.39    
+====================================================================================================
+Optimizer updates: SAC=1195, risk=15546; risk pools: safe=8530, collision=169
+
+====================================================================================================
+Episode: 12         | Timestep: 13000      | Average Reward: 408427.70  | Episode Time: 326.46    
+====================================================================================================
+Optimizer updates: SAC=1295, risk=19794; risk pools: safe=9375, collision=198
+
+====================================================================================================
+Episode: 13         | Timestep: 14000      | Average Reward: 409119.78  | Episode Time: 335.31    
+====================================================================================================
+Optimizer updates: SAC=1395, risk=24420; risk pools: safe=10000, collision=212
+
+====================================================================================================
+Episode: 14         | Timestep: 15000      | Average Reward: 418536.66  | Episode Time: 307.26    
+====================================================================================================
+Optimizer updates: SAC=1495, risk=29160; risk pools: safe=10000, collision=228
+
+====================================================================================================
+Episode: 15         | Timestep: 16000      | Average Reward: 459295.54  | Episode Time: 214.17    
+====================================================================================================
+Optimizer updates: SAC=1595, risk=33912; risk pools: safe=10000, collision=241
+
+====================================================================================================
+Episode: 16         | Timestep: 17000      | Average Reward: 424059.74  | Episode Time: 227.93    
+====================================================================================================
+Optimizer updates: SAC=1695, risk=38712; risk pools: safe=10000, collision=259
+
+====================================================================================================
+Episode: 17         | Timestep: 18000      | Average Reward: 486882.34  | Episode Time: 217.46    
+====================================================================================================
+Optimizer updates: SAC=1795, risk=43512; risk pools: safe=10000, collision=268
+
+====================================================================================================
+Episode: 18         | Timestep: 19000      | Average Reward: 447139.44  | Episode Time: 224.16    
+====================================================================================================
+Optimizer updates: SAC=1895, risk=48312; risk pools: safe=10000, collision=280
+save model
+Model saved to risk_model/risk_unsignalizedIntersections_0_19_0.pth
+
+====================================================================================================
+Episode: 19         | Timestep: 20000      | Average Reward: 443787.00  | Episode Time: 208.48    
+====================================================================================================
+Optimizer updates: SAC=1995, risk=53112; risk pools: safe=10000, collision=295
+
+====================================================================================================
+Episode: 20         | Timestep: 21000      | Average Reward: 510782.41  | Episode Time: 255.08    
+====================================================================================================
+Optimizer updates: SAC=2095, risk=57912; risk pools: safe=10000, collision=307
+
+====================================================================================================
+Episode: 21         | Timestep: 22000      | Average Reward: 489641.88  | Episode Time: 334.91    
+====================================================================================================
+Optimizer updates: SAC=2195, risk=62712; risk pools: safe=10000, collision=320
+
+====================================================================================================
+Episode: 22         | Timestep: 23000      | Average Reward: 420713.13  | Episode Time: 334.42    
+====================================================================================================
+Optimizer updates: SAC=2295, risk=67512; risk pools: safe=10000, collision=327
+
+====================================================================================================
+Episode: 23         | Timestep: 24000      | Average Reward: 516617.18  | Episode Time: 337.50    
+====================================================================================================
+Optimizer updates: SAC=2395, risk=72312; risk pools: safe=10000, collision=334
+
+====================================================================================================
+Episode: 24         | Timestep: 25000      | Average Reward: 469198.13  | Episode Time: 344.34    
+====================================================================================================
+Optimizer updates: SAC=2495, risk=77112; risk pools: safe=10000, collision=340
+
+====================================================================================================
+Episode: 25         | Timestep: 26000      | Average Reward: 462646.34  | Episode Time: 345.94    
+====================================================================================================
+Optimizer updates: SAC=2595, risk=81912; risk pools: safe=10000, collision=346
+
+====================================================================================================
+Episode: 26         | Timestep: 27000      | Average Reward: 489802.17  | Episode Time: 343.41    
+====================================================================================================
+Optimizer updates: SAC=2695, risk=86712; risk pools: safe=10000, collision=353
+
+====================================================================================================
+Episode: 27         | Timestep: 28000      | Average Reward: 491064.28  | Episode Time: 339.92    
+====================================================================================================
+Optimizer updates: SAC=2795, risk=91512; risk pools: safe=10000, collision=366
+
+====================================================================================================
+Episode: 28         | Timestep: 29000      | Average Reward: 519571.07  | Episode Time: 335.83    
+====================================================================================================
+Optimizer updates: SAC=2895, risk=96354; risk pools: safe=10000, collision=372
+save model
+Model saved to risk_model/risk_unsignalizedIntersections_0_29_0.pth
+
+====================================================================================================
+Episode: 29         | Timestep: 30000      | Average Reward: 555738.04  | Episode Time: 390.01    
+====================================================================================================
+Optimizer updates: SAC=2995, risk=101214; risk pools: safe=10000, collision=385
+
+====================================================================================================
+Episode: 30         | Timestep: 31000      | Average Reward: 481067.05  | Episode Time: 382.96    
+====================================================================================================
+Optimizer updates: SAC=3095, risk=106074; risk pools: safe=10000, collision=396
+
+====================================================================================================
+Episode: 31         | Timestep: 32000      | Average Reward: 450986.98  | Episode Time: 393.36    
+====================================================================================================
+Optimizer updates: SAC=3195, risk=110934; risk pools: safe=10000, collision=402
+
+====================================================================================================
+Episode: 32         | Timestep: 33000      | Average Reward: 469537.80  | Episode Time: 378.79    
+====================================================================================================
+Optimizer updates: SAC=3295, risk=115794; risk pools: safe=10000, collision=413
+
+====================================================================================================
+Episode: 33         | Timestep: 34000      | Average Reward: 537451.40  | Episode Time: 388.72    
+====================================================================================================
+Optimizer updates: SAC=3395, risk=120654; risk pools: safe=10000, collision=421
+
+====================================================================================================
+Episode: 34         | Timestep: 35000      | Average Reward: 528548.92  | Episode Time: 383.03    
+====================================================================================================
+Optimizer updates: SAC=3495, risk=125514; risk pools: safe=10000, collision=428
+
+====================================================================================================
+Episode: 35         | Timestep: 36000      | Average Reward: 478031.11  | Episode Time: 379.75    
+====================================================================================================
+Optimizer updates: SAC=3595, risk=130374; risk pools: safe=10000, collision=434
+
+====================================================================================================
+Episode: 36         | Timestep: 37000      | Average Reward: 467672.82  | Episode Time: 375.04    
+====================================================================================================
+Optimizer updates: SAC=3695, risk=135234; risk pools: safe=10000, collision=440
+
+====================================================================================================
+Episode: 37         | Timestep: 38000      | Average Reward: 562685.05  | Episode Time: 389.66    
+====================================================================================================
+Optimizer updates: SAC=3795, risk=140094; risk pools: safe=10000, collision=446
+
+====================================================================================================
+Episode: 38         | Timestep: 39000      | Average Reward: 480646.56  | Episode Time: 400.88    
+====================================================================================================
+Optimizer updates: SAC=3895, risk=144954; risk pools: safe=10000, collision=454
+save model
+Model saved to risk_model/risk_unsignalizedIntersections_0_39_0.pth
+
+====================================================================================================
+Episode: 39         | Timestep: 40000      | Average Reward: 527105.30  | Episode Time: 409.82    
+====================================================================================================
