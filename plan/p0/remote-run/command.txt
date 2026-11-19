@@ -1,0 +1,1 @@
+timeout 20m python train_sac.py --epochs 1 --max_e_steps 100 --save_interval 10000 --dvc cuda --seed 0
