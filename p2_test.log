@@ -1,0 +1,51 @@
+test_all_stages_keep_nine_tokens_and_score_one_vehicle (test_p2.P2Tests) ... ok
+test_cuda_forward_and_backward (test_p2.P2Tests) ... ERROR
+test_current_action_and_each_encoder_have_gradient (test_p2.P2Tests) ... ok
+test_field_slices_preserve_all_eight_distinct_groups (test_p2.P2Tests) ... ok
+test_invalid_masks_and_shapes_fail_before_attention (test_p2.P2Tests) ... ok
+test_padded_steps_cannot_change_valid_last_step_score (test_p2.P2Tests) ... FAIL
+test_specified_default_architecture (test_p2.P2Tests) ... ok
+test_state_dict_round_trip_and_bias_ablation (test_p2.P2Tests) ... ok
+
+======================================================================
+ERROR: test_cuda_forward_and_backward (test_p2.P2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/lab2439/Work/LXM/SAC-STGR/tests/test_p2.py", line 150, in test_cuda_forward_and_backward
+    scores = model(states, actions, mask)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/algos/spatiotemporal_risk_model.py", line 161, in forward
+    temporal = self.encode_temporal(spatial, valid_mask)
+  File "/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/algos/spatiotemporal_risk_model.py", line 144, in encode_temporal
+    src_key_padding_mask=padding_mask,
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/transformer.py", line 280, in forward
+    output = mod(output, src_mask=mask, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/transformer.py", line 538, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/transformer.py", line 549, in _sa_block
+    need_weights=False)[0]
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 1174, in forward
+    attn_mask=attn_mask, average_attn_weights=average_attn_weights)
+  File "/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/site-packages/torch/nn/functional.py", line 5139, in multi_head_attention_forward
+    attn_mask = attn_mask.masked_fill(key_padding_mask, float("-inf"))
+RuntimeError: expected mask dtype to be Bool but got Float
+
+======================================================================
+FAIL: test_padded_steps_cannot_change_valid_last_step_score (test_p2.P2Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/lab2439/Work/LXM/SAC-STGR/tests/test_p2.py", line 84, in test_padded_steps_cannot_change_valid_last_step_score
+    self.assertTrue(torch.allclose(before, after, atol=1e-6))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.229s
+
+FAILED (failures=1, errors=1)

@@ -1,0 +1,13 @@
+{
+  "tests_run": 33,
+  "skipped": [],
+  "failures": [],
+  "errors": [
+    [
+      "test_p0_recopy_uses_protected_reference_and_refuses_overwrite (test_repairs.RepairTests)",
+      "Traceback (most recent call last):\n  File \"/home/lab2439/Work/LXM/SAC-STGR/tests/test_repairs.py\", line 159, in test_p0_recopy_uses_protected_reference_and_refuses_overwrite\n    module.main(destination, report)\n  File \"/home/lab2439/Work/LXM/SAC-STGR/scripts/p0_snapshot.py\", line 48, in main\n    actual = digest(source)\n  File \"/home/lab2439/Work/LXM/SAC-STGR/scripts/p0_snapshot.py\", line 18, in digest\n    return sha256(path.read_bytes()).hexdigest()\n  File \"/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/pathlib.py\", line 1214, in read_bytes\n    with self.open(mode='rb') as f:\n  File \"/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/pathlib.py\", line 1208, in open\n    opener=self._opener)\n  File \"/home/lab2439/anaconda3/envs/SAC_RWB/lib/python3.7/pathlib.py\", line 1063, in _opener\n    return self._accessor.open(self, flags, mode)\nFileNotFoundError: [Errno 2] No such file or directory: '/home/lab2439/Work/LXM/SAC-STGR/references/SAC-RWB-main/Env.py'\n"
+    ]
+  ],
+  "require_cuda": true,
+  "passed": false
+}

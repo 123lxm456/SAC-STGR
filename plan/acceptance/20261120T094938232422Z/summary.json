@@ -1,0 +1,34 @@
+{
+  "mode": "target",
+  "passed": false,
+  "stages": {},
+  "commands": [
+    {
+      "name": "static",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/verify_plan.py",
+        "--report",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/acceptance/20261120T094938232422Z/static.json"
+      ],
+      "cwd": "/home/lab2439/Work/LXM/SAC-STGR",
+      "exitcode": 0
+    },
+    {
+      "name": "unit",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/run_unit_checks.py",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/acceptance/20261120T094938232422Z/unit-results.json",
+        "--require-cuda"
+      ],
+      "cwd": "/home/lab2439/Work/LXM/SAC-STGR",
+      "exitcode": 1
+    }
+  ],
+  "p3_started": false,
+  "error": "RuntimeError: unit failed with exit code 1; see its log"
+}
