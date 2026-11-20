@@ -59,3 +59,18 @@ python -B scripts/accept_p012.py --local
 ```
 
 本机允许两项 CUDA 测试跳过，`summary.json` 中 `passed` 保持 false；已有目录会拒绝覆盖。
+
+
+## Git 同步后缺少参考输入
+
+`references/` 不在 Git 中。若 P0 重建测试报告缺少 `references/SAC-RWB-main/Env.py`，需要另行上传本地生成的 `plan/p0/transfer/reference-inputs-20261120.tar.gz`。该包包含 24 个保护参考文件，已按保护清单逐文件验证，SHA-256 为 `e9d42995d5fdd3edba010da96986cbe5d0a0e1192cf6b1fecaf5fe8f91534fa0`。
+
+将包上传到服务器项目根目录后执行（GNU tar 的 `--skip-old-files` 保留已有文件，后续验收会核对其哈希）：
+
+```bash
+printf '%s\n' 'e9d42995d5fdd3edba010da96986cbe5d0a0e1192cf6b1fecaf5fe8f91534fa0  reference-inputs-20261120.tar.gz' | sha256sum -c - &&
+tar --skip-old-files -xzf reference-inputs-20261120.tar.gz &&
+python -B scripts/accept_p012.py
+```
+
+校验失败会停止；不要改保护清单或把修订版 `src/` 复制为原参考源码。
