@@ -1,0 +1,17 @@
+{
+  "tests_run": 29,
+  "skipped": [
+    [
+      "test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward)",
+      "CUDA is unavailable"
+    ]
+  ],
+  "failures": [],
+  "errors": [],
+  "require_cuda": false,
+  "passed": true
+}

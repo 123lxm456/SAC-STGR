@@ -339,6 +339,15 @@ class Env(gym.Env):
     def convert_virtual_id_to_real_id(self, virtual_id):
         return virtual_id.split('@')[0]
 
+    def risk_history_context(self, virtual_id):
+        """The observation's control segment, junction and exact group order."""
+        junction, groups, _ = self.pre_dir_info[virtual_id]
+        return virtual_id, junction, tuple(groups)
+
+    def previous_waiting_times(self, virtual_id):
+        # distance, speed, 8 queues, 8 waits, 80 occupancy values.
+        return self.previous_obs[virtual_id][10:18]
+
     def terminate_veh(self, virtual_id):
         real_id = virtual_id.split('@')[0]
         self.veh_name_mapping_table[real_id] = (self.veh_name_mapping_table[real_id][0], True)
@@ -636,12 +645,14 @@ class Env(gym.Env):
             self.vehicles.pop(veh.id)
 
         junction_colliding_vehicles = set()
+        collision_junctions = {}
         for veh_id in sim_res.colliding_vehicles_ids:
             current_road_id = self.sumo_interface.get_vehicle_edge(veh_id)
             if current_road_id.startswith(':'):
-                JuncID, ego_dir = self.map.get_veh_moving_direction(self.vehicles[veh_id])
+                JuncID = current_road_id[1:].rsplit('_', 1)[0]
                 if JuncID in self.junction_list and veh_id in self.vehicles:
                     junction_colliding_vehicles.add(self.vehicles[veh_id])
+                    collision_junctions[veh_id] = JuncID
 
         # for veh_id, veh in self.vehicles.items():
         #     if veh not in self.new_collided and veh not in self.new_arrived: # 存在性判断
@@ -660,7 +671,8 @@ class Env(gym.Env):
             for veh in self.new_arrived:
                 self.risk_predictor.buffer.update_data(veh.id, 0)
             for veh in self.new_collided:
-                self.risk_predictor.buffer.update_data(veh.id, 1)
+                self.risk_predictor.buffer.update_data(veh.id, 1,
+                                                      junction_id=collision_junctions[veh.id])
 
         # for veh in self.new_collided:
         #     if veh.type == 'RL':
@@ -765,7 +777,7 @@ class Env(gym.Env):
 
                 obs_waiting_lst = self.norm_value(obs_waiting_lst, self.max_wait_time, 0)
                 if virtual_id in self.previous_obs:
-                    pre_obs_waiting_lst = self.previous_obs[virtual_id][12:20]
+                    pre_obs_waiting_lst = self.previous_waiting_times(virtual_id)
                 else:
                     pre_obs_waiting_lst = np.zeros(8)
                 if virtual_id in self.pre_TTI_dic:
@@ -796,7 +808,7 @@ class Env(gym.Env):
                         obs_inner_lst.append(self.inner_lane_occmap[JuncID][keyword])
                     obs_waiting_lst = self.norm_value(obs_waiting_lst, self.max_wait_time, 0)
                     if virtual_id in self.previous_obs:
-                        pre_obs_waiting_lst = self.previous_obs[virtual_id][12:20]
+                        pre_obs_waiting_lst = self.previous_waiting_times(virtual_id)
                     else:
                         pre_obs_waiting_lst = np.zeros(8)
                     if virtual_id in self.pre_TTI_dic:

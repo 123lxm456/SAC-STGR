@@ -5,6 +5,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import xml.etree.ElementTree as ET
+import argparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,7 +18,18 @@ def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
-def main() -> None:
+def main(destination=DESTINATION, report_path=REPORT) -> None:
+    destination = Path(destination).resolve()
+    report_path = Path(report_path).resolve()
+    destination.relative_to(ROOT)
+    report_path.relative_to(ROOT)
+    for protected_root in (ROOT / 'references', ROOT / '.git'):
+        for candidate in (destination, report_path):
+            try:
+                candidate.relative_to(protected_root)
+            except ValueError:
+                continue
+            raise ValueError('Snapshot outputs cannot be inside a protected directory')
     protected = json.loads(
         (ROOT / "plan" / "review" / "protected-integrity.json").read_text(encoding="utf-8")
     )
@@ -25,8 +37,10 @@ def main() -> None:
         item for item in protected["files"]
         if item["path"].startswith("references/SAC-RWB-main/")
     ]
-    if DESTINATION.exists() and any(DESTINATION.rglob("*")):
-        raise RuntimeError(f"Refusing to overwrite nonempty work copy: {DESTINATION}")
+    if destination.exists() and any(destination.rglob("*")):
+        raise RuntimeError(f"Refusing to overwrite nonempty work copy: {destination}")
+    if report_path.exists():
+        raise RuntimeError(f"Refusing to overwrite existing snapshot report: {report_path}")
 
     checked = []
     for item in entries:
@@ -37,7 +51,7 @@ def main() -> None:
         checked.append((source, item, actual))
 
     for source, _, actual in checked:
-        target = DESTINATION / source.relative_to(REFERENCE)
+        target = destination / source.relative_to(REFERENCE)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(source.read_bytes())
         if digest(target) != actual:
@@ -57,7 +71,7 @@ def main() -> None:
         "files": [
             {
                 "source": item["path"],
-                "copy": (DESTINATION / source.relative_to(REFERENCE))
+                "copy": (destination / source.relative_to(REFERENCE))
                 .relative_to(ROOT).as_posix(),
                 "sha256": actual,
                 "bytes": source.stat().st_size,
@@ -70,10 +84,14 @@ def main() -> None:
         },
         "requirements_overlay": "plan/p0/requirements-server.txt",
     }
-    REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Verified and copied {len(checked)} files; wrote {REPORT}")
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Verified and copied {len(checked)} files; wrote {report_path}")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--destination', type=Path, default=DESTINATION)
+    parser.add_argument('--report', type=Path, default=REPORT)
+    args = parser.parse_args()
+    main(args.destination, args.report)

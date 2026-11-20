@@ -10,6 +10,7 @@ __pycache__/
 .mypy_cache/
 .venv/
 venv/
+.local-test-deps/
 .env
 .env.*
 !.env.example

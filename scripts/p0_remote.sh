@@ -3,8 +3,14 @@
 set -u
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-RUN="$ROOT/plan/p0/remote-run"
-mkdir -p "$RUN"
+RUN="${1:-$ROOT/plan/p0/verification-$(date -u +%Y%m%dT%H%M%SZ)-$$}"
+# Reserve before the first redirect: existing evidence is never overwritten.
+mkdir -p "$(dirname "$RUN")" || exit 1
+if ! mkdir "$RUN"; then
+  echo "Refusing existing or unwritable run directory: $RUN" >&2
+  exit 1
+fi
+RUN="$(cd "$RUN" && pwd)"
 
 if ! command -v sumo >/dev/null 2>&1; then
   echo "SUMO executable not found in PATH" > "$RUN/environment.log"
@@ -42,10 +48,13 @@ if [ "$env_status" -ne 0 ]; then
   exit "$env_status"
 fi
 
-python - "$ROOT" <<'PY' > "$RUN/inputs.log" 2>&1
+python -B "$ROOT/scripts/p0_snapshot.py" --destination "$RUN/work" --report "$RUN/snapshot.json" > "$RUN/inputs.log" 2>&1
+input_status=$?
+if [ "$input_status" -eq 0 ]; then
+python -B - "$ROOT" "$RUN" <<'PY' >> "$RUN/inputs.log" 2>&1
 import hashlib, json, pathlib, sys
 root = pathlib.Path(sys.argv[1])
-snapshot = json.loads((root / 'plan/p0/snapshot.json').read_text(encoding='utf-8'))
+snapshot = json.loads((pathlib.Path(sys.argv[2]) / 'snapshot.json').read_text(encoding='utf-8'))
 for item in snapshot['files']:
     for key in ('source', 'copy'):
         path = root / item[key]
@@ -53,18 +62,13 @@ for item in snapshot['files']:
 print(f"Verified {len(snapshot['files'])} reference/work-copy file pairs")
 PY
 input_status=$?
+fi
 printf '%s\n' "$input_status" > "$RUN/inputs.exitcode"
 if [ "$input_status" -ne 0 ]; then
   echo "Input verification failed; see $RUN/inputs.log"
   exit "$input_status"
 fi
 
-if [ -e "$RUN/work" ]; then
-  echo "Refusing to overwrite $RUN/work"
-  exit 1
-fi
-mkdir "$RUN/work"
-cp -a "$ROOT/src/sac_rwb/." "$RUN/work/"
 cd "$RUN/work" || exit 1
 printf '%s\n' 'timeout 20m python train_sac.py --epochs 1 --max_e_steps 100 --save_interval 10000 --dvc cuda --seed 0' > "$RUN/command.txt"
 timeout 20m python train_sac.py --epochs 1 --max_e_steps 100 --save_interval 10000 --dvc cuda --seed 0 > "$RUN/train.log" 2>&1

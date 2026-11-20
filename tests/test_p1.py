@@ -32,6 +32,29 @@ class DirectionMap:
 
 
 class P1Tests(unittest.TestCase):
+    @unittest.skipUnless(torch.cuda.is_available(), 'CUDA is unavailable')
+    def test_default_b0_cuda_optimizer_and_padding(self):
+        model = TransformerRiskPredictor(98, 1).cuda()
+        state = np.zeros(98, dtype=np.float32)
+        action = np.zeros(1, dtype=np.float32)
+        for label in (0, 1):
+            for index in range(64):
+                vehicle = '{}-{}'.format(label, index)
+                model.buffer.add(vehicle, state, action)
+                model.buffer.update_data(vehicle, label)
+        loss = model.train_model(batch_size=128, epochs=1, device='cuda')
+        self.assertTrue(np.isfinite(loss))
+        self.assertEqual(model.last_train_updates, 1)
+        model.eval()
+        states = torch.zeros(1, 10, 98, device='cuda')
+        actions = torch.zeros(1, 10, 1, device='cuda')
+        mask = torch.tensor([[False] * 9 + [True]], device='cuda')
+        with torch.no_grad():
+            before = model(states, actions, mask)
+            states[:, :9] = 1000
+            after = model(states, actions, mask)
+        self.assertTrue(torch.isfinite(after).all())
+        self.assertTrue(torch.allclose(before, after, atol=1e-6))
     def test_all_eight_groups_appear_once_on_both_road_types(self):
         env = Env.__new__(Env)
         env.keywords_order = [

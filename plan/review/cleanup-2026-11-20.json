@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-20",
+  "authorization": "User authorized confirmed-unused file cleanup",
+  "deleted": [
+    {
+      "path": "src/sac_rwb/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b",
+      "reference_copy": "references/SAC-RWB-main/core/custom_logger.py",
+      "reason": "Unused legacy RLlib callback",
+      "active_imports": []
+    },
+    {
+      "path": "src/sac_rwb/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f",
+      "reference_copy": "references/SAC-RWB-main/sac/main.py",
+      "reason": "Unused generic Gym entrypoint with incompatible SAC save/load calls",
+      "active_imports": []
+    }
+  ],
+  "retained": "All reference files, historical run snapshots, logs, weights, control_agent.py and integrity manifests remain intact"
+}

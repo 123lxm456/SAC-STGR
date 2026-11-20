@@ -1,0 +1,910 @@
+{
+  "date": "2026-11-20",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 309,
+      "sha256": "2ee837e06d8a6f6cbe8babaee319585d33bcacd760de22f7b0f9bf0baf2714ad"
+    },
+    {
+      "path": "research_implementation_plan.md",
+      "bytes": 13655,
+      "sha256": "309a8f181b970dc7680005a3378fec374b47428bcfce6bb24c3688ad23451005"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5065,
+      "sha256": "104a4675150bbde9d5ee1f6dcdc3a3c77722c6ff5401e0b2a12a23e19f1145a1"
+    },
+    {
+      "path": "tests/test_p2.py",
+      "bytes": 8556,
+      "sha256": "2cfaae27b035b1e111447868fc37f3fb98e76956f3d22dec6f9a094bb7e34fd1"
+    },
+    {
+      "path": "tests/test_p1.py",
+      "bytes": 5311,
+      "sha256": "437b2195733e90b2f4f7917f365a40b39b55688681eb733471fd2b24867d1e5e"
+    },
+    {
+      "path": "references/Dong_Guo_Biased_Attention_Risk_Prediction.pdf",
+      "bytes": 4141382,
+      "sha256": "efd0b0f7a19369d5152f030d809d3aaef88ce83ee4053a81f9bb7992e195c4b9"
+    },
+    {
+      "path": "chapters/03_methods_experiments_brief.docx",
+      "bytes": 15839,
+      "sha256": "d2a19c67bece45f638eb54342b72abacbeeee4d98fc4b5646c58e520263cccae"
+    },
+    {
+      "path": "chapters/03_methods_experiments_brief.md",
+      "bytes": 7440,
+      "sha256": "bce309803455946b975c09bbc1b7952d6d66ea547a6ed679c0008ba459b62949"
+    },
+    {
+      "path": "chapters/03_methods_experiments.md",
+      "bytes": 8793,
+      "sha256": "6c390aae0e8daa72f10c94d4104b0553079aedcdd02d09c4a0f26903fe529aa8"
+    },
+    {
+      "path": "chapters/03_methods_experiments.docx",
+      "bytes": 16765,
+      "sha256": "8243ae19a251de6da265889188d61b57e6200421283387cc9e39197b42cb9c3d"
+    },
+    {
+      "path": "scripts/verify_plan.py",
+      "bytes": 4483,
+      "sha256": "2821f20c1733355d167d6b68eca29c895a68be91bf8b51e8378008b40120dcfa"
+    },
+    {
+      "path": "scripts/p0_remote.sh",
+      "bytes": 2503,
+      "sha256": "bc37e4d64481f93e6dd267fa3a0eec0728649f6481fa7e64d213cec3ff898528"
+    },
+    {
+      "path": "scripts/format_chapter_docx.py",
+      "bytes": 2253,
+      "sha256": "61c8924977b5971fd6a97faa69a3989b3475a5c1b7a2a3e47358c4ba90a4f9b1"
+    },
+    {
+      "path": "scripts/p0_snapshot.py",
+      "bytes": 2873,
+      "sha256": "ae48a4fe6d4c820ea344ffedd3e367bc3834223419139d300c8fca519a7e81d0"
+    },
+    {
+      "path": "plan/evidence-map.md",
+      "bytes": 1519,
+      "sha256": "1b9779c94b1197a8093bd66e2368035f680eca5e14358983265d61c251decd8e"
+    },
+    {
+      "path": "plan/notes.md",
+      "bytes": 277,
+      "sha256": "c4bbe398d20e477a48d69c8a03a5e6bd14de54ea676a5fdb2f4cd40a3a8f294c"
+    },
+    {
+      "path": "plan/project-overview.md",
+      "bytes": 1388,
+      "sha256": "3991b9adb5c3f40c67c66d209e4c377c77f6413aaee568f27669a8f0048fce05"
+    },
+    {
+      "path": "plan/experiment-protocol.md",
+      "bytes": 3251,
+      "sha256": "89910e2a91dc87796f6137c1232f6d13419361f890d417ec66cba976960f383d"
+    },
+    {
+      "path": "plan/stage-gates.md",
+      "bytes": 2356,
+      "sha256": "d19b5c76eb0a0359dd711052ec941adff27f5a19df75931e0863c4d25fdef9fb"
+    },
+    {
+      "path": "plan/progress.md",
+      "bytes": 13902,
+      "sha256": "020d61f6976f94913bc052745eae9c970ed849df786525fb039557fad6ab50ee"
+    },
+    {
+      "path": "plan/outline.md",
+      "bytes": 733,
+      "sha256": "148f0945ff325811fdbc0e33fffbdcea84ac82cfaf78032bb890e2b920020387"
+    },
+    {
+      "path": "src/sac_rwb/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "bytes": 42881,
+      "sha256": "b3149a1ae58a9111e19d06001991c4bfc008c9cb8455cd6a437bc872058b9c57"
+    },
+    {
+      "path": "src/sac_rwb/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "src/sac_rwb/test_sac.py",
+      "bytes": 4688,
+      "sha256": "97bd5f671a138f7c222ef3e41b4a817ea9de47f6f497f4d3fa10a926d49b4e89"
+    },
+    {
+      "path": "src/sac_rwb/train_sac.py",
+      "bytes": 14111,
+      "sha256": "56856cd67dadeb8d388a46e3cb126263129333aab391fbbfa6affb7a92058943"
+    },
+    {
+      "path": "src/sac_rwb/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "src/sac_rwb/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "src/sac_rwb/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "bytes": 7297,
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "src/sac_rwb/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sac_rwb/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "src/sac_rwb/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "src/sac_rwb/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "src/sac_rwb/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "src/sac_rwb/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sac_rwb/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "src/sac_rwb/sac/SAC.py",
+      "bytes": 6078,
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "src/sac_rwb/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.sumocfg",
+      "bytes": 971,
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "src/sac_rwb/algos/transformer_risk_model.py",
+      "bytes": 12847,
+      "sha256": "2d7b53b37f20742a7bb916346bcdcccfade355df6cf6b6e95fada2e04cb499b9"
+    },
+    {
+      "path": "src/sac_rwb/algos/spatiotemporal_risk_model.py",
+      "bytes": 7527,
+      "sha256": "be3f341bb1e5a0de2da2ca817d3f2a09e5d6f39bba655cd19918cb6a7ac781b0"
+    },
+    {
+      "path": "src/sac_rwb/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/review/protected-integrity.json",
+      "bytes": 5110,
+      "sha256": "b546af09f92303e237888c76a451f5e4039cc866f9a16995af1ed3a3d6709fd6"
+    },
+    {
+      "path": "plan/review/method-experiment-traceability.md",
+      "bytes": 2113,
+      "sha256": "f3eded216e90dc95a1126f6f81b24d29e3c52b303cc09960af7550cc0cbb0bd5"
+    },
+    {
+      "path": "plan/review/reference-integrity.json",
+      "bytes": 6513,
+      "sha256": "c0b668cfdb1a72115609f3efa26cc2fc1f77942ff43dec45916588d9b58e5f7b"
+    },
+    {
+      "path": "plan/p2/README.md",
+      "bytes": 2670,
+      "sha256": "8954631a8b8bf39cd41806b43924fa5a1255bf684041a7c32a92201c922efc41"
+    },
+    {
+      "path": "plan/task-packets/spatiotemporal-redesign.md",
+      "bytes": 1166,
+      "sha256": "7fe8a1c2068f252fa2241e175b4bf392d7901db86426210a47c9ff1076356266"
+    },
+    {
+      "path": "plan/task-packets/brief-independent-method.md",
+      "bytes": 1140,
+      "sha256": "a4850e24068b8cf1c3c7136b817beda713fba4d6bd15f832337fdb171430da7c"
+    },
+    {
+      "path": "plan/p0/snapshot.json",
+      "bytes": 5832,
+      "sha256": "067f59c3995d92aef6f9434e62c922e092d959428533cad7627301bbebf36fa8"
+    },
+    {
+      "path": "plan/p0/README.md",
+      "bytes": 3731,
+      "sha256": "0d8c9d95bc2c608dfb144ed7daee16618b9230b5f023094fc56e1e82a844f12a"
+    },
+    {
+      "path": "plan/p0/requirements-server.txt",
+      "bytes": 239,
+      "sha256": "3b93f81058fbff74c87a20cc4eb038ec61cf2d167d07ca6b95515063aca4252b"
+    },
+    {
+      "path": "plan/p1/README.md",
+      "bytes": 6809,
+      "sha256": "608e4f27089891270c83d17278ff626b8a9ce5cc50c19f54041bf31a41498915"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/train.log",
+      "bytes": 17249,
+      "sha256": "8f0dcf9c195194011be384fc02a0e4bdd31a987e877bfd35e4bc4d55074a1033"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/train.exitcode",
+      "bytes": 4,
+      "sha256": "9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396"
+    },
+    {
+      "path": "plan/p1/remote-run/test.exitcode",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "plan/p1/remote-run/test_results.pkl",
+      "bytes": 13291897,
+      "sha256": "34fcc1616b87d1fa05b30a4cffcc1302df9a18abc6eb58ac9508fb145a973057"
+    },
+    {
+      "path": "plan/p1/remote-run/train.log",
+      "bytes": 2267,
+      "sha256": "b1e3a11360cd1680195dacfb8c17c21fd78872f18f614410bc86d3e03a3efefa"
+    },
+    {
+      "path": "plan/p1/remote-run/train.exitcode",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "plan/p1/remote-run/test.log",
+      "bytes": 2875,
+      "sha256": "65a61376fc4dfa2781f1fce392cdd6bdc6eec419da2c6a12612e065de520bc67"
+    },
+    {
+      "path": "plan/p1/remote-run/work/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sumolog",
+      "bytes": 1056,
+      "sha256": "ef76d51c2210adcd3722dd72e3ad83698b867a22a82a42836247ee403c626dba"
+    },
+    {
+      "path": "plan/p1/remote-run/work/Env.py",
+      "bytes": 42881,
+      "sha256": "b3149a1ae58a9111e19d06001991c4bfc008c9cb8455cd6a437bc872058b9c57"
+    },
+    {
+      "path": "plan/p1/remote-run/work/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "plan/p1/remote-run/work/test_sac.py",
+      "bytes": 4688,
+      "sha256": "97bd5f671a138f7c222ef3e41b4a817ea9de47f6f497f4d3fa10a926d49b4e89"
+    },
+    {
+      "path": "plan/p1/remote-run/work/train_sac.py",
+      "bytes": 14111,
+      "sha256": "56856cd67dadeb8d388a46e3cb126263129333aab391fbbfa6affb7a92058943"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/sumo_interface.py",
+      "bytes": 7297,
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/SAC.py",
+      "bytes": 6078,
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 971,
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "plan/p1/remote-run/work/risk_model/risk_unsignalizedIntersections_0_0_0.pth",
+      "bytes": 7468371,
+      "sha256": "c2a6f9de4c7ce3fb4e7eedaba4e935c1596702a22d11c61b1bee51cd55f4422c"
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12847,
+      "sha256": "2d7b53b37f20742a7bb916346bcdcccfade355df6cf6b6e95fada2e04cb499b9"
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_25/events.out.tfevents.1794986733.lab2439.2388954.0",
+      "bytes": 930,
+      "sha256": "41726a2a5c4175338d3d38cb6c81c460aa864e89957eb27e4187f2c46ce1266b"
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_actor_0.pth",
+      "bytes": 369875,
+      "sha256": "e518a36efd5ed9ccb88c802a0b66dd81f78bd7120bd516242779aa3068da5019"
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_q_critic_0.pth",
+      "bytes": 737751,
+      "sha256": "b75ae358fd42db242780601e013a14a9feb63246b42720d50f48df5f871a1487"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sumolog",
+      "bytes": 24873,
+      "sha256": "74680dc124788da485145edd9e15848f28c4d49685dabb4ed4cc8f6ad206431e"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/Env.py",
+      "bytes": 42881,
+      "sha256": "b3149a1ae58a9111e19d06001991c4bfc008c9cb8455cd6a437bc872058b9c57"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/test_sac.py",
+      "bytes": 4688,
+      "sha256": "97bd5f671a138f7c222ef3e41b4a817ea9de47f6f497f4d3fa10a926d49b4e89"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/train_sac.py",
+      "bytes": 14111,
+      "sha256": "56856cd67dadeb8d388a46e3cb126263129333aab391fbbfa6affb7a92058943"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/sumo_interface.py",
+      "bytes": 7297,
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/SAC.py",
+      "bytes": 6078,
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.sumocfg",
+      "bytes": 929,
+      "sha256": "6fa93fcb068e570105e6fe157838620177272c1ef7a53ecb21859667d973d6dd"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_29_0.pth",
+      "bytes": 7468471,
+      "sha256": "c0c9968f87621210fd6e13717967b8f08d805f2fd0b4ac0570f94bbcb2606d80"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_19_0.pth",
+      "bytes": 7468471,
+      "sha256": "ba850e542403218f7583661856e9083145ef176e5cad147dcae7c5581b0b173f"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_9_0.pth",
+      "bytes": 7468371,
+      "sha256": "cb68e841720cbac52f64cf8f6c3500650e0834f11a72876203df6b082ccf34ec"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_39_0.pth",
+      "bytes": 7468471,
+      "sha256": "525969b577ff96f0b70baf252b181e9b406c2f9ad3d9a2299946dd97e85fd44d"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/transformer_risk_model.py",
+      "bytes": 12847,
+      "sha256": "2d7b53b37f20742a7bb916346bcdcccfade355df6cf6b6e95fada2e04cb499b9"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_56/events.out.tfevents.1794988568.lab2439.2564780.0",
+      "bytes": 311866,
+      "sha256": "844d6212cfe30eb678ac41633e1492f73fbfe7eb2b20719da1714e3030cecf34"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_40.pth",
+      "bytes": 737765,
+      "sha256": "c30a0939ed2af5933e43935a48c1514fca62dede6709fe5fd2eb32cf83f52237"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_20.pth",
+      "bytes": 369885,
+      "sha256": "28f440791f59c10f32f9fcf6d5da978456996b4bb3459a459671d670c5c3f25a"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_40.pth",
+      "bytes": 369885,
+      "sha256": "e66ab98a52f5705a676dcdb1e10fe448ddd5a26ce14868084699b4a21aaad9d8"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_30.pth",
+      "bytes": 369885,
+      "sha256": "4914d1881368e70dd8ff1cc9393fcf835da4780cf532c2efc210fb90297df0ba"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_20.pth",
+      "bytes": 737765,
+      "sha256": "0264f5e9be38a0b2d1f84a8e27806aa0d3b9ce674c135f0dba57b4cd7c99bd79"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_10.pth",
+      "bytes": 369885,
+      "sha256": "0f42820a5144a3d06d041cb5ec51a3feffa90d41899a172e75c3c28c50bc6ca5"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_30.pth",
+      "bytes": 737765,
+      "sha256": "0372a48c6f660ff72c999345418aef7914e51c9b95dc7f7167fca36ef4b938c2"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_10.pth",
+      "bytes": 737765,
+      "sha256": "f9a5d760f7e1f436265477f1e4552c8b5d156762ca3028e840121f7e6bd5561c"
+    },
+    {
+      "path": "plan/p0/remote-run/environment.log",
+      "bytes": 3069,
+      "sha256": "e84dccedca6521518317d6f6868e6b98534509c784f0dd283af300cf2fa80e2f"
+    },
+    {
+      "path": "plan/p0/remote-run/inputs.log",
+      "bytes": 44,
+      "sha256": "3b46aa6f08841257588572ab475771202cc9beca3d3ef50abf78bd9ab6458f09"
+    },
+    {
+      "path": "plan/p0/remote-run/environment.exitcode",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "plan/p0/remote-run/command.txt",
+      "bytes": 104,
+      "sha256": "dae7b7ab12ed338722ced32bbce58585c10e59621097c258a8a92422fe24e010"
+    },
+    {
+      "path": "plan/p0/remote-run/inputs.exitcode",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "plan/p0/remote-run/train.log",
+      "bytes": 2162,
+      "sha256": "80d8337c99c797636e356d5712d659d765381a1c2816caaced7fc79af72418ea"
+    },
+    {
+      "path": "plan/p0/remote-run/train.exitcode",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "plan/p0/remote-run/work/requirements.txt",
+      "bytes": 253,
+      "sha256": "7d10dc7766b2c291f25ea29f42018852ce4e2546e25d918c182253ccf8c0a903"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sumolog",
+      "bytes": 1100,
+      "sha256": "5ecf275ee55314b352c8c6d5e4bc76fd036f5e23827fb67b50f24d1cdabf2c9e"
+    },
+    {
+      "path": "plan/p0/remote-run/work/Env.py",
+      "bytes": 43729,
+      "sha256": "ad5a243a2e80590b7294f92df1d5c7b4e60cc30c0510fe1bc3735c6d19555fbc"
+    },
+    {
+      "path": "plan/p0/remote-run/work/README.md",
+      "bytes": 1213,
+      "sha256": "fbeaf35d16e444577a263f18394aef6eee4146eabf11fe9a42fbdb6cc798ebff"
+    },
+    {
+      "path": "plan/p0/remote-run/work/test_sac.py",
+      "bytes": 4381,
+      "sha256": "46a370ccea830bf53522c41858c46c28e89149b4f3542e5e70937ea99bdf430c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/train_sac.py",
+      "bytes": 12981,
+      "sha256": "0ed81af44907307b800ab2fcb22f2dd0c8125eba0644d4fc0e66119458a9f3bd"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/monitor.py",
+      "bytes": 6349,
+      "sha256": "be5969551992d3f2d4753682bd5043055626bc81017dba59ff4528b6fda056ab"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/utils.py",
+      "bytes": 9322,
+      "sha256": "1cf713d927268cd507392128f34e880d8b58387e940e45aa03c348527cf457c6"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/custom_logger.py",
+      "bytes": 2619,
+      "sha256": "3b39976af858e512ca961aff1c1226d2e1aed9491c79f1c746239b2187415833"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/sumo_interface.py",
+      "bytes": 7468,
+      "sha256": "8423bcdb3b370282c1982590d0f35749af27a4ea52bb2dc0c4c0b862a29bef02"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/NetMap.py",
+      "bytes": 19536,
+      "sha256": "3fee672a6d3bf4dceddce425287c5d06796705a9bab0a9c57fa02aa69e02833e"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5281,
+      "sha256": "1ed153315fb103499100918e016b605af198790506a9d9261f97cb24883ec676"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/control_agent.py",
+      "bytes": 3217,
+      "sha256": "a94c8e4ed4db14d00ccdb82106de2478c72d638644f3efb179a54d86a0e8823c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/utils.py",
+      "bytes": 3750,
+      "sha256": "2489fbf2bce2b1694b75e6f5fe874bcf9ea841c55c466f846a27d2ee3902aee2"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/main.py",
+      "bytes": 6073,
+      "sha256": "00017960890caa28b5c619d0a38ad34e9e9d3cb82ac9aa83d64c3a13e5e6217a"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/SAC.py",
+      "bytes": 6177,
+      "sha256": "deed4f36ef29af6ea4279803505c3c2ed2b63c7cc584ecf58d18e574effb61ab"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561,
+      "sha256": "16eab010588025998f96853b81ab7cee4f6f7963ffbe5a542e7251eb22cd3272"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.view.xml",
+      "bytes": 93,
+      "sha256": "51d96963d903cbf3bf0d9e7718593c5dc76e5abc023a9821c101c9b4cc214734"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 1007,
+      "sha256": "44db4dde04e0db747fac4e6e6b5b84b56d192ec98fd15f8d6319009be220c39c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628,
+      "sha256": "5d0306e15b040ff668a8db86d4e73b045f26f738348dc97fc6a5f8a17295dbd9"
+    },
+    {
+      "path": "plan/p0/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12777,
+      "sha256": "dba94e7fa396115827e7819286c17447effbb6cf4dbe8d7a512135f491076fa8"
+    },
+    {
+      "path": "plan/p0/remote-run/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/SAC-RWB-main/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "references/SAC-RWB-main/Env.py",
+      "bytes": 42820,
+      "sha256": "e44cc73f6d693d0b8cbce574742ad26f1747ea4c17e1da72c48501f8d8325445"
+    },
+    {
+      "path": "references/SAC-RWB-main/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "references/SAC-RWB-main/test_sac.py",
+      "bytes": 4269,
+      "sha256": "53a3c17f2e5866747dd5a8a93411b9c7b19f5deff7b95d9ac93eecb1acc3c49b"
+    },
+    {
+      "path": "references/SAC-RWB-main/train_sac.py",
+      "bytes": 12739,
+      "sha256": "9d69c712d565b28a3b388885ca7378d451a5704ec16744c5facc557b533c14b0"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/sumo_interface.py",
+      "bytes": 7263,
+      "sha256": "ca4668389b31c28c1e71de0977479c9039c8461db70c75fa3ed1736dddd68c45"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "references/SAC-RWB-main/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/SAC.py",
+      "bytes": 6040,
+      "sha256": "0cc6c052967af3c15aebf586078e3b57bf8c332e63780d145d318c8b267041e5"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.sumocfg",
+      "bytes": 971,
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/transformer_risk_model.py",
+      "bytes": 12465,
+      "sha256": "689840af50afc0e4c7ec3f9122ac1c40a073fe54e6e1bb75c2aafcf945855740"
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

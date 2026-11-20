@@ -15,6 +15,20 @@ from algos.spatiotemporal_risk_model import SpatioTemporalRiskPredictor
 
 
 class P2Tests(unittest.TestCase):
+    def test_default_width_masked_backward_has_finite_gradients(self):
+        torch.manual_seed(19)
+        model = SpatioTemporalRiskPredictor()
+        states = torch.randn(2, 10, 98, requires_grad=True)
+        actions = torch.randn(2, 10, 1, requires_grad=True)
+        mask = torch.tensor([[False] * 9 + [True], [True] * 10])
+        model(states, actions, mask).sum().backward()
+        for parameter in model.parameters():
+            self.assertIsNotNone(parameter.grad)
+            self.assertTrue(torch.isfinite(parameter.grad).all())
+        self.assertTrue(torch.isfinite(actions.grad).all())
+        self.assertTrue(torch.all(actions.grad[~mask] == 0))
+        self.assertGreater(actions.grad[:, -1].abs().sum().item(), 0)
+
     def make_model(self, **overrides):
         options = dict(d_model=16, nhead=4, spatial_layers=1,
                        temporal_layers=2, feedforward_dim=32, dropout=0)
@@ -153,7 +167,8 @@ class P2Tests(unittest.TestCase):
 
     @unittest.skipUnless(torch.cuda.is_available(), "CUDA is unavailable")
     def test_cuda_forward_and_backward(self):
-        model = self.make_model().cuda()
+        # Exercise the specified production width, not only the small CPU fixture.
+        model = SpatioTemporalRiskPredictor().cuda()
         states = torch.randn(2, 10, 98, device="cuda")
         actions = torch.randn(2, 10, 1, device="cuda", requires_grad=True)
         mask = torch.tensor([[False] * 9 + [True], [True] * 10],
@@ -161,17 +176,24 @@ class P2Tests(unittest.TestCase):
         scores = model(states, actions, mask)
         self.assertEqual(tuple(scores.shape), (2,))
         scores.sum().backward()
+        self.assertTrue(torch.isfinite(scores).all())
         self.assertGreater(actions.grad[:, -1].abs().sum().item(), 0)
         model.eval()
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as directory:
             path = Path(directory) / "risk_cuda.pth"
             model.save_model(path)
-            restored = self.make_model().cuda().eval()
+            restored = SpatioTemporalRiskPredictor().cuda().eval()
             restored.load_model(path, map_location="cuda")
             with torch.no_grad():
                 expected = model(states, actions.detach(), mask)
                 actual = restored(states, actions.detach(), mask)
             self.assertTrue(torch.equal(expected, actual))
+            changed_states, changed_actions = states.clone(), actions.detach().clone()
+            changed_states[~mask] = 1000
+            changed_actions[~mask] = -1000
+            with torch.no_grad():
+                padded = restored(changed_states, changed_actions, mask)
+            self.assertTrue(torch.allclose(actual, padded, atol=1e-6))
 
 
 if __name__ == "__main__":

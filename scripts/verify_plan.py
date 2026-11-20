@@ -9,6 +9,7 @@ from pathlib import Path
 import hashlib
 import json
 import re
+import argparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -111,7 +112,9 @@ report = {
     "passed": all(item["passed"] for item in CHECKS),
     "checks": CHECKS,
 }
-out = ROOT / "plan/review/plan-verification.json"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--report', type=Path, default=ROOT / 'plan/review/plan-verification.json')
+out = parser.parse_args().report
 out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 print(json.dumps(report, ensure_ascii=False, indent=2))
 raise SystemExit(0 if report["passed"] else 1)

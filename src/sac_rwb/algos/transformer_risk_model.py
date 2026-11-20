@@ -25,15 +25,24 @@ class RiskExperienceBuffer:
         self.active_buffer = collections.deque(maxlen=max_size)
         self.risk_active_buffer = collections.deque(maxlen=max_size) 
 
-    def add(self, vehicle_id, state, action):
-        if vehicle_id not in self.to_use_buffer:
+    def add(self, vehicle_id, state, action, context=None, step=None):
+        # Retain delayed terminal supervision, but never concatenate a new
+        # control segment, coordinate system or nonconsecutive simulation step.
+        previous = self.to_use_buffer.get(vehicle_id)
+        changed = previous is not None and (
+            previous.get('context') != context or
+            (step is not None and previous.get('step') is not None
+             and step != previous['step'] + 1))
+        if previous is None or changed:
             self.to_use_buffer[vehicle_id] = {
                 "state_seq": collections.deque(maxlen=SEQUENCE_LENGTH),
-                "action_seq": collections.deque(maxlen=SEQUENCE_LENGTH)
+                "action_seq": collections.deque(maxlen=SEQUENCE_LENGTH),
+                "context": context,
             }
-        
-        self.to_use_buffer[vehicle_id]["state_seq"].append(state)
-        self.to_use_buffer[vehicle_id]["action_seq"].append(action)
+        history = self.to_use_buffer[vehicle_id]
+        history['step'] = step
+        history["state_seq"].append(np.array(state, dtype=np.float32, copy=True))
+        history["action_seq"].append(np.array(action, dtype=np.float32, copy=True))
 
     def clear_pending(self):
         """Discard unfinished histories when SUMO starts a new episode."""
@@ -42,6 +51,8 @@ class RiskExperienceBuffer:
     @staticmethod
     def pad_sequence(state_seq, action_seq):
         valid_count = len(state_seq)
+        if not 1 <= valid_count <= SEQUENCE_LENGTH or len(action_seq) != valid_count:
+            raise ValueError('state/action histories must have the same length in [1,10]')
         valid_mask = np.zeros(SEQUENCE_LENGTH, dtype=np.bool_)
         valid_mask[-valid_count:] = True
         state_dim = len(state_seq[0])
@@ -52,9 +63,13 @@ class RiskExperienceBuffer:
         return (np.asarray(states, dtype=np.float32),
                 np.asarray(actions, dtype=np.float32), valid_mask)
 
-    def update_data(self, vehicle_id, label):
+    def update_data(self, vehicle_id, label, junction_id=None):
         if vehicle_id in self.to_use_buffer:
             sample_queues = self.to_use_buffer.pop(vehicle_id)
+            context = sample_queues.get('context')
+            if junction_id is not None and context is not None and context[1] != junction_id:
+                # A collision at another junction is not an outcome for this window.
+                return
             state_seq = list(sample_queues["state_seq"])
             action_seq = list(sample_queues["action_seq"])
 
@@ -67,7 +82,9 @@ class RiskExperienceBuffer:
                 "state_seq": original_state_seq,
                 "action_seq": original_action_seq,
                 "valid_mask": valid_mask,
-                "label": label
+                "label": label,
+                "context": context,
+                "last_step": sample_queues.get('step'),
             }
 
             if label == 1:
@@ -76,6 +93,8 @@ class RiskExperienceBuffer:
                 self.active_buffer.append(original_data)
 
     def sample(self, batch_size):
+        if batch_size < 2 or batch_size % 2:
+            raise ValueError('balanced sampling requires a positive even batch size >= 2')
         # 确保有足够的数据可供采样
         if len(self.active_buffer) < batch_size // 2 or len(self.risk_active_buffer) < batch_size // 2:
             return None, None, None, None
@@ -306,6 +325,6 @@ class TransformerRiskPredictor(nn.Module):
         torch.save(self.state_dict(), save_path)
         print(f"Model saved to {save_path}")
 
-    def load_model(self, save_path):
-        self.load_state_dict(torch.load(save_path))
+    def load_model(self, save_path, map_location=None):
+        self.load_state_dict(torch.load(save_path, map_location=map_location))
         print(f"Model loaded from {save_path}")

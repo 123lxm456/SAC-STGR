@@ -10,6 +10,7 @@ from Env import Env
 import numpy as np
 
 import time
+from core.runtime import wait_for_observation
 
 # 新增：tensorboard相关导入
 # from torch.utils.tensorboard import SummaryWriter
@@ -46,7 +47,7 @@ parser.add_argument('--max_e_steps', type=int, default=1000)
 
 parser.add_argument('--test_logs_path', type=str, default='test_results.pkl', help='Test save path')
 parser.add_argument('--run_num', type=int, required=True, help='SAC checkpoint run number')
-parser.add_argument('--timestep', type=int, required=True, help='SAC checkpoint timestep suffix')
+parser.add_argument('--timestep', type=int, required=True, help='Exact SAC checkpoint suffix; new runs use decision steps, legacy files use their old suffix')
 
 opt = parser.parse_args()
 opt.dvc = torch.device(opt.dvc) # from str to torch.device
@@ -91,9 +92,9 @@ def main():
     agent.load(env_name, timestep=opt.timestep, run_num=opt.run_num)
 
     state, _ = env.reset()
+    measurement_start = env.env_step + 1
     for _ in range(1, opt.max_e_steps + 1):
-        while not state:
-            state, _, _, _, _, _ = env.step()
+        state = wait_for_observation(env, state)
         
         s = list(state.values())
         a = agent.select_action(s, deterministic=True)
@@ -108,8 +109,10 @@ def main():
             if done:
                 state.pop(key)
 
-    env.monitor.evaluate(min_step=0, max_step=min(opt.max_e_steps, 1000))
-    env.monitor.save_to_pickle(file_name=opt.test_logs_path)
+    measurement_end = env.env_step + 1
+    env.monitor.evaluate(min_step=measurement_start, max_step=measurement_end)
+    env.monitor.save_to_pickle(file_name=opt.test_logs_path,
+                               measurement_window=(measurement_start, measurement_end))
 
     env.close()
 

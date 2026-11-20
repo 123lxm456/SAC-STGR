@@ -8,6 +8,8 @@ import torch
 from Env import Env
 import numpy as np
 import time
+import json
+from core.runtime import wait_for_observation, reserve_run
 from torch.utils.tensorboard import SummaryWriter
 from algos.transformer_risk_model import TransformerRiskPredictor
 
@@ -39,6 +41,8 @@ parser.add_argument('--load_risk_model', type=int, default=0, help='Whether to l
 parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--max_e_steps', type=int, default=1000)
 opt = parser.parse_args()
+if opt.Loadmodel:
+    parser.error('--Loadmodel is unsupported: SAC checkpoints lack optimizer/replay state for resumption')
 opt.dvc = torch.device(opt.dvc) # from str to torch.device
 print(opt)
 
@@ -64,12 +68,9 @@ def main():
     if opt.load_risk_model:
         risk_model_path = opt.risk_model_path
         if os.path.exists(risk_model_path):
-            try:
-                risk_predictor.load_model(risk_model_path)
-            except Exception as e:
-                print(f"error: {e}")
+            risk_predictor.load_model(risk_model_path, map_location=opt.dvc)
         else:
-            print(f"Risk prediction model file not found: {risk_model_path}")
+            raise FileNotFoundError(f"Risk prediction model file not found: {risk_model_path}")
     else:
         print("Not loading pre trained risk prediction models, training will start from scratch")
     # Build Env
@@ -107,11 +108,10 @@ def main():
     log_dir = log_dir + '/' + env_name + '/'
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
-    current_num_files = next(os.walk(log_dir))[2]
-    run_num = len(current_num_files)
-    log_f_name = log_dir + 'SAC_' + env_name + "_log_" + str(run_num) + ".csv"
+    run_num, run_manifest = reserve_run(log_dir)
+    run_manifest.write_text(json.dumps(vars(opt), default=str, indent=2), encoding='utf-8')
     print("current logging run number for " + env_name + " : ", run_num)
-    print("logging at : " + log_f_name)
+    print("run configuration : " + str(run_manifest))
     tensorboard_dir = "tensorboard_logs"
     if not os.path.exists(tensorboard_dir):
         os.makedirs(tensorboard_dir)
@@ -142,21 +142,7 @@ def main():
         '''Interact & trian'''
         for t in range(opt.max_e_steps):
             total_steps += 1
-            empty_steps = 0
-            max_wait_steps = env.config.get('max_reset_wait_steps', env._max_episode_steps)
-            while not state:
-                state, _, _, _, _, _ = env.step()
-                empty_steps += 1
-                if not state and env.sumo_interface.tc.simulation.getMinExpectedNumber() == 0:
-                    raise RuntimeError(
-                        'SUMO has no remaining vehicles, but training did not receive an RL observation. '
-                        'Check the route file and junction_list.'
-                    )
-                if not state and empty_steps >= max_wait_steps:
-                    raise RuntimeError(
-                        f'Training found no RL observation after {max_wait_steps} simulation steps. '
-                        'Check the route file, junction_list, and max_reset_wait_steps.'
-                    )
+            state = wait_for_observation(env, state)
             s = list(state.values())
             a = agent.select_action(s, deterministic=False)  # a∈[-1,1]
             a = a.flatten()
@@ -171,7 +157,8 @@ def main():
             for key, state_val in state.items():
                 veh_id = env.convert_virtual_id_to_real_id(key)
                 action_val = np.array([action_dict[key]])
-                risk_predictor.buffer.add(veh_id, state_val, action_val)
+                risk_predictor.buffer.add(veh_id, state_val, action_val,
+                                          context=env.risk_history_context(key), step=env.env_step)
             if env.use_safety_predictor:
                 for key in state.keys():
                     veh_id = env.convert_virtual_id_to_real_id(key)
@@ -202,9 +189,10 @@ def main():
             for veh_id, reward_val in reward.items():
                 current_ep_reward += reward_val
                 current_reward_count += 1
-                if veh_id in env.reward_record:
-                    current_ep_efficiency_reward += env.reward_record[veh_id]['efficiency']
-                    current_ep_safety_reward += env.reward_record[veh_id]['safety']
+                real_id = env.convert_virtual_id_to_real_id(veh_id)
+                if real_id in env.reward_record:
+                    current_ep_efficiency_reward += env.reward_record[real_id]['efficiency']
+                    current_ep_safety_reward += env.reward_record[real_id]['safety']
             '''train if it's time'''
             if total_steps % max(1, opt.update_every) == 0 and agent.replay_buffer.size >= opt.batch_size:
                 losses = agent.train()
@@ -227,10 +215,10 @@ def main():
             '''save model'''
             if total_steps % opt.save_interval == 0:
                 print("save model")
-                agent.save(env_name, total_steps//1000, run_num)
+                agent.save(env_name, total_steps, run_num)
                 run_num_pretrained = run_num
-                random_seed = 0
-                risk_model_dir_path = risk_model_dir+"risk_{}_{}_{}_{}.pth".format(env_name, random_seed, i_episode, run_num_pretrained)
+                random_seed = opt.seed
+                risk_model_dir_path = risk_model_dir+"risk_{}_{}_{}_{}_step{}.pth".format(env_name, random_seed, i_episode, run_num_pretrained, total_steps)
                 risk_predictor.save_model(risk_model_dir_path)
         etime = time.time()
         print(f"\n{'=' * 100}\n"
@@ -244,10 +232,11 @@ def main():
         writer.add_scalar('Reward/Efficiency', current_ep_efficiency_reward, i_episode)
         writer.add_scalar('Reward/Safety', current_ep_safety_reward, i_episode)
         # 计算平均奖励
-        writer.add_scalar('Average_Reward/Avg_Total', current_ep_reward / current_reward_count, i_episode)
-        writer.add_scalar('Average_Reward/Avg_Efficiency', current_ep_efficiency_reward / current_reward_count,
+        reward_count = max(1, current_reward_count)
+        writer.add_scalar('Average_Reward/Avg_Total', current_ep_reward / reward_count, i_episode)
+        writer.add_scalar('Average_Reward/Avg_Efficiency', current_ep_efficiency_reward / reward_count,
                           i_episode)
-        writer.add_scalar('Average_Reward/Avg_Safety', current_ep_safety_reward / current_reward_count,
+        writer.add_scalar('Average_Reward/Avg_Safety', current_ep_safety_reward / reward_count,
                           i_episode)
         # 记录环境数据
         env_data = env.monitor.get_data(env)

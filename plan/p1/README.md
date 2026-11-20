@@ -1,6 +1,8 @@
 # P1 共同修复：本地实现与远端验收
 
-状态：P1 最低验收通过。用户在 Linux + RTX 4090 上手动完成单元测试、训练和测试短运行；助手没有操作 SSH。100 步运行不构成风险器在线学习或性能证据。
+> 2026-11-20 修订版以 [统一验收步骤](../acceptance/README.md) 为准；下方旧测试记录保留为历史证据。本轮目标环境验证尚未完成。
+
+状态：旧版最低验收曾通过；2026-11-20 修订版已完成本地功能修复，Linux + RTX 4090 复验待执行。以下旧日志属于历史证据，不能证明修订版通过。助手不操作 SSH。
 
 ## 修复范围
 
@@ -22,7 +24,7 @@
 - 用户提供的日志摘录显示训练 SUMO `--seed 0`、测试 SUMO `--seed 2`，并列出 `model/SAC_model_0/` 下 actor 与 critic 两份检查点。测试成功退出说明指定检查点可以由测试入口加载。
 - 完整 `train.log`、`test.log` 和短运行检查点已在 2026-11-19 回传本地并核对；100 episode 诊断另有 40 episode 日志与检查点，退出码 143。P1 短运行的风险器更新数仍为 0，诊断中的有效更新不能当作独立性能结果。
 
-P1 通过范围限于共同输入与训练缺陷修复的功能检查及有界短运行。P2 独立时空风险器已有本机实现，目标服务器验收待完成；P4 固定未来标签及 P5 独立性能对照仍待实施。
+P1 通过范围限于共同输入与训练缺陷修复的功能检查及有界短运行。P2 独立时空风险器历史测试曾通过，本轮扩大默认 CUDA 配置覆盖，修订版统一复验待执行；P4 固定未来标签及 P5 独立性能对照仍待实施。
 
 ## 在服务器上手动验收
 
@@ -36,7 +38,7 @@ cp -a src/sac_rwb plan/p1/remote-run/work
 cd plan/p1/remote-run/work
 timeout 20m python -B train_sac.py --epochs 1 --max_e_steps 100 --update_every 50 --save_interval 100 --dvc cuda --seed 0 > ../train.log 2>&1
 echo $? > ../train.exitcode
-python -B test_sac.py --run_num 0 --timestep 0 --max_e_steps 100 --test_logs_path ../test_results.pkl --dvc cuda --seed 2 > ../test.log 2>&1
+python -B test_sac.py --run_num 0 --timestep 100 --max_e_steps 100 --test_logs_path ../test_results.pkl --dvc cuda --seed 2 > ../test.log 2>&1
 echo $? > ../test.exitcode
 ```
 
