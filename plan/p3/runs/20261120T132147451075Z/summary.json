@@ -1,0 +1,10 @@
+{
+  "mode": "target",
+  "passed": false,
+  "p4_started": false,
+  "commands": [],
+  "variants": {},
+  "acceptance_scope": "Engineering integration only, not effectiveness or calibrated risk",
+  "require_online_risk_updates": false,
+  "error": "PackageNotFoundError: No package metadata was found for Gymnasium"
+}

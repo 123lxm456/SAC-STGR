@@ -1,0 +1,96 @@
+test_environment_mismatch_cannot_grant_acceptance (test_acceptance.AcceptanceTests) ... ok
+test_existing_evidence_is_not_overwritten (test_acceptance.AcceptanceTests) ... ok
+test_failed_p0_stops_before_p1_or_p3 (test_acceptance.AcceptanceTests) ... ok
+test_local_success_cannot_grant_target_acceptance (test_acceptance.AcceptanceTests) ... ok
+test_all_eight_groups_appear_once_on_both_road_types (test_p1.P1Tests) ... ok
+test_buffer_uses_same_masked_padding_and_no_fake_safe_sample (test_p1.P1Tests) ... ok
+test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests) ... ok
+test_mask_excludes_padded_values_from_last_step_score (test_p1.P1Tests) ... ok
+test_risk_update_requires_both_classes_and_keeps_optimizer (test_p1.P1Tests) ... ok
+test_sac_completes_five_optimizer_steps (test_p1.P1Tests) ... ok
+test_all_stages_keep_nine_tokens_and_score_one_vehicle (test_p2.P2Tests) ... ok
+test_cuda_forward_and_backward (test_p2.P2Tests) ... ok
+test_current_action_and_each_encoder_have_gradient (test_p2.P2Tests) ... ok
+test_default_width_masked_backward_has_finite_gradients (test_p2.P2Tests) ... ok
+test_field_slices_preserve_all_eight_distinct_groups (test_p2.P2Tests) ... ok
+test_invalid_masks_and_shapes_fail_before_attention (test_p2.P2Tests) ... ok
+test_padded_steps_cannot_change_valid_last_step_score (test_p2.P2Tests) ... ok
+test_padding_mask_uses_bool_required_by_locked_torch (test_p2.P2Tests) ... ok
+test_specified_default_architecture (test_p2.P2Tests) ... ok
+test_state_dict_round_trip_and_bias_ablation (test_p2.P2Tests) ... ok
+test_adapter_weights_load_into_the_standalone_p2_model (test_p3.P3Tests) ... ok
+test_batch_scoring_preserves_vehicle_mapping_and_physical_actions (test_p3.P3Tests) ... ok
+test_consecutive_histories_and_context_resets_remain_independent (test_p3.P3Tests) ... ok
+test_cuda_m1_online_scoring_and_optimizer (test_p3.P3Tests) ... ok
+test_factory_preserves_b0_and_specified_m1_width (test_p3.P3Tests) ... ok
+test_latency_records_are_bounded_and_totals_are_not_truncated (test_p3.P3Tests) ... ok
+test_m1_optimizer_is_persistent_and_counts_actual_updates (test_p3.P3Tests) ... ok
+test_runtime_empty_and_invalid_inputs_do_not_issue_predictions (test_p3.P3Tests) ... ok
+test_sac_action_risk_reward_replay_and_update_chain (test_p3.P3Tests) ... ok
+test_training_entrypoint_runs_both_variants_with_stubbed_sumo (test_p3.P3Tests) ... ok
+test_collision_elsewhere_does_not_label_an_old_junction (test_repairs.RepairTests) ... ok
+test_context_comes_from_the_observation_not_later_vehicle_state (test_repairs.RepairTests) ... ok
+test_history_copies_inputs_and_preserves_delayed_outcome (test_repairs.RepairTests) ... ok
+test_history_resets_for_junction_segment_order_and_time_gap (test_repairs.RepairTests) ... ok
+test_invalid_padding_and_imbalanced_batch_are_rejected (test_repairs.RepairTests) ... ok
+test_monitor_extends_capacity_without_losing_old_data (test_repairs.RepairTests) ... ok
+test_monitor_window_uses_recorded_steps_and_separate_junctions (test_repairs.RepairTests) ... ok
+test_no_traffic_metrics_are_explicitly_undefined (test_repairs.RepairTests) ... ok
+test_observation_on_last_allowed_step_is_returned (test_repairs.RepairTests) ... ok
+test_p0_archive_materializes_only_the_run_copy (test_repairs.RepairTests) ... ok
+test_p0_archive_rejects_unexpected_paths_before_writing (test_repairs.RepairTests) ... ok
+test_p0_recopy_uses_protected_reference_and_refuses_overwrite (test_repairs.RepairTests) ... ok
+test_reward_uses_only_eight_waiting_fields (test_repairs.RepairTests) ... ok
+test_run_reservation_respects_models_legacy_logs_and_markers (test_repairs.RepairTests) ... ok
+test_wait_is_bounded_and_detects_exhausted_traffic (test_repairs.RepairTests) ... ok
+test_arrival_removal_preserves_a_terminal_replay_transition (test_review.ReviewTests) ... ok
+test_b0_cuda_errors_are_not_replaced_with_fabricated_scores (test_review.ReviewTests) ... ok
+test_both_trainers_propagate_errors_instead_of_returning_zero_loss (test_review.ReviewTests) ... ok
+test_environment_declares_the_continuous_acceleration_it_actually_uses (test_review.ReviewTests) ... ok
+test_evaluation_closes_environment_when_checkpoint_initialization_fails (test_review.ReviewTests) ... ok
+test_sumo_startup_failure_is_bounded_and_explicit (test_review.ReviewTests) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 2.663s
+
+OK
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=2, buffer_size=10000, c_lr=0.0003, d_model=128, dvc=device(type='cpu'), epochs=1, eval_interval=2500, gamma=0.99, load_risk_model=0, max_e_steps=2, net_width=8, nhead=4, num_layers=2, render=False, risk_model_path='risk_model/risk_pretrained.pth', risk_variant='b0', save_interval=2, seed=0, update_every=1)
+Not loading pre trained risk prediction models, training will start from scratch
+Random Seed: 0
+current logging run number for unsignalizedIntersections :  0
+run configuration : Train_logs/unsignalizedIntersections/run_0.json
+tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
+start time: 21:22:55
+save model
+Model saved to risk_model/risk_b0_unsignalizedIntersections_0_0_0_step2.pth
+
+====================================================================================================
+Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.02      
+====================================================================================================
+Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
+Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=2, buffer_size=10000, c_lr=0.0003, d_model=128, dvc=device(type='cpu'), epochs=1, eval_interval=2500, gamma=0.99, load_risk_model=0, max_e_steps=2, net_width=8, nhead=4, num_layers=2, render=False, risk_model_path='risk_model/risk_pretrained.pth', risk_variant='m1', save_interval=2, seed=0, update_every=1)
+Not loading pre trained risk prediction models, training will start from scratch
+Random Seed: 0
+current logging run number for unsignalizedIntersections :  0
+run configuration : Train_logs/unsignalizedIntersections/run_0.json
+tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
+start time: 21:22:55
+save model
+
+====================================================================================================
+Episode: 0          | Timestep: 2          | Average Reward: -2.96      | Episode Time: 0.02      
+====================================================================================================
+Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
+Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=256, c_lr=0.0003, dvc=device(type='cpu'), epochs=500, eval_interval=2500, gamma=0.99, max_e_steps=1000, net_width=256, render=False, run_num=0, save_interval=10000, seed=0, test_logs_path='test_results.pkl', timestep=100, update_every=50, write=True)
+Random Seed: 0
+self.sumo_cmd
+['sumo']
+Restarting SUMO...
+self.sumo_cmd
+['sumo']
+Restarting SUMO...
+self.sumo_cmd
+['sumo']
+Restarting SUMO...
