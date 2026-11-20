@@ -1,0 +1,47 @@
+{
+  "authorization": "User requested deletion of confirmed redundant and obsolete files; references remains read-only",
+  "date": "2026-11-20",
+  "lossless_replacements": [
+    {
+      "deleted": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/rawdump.xml",
+      "original_bytes": 4887037,
+      "original_sha256": "809f77787a9d88c61ed2531041985b3a991b5032a125703faed0a9bbff4e81fc",
+      "replacement": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/rawdump.xml.gz",
+      "compressed_bytes": 474881,
+      "compressed_sha256": "abcb0845801ae029769a557986f5e0a0be157b3c3b9dc048d6275257d9dbf59f",
+      "reason": "SUMO output only, no code reads it; lossless archive preserves all trajectory evidence"
+    },
+    {
+      "deleted": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/rawdump.xml",
+      "original_bytes": 4901703,
+      "original_sha256": "1af6788560ad1cf1f7a20908966f5613c30003e7d1e5f39c76163146c5d073ca",
+      "replacement": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/rawdump.xml.gz",
+      "compressed_bytes": 475904,
+      "compressed_sha256": "36f8ec8aaa93c86ee22587116dc6e378ae5bcc484e31398e3a427d5321ff08eb",
+      "reason": "SUMO output only, no code reads it; lossless archive preserves all trajectory evidence"
+    }
+  ],
+  "obsolete_delivery_files": [
+    {
+      "deleted": "plan/p0/transfer/p012-archive-fix-20261120.tar.gz",
+      "bytes": 5111430,
+      "sha256": "2ac8024e69a36242edd2a96ea39e0d79db222742d14c9e1a6052c9bd9957c369",
+      "reason": "Obsolete repair delivery bundle contains superseded scripts; current source and protected original-input archive retained"
+    },
+    {
+      "deleted": "plan/p0/transfer/p012-archive-fix-20261120.tar.gz.sha256",
+      "bytes": 100,
+      "sha256": "1716c3af758efb453fbadab2c1dbf60e5023392acae17f6505b8d32bb08d38ab",
+      "reason": "Obsolete repair delivery bundle contains superseded scripts; current source and protected original-input archive retained"
+    }
+  ],
+  "preserved": [
+    "references/",
+    "all source and scene inputs in historical run snapshots",
+    "all logs, exit codes, source manifests and original acceptance JSON",
+    "all trained checkpoints, test pickle results and TensorBoard evidence",
+    "plan/p0/transfer/reference-inputs-20261120.tar.gz and its checksum",
+    "core/control_agent.py retained for possible P5 rule-controller reference"
+  ],
+  "net_bytes_reclaimed": 13949485
+}

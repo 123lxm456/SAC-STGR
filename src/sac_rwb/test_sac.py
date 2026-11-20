@@ -1,23 +1,12 @@
-from sac.utils import str2bool, evaluate_policy, Action_adapter, Action_adapter_reverse, Reward_adapter
-from datetime import datetime
+from sac.utils import str2bool
 from sac.SAC import SAC_countinuous
-import gymnasium as gym
-import os, shutil
 import argparse
 import torch
 import random
 from Env import Env
 import numpy as np
 
-import time
 from core.runtime import wait_for_observation
-
-# 新增：tensorboard相关导入
-# from torch.utils.tensorboard import SummaryWriter
-
-# 风险预测模型导入
-# from algos.transformer_risk_model_with_B import TransformerRiskPredictor
-from algos.transformer_risk_model import TransformerRiskPredictor
 
 '''Hyperparameter Setting'''
 parser = argparse.ArgumentParser()
@@ -79,42 +68,44 @@ def main():
         "sumo_seed": opt.seed,
     })
 
-    opt.state_dim = env.n_obs
-    opt.action_dim = env.n_action
-    opt.max_action = env.max_acc
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
-    print("Random Seed: {}".format(opt.seed))
+    try:
+        opt.state_dim = env.n_obs
+        opt.action_dim = env.n_action
+        opt.max_action = env.max_acc
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+        print("Random Seed: {}".format(opt.seed))
 
-    # load model
-    agent = SAC_countinuous(**vars(opt))
+        # load model
+        agent = SAC_countinuous(**vars(opt))
 
-    agent.load(env_name, timestep=opt.timestep, run_num=opt.run_num)
+        agent.load(env_name, timestep=opt.timestep, run_num=opt.run_num)
 
-    state, _ = env.reset()
-    measurement_start = env.env_step + 1
-    for _ in range(1, opt.max_e_steps + 1):
-        state = wait_for_observation(env, state)
-        
-        s = list(state.values())
-        a = agent.select_action(s, deterministic=True)
-        a = a.flatten()
-        action = a * opt.max_action
-        action_dict = dict(zip(state.keys(), action))
+        state, _ = env.reset()
+        measurement_start = env.env_step + 1
+        for _ in range(1, opt.max_e_steps + 1):
+            state = wait_for_observation(env, state)
+
+            s = list(state.values())
+            a = agent.select_action(s, deterministic=True)
+            a = a.flatten()
+            action = a * opt.max_action
+            action_dict = dict(zip(state.keys(), action))
 
 
 
-        state, rewards, is_terminal, _, _, _ = env.step(action_dict)
-        for key, done in is_terminal.items():
-            if done:
-                state.pop(key)
+            state, rewards, is_terminal, _, _, _ = env.step(action_dict)
+            for key, done in is_terminal.items():
+                if done:
+                    state.pop(key)
 
-    measurement_end = env.env_step + 1
-    env.monitor.evaluate(min_step=measurement_start, max_step=measurement_end)
-    env.monitor.save_to_pickle(file_name=opt.test_logs_path,
-                               measurement_window=(measurement_start, measurement_end))
+        measurement_end = env.env_step + 1
+        env.monitor.evaluate(min_step=measurement_start, max_step=measurement_end)
+        env.monitor.save_to_pickle(file_name=opt.test_logs_path,
+                                   measurement_window=(measurement_start, measurement_end))
 
-    env.close()
+    finally:
+        env.close()
 
 
 if __name__ == '__main__':

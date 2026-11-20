@@ -63,21 +63,12 @@ python -B scripts/accept_p012.py --local
 本机允许两项 CUDA 测试跳过，`summary.json` 中 `passed` 保持 false；已有目录会拒绝覆盖。
 
 
-## 服务器缺少 references/ 时的修复方式
+## 参考输入与过时修复包
 
-旧的“解压参考包到项目根目录”命令已废止，不再执行。服务器不存在本地生成的文件时，仅复制终端命令不会传输文件。
+旧的 `p012-archive-fix-20261120.tar.gz` 及其校验文件已在 P0–P3 复核清理中删除：它们只是交付载体，包含已过时的脚本，不应再解压覆盖当前代码。历史包哈希保留于 `plan/review/cleanup-p0123-20261120.json`。
 
-将本机 `plan/p0/transfer/p012-archive-fix-20261120.tar.gz` 上传到服务器项目根目录，校验成功后解压该修复包。包内只有更新脚本、回归测试、本说明和嵌套的原始输入压缩包，不含任何直接写往 `references/` 的成员，也不含模型、运行日志或检查点。
+服务器有 `references/` 时只读校验，不修改。缺少该目录时，仍保留并使用 `plan/p0/transfer/reference-inputs-20261120.tar.gz`，由 `scripts/p0_snapshot.py` 在内存核对保护清单后只写独立运行副本。该原始输入包及其校验文件没有删除；不要将修订版 src/ 冒充原始输入。
 
-```bash
-cd ~/Work/LXM/SAC-STGR
-ls -lh p012-archive-fix-20261120.tar.gz
-# 使用随修复包提供的 SHA-256 校验值核验后执行：
-tar -xzf p012-archive-fix-20261120.tar.gz
-conda activate SAC_RWB
-python -B scripts/accept_p012.py
-```
+## 历史输出压缩
 
-P0 读取 `plan/p0/transfer/reference-inputs-20261120.tar.gz` 时，先在内存核对全部 24 个成员的名称、文件类型和保护哈希，再将其中 23 个运行输入写入本次 `plan/acceptance/<时间>/p0/work/`。它不调用解压接口，也不创建或更改 `references/`。现有参考目录若存在仍按原保护清单检查；不允许拿修订版 `src/` 冒充原始输入。
-
-原失败运行目录保留，35 项测试通过后继续 P0/P1 短运行；全部目标验收通过前，P3 保持未开始。
+`20261120T104147769112Z` 下 P0 和 P1 工作目录的两份 `real_data/rawdump.xml` 是 SUMO 输出，不是输入，已先逐字节验证再无损压缩成 `rawdump.xml.gz`，原 XML 副本删除。日志、源码快照、场景、检查点和 pickle 均保留。需要轨迹输出时可用 `gzip -dk rawdump.xml.gz` 恢复，原内容 SHA-256 见清理清单；不要在 references/ 中执行恢复。

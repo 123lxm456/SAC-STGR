@@ -1,0 +1,64 @@
+{
+  "accepted": true,
+  "stage": "P3",
+  "acceptance_scope": "Minimum engineering integration, not natural-outcome risk learning or effectiveness",
+  "date": "2026-11-20",
+  "evidence_directory": "plan/p3/runs/20261120T112031917855Z",
+  "mode": "target",
+  "unit_tests": 45,
+  "cuda_skipped": 0,
+  "command_exitcodes": {
+    "unit": 0,
+    "static": 0,
+    "benchmark": 0,
+    "b0-train": 0,
+    "b0-test": 0,
+    "m1-train": 0,
+    "m1-test": 0
+  },
+  "source_manifest_entries_matched_after_LF_normalization": 40,
+  "returned_work_copies_checked": {
+    "b0": "All 24 non-config source inputs match server manifest; SUMO config matches recorded output-only change",
+    "m1": "All 24 non-config source inputs match server manifest; SUMO config matches recorded output-only change"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "1.13.1+cu117",
+  "sumo": "Eclipse SUMO sumo Version 1.12.0",
+  "benchmark_cases": 12,
+  "benchmark_repeats_per_case": 20,
+  "variants": {
+    "b0": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 0,
+      "inference_calls": 100,
+      "vehicles_scored": 367,
+      "parameter_count": 1223681,
+      "end_to_end_batch_mean_ms": 1.0396355483680964,
+      "end_to_end_batch_p95_ms": 1.2436814024113119,
+      "natural_risk_learning_observed": false
+    },
+    "m1": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 1,
+      "inference_calls": 100,
+      "vehicles_scored": 369,
+      "parameter_count": 127041,
+      "end_to_end_batch_mean_ms": 1.5900081326253712,
+      "end_to_end_batch_p95_ms": 1.8274566915351897,
+      "natural_risk_learning_observed": false
+    }
+  },
+  "limits": [
+    "Natural-outcome risk optimization was zero in both short runs",
+    "Synthetic-label CUDA optimization verifies the update path, not useful predictions",
+    "Random-input latency and 100-step smoke runs cannot establish safety/efficiency gains",
+    "Online batch sizes differ across runs; do not treat their end-to-end means as a controlled performance comparison"
+  ],
+  "p4_started": false
+}

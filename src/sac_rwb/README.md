@@ -1,6 +1,6 @@
 # SAC-RWB 工作副本
 
-P0/P1/P2 已完成目标环境验收。训练入口默认 B0；使用 `--risk_variant m1` 选择 P3 新风险器适配器，默认 M1 为 P2 的 64 维架构。P3 目标环境接入验证待完成。只读原始版本位于项目根目录 `references/SAC-RWB-main/`。
+P0/P1/P2 已完成目标环境验收。训练入口默认 B0；使用 `--risk_variant m1` 选择 P3 新风险器适配器，默认 M1 为 P2 的 64 维架构。P3 目标环境最低工程验收已通过；两组短运行自然风险更新均为 0，不能据此判断学习效果。只读原始版本位于项目根目录 `references/SAC-RWB-main/`。
 
 目标环境：Ubuntu 22.04.4、RTX4090、驱动 555.42.06、Python 3.7.12、PyTorch 1.13.1+cu117、SUMO 1.12.0。`requirements.txt` 按实际运行依赖统一，完整历史 freeze 在根目录 `plan/p0/environment-lock.txt`。未验证从空环境安装，优先使用原 `SAC_RWB` 环境。
 

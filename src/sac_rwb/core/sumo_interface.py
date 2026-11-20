@@ -28,13 +28,13 @@ class SubscribeDef:
 class SUMO(object):
     def __init__(self, cfg, render=False, seed=1):
         self.print_debug = False
-        self.tc = None    
+        self.tc = None
         self.cfg = cfg
         self.render  = render
         self.seed = seed
         self.sim_step = 1
         self.sumo_cmd = self.generate_sumo()
-        self.tc = self.start_sumo(self.tc)    
+        self.tc = self.start_sumo(self.tc)
         self.subscribes = Namespace()
         self.setup_sub()
         self.backup_TL = dict()
@@ -85,6 +85,7 @@ class SUMO(object):
         return cmd
 
     def start_sumo(self, tc, tries=3):
+        last_error = None
         for _ in range(tries):
             try:
                 if tc and not 'TRACI_NO_LOAD' in os.environ:
@@ -99,11 +100,13 @@ class SUMO(object):
                     traci.start(self.sumo_cmd, port=self.port, label=str(self.port))
                     tc = traci.getConnection(str(self.port))
                 return tc
-            except traci.exceptions.FatalTraCIError: # Sometimes there's an unknown error while starting SUMO
+            except traci.exceptions.FatalTraCIError as error: # Retry bounded startup failures.
+                last_error = error
                 if tc:
                     tc.close()
                 print('Restarting SUMO...')
                 tc = None
+        raise RuntimeError('SUMO startup failed after {} attempts'.format(tries)) from last_error
 
     def reset_sumo(self):
         self.tc = self.start_sumo(self.tc)
@@ -114,7 +117,7 @@ class SUMO(object):
 
     def step(self):
         self.tc.simulationStep()
-    
+
     def get_sim_info(self):
         sim_res = self.subscribes.sim.get()
         return sim_res

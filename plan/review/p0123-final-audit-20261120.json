@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-20",
+  "baseline_p012_target_passed": true,
+  "baseline_p3_target_passed": true,
+  "baseline_evidence": [
+    "plan/acceptance/20261120T104147769112Z",
+    "plan/p3/runs/20261120T112031917855Z"
+  ],
+  "baseline_target_tests": [
+    35,
+    45
+  ],
+  "current_revision_local_checks_passed": true,
+  "current_revision_target_retested": false,
+  "current_tests_run": 51,
+  "current_tests_passed": 48,
+  "cuda_skipped": 3,
+  "new_fault_boundary_tests": 6,
+  "static_checks_passed": 13,
+  "python37_active_files": 32,
+  "local_evidence_directory": "plan/p3/runs/20261120T130144519089Z",
+  "production_python_changes": [
+    "src/sac_rwb/Env.py",
+    "src/sac_rwb/algos/risk_training.py",
+    "src/sac_rwb/algos/transformer_risk_model.py",
+    "src/sac_rwb/core/sumo_interface.py",
+    "src/sac_rwb/test_sac.py"
+  ],
+  "unchanged_original_protected_files": 131,
+  "cleanup_manifest": "plan/review/cleanup-p0123-20261120.json",
+  "net_bytes_reclaimed": 13949485,
+  "p4_readiness": "Engineering foundation ready; target regression of this revision and user confirmation required before starting P4",
+  "p4_started": false,
+  "required_user_command": "python -B scripts/accept_p3.py",
+  "expected_target_tests": 51,
+  "limits": [
+    "Both baseline natural-outcome risk updates were zero; not evidence of effective online risk learning",
+    "No new future-H labels, censoring, splits or calibration have been implemented",
+    "No SSH connection was performed by the assistant"
+  ]
+}

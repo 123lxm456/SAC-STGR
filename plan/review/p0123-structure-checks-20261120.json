@@ -1,0 +1,9 @@
+{
+  "python_ast": 172,
+  "xml_parsed": 36,
+  "checkpoint_zip_crc": 24,
+  "docx_zip_xml": 2,
+  "pickle_structure": 4,
+  "gzip_roundtrips": 2,
+  "scope": "Project files excluding Git internals, isolated test dependencies and caches; no pickle execution or PDF content re-review"
+}

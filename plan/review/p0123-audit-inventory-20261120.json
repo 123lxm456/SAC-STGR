@@ -1,0 +1,1842 @@
+{
+  "date": "2026-11-20",
+  "scope": "Pre-review inventory excluding git objects, isolated local test dependencies and Python caches",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 348
+    },
+    {
+      "path": "research_implementation_plan.md",
+      "bytes": 13841
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 17
+    },
+    {
+      "path": "README.md",
+      "bytes": 5483
+    },
+    {
+      "path": "p2_test.log",
+      "bytes": 3662
+    },
+    {
+      "path": "tests/test_acceptance.py",
+      "bytes": 3731
+    },
+    {
+      "path": "tests/test_repairs.py",
+      "bytes": 9903
+    },
+    {
+      "path": "tests/test_p2.py",
+      "bytes": 9826
+    },
+    {
+      "path": "tests/test_p3.py",
+      "bytes": 11939
+    },
+    {
+      "path": "tests/test_p1.py",
+      "bytes": 6477
+    },
+    {
+      "path": "references/Dong_Guo_Biased_Attention_Risk_Prediction.pdf",
+      "bytes": 4141382
+    },
+    {
+      "path": "references/SAC-RWB-main/requirements.txt",
+      "bytes": 238
+    },
+    {
+      "path": "references/SAC-RWB-main/Env.py",
+      "bytes": 42820
+    },
+    {
+      "path": "references/SAC-RWB-main/README.md",
+      "bytes": 1177
+    },
+    {
+      "path": "references/SAC-RWB-main/test_sac.py",
+      "bytes": 4269
+    },
+    {
+      "path": "references/SAC-RWB-main/train_sac.py",
+      "bytes": 12739
+    },
+    {
+      "path": "references/SAC-RWB-main/core/monitor.py",
+      "bytes": 6227
+    },
+    {
+      "path": "references/SAC-RWB-main/core/utils.py",
+      "bytes": 9094
+    },
+    {
+      "path": "references/SAC-RWB-main/core/custom_logger.py",
+      "bytes": 2530
+    },
+    {
+      "path": "references/SAC-RWB-main/core/sumo_interface.py",
+      "bytes": 7263
+    },
+    {
+      "path": "references/SAC-RWB-main/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "references/SAC-RWB-main/core/NetMap.py",
+      "bytes": 19116
+    },
+    {
+      "path": "references/SAC-RWB-main/core/costomized_data_structures.py",
+      "bytes": 5139
+    },
+    {
+      "path": "references/SAC-RWB-main/core/control_agent.py",
+      "bytes": 3135
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/utils.py",
+      "bytes": 3629
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/main.py",
+      "bytes": 5952
+    },
+    {
+      "path": "references/SAC-RWB-main/sac/SAC.py",
+      "bytes": 6040
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/newroute1220_start0.xml",
+      "bytes": 11595038
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.view.xml",
+      "bytes": 88
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/osm.sumocfg",
+      "bytes": 971
+    },
+    {
+      "path": "references/SAC-RWB-main/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/transformer_risk_model.py",
+      "bytes": 12465
+    },
+    {
+      "path": "references/SAC-RWB-main/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "chapters/03_methods_experiments_brief.docx",
+      "bytes": 15839
+    },
+    {
+      "path": "chapters/03_methods_experiments_brief.md",
+      "bytes": 7440
+    },
+    {
+      "path": "chapters/03_methods_experiments.md",
+      "bytes": 8793
+    },
+    {
+      "path": "chapters/03_methods_experiments.docx",
+      "bytes": 16765
+    },
+    {
+      "path": "scripts/verify_plan.py",
+      "bytes": 4867
+    },
+    {
+      "path": "scripts/p0_remote.sh",
+      "bytes": 2979
+    },
+    {
+      "path": "scripts/format_chapter_docx.py",
+      "bytes": 2253
+    },
+    {
+      "path": "scripts/p0_snapshot.py",
+      "bytes": 5990
+    },
+    {
+      "path": "scripts/accept_p3.py",
+      "bytes": 7142
+    },
+    {
+      "path": "scripts/benchmark_risk.py",
+      "bytes": 3368
+    },
+    {
+      "path": "scripts/accept_p012.py",
+      "bytes": 8237
+    },
+    {
+      "path": "scripts/run_unit_checks.py",
+      "bytes": 1314
+    },
+    {
+      "path": "plan/evidence-map.md",
+      "bytes": 1519
+    },
+    {
+      "path": "plan/notes.md",
+      "bytes": 277
+    },
+    {
+      "path": "plan/project-overview.md",
+      "bytes": 1496
+    },
+    {
+      "path": "plan/experiment-protocol.md",
+      "bytes": 3251
+    },
+    {
+      "path": "plan/stage-gates.md",
+      "bytes": 1880
+    },
+    {
+      "path": "plan/progress.md",
+      "bytes": 19110
+    },
+    {
+      "path": "plan/outline.md",
+      "bytes": 733
+    },
+    {
+      "path": "plan/review/cleanup-2026-11-20.json",
+      "bytes": 922
+    },
+    {
+      "path": "plan/review/repair-verification-2026-11-20.json",
+      "bytes": 1041
+    },
+    {
+      "path": "plan/review/protected-integrity.json",
+      "bytes": 5110
+    },
+    {
+      "path": "plan/review/repair-baseline-2026-11-20.json",
+      "bytes": 33036
+    },
+    {
+      "path": "plan/review/method-experiment-traceability.md",
+      "bytes": 2113
+    },
+    {
+      "path": "plan/review/p0-archive-fix-verification.json",
+      "bytes": 645
+    },
+    {
+      "path": "plan/review/reference-integrity.json",
+      "bytes": 6513
+    },
+    {
+      "path": "plan/acceptance/p012-accepted-20261120.json",
+      "bytes": 1441
+    },
+    {
+      "path": "plan/acceptance/README.md",
+      "bytes": 5072
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/environment.json",
+      "bytes": 758
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/unit.log",
+      "bytes": 4086
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/static.json",
+      "bytes": 1598
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/unit-results.json",
+      "bytes": 1243
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/static.log",
+      "bytes": 1600
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T094938232422Z/summary.json",
+      "bytes": 1001
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/unit.log",
+      "bytes": 5843
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/unit-results.json",
+      "bytes": 417
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100502700451Z/summary.json",
+      "bytes": 1138
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/unit.log",
+      "bytes": 5567
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/unit-results.json",
+      "bytes": 417
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T094054776891Z/summary.json",
+      "bytes": 1138
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/unit.log",
+      "bytes": 6250
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/unit-results.json",
+      "bytes": 979
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T093813394058Z/summary.json",
+      "bytes": 1073
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/unit.log",
+      "bytes": 5843
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/unit-results.json",
+      "bytes": 417
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100729005526Z/summary.json",
+      "bytes": 1138
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/test_results.pkl",
+      "bytes": 13292362
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/environment.json",
+      "bytes": 758
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0.log",
+      "bytes": 110
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/unit.log",
+      "bytes": 3016
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-test.log",
+      "bytes": 3075
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-train.log",
+      "bytes": 2295
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/unit-results.json",
+      "bytes": 121
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-train.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-test.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/summary.json",
+      "bytes": 2480
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/requirements.txt",
+      "bytes": 432
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/sumolog",
+      "bytes": 1102
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/Env.py",
+      "bytes": 44377
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/README.md",
+      "bytes": 1479
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/test_sac.py",
+      "bytes": 5067
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/train_sac.py",
+      "bytes": 13891
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+      "bytes": 369895
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/model/SAC_model_0/unsignalizedIntersections_q_critic_100.pth",
+      "bytes": 737779
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/monitor.py",
+      "bytes": 7894
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/utils.py",
+      "bytes": 9322
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/sumo_interface.py",
+      "bytes": 7504
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/NetMap.py",
+      "bytes": 19536
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/costomized_data_structures.py",
+      "bytes": 5281
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/control_agent.py",
+      "bytes": 3217
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/core/runtime.py",
+      "bytes": 1396
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-20 18_42/events.out.tfevents.1795171325.lab2439.842248.0",
+      "bytes": 930
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/sac/utils.py",
+      "bytes": 3750
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/sac/SAC.py",
+      "bytes": 6217
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/osm.view.xml",
+      "bytes": 93
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/rawdump.xml",
+      "bytes": 4901703
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/osm.sumocfg",
+      "bytes": 1007
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/Train_logs/unsignalizedIntersections/run_0.json",
+      "bytes": 625
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/risk_model/risk_unsignalizedIntersections_0_0_0_step100.pth",
+      "bytes": 7468723
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/algos/transformer_risk_model.py",
+      "bytes": 14475
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/algos/spatiotemporal_risk_model.py",
+      "bytes": 7527
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/environment.log",
+      "bytes": 3069
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/inputs.log",
+      "bytes": 169
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/environment.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/snapshot.json",
+      "bytes": 6775
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/command.txt",
+      "bytes": 104
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/inputs.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/train.log",
+      "bytes": 2163
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/train.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/requirements.txt",
+      "bytes": 253
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/sumolog",
+      "bytes": 1101
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/Env.py",
+      "bytes": 43729
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/README.md",
+      "bytes": 1213
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/test_sac.py",
+      "bytes": 4381
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/train_sac.py",
+      "bytes": 12981
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/monitor.py",
+      "bytes": 6349
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/utils.py",
+      "bytes": 9322
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/custom_logger.py",
+      "bytes": 2619
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/sumo_interface.py",
+      "bytes": 7468
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/NetMap.py",
+      "bytes": 19536
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/costomized_data_structures.py",
+      "bytes": 5281
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/core/control_agent.py",
+      "bytes": 3217
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-20 18_41/events.out.tfevents.1795171316.lab2439.841192.0",
+      "bytes": 1485
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/sac/utils.py",
+      "bytes": 3750
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/sac/main.py",
+      "bytes": 6073
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/sac/SAC.py",
+      "bytes": 6177
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/osm.view.xml",
+      "bytes": 93
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/rawdump.xml",
+      "bytes": 4887037
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/osm.sumocfg",
+      "bytes": 1007
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/algos/transformer_risk_model.py",
+      "bytes": 12777
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/source-manifest.json",
+      "bytes": 5715
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/unit.log",
+      "bytes": 5041
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/unit-results.json",
+      "bytes": 417
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T093231001878Z/summary.json",
+      "bytes": 1138
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/source-manifest.json",
+      "bytes": 5553
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/environment.json",
+      "bytes": 234
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/unit.log",
+      "bytes": 7308
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/static.json",
+      "bytes": 1594
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/unit-results.json",
+      "bytes": 1822
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/static.log",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/acceptance/20261120T100619979385Z/summary.json",
+      "bytes": 1073
+    },
+    {
+      "path": "plan/p2/README.md",
+      "bytes": 3352
+    },
+    {
+      "path": "plan/task-packets/spatiotemporal-redesign.md",
+      "bytes": 1166
+    },
+    {
+      "path": "plan/task-packets/brief-independent-method.md",
+      "bytes": 1140
+    },
+    {
+      "path": "plan/p3/p012-baseline-manifest.json",
+      "bytes": 3580
+    },
+    {
+      "path": "plan/p3/README.md",
+      "bytes": 5830
+    },
+    {
+      "path": "plan/p3/accepted-20261120.json",
+      "bytes": 2241
+    },
+    {
+      "path": "plan/p3/post-acceptance-static-20261120.json",
+      "bytes": 1620
+    },
+    {
+      "path": "plan/p3/local-verification-20261120.json",
+      "bytes": 879
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/source-manifest.json",
+      "bytes": 6331
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/unit.log",
+      "bytes": 9823
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/static.json",
+      "bytes": 1596
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/unit-results.json",
+      "bytes": 573
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/static.log",
+      "bytes": 1598
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T111112974652Z/summary.json",
+      "bytes": 1048
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-test.log",
+      "bytes": 3067
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-train.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-config.json",
+      "bytes": 174
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-test.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/source-manifest.json",
+      "bytes": 6331
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/environment.json",
+      "bytes": 758
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/benchmark.log",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-test.pkl",
+      "bytes": 13292362
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-train.log",
+      "bytes": 2396
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-train.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/unit.log",
+      "bytes": 6395
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-runtime.json",
+      "bytes": 14331
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/benchmark.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-test.log",
+      "bytes": 3035
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-test.pkl",
+      "bytes": 13292362
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/static.json",
+      "bytes": 1620
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/unit-results.json",
+      "bytes": 121
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-test.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-config.json",
+      "bytes": 174
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-runtime.json",
+      "bytes": 14387
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-train.log",
+      "bytes": 2316
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/static.log",
+      "bytes": 1622
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/latency.json",
+      "bytes": 10542
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/summary.json",
+      "bytes": 3873
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/requirements.txt",
+      "bytes": 432
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/sumolog",
+      "bytes": 1102
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/Env.py",
+      "bytes": 44377
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/README.md",
+      "bytes": 1827
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/test_sac.py",
+      "bytes": 5067
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/train_sac.py",
+      "bytes": 14060
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+      "bytes": 369895
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/model/SAC_model_0/unsignalizedIntersections_q_critic_100.pth",
+      "bytes": 737779
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/monitor.py",
+      "bytes": 7894
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/utils.py",
+      "bytes": 9322
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/sumo_interface.py",
+      "bytes": 7504
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/NetMap.py",
+      "bytes": 19536
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/costomized_data_structures.py",
+      "bytes": 5281
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/control_agent.py",
+      "bytes": 3217
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/core/runtime.py",
+      "bytes": 1396
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-20 19_20/events.out.tfevents.1795173641.lab2439.1094536.0",
+      "bytes": 930
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/sac/utils.py",
+      "bytes": 3750
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/sac/SAC.py",
+      "bytes": 6217
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/real_data/osm.view.xml",
+      "bytes": 93
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/real_data/osm.sumocfg",
+      "bytes": 780
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/Train_logs/unsignalizedIntersections/risk_runtime_0.json",
+      "bytes": 14331
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/Train_logs/unsignalizedIntersections/run_0.json",
+      "bytes": 650
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/risk_model/risk_b0_unsignalizedIntersections_0_0_0_step100.pth",
+      "bytes": 7468831
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/algos/risk_training.py",
+      "bytes": 3095
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/algos/transformer_risk_model.py",
+      "bytes": 11595
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/algos/online_risk.py",
+      "bytes": 6163
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/algos/spatiotemporal_risk_model.py",
+      "bytes": 7527
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/requirements.txt",
+      "bytes": 432
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/sumolog",
+      "bytes": 1102
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/Env.py",
+      "bytes": 44377
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/README.md",
+      "bytes": 1827
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/test_sac.py",
+      "bytes": 5067
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/train_sac.py",
+      "bytes": 14060
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+      "bytes": 369895
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/model/SAC_model_0/unsignalizedIntersections_q_critic_100.pth",
+      "bytes": 737779
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/monitor.py",
+      "bytes": 7894
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/utils.py",
+      "bytes": 9322
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/sumo_interface.py",
+      "bytes": 7504
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/NetMap.py",
+      "bytes": 19536
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/costomized_data_structures.py",
+      "bytes": 5281
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/control_agent.py",
+      "bytes": 3217
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/core/runtime.py",
+      "bytes": 1396
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-20 19_20/events.out.tfevents.1795173658.lab2439.1097222.0",
+      "bytes": 930
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/sac/utils.py",
+      "bytes": 3750
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/sac/SAC.py",
+      "bytes": 6217
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/real_data/osm.view.xml",
+      "bytes": 93
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/real_data/osm.sumocfg",
+      "bytes": 780
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/Train_logs/unsignalizedIntersections/risk_runtime_0.json",
+      "bytes": 14387
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/Train_logs/unsignalizedIntersections/run_0.json",
+      "bytes": 650
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/risk_model/risk_m1_unsignalizedIntersections_0_0_0_step100.pth",
+      "bytes": 531796
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/algos/risk_training.py",
+      "bytes": 3095
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/algos/transformer_risk_model.py",
+      "bytes": 11595
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/algos/online_risk.py",
+      "bytes": 6163
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/algos/spatiotemporal_risk_model.py",
+      "bytes": 7527
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/source-manifest.json",
+      "bytes": 6331
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/benchmark.log",
+      "bytes": 592
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/unit.log",
+      "bytes": 9823
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/benchmark.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/static.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/static.json",
+      "bytes": 1620
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/unit-results.json",
+      "bytes": 573
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/static.log",
+      "bytes": 1622
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/latency.json",
+      "bytes": 4551
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/unit.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p3/runs/20261120T111320030334Z/summary.json",
+      "bytes": 1510
+    },
+    {
+      "path": "plan/p0/snapshot.json",
+      "bytes": 5832
+    },
+    {
+      "path": "plan/p0/README.md",
+      "bytes": 4543
+    },
+    {
+      "path": "plan/p0/requirements-server.txt",
+      "bytes": 432
+    },
+    {
+      "path": "plan/p0/environment-lock.txt",
+      "bytes": 1459
+    },
+    {
+      "path": "plan/p0/transfer/p012-archive-fix-20261120.tar.gz",
+      "bytes": 5111430
+    },
+    {
+      "path": "plan/p0/transfer/p012-archive-fix-20261120.tar.gz.sha256",
+      "bytes": 100
+    },
+    {
+      "path": "plan/p0/transfer/reference-inputs-20261120.tar.gz.sha256",
+      "bytes": 100
+    },
+    {
+      "path": "plan/p0/transfer/reference-inputs-20261120.tar.gz",
+      "bytes": 5122996
+    },
+    {
+      "path": "plan/p0/remote-run/environment.log",
+      "bytes": 3069
+    },
+    {
+      "path": "plan/p0/remote-run/inputs.log",
+      "bytes": 44
+    },
+    {
+      "path": "plan/p0/remote-run/environment.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p0/remote-run/command.txt",
+      "bytes": 104
+    },
+    {
+      "path": "plan/p0/remote-run/inputs.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p0/remote-run/train.log",
+      "bytes": 2162
+    },
+    {
+      "path": "plan/p0/remote-run/train.exitcode",
+      "bytes": 3
+    },
+    {
+      "path": "plan/p0/remote-run/work/requirements.txt",
+      "bytes": 253
+    },
+    {
+      "path": "plan/p0/remote-run/work/sumolog",
+      "bytes": 1100
+    },
+    {
+      "path": "plan/p0/remote-run/work/Env.py",
+      "bytes": 43729
+    },
+    {
+      "path": "plan/p0/remote-run/work/README.md",
+      "bytes": 1213
+    },
+    {
+      "path": "plan/p0/remote-run/work/test_sac.py",
+      "bytes": 4381
+    },
+    {
+      "path": "plan/p0/remote-run/work/train_sac.py",
+      "bytes": 12981
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/monitor.py",
+      "bytes": 6349
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/utils.py",
+      "bytes": 9322
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/custom_logger.py",
+      "bytes": 2619
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/sumo_interface.py",
+      "bytes": 7468
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/NetMap.py",
+      "bytes": 19536
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5281
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/control_agent.py",
+      "bytes": 3217
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/utils.py",
+      "bytes": 3750
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/main.py",
+      "bytes": 6073
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/SAC.py",
+      "bytes": 6177
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.view.xml",
+      "bytes": 93
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 1007
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628
+    },
+    {
+      "path": "plan/p0/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12777
+    },
+    {
+      "path": "plan/p0/remote-run/work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/README.md",
+      "bytes": 7317
+    },
+    {
+      "path": "plan/p1/diagnostic-100/train.log",
+      "bytes": 17249
+    },
+    {
+      "path": "plan/p1/diagnostic-100/train.exitcode",
+      "bytes": 4
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/requirements.txt",
+      "bytes": 238
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sumolog",
+      "bytes": 24873
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/Env.py",
+      "bytes": 42881
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/README.md",
+      "bytes": 1177
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/test_sac.py",
+      "bytes": 4688
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/train_sac.py",
+      "bytes": 14111
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_40.pth",
+      "bytes": 737765
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_20.pth",
+      "bytes": 369885
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_40.pth",
+      "bytes": 369885
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_30.pth",
+      "bytes": 369885
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_20.pth",
+      "bytes": 737765
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_10.pth",
+      "bytes": 369885
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_30.pth",
+      "bytes": 737765
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_10.pth",
+      "bytes": 737765
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/monitor.py",
+      "bytes": 6227
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/utils.py",
+      "bytes": 9094
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/custom_logger.py",
+      "bytes": 2530
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/sumo_interface.py",
+      "bytes": 7297
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/NetMap.py",
+      "bytes": 19116
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/costomized_data_structures.py",
+      "bytes": 5139
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/control_agent.py",
+      "bytes": 3135
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_56/events.out.tfevents.1794988568.lab2439.2564780.0",
+      "bytes": 311866
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/utils.py",
+      "bytes": 3629
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/main.py",
+      "bytes": 5952
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/SAC.py",
+      "bytes": 6078
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.view.xml",
+      "bytes": 88
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.sumocfg",
+      "bytes": 929
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_29_0.pth",
+      "bytes": 7468471
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_19_0.pth",
+      "bytes": 7468471
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_9_0.pth",
+      "bytes": 7468371
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_39_0.pth",
+      "bytes": 7468471
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/transformer_risk_model.py",
+      "bytes": 12847
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/remote-run/test.exitcode",
+      "bytes": 2
+    },
+    {
+      "path": "plan/p1/remote-run/test_results.pkl",
+      "bytes": 13291897
+    },
+    {
+      "path": "plan/p1/remote-run/train.log",
+      "bytes": 2267
+    },
+    {
+      "path": "plan/p1/remote-run/train.exitcode",
+      "bytes": 2
+    },
+    {
+      "path": "plan/p1/remote-run/test.log",
+      "bytes": 2875
+    },
+    {
+      "path": "plan/p1/remote-run/work/requirements.txt",
+      "bytes": 238
+    },
+    {
+      "path": "plan/p1/remote-run/work/sumolog",
+      "bytes": 1056
+    },
+    {
+      "path": "plan/p1/remote-run/work/Env.py",
+      "bytes": 42881
+    },
+    {
+      "path": "plan/p1/remote-run/work/README.md",
+      "bytes": 1177
+    },
+    {
+      "path": "plan/p1/remote-run/work/test_sac.py",
+      "bytes": 4688
+    },
+    {
+      "path": "plan/p1/remote-run/work/train_sac.py",
+      "bytes": 14111
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_actor_0.pth",
+      "bytes": 369875
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_q_critic_0.pth",
+      "bytes": 737751
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/monitor.py",
+      "bytes": 6227
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/utils.py",
+      "bytes": 9094
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/custom_logger.py",
+      "bytes": 2530
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/sumo_interface.py",
+      "bytes": 7297
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/NetMap.py",
+      "bytes": 19116
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5139
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/control_agent.py",
+      "bytes": 3135
+    },
+    {
+      "path": "plan/p1/remote-run/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_25/events.out.tfevents.1794986733.lab2439.2388954.0",
+      "bytes": 930
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/utils.py",
+      "bytes": 3629
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/main.py",
+      "bytes": 5952
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/SAC.py",
+      "bytes": 6078
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.view.xml",
+      "bytes": 88
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 971
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514
+    },
+    {
+      "path": "plan/p1/remote-run/work/risk_model/risk_unsignalizedIntersections_0_0_0.pth",
+      "bytes": 7468371
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12847
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src/sac_rwb/requirements.txt",
+      "bytes": 432
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "bytes": 43455
+    },
+    {
+      "path": "src/sac_rwb/README.md",
+      "bytes": 1910
+    },
+    {
+      "path": "src/sac_rwb/test_sac.py",
+      "bytes": 4774
+    },
+    {
+      "path": "src/sac_rwb/train_sac.py",
+      "bytes": 14060
+    },
+    {
+      "path": "src/sac_rwb/core/monitor.py",
+      "bytes": 7744
+    },
+    {
+      "path": "src/sac_rwb/core/utils.py",
+      "bytes": 9094
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "bytes": 7442
+    },
+    {
+      "path": "src/sac_rwb/core/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src/sac_rwb/core/NetMap.py",
+      "bytes": 19116
+    },
+    {
+      "path": "src/sac_rwb/core/costomized_data_structures.py",
+      "bytes": 5139
+    },
+    {
+      "path": "src/sac_rwb/core/control_agent.py",
+      "bytes": 3135
+    },
+    {
+      "path": "src/sac_rwb/core/runtime.py",
+      "bytes": 1358
+    },
+    {
+      "path": "src/sac_rwb/sac/utils.py",
+      "bytes": 3629
+    },
+    {
+      "path": "src/sac_rwb/sac/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src/sac_rwb/sac/SAC.py",
+      "bytes": 6078
+    },
+    {
+      "path": "src/sac_rwb/real_data/newroute1220_start0.xml",
+      "bytes": 11595038
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.view.xml",
+      "bytes": 88
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.sumocfg",
+      "bytes": 971
+    },
+    {
+      "path": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514
+    },
+    {
+      "path": "src/sac_rwb/algos/risk_training.py",
+      "bytes": 2598
+    },
+    {
+      "path": "src/sac_rwb/algos/transformer_risk_model.py",
+      "bytes": 10976
+    },
+    {
+      "path": "src/sac_rwb/algos/online_risk.py",
+      "bytes": 6042
+    },
+    {
+      "path": "src/sac_rwb/algos/spatiotemporal_risk_model.py",
+      "bytes": 7527
+    },
+    {
+      "path": "src/sac_rwb/algos/__init__.py",
+      "bytes": 0
+    }
+  ]
+}

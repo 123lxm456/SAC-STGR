@@ -1,0 +1,179 @@
+{
+  "device": "cpu",
+  "torch": "2.14.1+cpu",
+  "cuda": null,
+  "purpose": "Synthetic-input engineering cost only; no trained weights or accuracy claims",
+  "definition": "Synchronized model forward wall time; tensors already on device, no history assembly or host transfer; warmups excluded",
+  "repeats": 3,
+  "warmup": 1,
+  "cases": [
+    {
+      "variant": "b0",
+      "batch_size": 1,
+      "valid_steps": 1,
+      "parameter_count": 1223681,
+      "mean_ms": 1.4799000540127356,
+      "p50_ms": 1.4614001847803593,
+      "p95_ms": 1.5980199677869678,
+      "samples_ms": [
+        1.613199943676591,
+        1.4614001847803593,
+        1.3651000335812569
+      ]
+    },
+    {
+      "variant": "b0",
+      "batch_size": 1,
+      "valid_steps": 10,
+      "parameter_count": 1223681,
+      "mean_ms": 1.4002666963885229,
+      "p50_ms": 1.3898001052439213,
+      "p95_ms": 1.4664798509329557,
+      "samples_ms": [
+        1.4749998226761818,
+        1.3898001052439213,
+        1.3360001612454653
+      ]
+    },
+    {
+      "variant": "b0",
+      "batch_size": 8,
+      "valid_steps": 1,
+      "parameter_count": 1223681,
+      "mean_ms": 3.031099991252025,
+      "p50_ms": 3.0652000568807125,
+      "p95_ms": 3.1938098836690187,
+      "samples_ms": [
+        3.208099864423275,
+        3.0652000568807125,
+        2.8200000524520874
+      ]
+    },
+    {
+      "variant": "b0",
+      "batch_size": 8,
+      "valid_steps": 10,
+      "parameter_count": 1223681,
+      "mean_ms": 3.5470332950353622,
+      "p50_ms": 3.4308999311178923,
+      "p95_ms": 4.327840055339038,
+      "samples_ms": [
+        2.7826998848468065,
+        3.4308999311178923,
+        4.427500069141388
+      ]
+    },
+    {
+      "variant": "b0",
+      "batch_size": 32,
+      "valid_steps": 1,
+      "parameter_count": 1223681,
+      "mean_ms": 7.739466692631443,
+      "p50_ms": 7.715499959886074,
+      "p95_ms": 8.115549967624247,
+      "samples_ms": [
+        7.715499959886074,
+        7.342900149524212,
+        8.159999968484044
+      ]
+    },
+    {
+      "variant": "b0",
+      "batch_size": 32,
+      "valid_steps": 10,
+      "parameter_count": 1223681,
+      "mean_ms": 7.697933275873463,
+      "p50_ms": 7.603100035339594,
+      "p95_ms": 7.944199908524752,
+      "samples_ms": [
+        7.603100035339594,
+        7.5085998978465796,
+        7.982099894434214
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 1,
+      "valid_steps": 1,
+      "parameter_count": 127041,
+      "mean_ms": 1.9520333347221215,
+      "p50_ms": 1.9457999151200056,
+      "p95_ms": 2.0213099662214518,
+      "samples_ms": [
+        2.02969997189939,
+        1.9457999151200056,
+        1.8806001171469688
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 1,
+      "valid_steps": 10,
+      "parameter_count": 127041,
+      "mean_ms": 2.195266541093588,
+      "p50_ms": 1.9749999046325684,
+      "p95_ms": 2.687799884006381,
+      "samples_ms": [
+        1.8437998369336128,
+        1.9749999046325684,
+        2.7669998817145824
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 8,
+      "valid_steps": 1,
+      "parameter_count": 127041,
+      "mean_ms": 4.553699943547447,
+      "p50_ms": 4.7697999980300665,
+      "p95_ms": 5.05851989146322,
+      "samples_ms": [
+        3.8006999529898167,
+        4.7697999980300665,
+        5.090599879622459
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 8,
+      "valid_steps": 10,
+      "parameter_count": 127041,
+      "mean_ms": 4.448433329040806,
+      "p50_ms": 4.0113001596182585,
+      "p95_ms": 5.327010015025735,
+      "samples_ms": [
+        4.0113001596182585,
+        5.473199998959899,
+        3.860799828544259
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 32,
+      "valid_steps": 1,
+      "parameter_count": 127041,
+      "mean_ms": 10.439300055926045,
+      "p50_ms": 10.165699990466237,
+      "p95_ms": 11.337410006672144,
+      "samples_ms": [
+        10.165699990466237,
+        11.4676000084728,
+        9.684600168839097
+      ]
+    },
+    {
+      "variant": "m1",
+      "batch_size": 32,
+      "valid_steps": 10,
+      "parameter_count": 127041,
+      "mean_ms": 9.033466689288616,
+      "p50_ms": 9.128999896347523,
+      "p95_ms": 10.00533017795533,
+      "samples_ms": [
+        10.102700209245086,
+        7.86869996227324,
+        9.128999896347523
+      ]
+    }
+  ]
+}

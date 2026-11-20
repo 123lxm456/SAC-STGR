@@ -12,7 +12,6 @@ from gym.spaces.box import Box
 
 from copy import deepcopy
 from core.utils import start_edges, end_edges, dict_tolist, UNCONFLICT_SET
-from gym.spaces import Discrete
 from core.monitor import DataMonitor
 
 WHITE = (255, 255, 255)
@@ -36,7 +35,6 @@ class Env(gym.Env):
             high=1,
             shape=(self.n_obs,),
             dtype=np.float32)
-        self.action_space = Discrete(2)
 
         self.config = config
         self.print_debug = False
@@ -63,6 +61,8 @@ class Env(gym.Env):
 
         self.max_acc = 3.0
         self.min_acc = -3.0
+        self.action_space = Box(low=self.min_acc, high=self.max_acc,
+                                shape=(self.n_action,), dtype=np.float32)
         self.max_speed = 10
         self.min_speed = 0
 
@@ -87,7 +87,7 @@ class Env(gym.Env):
             self.conflict_resolve_mechanism_type = config['conflict_mechanism']
         else:
             self.conflict_resolve_mechanism_type = 'off'
-        
+
 
         # 风险预测模型
         self.use_safety_predictor = config['use_safety_predictor']
@@ -128,8 +128,8 @@ class Env(gym.Env):
         self.episode_total_waiting_time = 0.0  # 记录所有到达车辆的总等待时间
 
         ## vehicle level
-        self.vehicles = Container()  # 
-        self.rl_vehicles = Container()  # 
+        self.vehicles = Container()  #
+        self.rl_vehicles = Container()  #
         self.reward_record = dict()
         self.veh_waiting_clock = dict()
         self.veh_waiting_juncs = dict()
@@ -357,7 +357,7 @@ class Env(gym.Env):
         return True if self.map.check_veh_location_to_control(veh) and \
                        (self.map.edge_length(veh.road_id) - veh.laneposition) < self.control_distance \
             else False
-    
+
     def get_distance_to_intersection(self, veh):
         return self.map.edge_length(veh.road_id) - veh.laneposition
 
@@ -393,7 +393,7 @@ class Env(gym.Env):
         self.reward_record[rl_veh.id]['total'] = total_reward
 
         return total_reward
-        
+
     def _traffic_light_program_update(self):
         if self._step > self.traffic_light_program['disable_light_start']:
             self.sumo_interface.disable_all_trafficlight(self.traffic_light_program['disable_state'])
@@ -596,15 +596,15 @@ class Env(gym.Env):
                 # print("test1")
                 continue
             action_value = action[virtual_id]
-            
+
             # 处理连续动作：直接将动作值作为加速度使用
             # 确保加速度在允许范围内
             acceleration = float(action_value)  # 确保是浮点数
             acceleration = max(self.min_acc, min(self.max_acc, acceleration))  # 限制在[-3, 3]范围内
-            
+
             # 根据动作值设置对应的加速度
             self.sumo_interface.accl_control(self.rl_vehicles[veh_id], acceleration)
-            
+
             # 根据加速度设置车辆颜色以便观察
             if acceleration > 0:
                 self.sumo_interface.set_color(self.rl_vehicles[veh_id], GREEN)  # 加速-绿色
@@ -710,6 +710,11 @@ class Env(gym.Env):
         new_obs = {}
         # 获取当前的状态空间
         for virtual_id, val in self.pre_dir_info.items():
+            if val[2] not in self.rl_vehicles:
+                # Arrivals were removed above. Keep a terminal replay snapshot;
+                # its value is not bootstrapped because the transition is done.
+                new_obs[virtual_id] = deepcopy(self.previous_obs[virtual_id])
+                continue
             JuncID, rotated_keywords = val[0], val[1]
             obs_control_queue_length = []
             obs_waiting_lst = []
@@ -840,6 +845,14 @@ class Env(gym.Env):
                                                                                 np.reshape(np.array(obs_inner_lst),
                                                                                            (80,)))))
                     self.terminate_veh(virtual_id)
+        for veh in self.new_arrived:
+            for virtual_id in action:
+                if self.convert_virtual_id_to_real_id(virtual_id) == veh.id:
+                    obs[virtual_id] = deepcopy(self.previous_obs[virtual_id])
+                    new_obs[virtual_id] = deepcopy(self.previous_obs[virtual_id])
+                    rewards[virtual_id] = 0
+                    dones[virtual_id] = True
+                    self.terminate_veh(virtual_id)
         dones['__all__'] = False
         infos = {}
         truncated = {}
@@ -852,7 +865,7 @@ class Env(gym.Env):
             = deepcopy(obs), deepcopy(rewards), deepcopy(action), deepcopy(dones), deepcopy(self.inner_lane_obs)
         self.pre_dir_info = deepcopy(dir_info)
         self.pre_TTI_dic = deepcopy(TTI_dict)
-        
+
         self.monitor.step(self)
 
         self.conflict_vehids = []
