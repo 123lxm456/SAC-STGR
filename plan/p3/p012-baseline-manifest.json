@@ -1,0 +1,97 @@
+{
+  "scope": "Local source hashes immediately before P3 edits; not asserted equal to a server source manifest not yet returned",
+  "files": [
+    {
+      "path": "src/sac_rwb/algos/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sac_rwb/algos/spatiotemporal_risk_model.py",
+      "sha256": "be3f341bb1e5a0de2da2ca817d3f2a09e5d6f39bba655cd19918cb6a7ac781b0"
+    },
+    {
+      "path": "src/sac_rwb/algos/transformer_risk_model.py",
+      "sha256": "db96fb214d85ac32982a8e6d77aa39bdd1c1005b74f77192e71b68ceb957ba11"
+    },
+    {
+      "path": "src/sac_rwb/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sac_rwb/core/control_agent.py",
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "src/sac_rwb/core/costomized_data_structures.py",
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "src/sac_rwb/core/monitor.py",
+      "sha256": "694ad2a58ea2290642ad73311148c835349ea19e4e0267a4f7bcd340a7a010db"
+    },
+    {
+      "path": "src/sac_rwb/core/NetMap.py",
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "src/sac_rwb/core/runtime.py",
+      "sha256": "eac28f60ca7b3f9978ec721a5f20262b14b739bc624ea5917694530dfa4aa648"
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "src/sac_rwb/core/utils.py",
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "sha256": "1181e3347678f325971531ac91c2f023d09f15fe5522caf4722c67e78cabd0d0"
+    },
+    {
+      "path": "src/sac_rwb/README.md",
+      "sha256": "64c2857d68d831442e8aaddaa2778d781460ee45a2d32d35c26058bd861f647a"
+    },
+    {
+      "path": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml",
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "src/sac_rwb/real_data/newroute1220_start0.xml",
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.sumocfg",
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "src/sac_rwb/real_data/osm.view.xml",
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "src/sac_rwb/requirements.txt",
+      "sha256": "7560e8a79a5cc4b697d359b11c655aa6c4bf81db04169dde577b9dd27392afa6"
+    },
+    {
+      "path": "src/sac_rwb/sac/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sac_rwb/sac/SAC.py",
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "src/sac_rwb/sac/utils.py",
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "src/sac_rwb/test_sac.py",
+      "sha256": "67d70797f8b444d9cd71f3eb09c820092aa0f3aa7e97c0d6ae69d396157e1648"
+    },
+    {
+      "path": "src/sac_rwb/train_sac.py",
+      "sha256": "cb9a0335730fdc2279de5cc11285d65d8234f4b6324e22db714bbef522aa4f20"
+    }
+  ]
+}

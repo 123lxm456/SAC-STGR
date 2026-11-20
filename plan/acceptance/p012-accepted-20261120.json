@@ -1,0 +1,48 @@
+{
+  "accepted": true,
+  "mode": "target",
+  "stages": {
+    "P0": "passed",
+    "P1": "passed",
+    "P2": "passed"
+  },
+  "evidence_origin": "Raw server environment, summary, unit results, source manifest, logs, inputs and checkpoints returned locally by user",
+  "remote_evidence_directory": "/home/lab2439/Work/LXM/SAC-STGR/plan/acceptance/20261120T104147769112Z",
+  "command_exitcodes": {
+    "static": 0,
+    "unit": 0,
+    "p0": 0,
+    "p1-train": 0,
+    "p1-test": 0
+  },
+  "unit": {
+    "tests_run": 35,
+    "skipped": [],
+    "failures": [],
+    "errors": [],
+    "require_cuda": true,
+    "passed": true
+  },
+  "p1_smoke": {
+    "episodes": 1,
+    "decision_steps": 100,
+    "reward": -596.3,
+    "episode_seconds": 3.89,
+    "sac_updates": 5,
+    "risk_updates": 0,
+    "safe_pool": 34,
+    "collision_pool": 0
+  },
+  "limits": [
+    "Minimum engineering acceptance, not long-run stability or model performance",
+    "Risk optimizer CUDA path tested with synthetic labels; natural short run had no collision examples",
+    "No changes to references/ authorized"
+  ],
+  "p3_started_at_accepted_run": false,
+  "local_evidence_directory": "plan/acceptance/20261120T104147769112Z",
+  "returned_source_check": {
+    "files": 23,
+    "normalized_sha256_matches": 23,
+    "note": "Git checkout converted returned text files to CRLF; normalized LF hashes match original server manifest"
+  }
+}

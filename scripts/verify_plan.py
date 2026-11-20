@@ -75,9 +75,11 @@ check("technical specification has connected spatiotemporal pipeline",
       all(term in spec for term in
           ("[B,10,9,64]", "Encoder}_S", "Encoder}_T",
            "末步读出", "有效步掩码", "M1", "C1", "C2", "C3")))
-check("README and stage identify design status",
-      all("尚未" in item or "待开始" in item
-          for item in (readme, stage)))
+acceptance = json.loads(read('plan/acceptance/p012-accepted-20261120.json'))
+check("README and stage identify phases backed by P012 acceptance record",
+      all('P{}'.format(i) in item for i in range(6) for item in (readme, stage))
+      and acceptance.get('accepted') is True
+      and all(acceptance.get('stages', {}).get('P{}'.format(i)) == 'passed' for i in range(3)))
 check("method claims map to experiments",
       all(term in trace for term in
           ("M1", "B0", "C1", "C2", "C3", "A-B", "校准")))

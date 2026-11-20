@@ -1,0 +1,50 @@
+{
+  "mode": "local",
+  "passed": false,
+  "p4_started": false,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p3\\runs\\20261120T111320030334Z\\unit-results.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\verify_plan.py",
+        "--report",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p3\\runs\\20261120T111320030334Z\\static.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "benchmark",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\benchmark_risk.py",
+        "--device",
+        "cpu",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p3\\runs\\20261120T111320030334Z\\latency.json",
+        "--repeats",
+        "3",
+        "--warmup",
+        "1"
+      ],
+      "exitcode": 0
+    }
+  ],
+  "variants": {},
+  "acceptance_scope": "Engineering integration only, not effectiveness or calibrated risk",
+  "require_online_risk_updates": false,
+  "local_checks_passed": true
+}

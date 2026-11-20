@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-20",
+  "p012_accepted": true,
+  "p012_raw_evidence": "plan/acceptance/20261120T104147769112Z",
+  "p012_returned_source_normalized_hash_matches": 23,
+  "p3_local_checks_passed": true,
+  "p3_target_acceptance_passed": false,
+  "tests_run": 45,
+  "tests_passed": 42,
+  "cuda_skipped": 3,
+  "static_checks_passed": 13,
+  "synthetic_cpu_latency_cases": 12,
+  "evidence_directory": "plan/p3/runs/20261120T111320030334Z",
+  "protected_original_files_unchanged": 131,
+  "p2_network_modified": false,
+  "accepted_bce_training_method_reused_verbatim": true,
+  "p4_started": false,
+  "remaining": [
+    "User-run python -B scripts/accept_p3.py on locked Linux/RTX4090",
+    "Review real SUMO integration, synchronized GPU latency and actual online update counts",
+    "Natural risk learning not inferred from zero updates or synthetic tests"
+  ]
+}

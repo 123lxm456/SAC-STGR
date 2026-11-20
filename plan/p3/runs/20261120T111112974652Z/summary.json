@@ -1,0 +1,33 @@
+{
+  "mode": "local",
+  "passed": false,
+  "p4_started": false,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p3\\runs\\20261120T111112974652Z\\unit-results.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\verify_plan.py",
+        "--report",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p3\\runs\\20261120T111112974652Z\\static.json"
+      ],
+      "exitcode": 1
+    }
+  ],
+  "variants": {},
+  "acceptance_scope": "Engineering integration only, not effectiveness or calibrated risk",
+  "require_online_risk_updates": false,
+  "error": "RuntimeError: static failed; see its log"
+}

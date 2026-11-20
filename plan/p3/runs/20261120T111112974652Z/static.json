@@ -1,0 +1,71 @@
+{
+  "scope": "Static documents, immutable chapter 3.4 and protected file hashes only",
+  "passed": false,
+  "checks": [
+    {
+      "name": "protected references inventory and SHA-256 unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "output directory removed by request",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "full chapter 3.4 unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "full chapter ends at 3.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "full preserves core formula and limitations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "brief chapter 3.4 unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "brief chapter ends at 3.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "brief preserves core formula and limitations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "technical specification has connected spatiotemporal pipeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README and stage identify design status",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "method claims map to experiments",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "required project planning files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "active local links resolve",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}
