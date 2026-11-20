@@ -1,0 +1,33 @@
+{
+  "mode": "local",
+  "passed": false,
+  "stages": {},
+  "commands": [
+    {
+      "name": "static",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\verify_plan.py",
+        "--report",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\acceptance\\20261120T100619979385Z\\static.json"
+      ],
+      "cwd": "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR",
+      "exitcode": 0
+    },
+    {
+      "name": "unit",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\acceptance\\20261120T100619979385Z\\unit-results.json"
+      ],
+      "cwd": "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR",
+      "exitcode": 1
+    }
+  ],
+  "p3_started": false,
+  "error": "RuntimeError: unit failed with exit code 1; see its log"
+}

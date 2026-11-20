@@ -1,0 +1,22 @@
+{
+  "tests_run": 35,
+  "skipped": [
+    [
+      "test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward)",
+      "CUDA is unavailable"
+    ]
+  ],
+  "failures": [],
+  "errors": [
+    [
+      "test_p0_archive_materializes_only_the_run_copy (test_repairs.RepairTests.test_p0_archive_materializes_only_the_run_copy)",
+      "Traceback (most recent call last):\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_repairs.py\", line 46, in test_p0_archive_materializes_only_the_run_copy\n    module.main(destination, report)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\p0_snapshot.py\", line 78, in main\n    entries, payloads, provenance = reference_inputs(archive)\n                                    ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\p0_snapshot.py\", line 28, in reference_inputs\n    if archive is None and not REFERENCE.exists():\n                               ~~~~~~~~~~~~~~~~^^\n  File \"D:\\Anaconda3\\Lib\\pathlib\\_abc.py\", line 450, in exists\n    self.stat(follow_symlinks=follow_symlinks)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Anaconda3\\Lib\\pathlib\\_local.py\", line 515, in stat\n    return os.stat(self, follow_symlinks=follow_symlinks)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [WinError 65] 拒绝网络访问。: '\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\lxm\\\\codes\\\\SAC-STGR\\\\tmppnxes0v1\\\\references\\\\SAC-RWB-main'\n"
+    ]
+  ],
+  "require_cuda": false,
+  "passed": false
+}

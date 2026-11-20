@@ -1,0 +1,46 @@
+test_environment_mismatch_cannot_grant_acceptance (test_acceptance.AcceptanceTests.test_environment_mismatch_cannot_grant_acceptance) ... ok
+test_existing_evidence_is_not_overwritten (test_acceptance.AcceptanceTests.test_existing_evidence_is_not_overwritten) ... ok
+test_failed_p0_stops_before_p1_or_p3 (test_acceptance.AcceptanceTests.test_failed_p0_stops_before_p1_or_p3) ... ok
+test_local_success_cannot_grant_target_acceptance (test_acceptance.AcceptanceTests.test_local_success_cannot_grant_target_acceptance) ... ok
+test_all_eight_groups_appear_once_on_both_road_types (test_p1.P1Tests.test_all_eight_groups_appear_once_on_both_road_types) ... ok
+test_buffer_uses_same_masked_padding_and_no_fake_safe_sample (test_p1.P1Tests.test_buffer_uses_same_masked_padding_and_no_fake_safe_sample) ... ok
+test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding) ... skipped 'CUDA is unavailable'
+test_mask_excludes_padded_values_from_last_step_score (test_p1.P1Tests.test_mask_excludes_padded_values_from_last_step_score) ... \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\src\sac_rwb\algos\transformer_risk_model.py:174: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.transformer = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
+D:\Anaconda3\Lib\site-packages\torch\nn\modules\transformer.py:433: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+ok
+test_risk_update_requires_both_classes_and_keeps_optimizer (test_p1.P1Tests.test_risk_update_requires_both_classes_and_keeps_optimizer) ... \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\src\sac_rwb\algos\transformer_risk_model.py:174: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.transformer = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
+ok
+test_sac_completes_five_optimizer_steps (test_p1.P1Tests.test_sac_completes_five_optimizer_steps) ... ok
+test_all_stages_keep_nine_tokens_and_score_one_vehicle (test_p2.P2Tests.test_all_stages_keep_nine_tokens_and_score_one_vehicle) ... ok
+test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward) ... skipped 'CUDA is unavailable'
+test_current_action_and_each_encoder_have_gradient (test_p2.P2Tests.test_current_action_and_each_encoder_have_gradient) ... ok
+test_default_width_masked_backward_has_finite_gradients (test_p2.P2Tests.test_default_width_masked_backward_has_finite_gradients) ... ok
+test_field_slices_preserve_all_eight_distinct_groups (test_p2.P2Tests.test_field_slices_preserve_all_eight_distinct_groups) ... ok
+test_invalid_masks_and_shapes_fail_before_attention (test_p2.P2Tests.test_invalid_masks_and_shapes_fail_before_attention) ... ok
+test_padded_steps_cannot_change_valid_last_step_score (test_p2.P2Tests.test_padded_steps_cannot_change_valid_last_step_score) ... ok
+test_padding_mask_uses_bool_required_by_locked_torch (test_p2.P2Tests.test_padding_mask_uses_bool_required_by_locked_torch) ... ok
+test_specified_default_architecture (test_p2.P2Tests.test_specified_default_architecture) ... ok
+test_state_dict_round_trip_and_bias_ablation (test_p2.P2Tests.test_state_dict_round_trip_and_bias_ablation) ... ok
+test_collision_elsewhere_does_not_label_an_old_junction (test_repairs.RepairTests.test_collision_elsewhere_does_not_label_an_old_junction) ... ok
+test_context_comes_from_the_observation_not_later_vehicle_state (test_repairs.RepairTests.test_context_comes_from_the_observation_not_later_vehicle_state) ... ok
+test_history_copies_inputs_and_preserves_delayed_outcome (test_repairs.RepairTests.test_history_copies_inputs_and_preserves_delayed_outcome) ... ok
+test_history_resets_for_junction_segment_order_and_time_gap (test_repairs.RepairTests.test_history_resets_for_junction_segment_order_and_time_gap) ... ok
+test_invalid_padding_and_imbalanced_batch_are_rejected (test_repairs.RepairTests.test_invalid_padding_and_imbalanced_batch_are_rejected) ... ok
+test_monitor_extends_capacity_without_losing_old_data (test_repairs.RepairTests.test_monitor_extends_capacity_without_losing_old_data) ... ok
+test_monitor_window_uses_recorded_steps_and_separate_junctions (test_repairs.RepairTests.test_monitor_window_uses_recorded_steps_and_separate_junctions) ... ok
+test_no_traffic_metrics_are_explicitly_undefined (test_repairs.RepairTests.test_no_traffic_metrics_are_explicitly_undefined) ... ok
+test_observation_on_last_allowed_step_is_returned (test_repairs.RepairTests.test_observation_on_last_allowed_step_is_returned) ... ok
+test_p0_archive_materializes_only_the_run_copy (test_repairs.RepairTests.test_p0_archive_materializes_only_the_run_copy) ... ok
+test_p0_archive_rejects_unexpected_paths_before_writing (test_repairs.RepairTests.test_p0_archive_rejects_unexpected_paths_before_writing) ... ok
+test_p0_recopy_uses_protected_reference_and_refuses_overwrite (test_repairs.RepairTests.test_p0_recopy_uses_protected_reference_and_refuses_overwrite) ... ok
+test_reward_uses_only_eight_waiting_fields (test_repairs.RepairTests.test_reward_uses_only_eight_waiting_fields) ... ok
+test_run_reservation_respects_models_legacy_logs_and_markers (test_repairs.RepairTests.test_run_reservation_respects_models_legacy_logs_and_markers) ... ok
+test_wait_is_bounded_and_detects_exhausted_traffic (test_repairs.RepairTests.test_wait_is_bounded_and_detects_exhausted_traffic) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 21.462s
+
+OK (skipped=2)

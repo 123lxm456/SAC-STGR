@@ -1,0 +1,21 @@
+{
+  "local_evidence": "plan/acceptance/20261120T100729005526Z",
+  "tests_run": 35,
+  "passed": 33,
+  "skipped_cuda": 2,
+  "target_acceptance_pending": true,
+  "references_written": false,
+  "protected_files_unchanged": 131,
+  "bundle": "plan/p0/transfer/p012-archive-fix-20261120.tar.gz",
+  "bytes": 5111430,
+  "sha256": "2ac8024e69a36242edd2a96ea39e0d79db222742d14c9e1a6052c9bd9957c369",
+  "members": [
+    ".gitignore",
+    ".gitattributes",
+    "scripts/p0_snapshot.py",
+    "scripts/p0_remote.sh",
+    "tests/test_repairs.py",
+    "plan/acceptance/README.md",
+    "plan/p0/transfer/reference-inputs-20261120.tar.gz"
+  ]
+}

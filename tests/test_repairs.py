@@ -10,6 +10,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import tarfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import Mock
@@ -25,6 +26,43 @@ from core.runtime import wait_for_observation, reserve_run
 
 
 class RepairTests(unittest.TestCase):
+    def test_p0_archive_materializes_only_the_run_copy(self):
+        spec = importlib.util.spec_from_file_location('p0_archive', ROOT / 'scripts/p0_snapshot.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        # Reproduce the server layout: the protected manifest and input archive
+        # exist, but no references/ directory exists anywhere under this root.
+        with tempfile.TemporaryDirectory(dir=ROOT) as temp:
+            fixture = Path(temp)
+            (fixture / 'plan').mkdir()
+            (fixture / 'plan/review').mkdir()
+            (fixture / 'plan/review/protected-integrity.json').write_bytes(
+                (ROOT / 'plan/review/protected-integrity.json').read_bytes())
+            module.ROOT = fixture
+            module.REFERENCE = fixture / 'references/SAC-RWB-main'
+            destination = Path(temp) / 'work'
+            report = Path(temp) / 'snapshot.json'
+            with contextlib.redirect_stdout(io.StringIO()):
+                module.main(destination, report)
+            result = json.loads(report.read_text(encoding='utf-8'))
+            self.assertEqual(result['work_copy_file_count'], 23)
+            self.assertEqual(result['input_provenance']['kind'], 'verified_archive')
+            self.assertTrue((destination / 'Env.py').is_file())
+            self.assertFalse((Path(temp) / 'references').exists())
+
+    def test_p0_archive_rejects_unexpected_paths_before_writing(self):
+        spec = importlib.util.spec_from_file_location('p0_bad_archive', ROOT / 'scripts/p0_snapshot.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory(dir=ROOT) as temp:
+            archive = Path(temp) / 'invalid.tar.gz'
+            with tarfile.open(str(archive), 'w:gz') as package:
+                package.addfile(tarfile.TarInfo('../unexpected'))
+            destination = Path(temp) / 'work'
+            with self.assertRaises(ValueError):
+                module.main(destination, Path(temp) / 'snapshot.json', archive=archive)
+            self.assertFalse(destination.exists())
+
     def test_reward_uses_only_eight_waiting_fields(self):
         env = Env.__new__(Env)
         state = np.arange(98, dtype=np.float32)

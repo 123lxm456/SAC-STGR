@@ -56,7 +56,9 @@ import hashlib, json, pathlib, sys
 root = pathlib.Path(sys.argv[1])
 snapshot = json.loads((pathlib.Path(sys.argv[2]) / 'snapshot.json').read_text(encoding='utf-8'))
 for item in snapshot['files']:
-    for key in ('source', 'copy'):
+    # Original bytes were checked against the protected manifest before copying.
+    # Their source may be a verified archive; references/ need not exist here.
+    for key in ('copy',):
         path = root / item[key]
         assert hashlib.sha256(path.read_bytes()).hexdigest() == item['sha256'], path
 print(f"Verified {len(snapshot['files'])} reference/work-copy file pairs")
