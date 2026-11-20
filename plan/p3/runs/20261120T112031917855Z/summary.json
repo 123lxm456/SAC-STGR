@@ -1,0 +1,163 @@
+{
+  "mode": "target",
+  "passed": true,
+  "p4_started": false,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "timeout",
+        "20m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/run_unit_checks.py",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261120T112031917855Z/unit-results.json",
+        "--require-cuda"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/verify_plan.py",
+        "--report",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261120T112031917855Z/static.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "benchmark",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/benchmark_risk.py",
+        "--device",
+        "cuda",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261120T112031917855Z/latency.json",
+        "--repeats",
+        "20",
+        "--warmup",
+        "5"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "b0-train",
+      "argv": [
+        "timeout",
+        "20m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "train_sac.py",
+        "--risk_variant",
+        "b0",
+        "--epochs",
+        "1",
+        "--max_e_steps",
+        "100",
+        "--save_interval",
+        "100",
+        "--update_every",
+        "50",
+        "--dvc",
+        "cuda",
+        "--seed",
+        "0"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "b0-test",
+      "argv": [
+        "timeout",
+        "20m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "test_sac.py",
+        "--run_num",
+        "0",
+        "--timestep",
+        "100",
+        "--max_e_steps",
+        "100",
+        "--dvc",
+        "cuda",
+        "--seed",
+        "2",
+        "--test_logs_path",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261120T112031917855Z/b0-test.pkl"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "m1-train",
+      "argv": [
+        "timeout",
+        "20m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "train_sac.py",
+        "--risk_variant",
+        "m1",
+        "--epochs",
+        "1",
+        "--max_e_steps",
+        "100",
+        "--save_interval",
+        "100",
+        "--update_every",
+        "50",
+        "--dvc",
+        "cuda",
+        "--seed",
+        "0"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "m1-test",
+      "argv": [
+        "timeout",
+        "20m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "test_sac.py",
+        "--run_num",
+        "0",
+        "--timestep",
+        "100",
+        "--max_e_steps",
+        "100",
+        "--dvc",
+        "cuda",
+        "--seed",
+        "2",
+        "--test_logs_path",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261120T112031917855Z/m1-test.pkl"
+      ],
+      "exitcode": 0
+    }
+  ],
+  "variants": {
+    "b0": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "natural_risk_learning_observed": false,
+      "inference_calls": 100
+    },
+    "m1": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "natural_risk_learning_observed": false,
+      "inference_calls": 100
+    }
+  },
+  "acceptance_scope": "Engineering integration only, not effectiveness or calibrated risk",
+  "require_online_risk_updates": false
+}

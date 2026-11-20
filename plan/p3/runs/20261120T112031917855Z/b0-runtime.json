@@ -1,0 +1,531 @@
+{
+  "risk_variant": "b0",
+  "risk_parameter_count": 1223681,
+  "risk_network_config": {
+    "d_model": 128,
+    "nhead": 4,
+    "temporal_layers": 2
+  },
+  "decision_steps": 100,
+  "episodes_completed": 1,
+  "sac_updates": 5,
+  "risk_updates": 0,
+  "safe_pool": 34,
+  "collision_pool": 0,
+  "seed": 0,
+  "device": "cuda",
+  "risk_supervision": "legacy_terminal_outcomes; P4 horizon/censoring not implemented",
+  "inference": {
+    "calls": 100,
+    "vehicles_scored": 367,
+    "total_end_to_end_ms": 103.96355483680964,
+    "mean_end_to_end_ms_per_batch": 1.0396355483680964,
+    "amortized_ms_per_vehicle": 0.28327944097223334,
+    "retained_calls": 100,
+    "p50_retained_batch_ms": 1.0118474892806262,
+    "p95_retained_batch_ms": 1.2436814024113119,
+    "definition": "Synchronized wall time includes histories, tensor assembly, transfers, forward and CPU score mapping. Percentiles cover retained calls; first-call costs are included. Amortized cost is not single-vehicle latency.",
+    "retained_records": [
+      {
+        "batch_size": 2,
+        "forward_ms": 1.3976399786770344,
+        "end_to_end_ms": 1.8188089597970247
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.748284044675529,
+        "end_to_end_ms": 0.9943729965016246
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7085410179570317,
+        "end_to_end_ms": 0.9565000073052943
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7022790377959609,
+        "end_to_end_ms": 0.928567023947835
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.6685220287181437,
+        "end_to_end_ms": 0.866539019625634
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6633019656874239,
+        "end_to_end_ms": 0.8921390399336815
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6564569775946438,
+        "end_to_end_ms": 0.8756019524298608
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6619350169785321,
+        "end_to_end_ms": 0.8896170184016228
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.6558640161529183,
+        "end_to_end_ms": 0.8537909598089755
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.8234750130213797,
+        "end_to_end_ms": 1.0822470067068934
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8547540055587888,
+        "end_to_end_ms": 1.1352740111760795
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8446300053037703,
+        "end_to_end_ms": 1.1097770184278488
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.9094240376725793,
+        "end_to_end_ms": 1.24359194887802
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8779739728197455,
+        "end_to_end_ms": 1.182128966320306
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.8275779546238482,
+        "end_to_end_ms": 1.0674060322344303
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7639609975740314,
+        "end_to_end_ms": 1.0156959760934114
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7065989775583148,
+        "end_to_end_ms": 0.9743330301716924
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7005269872024655,
+        "end_to_end_ms": 0.9726849966682494
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6810619961470366,
+        "end_to_end_ms": 0.9236070327460766
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6771049811504781,
+        "end_to_end_ms": 0.899909995496273
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.7019340409897268,
+        "end_to_end_ms": 1.0055230231955647
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7358819711953402,
+        "end_to_end_ms": 0.9861430153250694
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7349840016104281,
+        "end_to_end_ms": 0.9620130294933915
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6653590244241059,
+        "end_to_end_ms": 0.89681101962924
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6642849766649306,
+        "end_to_end_ms": 0.8953160140663385
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6536180153489113,
+        "end_to_end_ms": 0.8851410239003599
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.6799850380048156,
+        "end_to_end_ms": 0.9925260092131793
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6705779815092683,
+        "end_to_end_ms": 0.8848800207488239
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7528870482929051,
+        "end_to_end_ms": 1.011931977700442
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.7540869992226362,
+        "end_to_end_ms": 0.9788649622350931
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8634470286779106,
+        "end_to_end_ms": 1.1391190346330404
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.8582240552641451,
+        "end_to_end_ms": 1.1671310057863593
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7686629542149603,
+        "end_to_end_ms": 1.0328609496355057
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7270239875651896,
+        "end_to_end_ms": 0.9559959871694446
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6915080011822283,
+        "end_to_end_ms": 0.9163289796561003
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.6812320207245648,
+        "end_to_end_ms": 0.941614038310945
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7056519971229136,
+        "end_to_end_ms": 1.0108340065926313
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.7247489993460476,
+        "end_to_end_ms": 1.0164029663428664
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6762190023437142,
+        "end_to_end_ms": 0.9115930297411978
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7143349503166974,
+        "end_to_end_ms": 0.9462900343351066
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6834689993411303,
+        "end_to_end_ms": 0.9290009620599449
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.6492129759863019,
+        "end_to_end_ms": 0.8390989969484508
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.6598620093427598,
+        "end_to_end_ms": 0.8630669908598065
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6767819868400693,
+        "end_to_end_ms": 0.9026289917528629
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.6786879966966808,
+        "end_to_end_ms": 0.9129410027526319
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.6810339982621372,
+        "end_to_end_ms": 0.9594979928806424
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8166610496118665,
+        "end_to_end_ms": 1.1030529858544469
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7049219566397369,
+        "end_to_end_ms": 0.9309579618275166
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.729891995433718,
+        "end_to_end_ms": 0.9653639863245189
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.7587599684484303,
+        "end_to_end_ms": 0.9815599769353867
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7379610324278474,
+        "end_to_end_ms": 1.002953969873488
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7423399947583675,
+        "end_to_end_ms": 0.9899910073727369
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7621850236319005,
+        "end_to_end_ms": 1.1253900011070073
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.8794490131549537,
+        "end_to_end_ms": 1.2131049879826605
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8181160083040595,
+        "end_to_end_ms": 1.087368989828974
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8432429749518633,
+        "end_to_end_ms": 1.1354460148140788
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8044320275075734,
+        "end_to_end_ms": 1.0788729996420443
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7486310205422342,
+        "end_to_end_ms": 1.0249480255879462
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7443309877999127,
+        "end_to_end_ms": 0.996988033875823
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.6706760032102466,
+        "end_to_end_ms": 0.9319030214101076
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.767707999330014,
+        "end_to_end_ms": 1.0329660144634545
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7212880300357938,
+        "end_to_end_ms": 0.9733039769344032
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7331539527513087,
+        "end_to_end_ms": 0.9989190148189664
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8185440092347562,
+        "end_to_end_ms": 1.0967099806293845
+      },
+      {
+        "batch_size": 1,
+        "forward_ms": 0.7677740068174899,
+        "end_to_end_ms": 1.0117630008608103
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8694790303707123,
+        "end_to_end_ms": 1.2453810195438564
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.7854560390114784,
+        "end_to_end_ms": 1.086167001631111
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7218290120363235,
+        "end_to_end_ms": 0.9841480059549212
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.6774429930374026,
+        "end_to_end_ms": 0.8968749898485839
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7612589979544282,
+        "end_to_end_ms": 1.0401660110801458
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.8253659470938146,
+        "end_to_end_ms": 1.1367530096322298
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.8278079912997782,
+        "end_to_end_ms": 1.1083789868280292
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.8631939999759197,
+        "end_to_end_ms": 1.1471829493530095
+      },
+      {
+        "batch_size": 2,
+        "forward_ms": 0.7649590261280537,
+        "end_to_end_ms": 1.0067480034194887
+      },
+      {
+        "batch_size": 3,
+        "forward_ms": 0.7114530308172107,
+        "end_to_end_ms": 0.9522479958832264
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7414920255541801,
+        "end_to_end_ms": 1.0664309957064688
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7372070103883743,
+        "end_to_end_ms": 1.0485730017535388
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7160549866966903,
+        "end_to_end_ms": 1.0182600235566497
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7262509898282588,
+        "end_to_end_ms": 1.0895070154219866
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.826854957267642,
+        "end_to_end_ms": 1.145813032053411
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.8119639824144542,
+        "end_to_end_ms": 1.1470800382085145
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.7758669671602547,
+        "end_to_end_ms": 1.0671999771147966
+      },
+      {
+        "batch_size": 7,
+        "forward_ms": 0.9201260400004685,
+        "end_to_end_ms": 1.248792978003621
+      },
+      {
+        "batch_size": 4,
+        "forward_ms": 0.7042649667710066,
+        "end_to_end_ms": 0.9716579806990921
+      },
+      {
+        "batch_size": 7,
+        "forward_ms": 0.7099389913491905,
+        "end_to_end_ms": 1.037520996760577
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7110720034688711,
+        "end_to_end_ms": 1.074247993528843
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7298569544218481,
+        "end_to_end_ms": 1.0373109835200012
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7290409994311631,
+        "end_to_end_ms": 1.035990018863231
+      },
+      {
+        "batch_size": 7,
+        "forward_ms": 0.7265789899975061,
+        "end_to_end_ms": 1.0480150231160223
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.7169629679992795,
+        "end_to_end_ms": 0.9902850142680109
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 1.2070899829268456,
+        "end_to_end_ms": 1.5486139454878867
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 1.5479070134460926,
+        "end_to_end_ms": 2.0061529939994216
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.8307590032927692,
+        "end_to_end_ms": 1.1662639444693923
+      },
+      {
+        "batch_size": 6,
+        "forward_ms": 0.7235759985633194,
+        "end_to_end_ms": 1.041367999278009
+      },
+      {
+        "batch_size": 7,
+        "forward_ms": 0.7260849815793335,
+        "end_to_end_ms": 1.0503849480301142
+      },
+      {
+        "batch_size": 7,
+        "forward_ms": 0.7021909696049988,
+        "end_to_end_ms": 1.0194449569098651
+      },
+      {
+        "batch_size": 5,
+        "forward_ms": 0.6992449634708464,
+        "end_to_end_ms": 0.9726029820740223
+      },
+      {
+        "batch_size": 9,
+        "forward_ms": 0.7045789971016347,
+        "end_to_end_ms": 1.0649710311554372
+      },
+      {
+        "batch_size": 9,
+        "forward_ms": 0.7195729995146394,
+        "end_to_end_ms": 1.0706479661166668
+      },
+      {
+        "batch_size": 10,
+        "forward_ms": 0.7019820041023195,
+        "end_to_end_ms": 1.0846590157598257
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "change": "Only removed netstate-dump from disposable copy to avoid bulk rawdump.xml",
+  "sha256": "c5f784a91d5cd76cb496358e374590bf3995f548c948afb777a37cd687bcf14d"
+}

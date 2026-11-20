@@ -1,0 +1,12 @@
+# Runtime packages actually installed in the verified Linux/Python 3.7 environment.
+# SUMO binary: 1.12.0; driver: 555.42.06; GPU: RTX 4090.
+# Full historical freeze is archived in environment-lock.txt.
+# This list does not install SUMO, a driver or Python. Clean reconstruction is unverified.
+gym==0.21.0
+Gymnasium==0.26.3
+lxml==5.4.0
+numpy==1.21.6
+sumolib==1.23.1
+tensorboard==2.11.2
+torch==1.13.1+cu117
+traci==1.23.1
