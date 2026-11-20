@@ -1,0 +1,469 @@
+{
+  "date": "2026-11-20",
+  "authorization": "User requested redundant-file deletion",
+  "roots": [
+    "plan/p0/remote-run/work",
+    "plan/p1/remote-run/work",
+    "plan/p1/diagnostic-100/work"
+  ],
+  "files": [
+    {
+      "path": "plan/p0/remote-run/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p0/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12777,
+      "sha256": "dba94e7fa396115827e7819286c17447effbb6cf4dbe8d7a512135f491076fa8"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/control_agent.py",
+      "bytes": 3217,
+      "sha256": "a94c8e4ed4db14d00ccdb82106de2478c72d638644f3efb179a54d86a0e8823c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5281,
+      "sha256": "1ed153315fb103499100918e016b605af198790506a9d9261f97cb24883ec676"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/custom_logger.py",
+      "bytes": 2619,
+      "sha256": "3b39976af858e512ca961aff1c1226d2e1aed9491c79f1c746239b2187415833"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/monitor.py",
+      "bytes": 6349,
+      "sha256": "be5969551992d3f2d4753682bd5043055626bc81017dba59ff4528b6fda056ab"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/NetMap.py",
+      "bytes": 19536,
+      "sha256": "3fee672a6d3bf4dceddce425287c5d06796705a9bab0a9c57fa02aa69e02833e"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/sumo_interface.py",
+      "bytes": 7468,
+      "sha256": "8423bcdb3b370282c1982590d0f35749af27a4ea52bb2dc0c4c0b862a29bef02"
+    },
+    {
+      "path": "plan/p0/remote-run/work/core/utils.py",
+      "bytes": 9322,
+      "sha256": "1cf713d927268cd507392128f34e880d8b58387e940e45aa03c348527cf457c6"
+    },
+    {
+      "path": "plan/p0/remote-run/work/Env.py",
+      "bytes": 43729,
+      "sha256": "ad5a243a2e80590b7294f92df1d5c7b4e60cc30c0510fe1bc3735c6d19555fbc"
+    },
+    {
+      "path": "plan/p0/remote-run/work/README.md",
+      "bytes": 1213,
+      "sha256": "fbeaf35d16e444577a263f18394aef6eee4146eabf11fe9a42fbdb6cc798ebff"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14777628,
+      "sha256": "5d0306e15b040ff668a8db86d4e73b045f26f738348dc97fc6a5f8a17295dbd9"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11686561,
+      "sha256": "16eab010588025998f96853b81ab7cee4f6f7963ffbe5a542e7251eb22cd3272"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 1007,
+      "sha256": "44db4dde04e0db747fac4e6e6b5b84b56d192ec98fd15f8d6319009be220c39c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/real_data/osm.view.xml",
+      "bytes": 93,
+      "sha256": "51d96963d903cbf3bf0d9e7718593c5dc76e5abc023a9821c101c9b4cc214734"
+    },
+    {
+      "path": "plan/p0/remote-run/work/requirements.txt",
+      "bytes": 253,
+      "sha256": "7d10dc7766b2c291f25ea29f42018852ce4e2546e25d918c182253ccf8c0a903"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/main.py",
+      "bytes": 6073,
+      "sha256": "00017960890caa28b5c619d0a38ad34e9e9d3cb82ac9aa83d64c3a13e5e6217a"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/SAC.py",
+      "bytes": 6177,
+      "sha256": "deed4f36ef29af6ea4279803505c3c2ed2b63c7cc584ecf58d18e574effb61ab"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sac/utils.py",
+      "bytes": 3750,
+      "sha256": "2489fbf2bce2b1694b75e6f5fe874bcf9ea841c55c466f846a27d2ee3902aee2"
+    },
+    {
+      "path": "plan/p0/remote-run/work/sumolog",
+      "bytes": 1100,
+      "sha256": "5ecf275ee55314b352c8c6d5e4bc76fd036f5e23827fb67b50f24d1cdabf2c9e"
+    },
+    {
+      "path": "plan/p0/remote-run/work/test_sac.py",
+      "bytes": 4381,
+      "sha256": "46a370ccea830bf53522c41858c46c28e89149b4f3542e5e70937ea99bdf430c"
+    },
+    {
+      "path": "plan/p0/remote-run/work/train_sac.py",
+      "bytes": 12981,
+      "sha256": "0ed81af44907307b800ab2fcb22f2dd0c8125eba0644d4fc0e66119458a9f3bd"
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/algos/transformer_risk_model.py",
+      "bytes": 12847,
+      "sha256": "2d7b53b37f20742a7bb916346bcdcccfade355df6cf6b6e95fada2e04cb499b9"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/sumo_interface.py",
+      "bytes": 7297,
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "plan/p1/remote-run/work/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "plan/p1/remote-run/work/Env.py",
+      "bytes": 42881,
+      "sha256": "b3149a1ae58a9111e19d06001991c4bfc008c9cb8455cd6a437bc872058b9c57"
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_actor_0.pth",
+      "bytes": 369875,
+      "sha256": "e518a36efd5ed9ccb88c802a0b66dd81f78bd7120bd516242779aa3068da5019"
+    },
+    {
+      "path": "plan/p1/remote-run/work/model/SAC_model_0/unsignalizedIntersections_q_critic_0.pth",
+      "bytes": 737751,
+      "sha256": "b75ae358fd42db242780601e013a14a9feb63246b42720d50f48df5f871a1487"
+    },
+    {
+      "path": "plan/p1/remote-run/work/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.sumocfg",
+      "bytes": 971,
+      "sha256": "35f2ab8468481276854e423990748d137d0226801544ab4aaa555d7c78f4b87f"
+    },
+    {
+      "path": "plan/p1/remote-run/work/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "plan/p1/remote-run/work/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "plan/p1/remote-run/work/risk_model/risk_unsignalizedIntersections_0_0_0.pth",
+      "bytes": 7468371,
+      "sha256": "c2a6f9de4c7ce3fb4e7eedaba4e935c1596702a22d11c61b1bee51cd55f4422c"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/SAC.py",
+      "bytes": 6078,
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "plan/p1/remote-run/work/sumolog",
+      "bytes": 1056,
+      "sha256": "ef76d51c2210adcd3722dd72e3ad83698b867a22a82a42836247ee403c626dba"
+    },
+    {
+      "path": "plan/p1/remote-run/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_25/events.out.tfevents.1794986733.lab2439.2388954.0",
+      "bytes": 930,
+      "sha256": "41726a2a5c4175338d3d38cb6c81c460aa864e89957eb27e4187f2c46ce1266b"
+    },
+    {
+      "path": "plan/p1/remote-run/work/test_sac.py",
+      "bytes": 4688,
+      "sha256": "97bd5f671a138f7c222ef3e41b4a817ea9de47f6f497f4d3fa10a926d49b4e89"
+    },
+    {
+      "path": "plan/p1/remote-run/work/train_sac.py",
+      "bytes": 14111,
+      "sha256": "56856cd67dadeb8d388a46e3cb126263129333aab391fbbfa6affb7a92058943"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/algos/transformer_risk_model.py",
+      "bytes": 12847,
+      "sha256": "2d7b53b37f20742a7bb916346bcdcccfade355df6cf6b6e95fada2e04cb499b9"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/costomized_data_structures.py",
+      "bytes": 5139,
+      "sha256": "0b0bd9db0ff89f05fc733529c61d464ca0cd2951e02351cbb82482069b2bb815"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/custom_logger.py",
+      "bytes": 2530,
+      "sha256": "78ea76fc0e184718d32817a3e61fc102bcf1212e23135c7d75ca9eeb5754800b"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/monitor.py",
+      "bytes": 6227,
+      "sha256": "1a3e2de671b1b24cdf45e5f953f1432a1c5e22cd03da4f53eeba21cd0ef64b09"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/NetMap.py",
+      "bytes": 19116,
+      "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/sumo_interface.py",
+      "bytes": 7297,
+      "sha256": "8381ee0f976eb027572adb1dcc6de23c5a0826301051f2c51fc2a319d15ecb76"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/core/utils.py",
+      "bytes": 9094,
+      "sha256": "ff7a784ec5495f0038cffffbc7c51f31956510743a630bc512ea25e9489d499a"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/Env.py",
+      "bytes": 42881,
+      "sha256": "b3149a1ae58a9111e19d06001991c4bfc008c9cb8455cd6a437bc872058b9c57"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_10.pth",
+      "bytes": 369885,
+      "sha256": "0f42820a5144a3d06d041cb5ec51a3feffa90d41899a172e75c3c28c50bc6ca5"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_20.pth",
+      "bytes": 369885,
+      "sha256": "28f440791f59c10f32f9fcf6d5da978456996b4bb3459a459671d670c5c3f25a"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_30.pth",
+      "bytes": 369885,
+      "sha256": "4914d1881368e70dd8ff1cc9393fcf835da4780cf532c2efc210fb90297df0ba"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_actor_40.pth",
+      "bytes": 369885,
+      "sha256": "e66ab98a52f5705a676dcdb1e10fe448ddd5a26ce14868084699b4a21aaad9d8"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_10.pth",
+      "bytes": 737765,
+      "sha256": "f9a5d760f7e1f436265477f1e4552c8b5d156762ca3028e840121f7e6bd5561c"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_20.pth",
+      "bytes": 737765,
+      "sha256": "0264f5e9be38a0b2d1f84a8e27806aa0d3b9ce674c135f0dba57b4cd7c99bd79"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_30.pth",
+      "bytes": 737765,
+      "sha256": "0372a48c6f660ff72c999345418aef7914e51c9b95dc7f7167fca36ef4b938c2"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/model/SAC_model_0/unsignalizedIntersections_q_critic_40.pth",
+      "bytes": 737765,
+      "sha256": "c30a0939ed2af5933e43935a48c1514fca62dede6709fe5fd2eb32cf83f52237"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/README.md",
+      "bytes": 1177,
+      "sha256": "d9c0e3869720a887b2f8e4ac10453f70bec6ff1f24d9ba479c181ce33f176529"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "bytes": 14636514,
+      "sha256": "2f9aac9750a21fad365a0316b33e5f14fae09ae8cb0c5da1506d0cd9463c39e4"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/newroute1220_start0.xml",
+      "bytes": 11595038,
+      "sha256": "4ceaf41aa431d2e5d45f445221a36913955578a17ceeb084a5b1f6935f9fb6e5"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.sumocfg",
+      "bytes": 929,
+      "sha256": "6fa93fcb068e570105e6fe157838620177272c1ef7a53ecb21859667d973d6dd"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/real_data/osm.view.xml",
+      "bytes": 88,
+      "sha256": "de3ae8e8769b9177bbd3be7f10076e322767b6b98450b60388723c3fd59fb459"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/requirements.txt",
+      "bytes": 238,
+      "sha256": "c1dfb7e90531156f9e13dce914f501032805e57a3837ad3f801d93916e5bb5d6"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_19_0.pth",
+      "bytes": 7468471,
+      "sha256": "ba850e542403218f7583661856e9083145ef176e5cad147dcae7c5581b0b173f"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_29_0.pth",
+      "bytes": 7468471,
+      "sha256": "c0c9968f87621210fd6e13717967b8f08d805f2fd0b4ac0570f94bbcb2606d80"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_39_0.pth",
+      "bytes": 7468471,
+      "sha256": "525969b577ff96f0b70baf252b181e9b406c2f9ad3d9a2299946dd97e85fd44d"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/risk_model/risk_unsignalizedIntersections_0_9_0.pth",
+      "bytes": 7468371,
+      "sha256": "cb68e841720cbac52f64cf8f6c3500650e0834f11a72876203df6b082ccf34ec"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/main.py",
+      "bytes": 5952,
+      "sha256": "2307c808e30cc5a1e1cd42def8326f7e432144d3b7de452a45b711b09087b90f"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/SAC.py",
+      "bytes": 6078,
+      "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sac/utils.py",
+      "bytes": 3629,
+      "sha256": "b87cdedfd38e7ad0050a43bac1ac55edeb0f62c480782ef9696ec45d5732b7e3"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/sumolog",
+      "bytes": 24873,
+      "sha256": "74680dc124788da485145edd9e15848f28c4d49685dabb4ed4cc8f6ad206431e"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/tensorboard_logs/unsignalizedIntersections/run0 2026-11-18 15_56/events.out.tfevents.1794988568.lab2439.2564780.0",
+      "bytes": 311866,
+      "sha256": "844d6212cfe30eb678ac41633e1492f73fbfe7eb2b20719da1714e3030cecf34"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/test_sac.py",
+      "bytes": 4688,
+      "sha256": "97bd5f671a138f7c222ef3e41b4a817ea9de47f6f497f4d3fa10a926d49b4e89"
+    },
+    {
+      "path": "plan/p1/diagnostic-100/work/train_sac.py",
+      "bytes": 14111,
+      "sha256": "56856cd67dadeb8d388a46e3cb126263129333aab391fbbfa6affb7a92058943"
+    }
+  ],
+  "file_count": 89,
+  "uncompressed_bytes": 122584079,
+  "scope": "Cold historical working copies only; top-level logs and exit codes, formal accepted runs, active src and references stay in place",
+  "archive": {
+    "path": "plan/archive/cold-working-copies-20261120.tar.gz",
+    "bytes": 46201094,
+    "sha256": "d103c7647a66482bdfcfc2dae2bb678429dbced21b08e557986de5c31aac0cbf",
+    "verified_files": 89
+  },
+  "status": "completed",
+  "deleted_expanded_files": 89,
+  "net_payload_bytes_reclaimed": 76382985,
+  "validation": "All archived members matched recorded SHA-256 and sizes; all sources rechecked before deletion; only listed cold roots removed."
+}

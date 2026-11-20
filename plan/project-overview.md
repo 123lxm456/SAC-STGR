@@ -9,4 +9,4 @@
 - 章节结构：`chapters/03_methods_experiments.md` 为完整方法与实验设计，`chapters/03_methods_experiments_brief.md` 的 3.1–3.3 独立介绍当前方法；两份 3.4 均逐字保留既定原文。扩展实验细节见 `plan/experiment-protocol.md`。
 - 保护范围：`references/` 完全只读；原源码作为事实依据，不是改动目标。`output/` 已由用户明确要求删除。
 
-- P4 前复核：本轮补齐异常与到达边界修复，本地 51 项中 48 通过、3 CUDA 跳过；目标回归及用户确认前不正式实施 P4。详见 `plan/review/p0123-final-audit-20261120.md`。
+- P4 前复核：本轮补齐异常与到达边界修复，本地 51 项中 48 通过、3 CUDA 跳过；随后目标环境 51 项全部通过；当前等待用户确认后再正式实施 P4。详见 `plan/review/p0123-final-audit-20261120.md`。

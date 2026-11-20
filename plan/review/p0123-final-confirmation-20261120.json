@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-20",
+  "passed": true,
+  "scope": "P0-P3 post-review engineering acceptance; not effectiveness or calibrated risk",
+  "target_evidence": "plan/p3/runs/20261120T132252406987Z",
+  "tests_run": 51,
+  "skipped": 0,
+  "errors": 0,
+  "failures": 0,
+  "matched_current_source_entries": 41,
+  "both_work_copies_match_except_recorded_output_config": true,
+  "benchmark_cases": 12,
+  "variants": {
+    "b0": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 0,
+      "inference_calls": 100,
+      "vehicles_scored": 367,
+      "mean_batch_end_to_end_ms": 1.048417289275676
+    },
+    "m1": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 1,
+      "inference_calls": 100,
+      "vehicles_scored": 369,
+      "mean_batch_end_to_end_ms": 1.6616965079447255
+    }
+  },
+  "p4_ready": true,
+  "p4_requires_user_confirmation": true,
+  "p4_started": false,
+  "limit": "Natural risk optimizer updates remain zero in both short runs; P4 labeling/splits/censoring/calibration and P5 effectiveness remain unimplemented"
+}

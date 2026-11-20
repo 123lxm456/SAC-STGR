@@ -11,10 +11,10 @@
     45
   ],
   "current_revision_local_checks_passed": true,
-  "current_revision_target_retested": false,
+  "current_revision_target_retested": true,
   "current_tests_run": 51,
-  "current_tests_passed": 48,
-  "cuda_skipped": 3,
+  "current_tests_passed": 51,
+  "cuda_skipped": 0,
   "new_fault_boundary_tests": 6,
   "static_checks_passed": 13,
   "python37_active_files": 32,
@@ -29,13 +29,21 @@
   "unchanged_original_protected_files": 131,
   "cleanup_manifest": "plan/review/cleanup-p0123-20261120.json",
   "net_bytes_reclaimed": 13949485,
-  "p4_readiness": "Engineering foundation ready; target regression of this revision and user confirmation required before starting P4",
+  "p4_readiness": "Engineering conditions satisfied; awaiting explicit user confirmation before implementing P4",
   "p4_started": false,
-  "required_user_command": "python -B scripts/accept_p3.py",
   "expected_target_tests": 51,
   "limits": [
     "Both baseline natural-outcome risk updates were zero; not evidence of effective online risk learning",
     "No new future-H labels, censoring, splits or calibration have been implemented",
     "No SSH connection was performed by the assistant"
-  ]
+  ],
+  "local_test_results": {
+    "run": 51,
+    "passed": 48,
+    "cuda_skipped": 3
+  },
+  "target_evidence_directory": "plan/p3/runs/20261120T132252406987Z",
+  "target_matched_current_source_entries": 41,
+  "target_revalidation_passed": true,
+  "reproduction_command": "python -B scripts/accept_p3.py"
 }
