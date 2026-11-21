@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-21",
+  "deleted": [
+    {
+      "path": "src/sac_rwb/core/control_agent.py",
+      "bytes": 3135,
+      "sha256": "63ad86a498f7cc49f460450dae2e482fe4db228dbb50f76d7c9c88fb18447212",
+      "reason": "No imports or call sites in active src/scripts/tests; obsolete signal phase controller; original preserved in read-only references and historical snapshots.",
+      "recovery_source": "references/SAC-RWB-main/core/control_agent.py"
+    }
+  ],
+  "removed_code": [
+    "Unused single-environment evaluate_policy and reward/action adapters in sac/utils.py",
+    "Unused imports and tensorboard directory counter in train_sac.py",
+    "Empty set_safety_junction and obsolete 33-SUMO debug launcher in core/sumo_interface.py"
+  ],
+  "preserved": [
+    "references",
+    "chapters",
+    "formal and failed experiment evidence",
+    "input bundle",
+    "cold archive",
+    "model checkpoints",
+    "isolated local test dependencies"
+  ]
+}

@@ -1,5 +1,5 @@
 
-import subprocess, inspect
+import inspect
 import sumolib
 import traci
 import traci.constants as T # https://sumo.dlr.de/pydoc/traci.constants.html
@@ -150,9 +150,6 @@ class SUMO(object):
             self.traffic_light_status = True
 
 
-    def set_safety_junction(self):
-        pass
-
     def set_veh_route(self, veh_id, route):
         if route:
             self.tc.vehicle.setRoute(veh_id, route)
@@ -197,14 +194,3 @@ class SUMO(object):
         if self.tc:
             self.tc.close()
             self.tc = None
-
-if __name__ == "__main__":
-    sumo_connection = SUMO('real_data/osm.sumocfg', render=True)
-    sumo_connection.disable_all_trafficlight()
-    sumo_queue = []
-    for i in range(32):
-        sumo_queue.extend([SUMO('real_data/osm.sumocfg')])
-    while True:
-        sumo_connection.tc.simulationStep()
-        res = sumo_connection.get_sim_info()
-

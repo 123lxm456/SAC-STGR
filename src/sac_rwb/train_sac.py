@@ -1,7 +1,7 @@
-from sac.utils import str2bool, evaluate_policy, Action_adapter, Action_adapter_reverse, Reward_adapter
+from sac.utils import str2bool
 from datetime import datetime
 from sac.SAC import SAC_countinuous
-import os, shutil
+import os
 import random
 import argparse
 import torch
@@ -42,6 +42,9 @@ parser.add_argument('--load_risk_model', type=int, default=0, help='Whether to l
 parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--max_e_steps', type=int, default=1000)
 opt = parser.parse_args()
+for name in ('epochs', 'max_e_steps', 'Max_train_steps', 'save_interval', 'update_every', 'batch_size'):
+    if getattr(opt, name) < 1:
+        parser.error('--{} must be positive'.format(name))
 if opt.Loadmodel:
     parser.error('--Loadmodel is unsupported: SAC checkpoints lack optimizer/replay state for resumption')
 opt.dvc = torch.device(opt.dvc) # from str to torch.device
@@ -119,7 +122,6 @@ def main():
         if not os.path.exists(tensorboard_dir):
             os.makedirs(tensorboard_dir)
     
-        n = len(next(os.walk(tensorboard_dir))[1])
         # 创建tensorboard writer
         timenow = str(datetime.now())[0:-10]
         timenow = ' ' + timenow[0:13] + '_' + timenow[-2::]
@@ -132,6 +134,8 @@ def main():
         cur_time = time.localtime()
         print("start time: %02d:%02d:%02d" % (cur_time.tm_hour, cur_time.tm_min, cur_time.tm_sec))
         for i_episode in range(opt.epochs):
+            if total_steps >= opt.Max_train_steps:
+                break
             risk_predictor.buffer.clear_pending()
             state, _ = env.reset()
             stime = time.time()
@@ -140,7 +144,7 @@ def main():
             current_ep_safety_reward = 0
             current_reward_count = 0
             '''Interact & trian'''
-            for t in range(opt.max_e_steps):
+            for t in range(min(opt.max_e_steps, opt.Max_train_steps - total_steps)):
                 total_steps += 1
                 state = wait_for_observation(env, state)
                 s = list(state.values())

@@ -67,48 +67,6 @@ class Double_Q_Critic(nn.Module):
 		q2 = self.Q_2(sa)
 		return q1, q2
 
-#reward engineering for better training
-def Reward_adapter(r, EnvIdex):
-	# For Pendulum-v0
-	if EnvIdex == 0:
-		r = (r + 8) / 8
-
-	# For LunarLander
-	elif EnvIdex == 1:
-		if r <= -100: r = -10
-
-	# For BipedalWalker
-	elif EnvIdex == 4 or EnvIdex == 5:
-		if r <= -100: r = -1
-	return r
-
-
-def Action_adapter(a,max_action):
-	#from [-1,1] to [-max,max]
-	return  a*max_action
-
-def Action_adapter_reverse(act,max_action):
-	#from [-max,max] to [-1,1]
-	return  act/max_action
-
-
-def evaluate_policy(env, max_action, agent, turns = 3):
-	total_scores = 0
-	for j in range(turns):
-		s, info = env.reset()
-		done = False
-		while not done:
-			# Take deterministic actions at test time
-			a = agent.select_action(s, deterministic=True)
-			act = Action_adapter(a, max_action)
-			s_next, r, dw, tr, info = env.step(act)
-			done = (dw or tr)
-
-			total_scores += r
-			s = s_next
-	return int(total_scores/turns)
-
-
 def str2bool(v):
 	'''transfer str to bool for argparse'''
 	if isinstance(v, bool):

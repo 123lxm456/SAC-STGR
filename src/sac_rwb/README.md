@@ -11,8 +11,10 @@ python -B train_sac.py --epochs 1 --max_e_steps 100 --save_interval 100 --dvc cu
 python -B test_sac.py --run_num 0 --timestep 100 --max_e_steps 100 --dvc cuda --seed 2
 ```
 
-`run_num=0` 仅适用于新副本。新检查点后缀为实际决策步数；旧文件仍按原后缀加载。训练预算由 `--epochs` 与 `--max_e_steps` 控制。SAC 参数文件不提供完整断点续训，`--Loadmodel True` 会明确拒绝。风险器加载失败会停止，避免误用随机初始化模型。
+`run_num=0` 仅适用于新副本。新检查点后缀为实际决策步数；旧文件仍按原后缀加载。训练预算为 `min(epochs × max_e_steps, Max_train_steps)` 个决策步；总上限会在轮内生效，并阻止额外 reset。SUMO 等待观测期间的仿真步不计为决策步。SAC 参数文件不提供完整断点续训，`--Loadmodel True` 会明确拒绝。风险器加载失败会停止，避免误用随机初始化模型。
 
 风险窗口在控制片段、路口、组别顺序或仿真步连续性变化时重建，被替换的未判定窗口不生成标签。当前仍用原终局结局监督，P4 的固定未来窗与删失协议尚未实现。历史检查点只作诊断证据。
 
 P3 请从根目录执行 `python -B scripts/accept_p3.py`，使用新的独立运行副本；步骤见 `plan/p3/README.md`。`--d_model`、`--nhead` 和 `--num_layers` 是 B0 参数，M1 使用固定的 P2 默认配置并将实际配置写入运行报告。
+
+2026-11-21 清理：活跃副本不再包含未调用的 `core/control_agent.py`、旧单环境 `evaluate_policy` 和奖励/动作适配器；原始实现仍在只读参考快照及历史运行快照中，可供后续规则对照研究。`EnvIdex`、`ModelIdex`、`eval_interval` 保留为旧命令兼容参数，不参与当前训练调度；独立评估使用 `test_sac.py`。当前预算补丁已通过本地回归，目标 Linux/RTX 4090 复验仍待完成。

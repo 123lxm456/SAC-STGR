@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "lossless_gzip_hash_roundtrips": [
+    "plan/acceptance/20261120T104147769112Z/p0/work/real_data/rawdump.xml.gz",
+    "plan/acceptance/20261120T104147769112Z/p1-work/real_data/rawdump.xml.gz"
+  ],
+  "latency_checks": [
+    {
+      "path": "plan/p3/runs/20261120T132252406987Z/latency.json",
+      "cases": 12,
+      "samples_per_case": 20
+    },
+    {
+      "path": "plan/review/latency-cpu-20261121.json",
+      "cases": 12,
+      "samples_per_case": 3
+    }
+  ],
+  "scope": "Artifact integrity and timing structure only; no effectiveness claims"
+}

@@ -1,0 +1,30 @@
+{
+  "tests_run": 18,
+  "skipped": [
+    [
+      "test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward)",
+      "CUDA is unavailable"
+    ]
+  ],
+  "failures": [],
+  "errors": [
+    [
+      "test_p1 (unittest.loader._FailedTest.test_p1)",
+      "ImportError: Failed to import test module: test_p1\nTraceback (most recent call last):\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_p1.py\", line 15, in <module>\n    from Env import Env\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\Env.py\", line 3, in <module>\n    from core.sumo_interface import SUMO\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\core\\sumo_interface.py\", line 3, in <module>\n    import sumolib\nModuleNotFoundError: No module named 'sumolib'\n\n"
+    ],
+    [
+      "test_p3 (unittest.loader._FailedTest.test_p3)",
+      "ImportError: Failed to import test module: test_p3\nTraceback (most recent call last):\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_p3.py\", line 20, in <module>\n    from Env import Env\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\Env.py\", line 3, in <module>\n    from core.sumo_interface import SUMO\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\core\\sumo_interface.py\", line 3, in <module>\n    import sumolib\nModuleNotFoundError: No module named 'sumolib'\n\n"
+    ],
+    [
+      "test_repairs (unittest.loader._FailedTest.test_repairs)",
+      "ImportError: Failed to import test module: test_repairs\nTraceback (most recent call last):\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_repairs.py\", line 22, in <module>\n    from Env import Env\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\Env.py\", line 3, in <module>\n    from core.sumo_interface import SUMO\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\core\\sumo_interface.py\", line 3, in <module>\n    import sumolib\nModuleNotFoundError: No module named 'sumolib'\n\n"
+    ],
+    [
+      "test_review (unittest.loader._FailedTest.test_review)",
+      "ImportError: Failed to import test module: test_review\nTraceback (most recent call last):\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"D:\\Anaconda3\\Lib\\unittest\\loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_review.py\", line 18, in <module>\n    from core.sumo_interface import SUMO\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\src\\sac_rwb\\core\\sumo_interface.py\", line 3, in <module>\n    import sumolib\nModuleNotFoundError: No module named 'sumolib'\n\n"
+    ]
+  ],
+  "require_cuda": false,
+  "passed": false
+}

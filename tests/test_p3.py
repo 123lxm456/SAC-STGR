@@ -39,9 +39,20 @@ class ControlContext:
 
 class P3Tests(unittest.TestCase):
     def test_training_entrypoint_runs_both_variants_with_stubbed_sumo(self):
+        self.exercise_training_entrypoint()
+
+    def test_training_budget_stops_within_an_episode(self):
+        self.exercise_training_entrypoint(epochs=3, budget=3, expected_steps=3)
+
+    def test_training_budget_does_not_reset_an_extra_episode(self):
+        self.exercise_training_entrypoint(epochs=3, budget=2, expected_steps=2)
+
+    def exercise_training_entrypoint(self, epochs=1, budget=500000, expected_steps=2):
         env_module = importlib.import_module('Env')
         sac = importlib.import_module('sac.SAC')
         buffer_type = sac.ReplayBuffer
+
+        resets = []
 
         class StubEnv(ControlContext):
             n_obs, n_action, max_acc = 98, 1, 3.0
@@ -57,6 +68,7 @@ class P3Tests(unittest.TestCase):
                     ('max_quene_length', 'avg_quene_length', 'quene_wait', 'conflict', 'conflict_rate', 'avg_speed'), 0))
 
             def reset(self):
+                resets.append(True)
                 self.env_step = 0
                 return {'v': np.zeros(98, dtype=np.float32)}, {}
 
@@ -73,6 +85,7 @@ class P3Tests(unittest.TestCase):
                 pass
 
         for variant in ('b0', 'm1'):
+            resets.clear()
             with self.subTest(variant=variant), tempfile.TemporaryDirectory(dir=ROOT) as temp:
                 previous_cwd = Path.cwd()
                 try:
@@ -83,14 +96,18 @@ class P3Tests(unittest.TestCase):
                          patch.object(sac, 'ReplayBuffer', side_effect=lambda s, a, max_size, dvc:
                                       buffer_type(s, a, 8, dvc)), \
                          patch.object(sys, 'argv', ['train_sac.py', '--risk_variant', variant,
-                                      '--dvc', 'cpu', '--epochs', '1', '--max_e_steps', '2',
+                                      '--dvc', 'cpu', '--epochs', str(epochs), '--max_e_steps', '2',
+                                      '--Max_train_steps', str(budget),
                                       '--save_interval', '2', '--update_every', '1', '--batch_size', '2', '--net_width', '8']):
                         namespace = runpy.run_path(str(ROOT / 'src/sac_rwb/train_sac.py'), run_name='p3_entry_test')
                         namespace['main']()
                     report = json.loads(Path('Train_logs/unsignalizedIntersections/risk_runtime_0.json').read_text(encoding='utf-8'))
                     self.assertEqual(report['risk_variant'], variant)
-                    self.assertEqual(report['inference']['calls'], 2)
-                    self.assertEqual(report['sac_updates'], 5)
+                    self.assertEqual(report['inference']['calls'], expected_steps)
+                    self.assertEqual(report['decision_steps'], expected_steps)
+                    self.assertEqual(len(resets), (expected_steps + 1) // 2)
+                    self.assertEqual(report['episodes_completed'], len(resets))
+                    self.assertEqual(report['sac_updates'], 5 * (expected_steps - 1))
                     self.assertEqual(report['risk_updates'], 0)
                     self.assertTrue(Path('model/SAC_model_0/unsignalizedIntersections_actor_2.pth').is_file())
                     writer.close.assert_called_once()

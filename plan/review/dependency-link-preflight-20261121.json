@@ -1,0 +1,375 @@
+{
+  "scope": "Structure, input dependencies and historical recovery; no SUMO or GPU run",
+  "structural_checks_passed": false,
+  "counts": {
+    "zip_crc": 17,
+    "json": 118,
+    "python_ast": 159,
+    "xml": 32,
+    "gzip_crc": 2,
+    "pickle_structure_only": 6,
+    "cold_archive_members_verified": 89
+  },
+  "errors": [
+    {
+      "path": "active document links",
+      "error": [
+        "plan/review/p0123-audit-20261121.md -> dependency-final-20261121.json"
+      ]
+    }
+  ],
+  "historical_target_evidence": {
+    "p012": {
+      "passed": true,
+      "tests_run": 35,
+      "commands": 5
+    },
+    "p3_latest": {
+      "passed": true,
+      "tests_run": 51,
+      "commands": 7
+    },
+    "b0": {
+      "snapshot_verified": true,
+      "sac_updates": 5,
+      "risk_updates": 0
+    },
+    "m1": {
+      "snapshot_verified": true,
+      "sac_updates": 5,
+      "risk_updates": 0
+    }
+  },
+  "baseline": "plan/p3/runs/20261120T132252406987Z",
+  "baseline_matched_entries": 35,
+  "baseline_source_delta": [
+    {
+      "path": "src/sac_rwb/README.md",
+      "status": "changed"
+    },
+    {
+      "path": "src/sac_rwb/core/control_agent.py",
+      "status": "missing"
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "status": "changed"
+    },
+    {
+      "path": "src/sac_rwb/sac/utils.py",
+      "status": "changed"
+    },
+    {
+      "path": "src/sac_rwb/train_sac.py",
+      "status": "changed"
+    },
+    {
+      "path": "tests/test_p3.py",
+      "status": "changed"
+    }
+  ],
+  "new_source_files": [
+    "scripts/audit_p0123.py"
+  ],
+  "imports": {
+    "scripts/accept_p012.py": [
+      "datetime",
+      "importlib.metadata",
+      "importlib_metadata",
+      "pathlib",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "platform",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys",
+      "torch"
+    ],
+    "scripts/accept_p3.py": [
+      "accept_p012",
+      "datetime",
+      "pathlib",
+      "argparse",
+      "hashlib",
+      "json",
+      "shutil",
+      "subprocess",
+      "sys",
+      "xml.etree.ElementTree"
+    ],
+    "scripts/audit_p0123.py": [
+      "pathlib",
+      "argparse",
+      "ast",
+      "gzip",
+      "hashlib",
+      "json",
+      "pickletools",
+      "re",
+      "tarfile",
+      "xml.etree.ElementTree",
+      "zipfile"
+    ],
+    "scripts/benchmark_risk.py": [
+      "algos.online_risk",
+      "pathlib",
+      "argparse",
+      "json",
+      "numpy",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "scripts/format_chapter_docx.py": [
+      "io",
+      "pathlib",
+      "zipfile",
+      "sys",
+      "tempfile",
+      "xml.etree.ElementTree"
+    ],
+    "scripts/p0_snapshot.py": [
+      "collections",
+      "hashlib",
+      "pathlib",
+      "argparse",
+      "json",
+      "tarfile",
+      "xml.etree.ElementTree"
+    ],
+    "scripts/run_unit_checks.py": [
+      "pathlib",
+      "argparse",
+      "json",
+      "sys",
+      "unittest"
+    ],
+    "scripts/verify_plan.py": [
+      "pathlib",
+      "argparse",
+      "hashlib",
+      "json",
+      "re"
+    ],
+    "src/sac_rwb/algos/__init__.py": [],
+    "src/sac_rwb/algos/online_risk.py": [
+      "algos.risk_training",
+      "algos.spatiotemporal_risk_model",
+      "algos.transformer_risk_model",
+      "collections",
+      "numpy",
+      "time",
+      "torch"
+    ],
+    "src/sac_rwb/algos/risk_training.py": [
+      "torch",
+      "torch"
+    ],
+    "src/sac_rwb/algos/spatiotemporal_risk_model.py": [
+      "torch",
+      "math",
+      "torch"
+    ],
+    "src/sac_rwb/algos/transformer_risk_model.py": [
+      "algos.risk_training",
+      "collections",
+      "math",
+      "numpy",
+      "random",
+      "torch",
+      "torch.nn"
+    ],
+    "src/sac_rwb/core/__init__.py": [],
+    "src/sac_rwb/core/costomized_data_structures.py": [
+      "collections",
+      "core.utils",
+      "numpy",
+      "sys"
+    ],
+    "src/sac_rwb/core/monitor.py": [
+      "math",
+      "numpy",
+      "pickle"
+    ],
+    "src/sac_rwb/core/NetMap.py": [
+      "copy",
+      "core.utils",
+      "math",
+      "os",
+      "sys"
+    ],
+    "src/sac_rwb/core/runtime.py": [
+      "pathlib"
+    ],
+    "src/sac_rwb/core/sumo_interface.py": [
+      "copy",
+      "core.costomized_data_structures",
+      "traci.exceptions",
+      "inspect",
+      "os",
+      "sumolib",
+      "sys",
+      "traci",
+      "traci.constants"
+    ],
+    "src/sac_rwb/core/utils.py": [
+      "lxml",
+      "time",
+      "xml.etree.ElementTree"
+    ],
+    "src/sac_rwb/Env.py": [
+      "copy",
+      "core.NetMap",
+      "core.costomized_data_structures",
+      "core.monitor",
+      "core.sumo_interface",
+      "core.utils",
+      "gym.spaces.box",
+      "typing",
+      "gym",
+      "math",
+      "numpy",
+      "random"
+    ],
+    "src/sac_rwb/sac/__init__.py": [],
+    "src/sac_rwb/sac/SAC.py": [
+      "sac.utils",
+      "copy",
+      "numpy",
+      "os",
+      "torch",
+      "torch.nn.functional"
+    ],
+    "src/sac_rwb/sac/utils.py": [
+      "torch.distributions",
+      "argparse",
+      "numpy",
+      "torch",
+      "torch.nn",
+      "torch.nn.functional"
+    ],
+    "src/sac_rwb/test_sac.py": [
+      "Env",
+      "core.runtime",
+      "sac.SAC",
+      "sac.utils",
+      "argparse",
+      "numpy",
+      "random",
+      "torch"
+    ],
+    "src/sac_rwb/train_sac.py": [
+      "Env",
+      "algos.online_risk",
+      "core.runtime",
+      "datetime",
+      "sac.SAC",
+      "sac.utils",
+      "torch.utils.tensorboard",
+      "argparse",
+      "json",
+      "numpy",
+      "os",
+      "random",
+      "time",
+      "torch"
+    ],
+    "tests/test_acceptance.py": [
+      "pathlib",
+      "types",
+      "unittest.mock",
+      "contextlib",
+      "importlib.util",
+      "io",
+      "json",
+      "numpy",
+      "sys",
+      "tempfile",
+      "torch",
+      "unittest"
+    ],
+    "tests/test_p1.py": [
+      "Env",
+      "algos.transformer_risk_model",
+      "pathlib",
+      "types",
+      "unittest.mock",
+      "importlib",
+      "numpy",
+      "sys",
+      "torch",
+      "unittest"
+    ],
+    "tests/test_p2.py": [
+      "algos.spatiotemporal_risk_model",
+      "pathlib",
+      "unittest.mock",
+      "numpy",
+      "sys",
+      "tempfile",
+      "torch",
+      "unittest"
+    ],
+    "tests/test_p3.py": [
+      "Env",
+      "algos.online_risk",
+      "algos.spatiotemporal_risk_model",
+      "pathlib",
+      "types",
+      "unittest.mock",
+      "importlib",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "runpy",
+      "sys",
+      "tempfile",
+      "torch",
+      "unittest"
+    ],
+    "tests/test_repairs.py": [
+      "Env",
+      "algos.transformer_risk_model",
+      "core.monitor",
+      "core.runtime",
+      "pathlib",
+      "types",
+      "unittest.mock",
+      "contextlib",
+      "hashlib",
+      "importlib.util",
+      "io",
+      "json",
+      "math",
+      "numpy",
+      "subprocess",
+      "sys",
+      "tarfile",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_review.py": [
+      "Env",
+      "algos.online_risk",
+      "algos.transformer_risk_model",
+      "core.costomized_data_structures",
+      "core.sumo_interface",
+      "pathlib",
+      "types",
+      "unittest.mock",
+      "importlib",
+      "numpy",
+      "runpy",
+      "sys",
+      "torch",
+      "unittest"
+    ]
+  },
+  "target_acceptance_of_current_delta": false,
+  "p4_started": false
+}
