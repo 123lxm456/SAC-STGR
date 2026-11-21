@@ -11,17 +11,18 @@
   },
   "current_static_checks_passed": true,
   "current_structure_checks_passed": true,
-  "current_target_regression": "pending",
+  "current_target_regression": "passed",
   "p4_ready_unconditionally": false,
   "p4_requires_user_confirmation": true,
   "p4_started": false,
   "remaining": [
-    "Target Linux/RTX4090 regression for current budget patch and cleanup",
     "Natural risk optimizer updates remain unobserved in historical short runs",
     "P4 H/collision/censoring/split protocol awaits approval",
     "Clean environment reconstruction and P5 effectiveness unverified"
   ],
   "source_manifest": "plan/review/source-final-20261121.json",
   "audit": "plan/review/p0123-audit-20261121.md",
-  "cleanup": "plan/review/cleanup-20261121.json"
+  "cleanup": "plan/review/cleanup-20261121.json",
+  "p4_engineering_ready": true,
+  "target_confirmation": "plan/review/p0123-target-confirmation-20261121.json"
 }

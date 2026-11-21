@@ -1,0 +1,18 @@
+{
+  "version": "p4-h10-v1",
+  "history_steps": 10,
+  "horizon_steps": 10,
+  "step_seconds": 1.0,
+  "interval": "(decision_step, decision_step + H]",
+  "collision_scope": "scored vehicle, physical SUMO collisions anywhere on network",
+  "safe_terminal": "SUMO arrived ID; leaving control area is not terminal",
+  "censor": "missing vehicle, reset, end of collection, or interrupted observation",
+  "action": "bounded acceleration command sent to SUMO slowDown, not measured acceleration",
+  "minimum_evaluation_positives": 20,
+  "minimum_evaluation_negatives": 20,
+  "minimum_evaluation_collision_vehicles": 5,
+  "minimum_training_positives": 64,
+  "minimum_training_negatives": 64,
+  "threshold": 0.5,
+  "calibration_bins": 10
+}

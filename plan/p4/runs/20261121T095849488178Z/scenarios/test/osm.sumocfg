@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\src\sac_rwb\real_data\CSeditClean_1.net_threelegs.xml" />
+        <route-files value="\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\plan\p4\runs\20261121T095849488178Z\scenarios\test\routes.xml" />
+        
+	
+    </input>
+
+    <processing>
+        <ignore-route-errors value="true" />
+    </processing>
+
+    <report>
+        <verbose value="true" />
+        <duration-log.statistics value="true" />
+        <no-step-log value="true" />
+    </report>
+
+    <random>
+        <seed value="1" />
+    </random>
+
+</configuration>

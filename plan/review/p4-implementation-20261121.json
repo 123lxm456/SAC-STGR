@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-21",
+  "stage": "P4",
+  "authorized": true,
+  "implementation_status": "implemented_and_local_checks_passed",
+  "target_acceptance": "pending_user_execution",
+  "full_P4_accepted": false,
+  "p5_started": false,
+  "local_evidence": "plan/p4/runs/20261121T100227699144Z",
+  "tests_run": 74,
+  "passed_tests": 71,
+  "cuda_skipped": 3,
+  "failures": 0,
+  "errors": 0,
+  "static_checks_passed": true,
+  "source_manifest_entries": 47,
+  "source_unchanged_during_local_acceptance": true,
+  "python_3_7_grammar_checked": true,
+  "protocol": "p4-h10-v1",
+  "delta_from_accepted_P3": [
+    {
+      "path": "scripts/accept_p4.py",
+      "change": "added"
+    },
+    {
+      "path": "scripts/audit_p4.py",
+      "change": "added"
+    },
+    {
+      "path": "scripts/collect_p4.py",
+      "change": "added"
+    },
+    {
+      "path": "src/sac_rwb/algos/horizon_risk.py",
+      "change": "added"
+    },
+    {
+      "path": "src/sac_rwb/algos/online_risk.py",
+      "change": "modified"
+    },
+    {
+      "path": "src/sac_rwb/algos/p4_data.py",
+      "change": "added"
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "change": "modified"
+    },
+    {
+      "path": "src/sac_rwb/README.md",
+      "change": "modified"
+    },
+    {
+      "path": "src/sac_rwb/train_sac.py",
+      "change": "modified"
+    },
+    {
+      "path": "tests/test_p3.py",
+      "change": "modified"
+    },
+    {
+      "path": "tests/test_p4.py",
+      "change": "added"
+    }
+  ],
+  "scene_partitions": {
+    "train": {
+      "routes": 19,
+      "demand_elements": 5203,
+      "seed": 100
+    },
+    "validation": {
+      "routes": 21,
+      "demand_elements": 14068,
+      "seed": 200
+    },
+    "test": {
+      "routes": 19,
+      "demand_elements": 11237,
+      "seed": 300
+    }
+  },
+  "remaining": [
+    "Linux/RTX4090 full regression and P4 online/frozen SUMO collection",
+    "Natural class support, independent partition integrity and validation-only calibration on real data",
+    "P4 calibration uses diagnostic P3 weights; P5 effectiveness and multi-seed retraining remain unauthorized"
+  ]
+}

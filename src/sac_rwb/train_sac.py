@@ -9,6 +9,7 @@ from Env import Env
 import numpy as np
 import time
 import json
+from pathlib import Path
 from core.runtime import wait_for_observation, reserve_run
 from torch.utils.tensorboard import SummaryWriter
 from algos.online_risk import create_risk_predictor, OnlineRiskRuntime
@@ -41,12 +42,16 @@ parser.add_argument('--risk_model_path', type=str, default="risk_model/risk_pret
 parser.add_argument('--load_risk_model', type=int, default=0, help='Whether to load the pretrained risk prediction model (1 to load, 0 not to load)')
 parser.add_argument('--epochs', type=int, default=500)
 parser.add_argument('--max_e_steps', type=int, default=1000)
+parser.add_argument('--risk_supervision', choices=('legacy', 'horizon'), default='legacy')
+parser.add_argument('--risk_dataset_dir', type=str, help='New immutable P4 dataset directory; train split only')
 opt = parser.parse_args()
 for name in ('epochs', 'max_e_steps', 'Max_train_steps', 'save_interval', 'update_every', 'batch_size'):
     if getattr(opt, name) < 1:
         parser.error('--{} must be positive'.format(name))
 if opt.Loadmodel:
     parser.error('--Loadmodel is unsupported: SAC checkpoints lack optimizer/replay state for resumption')
+if opt.risk_supervision == 'horizon' and not opt.risk_dataset_dir:
+    parser.error('--risk_dataset_dir is required for horizon supervision')
 opt.dvc = torch.device(opt.dvc) # from str to torch.device
 print(opt)
 
@@ -74,8 +79,22 @@ def main():
             raise FileNotFoundError(f"Risk prediction model file not found: {risk_model_path}")
     else:
         print("Not loading pre trained risk prediction models, training will start from scratch")
+    collector = None
+    if opt.risk_supervision == 'horizon':
+        from algos.horizon_risk import HorizonRiskBuffer
+        import hashlib
+        scenario_id = hashlib.sha256(Path('real_data/newroute1220_start0.xml').read_bytes()).hexdigest()
+        collector = HorizonRiskBuffer(opt.risk_dataset_dir, {
+            'split': 'train', 'scenario_id': scenario_id, 'seed': opt.seed,
+            'run_id': os.path.abspath(opt.risk_dataset_dir), 'behavior': 'online_shared_SAC',
+            'frozen_risk_model': False,
+        }, max_size=opt.buffer_size)
+        risk_predictor.buffer = collector
     # Build Env
-    env = Env({
+    env = None
+    writer = None
+    try:
+        env = Env({
         "junction_list": ['229', '499', '332', '334'],
         "spawn_rl_prob": {},
         "probablity_RL": 1.0,
@@ -90,10 +109,9 @@ def main():
         },
         "use_safety_predictor": True,
         "sumo_seed": opt.seed,
-        "risk_predictor": risk_predictor
-    })
-    writer = None
-    try:
+        "risk_predictor": risk_predictor,
+        "risk_event_collector": collector,
+        })
         opt.state_dim = env.n_obs
         opt.action_dim = env.n_action
         opt.max_action = env.max_acc   #remark: action space【-max,max】
@@ -136,7 +154,10 @@ def main():
         for i_episode in range(opt.epochs):
             if total_steps >= opt.Max_train_steps:
                 break
-            risk_predictor.buffer.clear_pending()
+            if collector is not None:
+                collector.start_episode(i_episode)
+            else:
+                risk_predictor.buffer.clear_pending()
             state, _ = env.reset()
             stime = time.time()
             current_ep_reward = 0
@@ -213,7 +234,8 @@ def main():
                 'safe_pool': len(risk_predictor.buffer.active_buffer),
                 'collision_pool': len(risk_predictor.buffer.risk_active_buffer),
                 'seed': opt.seed, 'device': str(opt.dvc),
-                'risk_supervision': 'legacy_terminal_outcomes; P4 horizon/censoring not implemented',
+                'risk_supervision': ('fixed_future_horizon_p4-h10-v1' if collector is not None else
+                                     'legacy_terminal_outcomes; P4 disabled'),
                 'inference': risk_runtime.summary(),
             }
             runtime_path = os.path.join(log_dir, 'risk_runtime_{}.json'.format(run_num))
@@ -241,9 +263,16 @@ def main():
             writer.add_scalar('Env_Data/avg_speed', env_data['avg_speed'], total_steps)
 
     finally:
-        if writer is not None:
-            writer.close()
-        env.close()
+        try:
+            if writer is not None:
+                writer.close()
+        finally:
+            try:
+                if env is not None:
+                    env.close()
+            finally:
+                if collector is not None:
+                    collector.close()
 
 if __name__ == '__main__':
     main()

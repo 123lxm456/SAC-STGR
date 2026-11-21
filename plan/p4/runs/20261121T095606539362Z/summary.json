@@ -1,0 +1,23 @@
+{
+  "mode": "local",
+  "passed": false,
+  "engineering_passed": false,
+  "data_ready": false,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p4\\runs\\20261121T095606539362Z\\unit-results.json"
+      ],
+      "exitcode": 1
+    }
+  ],
+  "variants": {},
+  "p4_started": true,
+  "p5_started": false,
+  "error": "RuntimeError: unit failed; see log"
+}

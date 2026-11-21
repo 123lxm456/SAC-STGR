@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-21",
+  "passed": true,
+  "scope": "Current P0-P3 engineering regression; no effectiveness or calibrated-risk conclusion",
+  "target_evidence": "plan/p3/runs/20261121T092656852782Z",
+  "tests_run": 53,
+  "skipped": 0,
+  "errors": 0,
+  "failures": 0,
+  "matched_current_source_entries": 41,
+  "unrecorded_source_files": [],
+  "both_work_copies_match_except_recorded_output_config": true,
+  "obsolete_controller_absent_in_both_work_copies": true,
+  "successful_commands": 7,
+  "benchmark_cases": 12,
+  "benchmark_samples_per_case": 20,
+  "checkpoint_zip_crc_verified": 4,
+  "pickle_structures_verified": 2,
+  "target_environment_matches_lock": true,
+  "variants": {
+    "b0": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 0,
+      "inference_calls": 100,
+      "mean_batch_end_to_end_ms": 1.0116943484172225
+    },
+    "m1": {
+      "decision_steps": 100,
+      "sac_updates": 5,
+      "risk_updates": 0,
+      "safe_pool": 34,
+      "collision_pool": 1,
+      "inference_calls": 100,
+      "mean_batch_end_to_end_ms": 1.5543254534713924
+    }
+  },
+  "p4_engineering_ready": true,
+  "p4_requires_user_confirmation": true,
+  "p4_started": false,
+  "limit": "Natural risk updates remain zero; P4 H/collision/censoring/splits/calibration and P5 effectiveness remain pending"
+}

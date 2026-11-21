@@ -18,3 +18,5 @@ python -B test_sac.py --run_num 0 --timestep 100 --max_e_steps 100 --dvc cuda --
 P3 请从根目录执行 `python -B scripts/accept_p3.py`，使用新的独立运行副本；步骤见 `plan/p3/README.md`。`--d_model`、`--nhead` 和 `--num_layers` 是 B0 参数，M1 使用固定的 P2 默认配置并将实际配置写入运行报告。
 
 2026-11-21 清理：活跃副本不再包含未调用的 `core/control_agent.py`、旧单环境 `evaluate_policy` 和奖励/动作适配器；原始实现仍在只读参考快照及历史运行快照中，可供后续规则对照研究。`EnvIdex`、`ModelIdex`、`eval_interval` 保留为旧命令兼容参数，不参与当前训练调度；独立评估使用 `test_sac.py`。当前预算补丁已通过本地回归，目标 Linux/RTX 4090 复验仍待完成。
+
+P4 已获用户授权。默认仍为 `--risk_supervision legacy`；显式 `--risk_supervision horizon --risk_dataset_dir /新目录` 启用 p4-h10-v1 真实未来窗标签及删失。逐仿真步观察物理事件，P1 掩码和 B0/M1 优化路径复用。完整协议及独立冻结采集/校准验收入口见项目根目录 `plan/p4/README.md` 与 `scripts/accept_p4.py`。本轮 P4 尚待目标与自然事件证据验收，P5 未实施。

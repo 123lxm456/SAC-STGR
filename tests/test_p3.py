@@ -47,7 +47,10 @@ class P3Tests(unittest.TestCase):
     def test_training_budget_does_not_reset_an_extra_episode(self):
         self.exercise_training_entrypoint(epochs=3, budget=2, expected_steps=2)
 
-    def exercise_training_entrypoint(self, epochs=1, budget=500000, expected_steps=2):
+    def test_horizon_mode_integrates_with_both_training_entrypoints(self):
+        self.exercise_training_entrypoint(supervision='horizon')
+
+    def exercise_training_entrypoint(self, epochs=1, budget=500000, expected_steps=2, supervision='legacy'):
         env_module = importlib.import_module('Env')
         sac = importlib.import_module('sac.SAC')
         buffer_type = sac.ReplayBuffer
@@ -64,6 +67,7 @@ class P3Tests(unittest.TestCase):
                 self.use_safety_predictor = config['use_safety_predictor']
                 self.risk_predictor = config['risk_predictor']
                 self.reward_record = {}
+                self.vehicles = {'v': SimpleNamespace(route=('edge',))}
                 self.monitor = SimpleNamespace(get_data=lambda env: dict.fromkeys(
                     ('max_quene_length', 'avg_quene_length', 'quene_wait', 'conflict', 'conflict_rate', 'avg_speed'), 0))
 
@@ -77,6 +81,11 @@ class P3Tests(unittest.TestCase):
                 self.reward_record['v'] = {'efficiency': 0, 'safety': -3 * scores['v']}
                 state = np.full(98, self.env_step, dtype=np.float32)
                 done = self.env_step == 2
+                config_collector = self.config.get('risk_event_collector')
+                if config_collector is not None:
+                    for key, action in actions.items():
+                        config_collector.confirm_action(key, float(action), self.env_step - 1)
+                    config_collector.observe(self.env_step, [], ['v'] if done else [], ['v'])
                 if done:
                     self.risk_predictor.buffer.update_data('v', 0)
                 return {'v': state}, {'v': -3 * scores['v']}, {'v': done, '__all__': False}, {}, {}, {'v': state}
@@ -91,6 +100,9 @@ class P3Tests(unittest.TestCase):
                 try:
                     os.chdir(temp)
                     writer = Mock()
+                    if supervision == 'horizon':
+                        Path('real_data').mkdir()
+                        Path('real_data/newroute1220_start0.xml').write_text('<routes/>')
                     with patch.dict(sys.modules, {'torch.utils.tensorboard': SimpleNamespace(SummaryWriter=lambda path: writer)}), \
                          patch.object(env_module, 'Env', StubEnv), \
                          patch.object(sac, 'ReplayBuffer', side_effect=lambda s, a, max_size, dvc:
@@ -98,6 +110,7 @@ class P3Tests(unittest.TestCase):
                          patch.object(sys, 'argv', ['train_sac.py', '--risk_variant', variant,
                                       '--dvc', 'cpu', '--epochs', str(epochs), '--max_e_steps', '2',
                                       '--Max_train_steps', str(budget),
+                                      '--risk_supervision', supervision, '--risk_dataset_dir', 'p4-dataset',
                                       '--save_interval', '2', '--update_every', '1', '--batch_size', '2', '--net_width', '8']):
                         namespace = runpy.run_path(str(ROOT / 'src/sac_rwb/train_sac.py'), run_name='p3_entry_test')
                         namespace['main']()
@@ -111,6 +124,11 @@ class P3Tests(unittest.TestCase):
                     self.assertEqual(report['risk_updates'], 0)
                     self.assertTrue(Path('model/SAC_model_0/unsignalizedIntersections_actor_2.pth').is_file())
                     writer.close.assert_called_once()
+                    if supervision == 'horizon':
+                        from algos.p4_data import read_dataset
+                        manifest, rows, _ = read_dataset('p4-dataset')
+                        self.assertEqual(manifest['metadata']['split'], 'train')
+                        self.assertEqual([row['label'] for row in rows], [0, 0])
                 finally:
                     os.chdir(previous_cwd)
 

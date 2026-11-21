@@ -587,6 +587,7 @@ class Env(gym.Env):
             return dict()
 
         # execute action in the sumo env 执行动作在sumo中，改变sumo里面东西的状态
+        collector = self.config.get('risk_event_collector') if hasattr(self, 'config') else None
         current_sumo_veh_ids = self.sumo_interface.tc.vehicle.getIDList()
         for virtual_id in action.keys():
 
@@ -604,6 +605,8 @@ class Env(gym.Env):
 
             # 根据动作值设置对应的加速度
             self.sumo_interface.accl_control(self.rl_vehicles[veh_id], acceleration)
+            if collector is not None:
+                collector.confirm_action(veh_id, acceleration, self._step)
 
             # 根据加速度设置车辆颜色以便观察
             if acceleration > 0:
@@ -617,6 +620,13 @@ class Env(gym.Env):
 
         # gathering states from sumo 从sumo中收集状态
         sim_res = self.sumo_interface.get_sim_info()
+
+        # P4 observes physical outcomes before the legacy junction-only filter.
+        # This also runs on idle steps while wait_for_observation advances SUMO.
+        if collector is not None:
+            collector.observe(self._step + 1, sim_res.colliding_vehicles_ids,
+                              sim_res.arrived_vehicles_ids,
+                              self.sumo_interface.tc.vehicle.getIDList())
 
         # setup for new departed vehicles 新到达车辆的设置（要离开的车辆）
         for veh_id in sim_res.departed_vehicles_ids:

@@ -76,6 +76,8 @@ class OnlineRiskRuntime:
             action = float(physical_actions[key])
             if not np.isfinite(action) or not env.min_acc <= action <= env.max_acc:
                 raise ValueError('Risk inputs must use the bounded physical action sent to SUMO')
+            if hasattr(self.predictor.buffer, 'set_vehicle_route'):
+                self.predictor.buffer.set_vehicle_route(vehicle, env.vehicles[vehicle].route)
             self.predictor.buffer.add(vehicle, states[key], np.array([action], dtype=np.float32),
                                       context=env.risk_history_context(key), step=env.env_step)
             sequences.append(self.predictor.buffer.get_sequence(vehicle))
@@ -98,6 +100,8 @@ class OnlineRiskRuntime:
         if not ((values >= 0) & (values <= 1)).all():
             raise RuntimeError('Risk scores must lie in [0,1]')
         result = {key: float(value) for key, value in zip(keys, values)}
+        if hasattr(self.predictor.buffer, 'record_scores'):
+            self.predictor.buffer.record_scores(dict(zip(real_ids, values)))
         total_ms = 1000 * (time.perf_counter() - started)
         self.calls += 1
         self.vehicles += len(keys)

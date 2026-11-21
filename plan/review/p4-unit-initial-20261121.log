@@ -1,0 +1,20 @@
+test_collision_after_horizon_cannot_relabel_mature_negative (test_p4.P4Tests.test_collision_after_horizon_cannot_relabel_mature_negative) ... ok
+test_collision_at_inclusive_horizon_labels_last_ten_executed_windows (test_p4.P4Tests.test_collision_at_inclusive_horizon_labels_last_ten_executed_windows) ... ok
+test_context_change_resets_history_but_preserves_real_future (test_p4.P4Tests.test_context_change_resets_history_but_preserves_real_future) ... ok
+test_cross_seed_route_scene_and_vehicle_leakage_are_rejected (test_p4.P4Tests.test_cross_seed_route_scene_and_vehicle_leakage_are_rejected) ... ok
+test_disappearance_reset_and_budget_end_are_censored (test_p4.P4Tests.test_disappearance_reset_and_budget_end_are_censored) ... ok
+test_generated_scenarios_have_disjoint_complete_routes_and_seeds (test_p4.P4Tests.test_generated_scenarios_have_disjoint_complete_routes_and_seeds) ... ok
+test_idle_steps_advance_future_and_control_departure_is_not_safe (test_p4.P4Tests.test_idle_steps_advance_future_and_control_departure_is_not_safe) ... ok
+test_independent_natural_ratio_audit_and_validation_only_calibration (test_p4.P4Tests.test_independent_natural_ratio_audit_and_validation_only_calibration) ... ok
+test_legacy_callbacks_cannot_label_p4_and_holdout_never_enters_training (test_p4.P4Tests.test_legacy_callbacks_cannot_label_p4_and_holdout_never_enters_training) ... ok
+test_metrics_have_known_values_and_order_independent_ties (test_p4.P4Tests.test_metrics_have_known_values_and_order_independent_ties) ... ok
+test_real_arrival_is_negative_and_collision_has_precedence (test_p4.P4Tests.test_real_arrival_is_negative_and_collision_has_precedence) ... ok
+test_skipped_simulation_step_and_unscored_commit_fail (test_p4.P4Tests.test_skipped_simulation_step_and_unscored_commit_fail) ... ok
+test_tampered_label_and_incomplete_dataset_are_rejected (test_p4.P4Tests.test_tampered_label_and_incomplete_dataset_are_rejected) ... ok
+test_unexecuted_action_is_not_a_training_or_dataset_sample (test_p4.P4Tests.test_unexecuted_action_is_not_a_training_or_dataset_sample) ... ok
+test_zero_positive_dataset_does_not_claim_calibration_or_full_acceptance (test_p4.P4Tests.test_zero_positive_dataset_does_not_claim_calibration_or_full_acceptance) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 9.586s
+
+OK
