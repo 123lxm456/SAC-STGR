@@ -1,0 +1,65 @@
+***Starting server on port 46057 ***
+Loading net-file from 'real_data/CSeditClean_1.net_threelegs.xml' ... done (560ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 1.08s
+ TraCI-Duration: 1.07s
+ Real time factor: 0.929368
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Namespace(EnvIdex=0, Loadmodel=False, Max_train_steps=500000, ModelIdex=100, a_lr=0.0003, adaptive_alpha=True, alpha=0.12, batch_size=256, c_lr=0.0003, dvc=device(type='cuda'), epochs=500, eval_interval=2500, gamma=0.99, max_e_steps=100, net_width=256, render=False, run_num=0, save_interval=10000, seed=2, test_logs_path='/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-test.pkl', timestep=100, update_every=50, write=True)
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', 'real_data/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '2', '-S', '--no-warnings']
+ Retrying in 1 seconds
+Random Seed: 2
+Avg waiting time at229 topstraight: 0.0
+Avg waiting time at229 topleft: 0.0
+Avg waiting time at229 rightstraight: 0.0
+Avg waiting time at229 rightleft: 0.0
+Avg waiting time at229 bottomstraight: 0.11214953271028037
+Avg waiting time at229 bottomleft: 0.0
+Avg waiting time at229 leftstraight: 0.0
+Avg waiting time at229 leftleft: 0.0
+Total avg wait time at junction 229: 0.014018691588785047
+Avg waiting time at499 topstraight: 0.0
+Avg waiting time at499 topleft: 0.0
+Avg waiting time at499 rightstraight: 0.0
+Avg waiting time at499 rightleft: 0.0
+Avg waiting time at499 bottomstraight: 0.0
+Avg waiting time at499 bottomleft: 0.0
+Avg waiting time at499 leftstraight: 0.0
+Avg waiting time at499 leftleft: 0.0
+Total avg wait time at junction 499: 0.0
+Avg waiting time at332 topstraight: 0.0
+Avg waiting time at332 topleft: 0.0
+Avg waiting time at332 rightstraight: 0.0
+Avg waiting time at332 rightleft: 0.0
+Avg waiting time at332 bottomstraight: 0.0
+Avg waiting time at332 bottomleft: 0.0
+Avg waiting time at332 leftstraight: 0.0
+Avg waiting time at332 leftleft: 0.0
+Total avg wait time at junction 332: 0.0
+Avg waiting time at334 topstraight: 0.0
+Avg waiting time at334 topleft: 0.0
+Avg waiting time at334 rightstraight: 0.0
+Avg waiting time at334 rightleft: 0.0
+Avg waiting time at334 bottomstraight: 0.0
+Avg waiting time at334 bottomleft: 0.0
+Avg waiting time at334 leftstraight: 0.0
+Avg waiting time at334 leftleft: 0.0
+Total avg wait time at junction 334: 0.0
