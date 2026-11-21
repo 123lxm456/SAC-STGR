@@ -1,0 +1,24 @@
+{
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-debian-bookworm-sid",
+  "python": "3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:21) \n[GCC 9.4.0]",
+  "executable": "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+  "numpy": "1.21.6",
+  "torch": "1.13.1+cu117",
+  "cuda": "11.7",
+  "cuda_available": true,
+  "packages": {
+    "gym": "0.21.0",
+    "Gymnasium": "0.26.3",
+    "lxml": "5.4.0",
+    "numpy": "1.21.6",
+    "sumolib": "1.23.1",
+    "tensorboard": "2.11.2",
+    "torch": "1.13.1+cu117",
+    "traci": "1.23.1"
+  },
+  "target_required": true,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "sumo": "Eclipse SUMO sumo Version 1.12.0",
+  "gpu_driver": "NVIDIA GeForce RTX 4090, 555.42.06",
+  "target_errors": []
+}

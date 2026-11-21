@@ -18,6 +18,10 @@ venv/
 
 # Training artifacts and model weights
 
+# P4 raw datasets stay on the experiment server; commit audits and manifests.
+/plan/p4/runs/**/samples.jsonl
+/plan/p4/runs/**/events.jsonl
+
 
 # Temporary files
 *.tmp
