@@ -1,0 +1,231 @@
+{
+  "base_run": "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z",
+  "replicates": [
+    1,
+    2,
+    3
+  ],
+  "steps": 2000,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "training_collections": {
+    "b0": [
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/train-0",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-1",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-2",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-3"
+    ],
+    "m1": [
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/train-0",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-1",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-2",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-3"
+    ]
+  },
+  "evaluation_collections": {
+    "b0": [
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/validation-0",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/test-0"
+    ],
+    "m1": [
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/validation-0",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/test-0"
+    ]
+  },
+  "checkpoints": {
+    "b0": {
+      "actor": "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+      "risk_model": "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/risk_model/risk_b0_unsignalizedIntersections_0_0_0_step100.pth"
+    },
+    "m1": {
+      "actor": "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+      "risk_model": "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/risk_model/risk_m1_unsignalizedIntersections_0_0_0_step100.pth"
+    }
+  },
+  "p5_started": false,
+  "mode": "target",
+  "passed": true,
+  "engineering_passed": true,
+  "data_ready": true,
+  "variants": {
+    "b0": {
+      "data_ready": true,
+      "positive_windows": 145,
+      "negative_windows": 82696
+    },
+    "m1": {
+      "data_ready": true,
+      "positive_windows": 175,
+      "negative_windows": 29787
+    }
+  },
+  "commands": [
+    {
+      "name": "b0-train-1",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "b0",
+        "--replicate",
+        "1",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/risk_model/risk_b0_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-1"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "b0-train-2",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "b0",
+        "--replicate",
+        "2",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/risk_model/risk_b0_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-2"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "b0-train-3",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "b0",
+        "--replicate",
+        "3",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/b0-work/risk_model/risk_b0_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/b0/train-3"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "m1-train-1",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "m1",
+        "--replicate",
+        "1",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/risk_model/risk_m1_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-1"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "m1-train-2",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "m1",
+        "--replicate",
+        "2",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/risk_model/risk_m1_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-2"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "m1-train-3",
+      "argv": [
+        "timeout",
+        "50m",
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/collect_p4.py",
+        "--scenarios",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/scenarios/scenarios.json",
+        "--split",
+        "train",
+        "--variant",
+        "m1",
+        "--replicate",
+        "3",
+        "--actor",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/model/SAC_model_0/unsignalizedIntersections_actor_100.pth",
+        "--risk-model",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p3/runs/20261121T092656852782Z/m1-work/risk_model/risk_m1_unsignalizedIntersections_0_0_0_step100.pth",
+        "--steps",
+        "2000",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T150247686103Z-train-extension/m1/train-3"
+      ],
+      "exitcode": 0
+    }
+  ],
+  "evaluation_unchanged": true,
+  "status": "passed"
+}

@@ -1,0 +1,572 @@
+{
+  "protocol": {
+    "version": "p4-h10-v1",
+    "history_steps": 10,
+    "horizon_steps": 10,
+    "step_seconds": 1.0,
+    "interval": "(decision_step, decision_step + H]",
+    "collision_scope": "scored vehicle, physical SUMO collisions anywhere on network",
+    "safe_terminal": "SUMO arrived ID; leaving control area is not terminal",
+    "censor": "missing vehicle, reset, end of collection, or interrupted observation",
+    "action": "bounded acceleration command sent to SUMO slowDown, not measured acceleration",
+    "minimum_evaluation_positives": 20,
+    "minimum_evaluation_negatives": 20,
+    "minimum_evaluation_collision_vehicles": 5,
+    "minimum_training_positives": 64,
+    "minimum_training_negatives": 64,
+    "threshold": 0.5,
+    "calibration_bins": 10
+  },
+  "isolation_passed": true,
+  "splits": {
+    "train": {
+      "windows": 30111,
+      "censored": 149,
+      "vehicles": 5079,
+      "positive_vehicles": 72,
+      "positive_collision_vehicle_events": 72,
+      "action": {
+        "count": 30111,
+        "mean": 0.12702135275039136,
+        "min": -0.04453146830201149,
+        "max": 0.3381168842315674,
+        "quantiles": [
+          -0.04453146830201149,
+          0.10560467094182968,
+          0.12234987318515778,
+          0.14871849119663239,
+          0.3381168842315674
+        ],
+        "histogram_edges": [
+          -3.0,
+          -2.5,
+          -2.0,
+          -1.5,
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ],
+        "histogram_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          30103,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_metrics": {
+        "samples": 29962,
+        "positive_windows": 175,
+        "negative_windows": 29787,
+        "prevalence": 0.005840731593351579,
+        "auprc_average_precision": 0.00543902013734408,
+        "auroc": 0.48074260583476014,
+        "brier": 0.250160844950483,
+        "ece": 0.4943163819851286,
+        "false_negatives": 71,
+        "positive_denominator": 175,
+        "threshold": 0.5,
+        "false_negative_rate": 0.4057142857142857,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 1,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 2,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 3,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 4,
+            "count": 11862,
+            "mean_score": 0.4986266790363323,
+            "event_rate": 0.005985499915697184
+          },
+          {
+            "bin": 5,
+            "count": 18100,
+            "mean_score": 0.5011600978071519,
+            "event_rate": 0.00574585635359116
+          },
+          {
+            "bin": 6,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 7,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 8,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 9,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          }
+        ],
+        "undefined_reason": null
+      }
+    },
+    "validation": {
+      "windows": 26778,
+      "censored": 485,
+      "vehicles": 925,
+      "positive_vehicles": 158,
+      "positive_collision_vehicle_events": 161,
+      "action": {
+        "count": 26778,
+        "mean": 0.19041667346845648,
+        "min": -0.02615896612405777,
+        "max": 0.39458543062210083,
+        "quantiles": [
+          -0.02615896612405777,
+          0.13211435079574585,
+          0.2041703462600708,
+          0.2537263333797455,
+          0.39458543062210083
+        ],
+        "histogram_edges": [
+          -3.0,
+          -2.5,
+          -2.0,
+          -1.5,
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ],
+        "histogram_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          26758,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_metrics": {
+        "samples": 26293,
+        "positive_windows": 509,
+        "negative_windows": 25784,
+        "prevalence": 0.01935876469022173,
+        "auprc_average_precision": 0.06853021367226567,
+        "auroc": 0.8531608292436423,
+        "brier": 0.23920139174120728,
+        "ece": 0.4696352429441731,
+        "false_negatives": 267,
+        "positive_denominator": 509,
+        "threshold": 0.5,
+        "false_negative_rate": 0.5245579567779961,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 1,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 2,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 3,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 4,
+            "count": 23116,
+            "mean_score": 0.4873081553849223,
+            "event_rate": 0.011550441252811905
+          },
+          {
+            "bin": 5,
+            "count": 3177,
+            "mean_score": 0.5012603471366948,
+            "event_rate": 0.07617248977022348
+          },
+          {
+            "bin": 6,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 7,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 8,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 9,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          }
+        ],
+        "undefined_reason": null
+      }
+    },
+    "test": {
+      "windows": 29513,
+      "censored": 538,
+      "vehicles": 1108,
+      "positive_vehicles": 23,
+      "positive_collision_vehicle_events": 23,
+      "action": {
+        "count": 29513,
+        "mean": 0.16559819810770862,
+        "min": -0.049297258257865906,
+        "max": 0.386350154876709,
+        "quantiles": [
+          -0.049297258257865906,
+          0.12908071279525757,
+          0.16337524354457855,
+          0.19949063658714294,
+          0.386350154876709
+        ],
+        "histogram_edges": [
+          -3.0,
+          -2.5,
+          -2.0,
+          -1.5,
+          -1.0,
+          -0.5,
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ],
+        "histogram_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          36,
+          29477,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "raw_metrics": {
+        "samples": 28975,
+        "positive_windows": 90,
+        "negative_windows": 28885,
+        "prevalence": 0.0031061259706643657,
+        "auprc_average_precision": 0.002546530582102842,
+        "auroc": 0.4454599657646222,
+        "brier": 0.24077085080338612,
+        "ece": 0.4874785431178095,
+        "false_negatives": 88,
+        "positive_denominator": 90,
+        "threshold": 0.5,
+        "false_negative_rate": 0.9777777777777777,
+        "reliability_bins": [
+          {
+            "bin": 0,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 1,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 2,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 3,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 4,
+            "count": 25798,
+            "mean_score": 0.4892689473675761,
+            "event_rate": 0.003411117140863633
+          },
+          {
+            "bin": 5,
+            "count": 3177,
+            "mean_score": 0.5012686442083107,
+            "event_rate": 0.0006295247088448222
+          },
+          {
+            "bin": 6,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 7,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 8,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          },
+          {
+            "bin": 9,
+            "count": 0,
+            "mean_score": null,
+            "event_rate": null
+          }
+        ],
+        "undefined_reason": null
+      }
+    }
+  },
+  "physical_collision_vehicle_events": 733,
+  "collision_event_scope": "all raw SUMO vehicle/step events; split positive events count only scored vehicles",
+  "calibration": {
+    "method": "validation-only regularized Platt",
+    "slope": 6.843916362606369,
+    "intercept": -3.6207143045692236,
+    "regularization": 0.0001,
+    "fit_samples": 26293
+  },
+  "calibrated_metrics": {
+    "validation": {
+      "samples": 26293,
+      "positive_windows": 509,
+      "negative_windows": 25784,
+      "prevalence": 0.01935876469022173,
+      "auprc_average_precision": 0.06853021367226567,
+      "auroc": 0.8531608292436423,
+      "brier": 0.01877726763280115,
+      "ece": 0.00036207143045691864,
+      "false_negatives": 509,
+      "positive_denominator": 509,
+      "threshold": 0.5,
+      "false_negative_rate": 1.0,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 26293,
+          "mean_score": 0.01972083612067865,
+          "event_rate": 0.01935876469022173
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 9,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        }
+      ],
+      "undefined_reason": null
+    },
+    "test": {
+      "samples": 28975,
+      "positive_windows": 90,
+      "negative_windows": 28885,
+      "prevalence": 0.0031061259706643657,
+      "auprc_average_precision": 0.002546530582102842,
+      "auroc": 0.4454599657646222,
+      "brier": 0.0034144829740487266,
+      "ece": 0.017367054063370822,
+      "false_negatives": 90,
+      "positive_denominator": 90,
+      "threshold": 0.5,
+      "false_negative_rate": 1.0,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 28975,
+          "mean_score": 0.02047318003403519,
+          "event_rate": 0.0031061259706643657
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        },
+        {
+          "bin": 9,
+          "count": 0,
+          "mean_score": null,
+          "event_rate": null
+        }
+      ],
+      "undefined_reason": null
+    }
+  },
+  "training_data_ready": true,
+  "calibration_data_ready": true,
+  "data_ready": true,
+  "insufficiency": null,
+  "scope": "P4 data and calibration diagnostic only; correlated windows are not independent events; no P5 comparison",
+  "p5_started": false
+}

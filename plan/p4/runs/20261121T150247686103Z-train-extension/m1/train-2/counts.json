@@ -1,0 +1,9 @@
+{
+  "unexecuted_discarded": 0,
+  "commands_sent": 8699,
+  "executed_decisions": 8699,
+  "windows": 8699,
+  "negative": 8613,
+  "positive": 45,
+  "censored": 41
+}

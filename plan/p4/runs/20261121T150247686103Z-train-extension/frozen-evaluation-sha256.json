@@ -1,0 +1,18 @@
+{
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/validation-0/manifest.json": "4b6d1bc819265349bf99f6786b4f9e169a6dd64d83f83ecf1b18b5ff61d026cc",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/validation-0/counts.json": "3fce5d149ac6a9bbf56009179a3c3794e2e0b8ab20cc3d376001ec6883409936",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/validation-0/samples.jsonl": "97958d31cca172e8aff30f12c3fc3cb016c99e45c80153205b2684e3d225ab55",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/validation-0/events.jsonl": "8c1b2532013ca08c20319cd84e3cd265c1575a6cf61b023f45f339dc61425940",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/test-0/manifest.json": "5c27f36a4ee8f384e6308e8787f6dada00ee774c55578028833f07de29b60d17",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/test-0/counts.json": "328649f29091dffe2ac83154132d530bd5da437d74bb178165e9a5635e1e5844",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/test-0/samples.jsonl": "91772c392252fd5aa32f49b61804233f47941a918d281eba7ef75da2e0d2e222",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/b0/test-0/events.jsonl": "0c15d2b3a833e828e6d798de13d16ee727a9faa317664a85f16d1aa901b47c26",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/validation-0/manifest.json": "5c63fe14b606d011a405d626ff9e79577158fb6b02c87230702a1d6b8da6a223",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/validation-0/counts.json": "04fda5b916835a6fdc8a082b844ec3a80cf971e1288a0f604093072da8133189",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/validation-0/samples.jsonl": "fe70122c2901d5f78d793a88414f4f8873b3cf91976d7f9966fd6bab37e52055",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/validation-0/events.jsonl": "5f03d04b70272f849803e18789906ba5fc2acc82f5be4906a6cb16d0c1a38d01",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/test-0/manifest.json": "4fe4294faff077ec45a6c371817ca764f0cea3832ffec2679821386e4da05998",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/test-0/counts.json": "85c6f5d9728a82b935959a8add0c76c72d670f0cd728785256bfde8042e8dcfb",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/test-0/samples.jsonl": "e5749cb63b49653c02f564f5f0f020461dfb12e91dd746f43f74f1efa3aeaddb",
+  "/home/lab2439/Work/LXM/SAC-STGR/plan/p4/runs/20261121T115438612730Z/m1/test-0/events.jsonl": "37831873bcc6355ecbad738de5813a213c4b95b10c11032e147e8be8d8f94ab0"
+}
