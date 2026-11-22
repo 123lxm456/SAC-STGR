@@ -1,0 +1,8 @@
+{
+  "tests_run": 107,
+  "skipped": [],
+  "failures": [],
+  "errors": [],
+  "require_cuda": true,
+  "passed": true
+}

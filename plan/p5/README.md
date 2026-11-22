@@ -56,7 +56,7 @@ df -h .
 python -B scripts/accept_p5.py --smoke
 ```
 
-预期：交付校验 OK；新增 UTC 运行目录，全部回归无 CUDA 跳过；3 组 × 1 种子各训练 100 决策、B0/M1 各 2 次离线优化，3 次 nominal/100 仿真步冻结评价。成功的 smoke **退出码为 2**，`engineering_passed=true`、`passed=false`、`status=smoke_passed_not_research`；risk_updates=0 在 smoke 可接受。退出码 1 表示错误，应回传该目录，不降低门槛。
+预期：交付校验 OK；新增 UTC 运行目录，全部回归无 CUDA 跳过；3 组 × 1 种子各训练 **1,000 决策**、B0/M1 各 2 次离线优化，3 次 nominal/100 仿真步冻结评价。初版 100 决策在稀疏 train 场景仅产生约 160 条经验，未填满 SAC 的 256 批次，已延长 smoke 预算；研究协议、SAC batch 和“必须实际 SAC 更新”的门槛均不改。成功的 smoke **退出码为 2**，`engineering_passed=true`、`passed=false`、`status=smoke_passed_not_research`；risk_updates=0 在 smoke 可接受。退出码 1 表示错误，应回传该目录，不降低门槛。
 
 可先回传 smoke 证据确认目标兼容性；正式研究命令如下（已获授权，无需再次授权，运行耗时取决于服务器）：
 

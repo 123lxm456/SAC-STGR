@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from algos.p5_models import create_p5_predictor, VARIANTS
 from algos.p5_experiment import balanced_update, fit_offline, paired_summary, seed_all
 from algos.p5_metrics import PhysicalMetrics, audit_physical
-from accept_p5 import validate_protocol, protocol_hash, scenarios_at, execute
+from accept_p5 import validate_protocol, protocol_hash, scenarios_at, execute, smoke_protocol
 from audit_p5 import audit, system_references, within
 
 
@@ -135,6 +135,16 @@ class P5Tests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 validate_protocol(changed)
         self.assertEqual(protocol_hash(original), protocol_hash(json.loads(json.dumps(original))))
+
+    def test_sparse_scene_smoke_budget_can_fill_sac_replay_without_changing_research_protocol(self):
+        locked = json.loads((ROOT / 'plan/p5/protocol.json').read_text())
+        before = protocol_hash(locked)
+        smoke = smoke_protocol(locked)
+        self.assertGreaterEqual(smoke['online']['decision_steps'], 2 * 256)
+        self.assertEqual(smoke['online']['episode_decisions'], smoke['online']['decision_steps'])
+        self.assertFalse(smoke['research_run'])
+        self.assertEqual(smoke['evaluation']['simulation_steps'], 100)
+        self.assertEqual(before, protocol_hash(locked))
 
     def test_scenarios_keep_split_routes_and_scale_only_flow_density(self):
         protocol = json.loads((ROOT / 'plan/p5/protocol.json').read_text())

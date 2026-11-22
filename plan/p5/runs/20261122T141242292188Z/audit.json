@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "status": "smoke_passed_not_research",
+  "primary_matrix_integrity_passed": true,
+  "missing_natural_risk_updates": [
+    [
+      "b0",
+      11
+    ],
+    [
+      "m1",
+      11
+    ]
+  ],
+  "system_references": {
+    "passed": false,
+    "scope": "smoke"
+  },
+  "aggregate": {
+    "offline": {},
+    "closed_loop": {},
+    "paired_m1_minus_comparator": {}
+  },
+  "scope": "Fixed-budget final checkpoints, common offline corpus, paired training seeds; effect direction does not control acceptance"
+}

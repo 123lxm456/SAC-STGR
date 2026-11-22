@@ -1,0 +1,100 @@
+{"step": 1, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 0, "speed_sum": 0, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 2, "pairs": [], "departed": ["978613913#0.1", "847825694#3.1", "flow_03.0", "flow_05.0"], "arrived": [], "collided": [], "vehicles": 4, "speed_sum": 20.0, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 3, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 4, "speed_sum": 24.45436630093027, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 4, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 4, "speed_sum": 26.757919968967325, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 5, "pairs": [], "departed": ["877763364#0.1", "229357869#5.1"], "arrived": [], "collided": [], "vehicles": 6, "speed_sum": 31.15875752782449, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 6, "pairs": [], "departed": ["877763351#0.3"], "arrived": [], "collided": [], "vehicles": 7, "speed_sum": 38.27394927274436, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 7, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 7, "speed_sum": 47.266004230966786, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 8, "pairs": [], "departed": ["229489781#11.1", "877763365#6.1"], "arrived": [], "collided": [], "vehicles": 9, "speed_sum": 53.22827788966242, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 9, "pairs": [], "departed": ["36870615#1.1"], "arrived": [], "collided": [], "vehicles": 10, "speed_sum": 63.823304957593784, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 10, "pairs": [], "departed": ["gneE41.2", "847825694#3.5"], "arrived": [], "collided": [], "vehicles": 12, "speed_sum": 73.22162147993222, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 11, "pairs": [], "departed": ["229489602#4.1", "36913228.1"], "arrived": [], "collided": [], "vehicles": 14, "speed_sum": 85.73165511430707, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 12, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 14, "speed_sum": 98.30519270175135, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 13, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 14, "speed_sum": 111.98663615633268, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 14, "pairs": [], "departed": ["978613913#0.2", "36913237.1", "gneE41.3", "229357869#5.3"], "arrived": [], "collided": [], "vehicles": 18, "speed_sum": 117.35318054493982, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 15, "pairs": [], "departed": ["877763365#6.2"], "arrived": [], "collided": [], "vehicles": 19, "speed_sum": 131.77335734842347, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 16, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 19, "speed_sum": 148.18297346821052, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 17, "pairs": [], "departed": ["877763364#0.2", "978613907#0.8", "36870615#1.2"], "arrived": [], "collided": [], "vehicles": 22, "speed_sum": 161.13143494457472, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 18, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 22, "speed_sum": 173.094805881381, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 19, "pairs": [], "departed": ["gneE41.4", "229357869#5.4", "847825694#3.10"], "arrived": [], "collided": [], "vehicles": 25, "speed_sum": 188.21881320849062, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 20, "pairs": [], "departed": ["229489781#11.2", "37723144.1", "229489600.1"], "arrived": [], "collided": [], "vehicles": 28, "speed_sum": 201.02362618220508, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 21, "pairs": [], "departed": ["36913228.2"], "arrived": [], "collided": [], "vehicles": 29, "speed_sum": 219.20770450695414, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 22, "pairs": [], "departed": ["877763365#6.3"], "arrived": [], "collided": [], "vehicles": 30, "speed_sum": 232.31871881252155, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 23, "pairs": [], "departed": ["229489602#4.2", "877763351#0.9", "847825694#3.12", "gneE41.5"], "arrived": [], "collided": [], "vehicles": 34, "speed_sum": 252.19455137371557, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 24, "pairs": [], "departed": ["229357869#5.5"], "arrived": [], "collided": [], "vehicles": 35, "speed_sum": 275.16669033460784, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 25, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 35, "speed_sum": 292.4464294927195, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 26, "pairs": [], "departed": ["978613913#0.3", "36870615#1.3"], "arrived": [], "collided": [], "vehicles": 37, "speed_sum": 300.10373199609666, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 27, "pairs": [], "departed": ["36913237.2"], "arrived": [], "collided": [], "vehicles": 38, "speed_sum": 316.32187664932206, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 28, "pairs": [], "departed": ["gneE41.6", "229357869#5.6"], "arrived": [], "collided": [], "vehicles": 40, "speed_sum": 333.82164184092534, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 29, "pairs": [], "departed": ["877763364#0.3", "877763365#6.4"], "arrived": [], "collided": [], "vehicles": 42, "speed_sum": 344.395801576646, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 30, "pairs": [], "departed": ["978613907#0.14"], "arrived": [], "collided": [], "vehicles": 43, "speed_sum": 353.3466883454937, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 31, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 43, "speed_sum": 377.44908849622595, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 32, "pairs": [], "departed": ["978613913#0.4", "36913228.3", "37552734#6.62.2", "gneE41.7"], "arrived": [], "collided": [], "vehicles": 47, "speed_sum": 389.59436419687694, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 33, "pairs": [], "departed": ["229357869#5.7"], "arrived": [], "collided": [], "vehicles": 48, "speed_sum": 404.5413253572072, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 34, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 48, "speed_sum": 415.8207390104187, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 35, "pairs": [], "departed": ["229489781#11.3", "878066815#5.7"], "arrived": ["flow_03.0", "flow_05.0"], "collided": [], "vehicles": 48, "speed_sum": 406.60794534368915, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 36, "pairs": [], "departed": ["37723144.2", "877763365#6.5", "847825694#3.19"], "arrived": [], "collided": [], "vehicles": 51, "speed_sum": 423.1535017591668, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 37, "pairs": [], "departed": ["229489600.2", "gneE41.8"], "arrived": [], "collided": [], "vehicles": 53, "speed_sum": 443.3220237234374, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 38, "pairs": [], "departed": ["229489602#4.3", "flow_03.1", "flow_05.1"], "arrived": [], "collided": [], "vehicles": 56, "speed_sum": 479.1765393928625, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 39, "pairs": [], "departed": ["877763351#0.18", "847825694#3.20"], "arrived": [], "collided": [], "vehicles": 58, "speed_sum": 490.88623982274714, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 40, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 58, "speed_sum": 506.91945234902914, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 41, "pairs": [], "departed": ["978613913#0.5"], "arrived": [], "collided": [], "vehicles": 59, "speed_sum": 520.1459683603168, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 42, "pairs": [], "departed": ["36913237.3", "gneE41.9", "36913228.4"], "arrived": [], "collided": [], "vehicles": 62, "speed_sum": 536.3967815747512, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 43, "pairs": [], "departed": ["229489781#11.4", "36870615#1.5", "877763365#6.6"], "arrived": [], "collided": [], "vehicles": 65, "speed_sum": 547.4483951734611, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 44, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 65, "speed_sum": 568.3567669498316, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 45, "pairs": [], "departed": ["878066815#5.9"], "arrived": [], "collided": [], "vehicles": 66, "speed_sum": 575.469278179497, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 46, "pairs": [], "departed": ["877763364#0.5", "847825694#3.24", "gneE41.10"], "arrived": [], "collided": [], "vehicles": 69, "speed_sum": 596.6807542217817, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 47, "pairs": [], "departed": ["37552734#6.62.3"], "arrived": [], "collided": [], "vehicles": 70, "speed_sum": 614.2689866647044, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 48, "pairs": [], "departed": ["877763351#0.24"], "arrived": [], "collided": [], "vehicles": 71, "speed_sum": 625.109816756248, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 49, "pairs": [], "departed": ["229488614#0.1"], "arrived": [], "collided": [], "vehicles": 72, "speed_sum": 638.6337877033976, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 50, "pairs": [], "departed": ["877763365#6.7"], "arrived": [], "collided": [], "vehicles": 73, "speed_sum": 652.9584715664831, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 51, "pairs": [], "departed": ["877763351#0.25", "gneE41.11", "847825694#3.27", "36870615#1.6"], "arrived": [], "collided": [], "vehicles": 77, "speed_sum": 667.6370433258569, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 52, "pairs": [], "departed": ["229489602#4.4", "36913228.5"], "arrived": [], "collided": [], "vehicles": 79, "speed_sum": 685.0082729103025, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 53, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 79, "speed_sum": 701.1892635762672, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 54, "pairs": [], "departed": ["36913237.4"], "arrived": [], "collided": [], "vehicles": 80, "speed_sum": 704.0607384924933, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 55, "pairs": [], "departed": ["978613913#0.6", "229489600.3", "gneE41.12"], "arrived": [], "collided": [], "vehicles": 83, "speed_sum": 723.7710594150393, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 56, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 83, "speed_sum": 744.8011010923741, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 57, "pairs": [], "departed": ["37723144.3", "847825694#3.30"], "arrived": [], "collided": [], "vehicles": 85, "speed_sum": 753.4480850491647, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 58, "pairs": [], "departed": ["229489781#11.5", "877763365#6.8"], "arrived": [], "collided": [], "vehicles": 87, "speed_sum": 763.3048083696007, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 59, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 87, "speed_sum": 782.3562304237045, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 60, "pairs": [], "departed": ["gneE41.13", "36870615#1.7"], "arrived": [], "collided": [], "vehicles": 89, "speed_sum": 791.3576260427859, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 61, "pairs": [], "departed": ["877763364#0.6", "229357869#5.13"], "arrived": [], "collided": [], "vehicles": 91, "speed_sum": 812.1888808658902, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 62, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 91, "speed_sum": 822.1841259303699, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 63, "pairs": [["gneE41.8", "229357869#5.4"]], "departed": ["36913228.6", "37552734#6.62.4"], "arrived": [], "collided": ["229357869#5.4", "gneE41.8"], "vehicles": 93, "speed_sum": 830.4754133082512, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 64, "pairs": [], "departed": ["978613913#0.7", "gneE41.14"], "arrived": [], "collided": [], "vehicles": 95, "speed_sum": 846.9420808710938, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 65, "pairs": [], "departed": ["847825694#3.34", "877763365#6.9"], "arrived": [], "collided": [], "vehicles": 97, "speed_sum": 860.9249156074181, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 66, "pairs": [], "departed": ["877763351#0.33", "229357869#5.14"], "arrived": [], "collided": [], "vehicles": 99, "speed_sum": 871.7733529886498, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 67, "pairs": [], "departed": ["229489602#4.5"], "arrived": [], "collided": [], "vehicles": 100, "speed_sum": 888.7567891816577, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 68, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 100, "speed_sum": 905.8019539960732, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 69, "pairs": [], "departed": ["36913237.5", "gneE41.15"], "arrived": [], "collided": [], "vehicles": 102, "speed_sum": 915.5457303077416, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 70, "pairs": [], "departed": ["877763364#0.7", "229357869#5.15"], "arrived": [], "collided": [], "vehicles": 104, "speed_sum": 935.0463647313114, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 71, "pairs": [], "departed": [], "arrived": ["flow_03.1", "flow_05.1"], "collided": [], "vehicles": 102, "speed_sum": 919.3344426478628, "groups": 32, "queue_sum": 2, "wait_sum": 0.0}
+{"step": 72, "pairs": [], "departed": ["877763365#6.10", "847825694#3.38"], "arrived": [], "collided": [], "vehicles": 104, "speed_sum": 929.0111574506861, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 73, "pairs": [], "departed": ["978613913#0.8", "37723144.4", "229489600.4", "36913228.7"], "arrived": [], "collided": [], "vehicles": 108, "speed_sum": 944.5363226767228, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 74, "pairs": [], "departed": ["gneE41.16", "flow_03.2", "flow_05.2"], "arrived": [], "collided": [], "vehicles": 111, "speed_sum": 983.4664682819108, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 75, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 111, "speed_sum": 994.0685435107882, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 76, "pairs": [], "departed": ["229489781#11.6", "978613907#0.37", "847825694#3.40"], "arrived": [], "collided": [], "vehicles": 114, "speed_sum": 1009.5038589208999, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 77, "pairs": [], "departed": ["36870615#1.9"], "arrived": [], "collided": [], "vehicles": 115, "speed_sum": 1024.041962264174, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 78, "pairs": [], "departed": ["gneE41.17"], "arrived": ["gneE41.2"], "collided": [], "vehicles": 115, "speed_sum": 1036.2797665924284, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 79, "pairs": [], "departed": ["229489602#4.6", "847825694#3.41", "877763365#6.11"], "arrived": [], "collided": [], "vehicles": 118, "speed_sum": 1053.061207648295, "groups": 32, "queue_sum": 2, "wait_sum": 0.0}
+{"step": 80, "pairs": [], "departed": ["36913237.6"], "arrived": [], "collided": [], "vehicles": 119, "speed_sum": 1065.6553893091025, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 81, "pairs": [], "departed": [], "arrived": ["36870615#1.1", "37552734#6.62.2"], "collided": [], "vehicles": 117, "speed_sum": 1064.4772810424222, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 82, "pairs": [], "departed": ["978613913#0.9"], "arrived": [], "collided": [], "vehicles": 118, "speed_sum": 1073.1982317579161, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 83, "pairs": [], "departed": ["978613907#0.41", "gneE41.18", "36913228.8"], "arrived": [], "collided": [], "vehicles": 121, "speed_sum": 1086.701999605471, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 84, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 121, "speed_sum": 1106.9816436043711, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 85, "pairs": [], "departed": ["229489781#11.7", "847825694#3.45", "36870615#1.10"], "arrived": [], "collided": [], "vehicles": 124, "speed_sum": 1114.9947290751572, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 86, "pairs": [], "departed": ["877763351#0.41", "877763365#6.12"], "arrived": [], "collided": [], "vehicles": 126, "speed_sum": 1122.8586360559473, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 87, "pairs": [], "departed": ["gneE41.19"], "arrived": [], "collided": [], "vehicles": 127, "speed_sum": 1137.1558868759523, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 88, "pairs": [], "departed": ["978613913#0.10"], "arrived": [], "collided": [], "vehicles": 128, "speed_sum": 1152.2200382586304, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 89, "pairs": [], "departed": ["877763351#0.43", "847825694#3.47"], "arrived": ["36870615#1.2"], "collided": [], "vehicles": 129, "speed_sum": 1151.675618966348, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 90, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 129, "speed_sum": 1168.9874276905252, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 91, "pairs": [], "departed": ["877763364#0.9", "229489600.5"], "arrived": [], "collided": [], "vehicles": 131, "speed_sum": 1195.0677508607223, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 92, "pairs": [], "departed": ["37723144.5", "847825694#3.48"], "arrived": ["gneE41.5"], "collided": [], "vehicles": 132, "speed_sum": 1187.3568223482305, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 93, "pairs": [], "departed": ["877763365#6.13"], "arrived": [], "collided": [], "vehicles": 133, "speed_sum": 1204.209287009663, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}
+{"step": 94, "pairs": [], "departed": ["229489602#4.7", "36913228.9", "229357869#5.20", "36870615#1.11"], "arrived": [], "collided": [], "vehicles": 137, "speed_sum": 1210.3041108143111, "groups": 32, "queue_sum": 3, "wait_sum": 0.0}
+{"step": 95, "pairs": [], "departed": ["877763351#0.45"], "arrived": ["37552734#6.62.3"], "collided": [], "vehicles": 137, "speed_sum": 1219.351801093185, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 96, "pairs": [], "departed": ["gneE41.21"], "arrived": ["gneE41.6"], "collided": [], "vehicles": 137, "speed_sum": 1237.981408869723, "groups": 32, "queue_sum": 2, "wait_sum": 0.0}
+{"step": 97, "pairs": [], "departed": ["978613913#0.11"], "arrived": ["877763365#6.1"], "collided": [], "vehicles": 137, "speed_sum": 1241.7829840973013, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 98, "pairs": [], "departed": ["36913237.7"], "arrived": ["36870615#1.3"], "collided": [], "vehicles": 137, "speed_sum": 1246.8038025653723, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 99, "pairs": [], "departed": [], "arrived": [], "collided": [], "vehicles": 137, "speed_sum": 1254.6536236182608, "groups": 32, "queue_sum": 0, "wait_sum": 0}
+{"step": 100, "pairs": [], "departed": ["229488614#0.2", "877763365#6.14"], "arrived": [], "collided": [], "vehicles": 139, "speed_sum": 1259.0411158958404, "groups": 32, "queue_sum": 1, "wait_sum": 0.0}

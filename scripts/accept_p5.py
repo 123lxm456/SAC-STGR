@@ -5,6 +5,7 @@ missing research evidence. Exit 1: failed execution/integrity check.
 """
 
 import argparse
+import copy
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -24,6 +25,18 @@ def read(path):
 
 def protocol_hash(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
+
+
+def smoke_protocol(locked):
+    protocol = copy.deepcopy(locked)
+    protocol.update(research_run=False, training_seeds=[11], risk_variants=['b0', 'm1'],
+                    policy_variants=['b0', 'm1', 's0'])
+    # A sparse P4 train scene produced only 160 transitions in 100 decisions.
+    # Keep SAC batch=256 and the real-update gate; provide sufficient exposure.
+    protocol['online'].update(decision_steps=1000, episode_decisions=1000)
+    protocol['offline']['updates'] = 2
+    protocol['evaluation'].update(simulation_steps=100, seeds=[3000], densities={'nominal': 1.0})
+    return protocol
 
 
 def validate_protocol(protocol):
@@ -181,12 +194,7 @@ def main():
             write_json(run / 'common-corpus-audit.json', audit)
             fingerprint = corpus_fingerprint(paths)
             if args.smoke:
-                protocol.update(research_run=False, training_seeds=[11], risk_variants=['b0', 'm1'],
-                                policy_variants=['b0', 'm1', 's0'])
-                protocol['online']['decision_steps'] = 100
-                protocol['online']['episode_decisions'] = 100
-                protocol['offline']['updates'] = 2
-                protocol['evaluation'].update(simulation_steps=100, seeds=[3000], densities={'nominal': 1.0})
+                protocol = smoke_protocol(protocol)
             plan = dict(protocol=protocol, protocol_sha256=protocol_hash(protocol), scenarios=scenes,
                         common_corpus=[str(path) for path in paths], common_corpus_sha256=fingerprint)
             write_json(run / 'plan.json', plan)

@@ -127,7 +127,10 @@ def audit(run, require_full=True):
             result = read(folder / 'result.json')
             require(result['completed'] and result['initialized_from_scratch'] and result['seed'] == seed and
                     result['variant'] == variant and result['decision_steps'] == protocol['online']['decision_steps'] and
-                    result['sac_updates'] > 0 and result['risk_supervision'] == 'p4-h10-v1', 'Incomplete online training')
+                    result['sac_updates'] > 0 and result['risk_supervision'] == 'p4-h10-v1',
+                    'Incomplete online training: variant={}, seed={}, steps={}/{}, SAC updates={}, completed={}'.format(
+                        variant, seed, result.get('decision_steps'), protocol['online']['decision_steps'],
+                        result.get('sac_updates'), result.get('completed')))
             for key, filename in (('actor_sha256', 'actor.pth'), ('risk_sha256', 'risk.pth'),
                                   ('initial_actor_sha256', 'actor-initial.pth')):
                 require(sha_file(folder / filename) == result[key], 'Changed online checkpoint')

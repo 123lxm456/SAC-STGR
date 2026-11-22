@@ -169,6 +169,14 @@ class WorkerTests(unittest.TestCase):
             self.assertEqual(verdict['status'], 'smoke_passed_not_research')
             with self.assertRaises(ValueError):
                 audit(root, require_full=True)
+            result_path = root / 'online/b0/11/result.json'
+            original = result_path.read_text()
+            no_updates = json.loads(original)
+            no_updates['sac_updates'] = 0
+            result_path.write_text(json.dumps(no_updates))
+            with self.assertRaisesRegex(ValueError, 'SAC updates=0'):
+                audit(root, require_full=False)
+            result_path.write_text(original)
             (root / 'train-b0-11.exitcode').write_text('1')
             with self.assertRaisesRegex(ValueError, 'execution proof'):
                 audit(root, require_full=False)
