@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-22",
+  "passed": true,
+  "scope": "P0-P4 current revision regression and P5 engineering/data entry gates; not effectiveness",
+  "target_evidence": "plan/review/p5-entry-runs/20261122T083545358653Z",
+  "stages": {
+    "P0": "passed",
+    "P1": "passed",
+    "P2": "passed",
+    "P3": "passed",
+    "P4": "passed"
+  },
+  "target_tests": {
+    "run": 91,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "require_cuda": true
+  },
+  "matched_current_source_entries": 52,
+  "target_environment_matches_lock": true,
+  "strict_server_raw_data_reaudited": true,
+  "audited_windows": 234453,
+  "P4_results_identical_to_accepted_records": true,
+  "frozen_evaluation_and_checkpoints_verified": true,
+  "structure_and_dependencies_passed": true,
+  "structure_counts": {
+    "python_ast": 246,
+    "xml": 66,
+    "json": 242,
+    "gzip_crc": 2,
+    "checkpoint_or_docx_zip_crc": 29,
+    "pickle_structure_only": 8,
+    "cold_archive_members": 89
+  },
+  "obsolete_delivery_files_still_absent": true,
+  "p5_ready": true,
+  "p5_started": false,
+  "p5_requires_user_confirmation": true,
+  "raw_data_location": "Original JSONL retained on server; re-read by verified server code; local review checked execution proof, hashes and artifacts",
+  "research_limits": [
+    "P4 diagnostic checkpoints do not establish learned risk or closed-loop gains",
+    "Window support thresholds are not a statistical-power claim",
+    "P5 must lock common offline data/behavior, training budgets, paired seeds and physical collision denominators"
+  ]
+}

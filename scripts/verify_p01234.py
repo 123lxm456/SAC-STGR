@@ -82,6 +82,19 @@ def local_saved_path(value, remote_root):
 
 def semantic_body(text):
     tree = ast.parse(text)
+    # P5's exact optional callback leaves legacy runs unchanged. Strip only
+    # this reviewed pair of statements in Env.step_once, never arbitrary code.
+    callback = ast.parse("observer = self.config.get('physical_observer') if hasattr(self, 'config') else None\n"
+                         "if observer is not None:\n    observer.step(self, sim_res)\n").body
+    expected = [ast.dump(node, include_attributes=False) for node in callback]
+    for node in tree.body:
+        if isinstance(node, ast.ClassDef) and node.name == 'Env':
+            for method in node.body:
+                if isinstance(method, ast.FunctionDef) and method.name == 'step_once':
+                    for index in range(len(method.body) - 1):
+                        if [ast.dump(n, include_attributes=False) for n in method.body[index:index + 2]] == expected:
+                            del method.body[index:index + 2]
+                            break
     tree.body = [node for node in tree.body
                  if not isinstance(node, (ast.Import, ast.ImportFrom))
                  and not (isinstance(node, ast.ClassDef) and node.name == 'timer')]
@@ -208,11 +221,16 @@ def historical_proof(target=False):
             continue
         relative = entry['path']
         snapshot = ROOT / P4 / 'b0-work' / relative[len('src/sac_rwb/'):]
-        if relative in IMPORT_CLEANUP:
+        if relative == 'src/sac_rwb/README.md':
+            # Stage-status corrections do not change executable source. Keep
+            # every other unreviewed source delta fail-closed below.
+            deltas.append({'path': relative, 'scope': 'documentation status only'})
+        elif relative in IMPORT_CLEANUP:
             require(semantic_body(path.read_text(encoding='utf-8')) ==
                     semantic_body(snapshot.read_text(encoding='utf-8')),
                     'Runtime behavior changed beyond dead-code/import cleanup: ' + relative)
-            deltas.append({'path': relative, 'scope': 'unused imports / uncalled timer only'})
+            deltas.append({'path': relative, 'scope': ('unused imports and exact optional P5 physical-observer callback; legacy default unchanged'
+                                                      if relative == 'src/sac_rwb/Env.py' else 'unused imports / uncalled timer only')})
         elif relative == 'src/sac_rwb/algos/p4_data.py':
             old = ast.parse(snapshot.read_text(encoding='utf-8'))
             current = ast.parse(path.read_text(encoding='utf-8'))

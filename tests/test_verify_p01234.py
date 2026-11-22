@@ -63,6 +63,16 @@ class VerifierTests(unittest.TestCase):
         self.assertEqual(self.module.semantic_body(old), self.module.semantic_body(cleaned))
         self.assertNotEqual(self.module.semantic_body(old), self.module.semantic_body(changed))
 
+    def test_optional_p5_callback_is_exact_and_other_environment_changes_still_fail(self):
+        old = 'class Env:\n    def step_once(self):\n        return 1\n'
+        current = ("class Env:\n    def step_once(self):\n"
+                   "        observer = self.config.get('physical_observer') if hasattr(self, 'config') else None\n"
+                   "        if observer is not None:\n            observer.step(self, sim_res)\n"
+                   "        return 1\n")
+        self.assertEqual(self.module.semantic_body(old), self.module.semantic_body(current))
+        self.assertNotEqual(self.module.semantic_body(old), self.module.semantic_body(current.replace('return 1', 'return 2')))
+        self.assertNotEqual(self.module.semantic_body(old), self.module.semantic_body(current.replace('observer.step(self, sim_res)', 'observer.step(self, other)')))
+
 
 if __name__ == '__main__':
     unittest.main()

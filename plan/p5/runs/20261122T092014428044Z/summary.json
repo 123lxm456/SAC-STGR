@@ -1,0 +1,31 @@
+{
+  "mode": "local",
+  "passed": false,
+  "p5_started": false,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+        "--output",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p5\\runs\\20261122T092014428044Z\\unit-results.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "argv": [
+        "D:\\Anaconda3\\python.exe",
+        "-B",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\verify_plan.py",
+        "--report",
+        "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p5\\runs\\20261122T092014428044Z\\static.json"
+      ],
+      "exitcode": 0
+    }
+  ],
+  "status": "auxiliary_passed_not_p5_acceptance",
+  "local_checks_passed": true
+}

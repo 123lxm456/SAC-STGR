@@ -22,6 +22,11 @@ venv/
 /plan/p4/runs/**/samples.jsonl
 /plan/p4/runs/**/events.jsonl
 
+# P5 online trajectory journals remain on the experiment server.
+/plan/p5/runs/**/online-data/samples.jsonl
+/plan/p5/runs/**/online-data/events.jsonl
+/plan/p5/returns/
+
 
 # Temporary files
 *.tmp

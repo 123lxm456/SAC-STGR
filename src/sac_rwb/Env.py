@@ -877,6 +877,10 @@ class Env(gym.Env):
 
         self.monitor.step(self)
 
+        observer = self.config.get('physical_observer') if hasattr(self, 'config') else None
+        if observer is not None:
+            observer.step(self, sim_res)
+
         self.conflict_vehids = []
         self._print_debug('finish process step')
         if len(dict_tolist(rewards)) > 0 and self.print_debug:

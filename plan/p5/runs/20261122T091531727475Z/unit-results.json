@@ -1,0 +1,30 @@
+{
+  "tests_run": 106,
+  "skipped": [
+    [
+      "test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_m1_online_scoring_and_optimizer (test_p3.P3Tests.test_cuda_m1_online_scoring_and_optimizer)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_ablation_cuda_real_update (test_p5.P5Tests.test_ablation_cuda_real_update)",
+      "CUDA is unavailable"
+    ]
+  ],
+  "failures": [],
+  "errors": [
+    [
+      "test_training_and_fixed_horizon_evaluation_reuse_p4_runtime_without_sumo (test_p5_worker.WorkerTests.test_training_and_fixed_horizon_evaluation_reuse_p4_runtime_without_sumo)",
+      "Traceback (most recent call last):\n  File \"\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tests\\test_p5_worker.py\", line 108, in test_training_and_fixed_horizon_evaluation_reuse_p4_runtime_without_sumo\n    model.mkdir(parents=True)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"D:\\Anaconda3\\Lib\\pathlib\\_local.py\", line 722, in mkdir\n    os.mkdir(self, mode)\n    ~~~~~~~~^^^^^^^^^^^^\nPermissionError: [WinError 65] 拒绝网络访问。: '\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\lxm\\\\codes\\\\SAC-STGR\\\\tmpkt899w8s\\\\online\\\\b0\\\\11'\n"
+    ]
+  ],
+  "require_cuda": false,
+  "passed": false
+}

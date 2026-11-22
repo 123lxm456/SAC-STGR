@@ -1,0 +1,20 @@
+{
+  "target_evidence": "plan/review/p5-entry-runs/20261122T083545358653Z",
+  "source_entries": 52,
+  "matched_before_this_review": 52,
+  "matched_after_status_corrections": 50,
+  "reviewed_changes": [
+    "scripts/verify_p01234.py",
+    "src/sac_rwb/README.md"
+  ],
+  "runtime_model_training_label_and_metric_sources_unchanged": true,
+  "additional_deleted_files": [],
+  "previously_deleted_files_still_absent": [
+    "plan/p4/transfer/p4-implementation-20261121.tar.gz",
+    "plan/p4/transfer/p4-implementation-20261121.tar.gz.sha256",
+    "plan/p4/transfer/source-package-20261121.json"
+  ],
+  "ssh_reauthentication_failed": true,
+  "new_remote_test_run": false,
+  "p5_started": false
+}

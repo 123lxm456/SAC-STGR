@@ -1,0 +1,13 @@
+[
+  {
+    "name": "unit",
+    "argv": [
+      "D:\\Anaconda3\\python.exe",
+      "-B",
+      "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\scripts\\run_unit_checks.py",
+      "--output",
+      "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\plan\\p5\\runs\\20261122T091531727475Z\\unit-results.json"
+    ],
+    "exitcode": 1
+  }
+]

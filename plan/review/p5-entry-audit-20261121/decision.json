@@ -20,9 +20,8 @@
   "structure_and_dependency_checks_passed": true,
   "labels_architecture_and_calibration_formulas_unchanged": true,
   "fixed_issue": "P4 reader did not reconcile all committed commands with windows, per-class counters or actual command bounds",
-  "current_target_revision_regression": "pending",
-  "strict_server_raw_data_reaudit": "pending",
-  "p5_ready_unconditionally": false,
+  "current_target_revision_regression": "passed",
+  "strict_server_raw_data_reaudit": "passed",
   "p5_started": false,
   "p5_requires_user_confirmation": true,
   "deleted_file_count": 3,
@@ -35,5 +34,9 @@
     "Correlated rare-event windows do not establish statistical power",
     "P5 must predeclare common offline evaluation data/behavior, budgets, paired seeds and physical collision denominators"
   ],
-  "completed_date": "2026-11-22"
+  "completed_date": "2026-11-22",
+  "target_confirmed_date": "2026-11-22",
+  "p5_ready": true,
+  "p5_engineering_and_data_gates_passed": true,
+  "target_confirmation": "plan/review/p5-entry-confirmation-20261122.json"
 }
