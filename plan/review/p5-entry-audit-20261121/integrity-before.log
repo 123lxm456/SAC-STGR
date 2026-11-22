@@ -1,0 +1,77 @@
+test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance (test_p4_integrity.DataIntegrityTests.test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance) ... FAIL
+test_class_counts_must_match_actual_labels (test_p4_integrity.DataIntegrityTests.test_class_counts_must_match_actual_labels) ... FAIL
+test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) ... 
+  test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=-1) ... FAIL
+  test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=1.5) ... FAIL
+  test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=True) ... FAIL
+test_extra_committed_command_without_a_sample_is_rejected (test_p4_integrity.DataIntegrityTests.test_extra_committed_command_without_a_sample_is_rejected) ... FAIL
+test_removed_window_cannot_be_hidden_by_recounting_samples (test_p4_integrity.DataIntegrityTests.test_removed_window_cannot_be_hidden_by_recounting_samples) ... FAIL
+test_unmodified_closed_dataset_still_reads_identically (test_p4_integrity.DataIntegrityTests.test_unmodified_closed_dataset_still_reads_identically) ... ok
+
+======================================================================
+FAIL: test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance (test_p4_integrity.DataIntegrityTests.test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 80, in test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance
+    with self.assertRaisesRegex(ValueError, 'command'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_class_counts_must_match_actual_labels (test_p4_integrity.DataIntegrityTests.test_class_counts_must_match_actual_labels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 42, in test_class_counts_must_match_actual_labels
+    with self.assertRaisesRegex(ValueError, 'counter'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 68, in test_counter_values_cannot_be_negative_or_noninteger
+    with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'counter'):
+                                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 68, in test_counter_values_cannot_be_negative_or_noninteger
+    with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'counter'):
+                                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) (value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 68, in test_counter_values_cannot_be_negative_or_noninteger
+    with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'counter'):
+                                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_extra_committed_command_without_a_sample_is_rejected (test_p4_integrity.DataIntegrityTests.test_extra_committed_command_without_a_sample_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 60, in test_extra_committed_command_without_a_sample_is_rejected
+    with self.assertRaisesRegex(ValueError, 'command'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_removed_window_cannot_be_hidden_by_recounting_samples (test_p4_integrity.DataIntegrityTests.test_removed_window_cannot_be_hidden_by_recounting_samples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_p4_integrity.py", line 52, in test_removed_window_cannot_be_hidden_by_recounting_samples
+    with self.assertRaisesRegex(ValueError, 'command'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.152s
+
+FAILED (failures=7)

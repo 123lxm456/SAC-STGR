@@ -1,6 +1,5 @@
 import numpy as np
 import pickle
-import math
 
 
 class DataMonitor(object):

@@ -1,4 +1,4 @@
-from collections import OrderedDict, defaultdict, Counter
+from collections import OrderedDict
 import sys
 import numpy as np
 from core.utils import DIR_KEYWORDS

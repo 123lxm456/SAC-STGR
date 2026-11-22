@@ -1,0 +1,67 @@
+{
+  "authorization": "User requested removal of dependency-checked obsolete/redundant files before P5",
+  "deleted_files": [
+    {
+      "path": "plan/p4/transfer/p4-implementation-20261121.tar.gz",
+      "bytes": 120227,
+      "sha256": "b9f3170c4933f61afb360e9daf62a8fb7b1d233e8419c2bc802a795b1c59ae10",
+      "reason": "Superseded P4 initial delivery package; current accepted source and all execution evidence remain available."
+    },
+    {
+      "path": "plan/p4/transfer/p4-implementation-20261121.tar.gz.sha256",
+      "bytes": 100,
+      "sha256": "2a74c74fb6f9044d3a8f6bb79c5df106657104a678f1e7b8e6dfbca5f8563248",
+      "reason": "Superseded P4 initial delivery package; current accepted source and all execution evidence remain available."
+    },
+    {
+      "path": "plan/p4/transfer/source-package-20261121.json",
+      "bytes": 10682,
+      "sha256": "d4d1b2d682d6c01a3c23c434d686ff91eacd359c22c4e32a8573b45b5c9ed08b",
+      "reason": "Superseded P4 initial delivery package; current accepted source and all execution evidence remain available."
+    }
+  ],
+  "net_deleted_bytes": 131009,
+  "recovery_git_commit": "61e16870c35e76e480f12644a3906b0fe71e0951",
+  "removed_code": [
+    {
+      "path": "src/sac_rwb/core/utils.py",
+      "symbols": [
+        "timer",
+        "time import"
+      ],
+      "reason": "No active imports or calls; empty report method; original preserved in read-only references."
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "symbols": [
+        "unused Set/math imports"
+      ]
+    },
+    {
+      "path": "src/sac_rwb/core/monitor.py",
+      "symbols": [
+        "unused math import"
+      ]
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "symbols": [
+        "unused direct exception imports; actual traci.exceptions handler unchanged"
+      ]
+    },
+    {
+      "path": "src/sac_rwb/core/costomized_data_structures.py",
+      "symbols": [
+        "unused defaultdict/Counter imports"
+      ]
+    }
+  ],
+  "preserved": [
+    "references/ and chapter 3.4",
+    "all accepted and failed experiment data/logs/exitcodes/source snapshots",
+    "P3 actor/risk checkpoints required by P4 collection",
+    "all existing archive and original-input bundles",
+    "local test dependencies",
+    "Git history"
+  ]
+}

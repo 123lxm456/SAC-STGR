@@ -1,0 +1,26 @@
+{
+  "mode": "local",
+  "passed": false,
+  "p5_ready": false,
+  "p5_started": false,
+  "p5_requires_user_confirmation": true,
+  "commands": [
+    {
+      "name": "unit",
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "exitcode": 0
+    }
+  ],
+  "local_checks_passed": true,
+  "historical_stages": {
+    "P0": "passed",
+    "P1": "passed",
+    "P2": "passed",
+    "P3": "passed",
+    "P4": "passed"
+  },
+  "raw_reaudited": false
+}

@@ -1,4 +1,3 @@
-import time 
 import xml.etree.ElementTree as ElementTree
 from lxml import etree
 ## global const
@@ -33,30 +32,6 @@ def rank_of_first(waiting_lst):
         if val > first:
             rank += 1
     return len(waiting_lst)-rank
-
-class timer(object):
-    def __init__(self) -> None:
-        self.start_time = dict()
-        self.running_time = dict()
-
-    def start(self, func):
-        self.start_time[func] = time.time()
-
-    def end(self, func):
-        if self.start_time[func]:
-            end_time = time.time()
-            print(func+' lasts:'+ str(end_time-self.start_time[func]))
-            if not func in self.running_time.keys():
-                self.running_time[func] = [end_time-self.start_time[func]]
-            else:
-                self.running_time[func].extend([end_time-self.start_time[func]])
-            self.start_time[func] = 0
-        else:
-            print(func+' not found')
-    
-    def report(self, func):
-        pass
-
 
 def dict_tolist(dict_input):
     result = []

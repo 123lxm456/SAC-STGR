@@ -1,0 +1,11 @@
+test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance (test_p4_integrity.DataIntegrityTests.test_actual_sent_command_must_be_bounded_even_with_rounding_tolerance) ... ok
+test_class_counts_must_match_actual_labels (test_p4_integrity.DataIntegrityTests.test_class_counts_must_match_actual_labels) ... ok
+test_counter_values_cannot_be_negative_or_noninteger (test_p4_integrity.DataIntegrityTests.test_counter_values_cannot_be_negative_or_noninteger) ... ok
+test_extra_committed_command_without_a_sample_is_rejected (test_p4_integrity.DataIntegrityTests.test_extra_committed_command_without_a_sample_is_rejected) ... ok
+test_removed_window_cannot_be_hidden_by_recounting_samples (test_p4_integrity.DataIntegrityTests.test_removed_window_cannot_be_hidden_by_recounting_samples) ... ok
+test_unmodified_closed_dataset_still_reads_identically (test_p4_integrity.DataIntegrityTests.test_unmodified_closed_dataset_still_reads_identically) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.422s
+
+OK

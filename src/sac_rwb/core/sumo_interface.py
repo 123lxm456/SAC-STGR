@@ -3,7 +3,6 @@ import inspect
 import sumolib
 import traci
 import traci.constants as T # https://sumo.dlr.de/pydoc/traci.constants.html
-from traci.exceptions import FatalTraCIError, TraCIException
 
 import os, sys
 sys.path.append(os.getcwd())

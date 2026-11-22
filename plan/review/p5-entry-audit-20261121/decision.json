@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "historical_P0_to_P4": {
+    "P0": "passed",
+    "P1": "passed",
+    "P2": "passed",
+    "P3": "passed",
+    "P4": "passed"
+  },
+  "current_revision_local_tests": {
+    "run": 91,
+    "passed": 88,
+    "cuda_skipped": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  "actual_local_evidence": "plan/review/p5-entry-runs/20261121T155207216496Z",
+  "current_source_entries": 52,
+  "source_unchanged_during_verification": true,
+  "structure_and_dependency_checks_passed": true,
+  "labels_architecture_and_calibration_formulas_unchanged": true,
+  "fixed_issue": "P4 reader did not reconcile all committed commands with windows, per-class counters or actual command bounds",
+  "current_target_revision_regression": "pending",
+  "strict_server_raw_data_reaudit": "pending",
+  "p5_ready_unconditionally": false,
+  "p5_started": false,
+  "p5_requires_user_confirmation": true,
+  "deleted_file_count": 3,
+  "deleted_payload_bytes": 131009,
+  "cleanup_manifest": "plan/review/p5-entry-audit-20261121/cleanup.json",
+  "target_command": "python -B scripts/verify_p01234.py --target",
+  "required_target_result": "All current tests passed with no skips; original raw P4 audits exactly reproduced; target/passed=true and p5_ready=true, p5_started=false",
+  "research_limits": [
+    "P4 checkpoints are diagnostic and do not prove natural risk learning or effectiveness",
+    "Correlated rare-event windows do not establish statistical power",
+    "P5 must predeclare common offline evaluation data/behavior, budgets, paired seeds and physical collision denominators"
+  ],
+  "completed_date": "2026-11-22"
+}

@@ -83,16 +83,26 @@ def create_scenarios(source, output):
     return result
 
 
+def _read_jsonl(path):
+    # Avoid holding a complete JSONL string and split-line copies alongside the
+    # decoded tensors. Large real datasets remain on the experiment server.
+    with path.open(encoding='utf-8') as stream:
+        return [json.loads(line) for line in stream]
+
+
 def read_dataset(directory):
     directory = Path(directory)
     manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
     if manifest['protocol'] != PROTOCOL:
         raise ValueError('Mixed or modified label protocols')
-    rows = [json.loads(line) for line in (directory / 'samples.jsonl').read_text(encoding='utf-8').splitlines()]
-    events = [json.loads(line) for line in (directory / 'events.jsonl').read_text(encoding='utf-8').splitlines()]
+    rows = _read_jsonl(directory / 'samples.jsonl')
+    events = _read_jsonl(directory / 'events.jsonl')
     steps = {}
     by_episode = {}
+    committed = set()
     for event in events:
+        if type(event['episode']) is not int or event['episode'] < 0 or type(event['step']) is not int or event['step'] < 1:
+            raise ValueError('Simulation episode/step must be nonnegative integer indices')
         key = (event['episode'], event['step'])
         if key in steps:
             raise ValueError('Duplicate simulation event step')
@@ -101,8 +111,17 @@ def read_dataset(directory):
             raise ValueError('Unobserved simulation gap')
         steps[key] = event
         by_episode[event['episode']] = event['step']
+        commands = event.get('commands', {})
+        if not isinstance(commands, dict):
+            raise ValueError('Physical command log must map vehicle IDs to actions')
+        for vehicle, action in commands.items():
+            if not isinstance(vehicle, str) or not vehicle or type(action) not in (int, float) or not np.isfinite(action) or not -3 <= action <= 3:
+                raise ValueError('Physical command must be finite and bounded in [-3,3]')
+            committed.add((event['episode'], vehicle, event['step'] - 1))
     seen = set()
     for row in rows:
+        if type(row['episode']) is not int or row['episode'] < 0 or type(row['decision_step']) is not int or row['decision_step'] < 0:
+            raise ValueError('Decision episode/step must be nonnegative integer indices')
         key = (row['episode'], row['vehicle_id'], row['decision_step'])
         if key in seen:
             raise ValueError('Duplicate decision window')
@@ -116,8 +135,10 @@ def read_dataset(directory):
             raise ValueError('Invalid recorded state/action values')
         if np.any(states[~mask]) or np.any(actions[~mask]):
             raise ValueError('Padding must match online zero padding')
-        if not row['executed'] or row['horizon_steps'] != PROTOCOL['horizon_steps']:
+        if row['executed'] is not True or row['horizon_steps'] != PROTOCOL['horizon_steps']:
             raise ValueError('Unexecuted or inconsistent window')
+        if row['label'] is not None and (type(row['label']) is not int or row['label'] not in (0, 1)):
+            raise ValueError('Window label must be integer 0/1 or censored null')
         if not np.isfinite(row['score']) or not 0 <= row['score'] <= 1:
             raise ValueError('Invalid recorded score')
         episode, start, vehicle = row['episode'], row['decision_step'], row['vehicle_id']
@@ -149,6 +170,17 @@ def read_dataset(directory):
     counts = json.loads((directory / 'counts.json').read_text(encoding='utf-8'))
     if counts.get('executed_decisions', 0) != len(rows) or counts.get('windows', 0) != len(rows):
         raise ValueError('Unaccounted decisions or incomplete dataset closure')
+    if any(type(value) is not int or value < 0 for value in counts.values()):
+        raise ValueError('Dataset counters must be nonnegative integers')
+    observed = {'positive': sum(row['label'] == 1 for row in rows),
+                'negative': sum(row['label'] == 0 for row in rows),
+                'censored': sum(row['label'] is None for row in rows)}
+    if any(counts.get(name, 0) != value for name, value in observed.items()):
+        raise ValueError('Dataset class counters disagree with stored labels')
+    if seen != committed:
+        raise ValueError('Committed physical commands and stored windows must correspond one-to-one')
+    if not len(committed) <= counts.get('commands_sent', 0) <= len(committed) + counts.get('unexecuted_discarded', 0):
+        raise ValueError('Sent-command counter disagrees with committed/discarded decisions')
     return manifest, rows, events
 
 

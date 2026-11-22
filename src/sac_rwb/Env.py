@@ -1,4 +1,3 @@
-from typing import Set
 #from ray.rllib.utils.typing import AgentID
 from core.sumo_interface import SUMO
 
@@ -7,7 +6,7 @@ from core.NetMap import NetMap
 from core.utils import rank_of_first
 import numpy as np
 import gym
-import random, math
+import random
 from gym.spaces.box import Box
 
 from copy import deepcopy

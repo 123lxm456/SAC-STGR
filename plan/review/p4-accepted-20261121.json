@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-21",
+  "stage": "P4",
+  "accepted": true,
+  "scope": "Locked p4-h10-v1 engineering/data support gate; no P5 effectiveness claim",
+  "base_engineering_evidence": "plan/p4/runs/20261121T115438612730Z",
+  "train_extension_evidence": "plan/p4/runs/20261121T150247686103Z-train-extension",
+  "base_target_tests": {
+    "run": 74,
+    "skipped": 0,
+    "errors": 0,
+    "failures": 0
+  },
+  "extension_local_planning_tests": 6,
+  "successful_target_commands": {
+    "base": 10,
+    "extension": 6
+  },
+  "matched_extension_source_entries": 49,
+  "target_environment_matches_lock": true,
+  "seeds": [
+    100,
+    101,
+    102,
+    103
+  ],
+  "extension_decisions_per_seed_per_variant": 2000,
+  "variants": {
+    "b0": {
+      "train_positive": 145,
+      "train_negative": 82696,
+      "train_censored": 636,
+      "train_positive_vehicles": 68,
+      "splits": {
+        "train": {
+          "positive": 145,
+          "negative": 82696,
+          "positive_vehicles": 68
+        },
+        "validation": {
+          "positive": 81,
+          "negative": 29968,
+          "positive_vehicles": 24
+        },
+        "test": {
+          "positive": 24,
+          "negative": 33570,
+          "positive_vehicles": 11
+        }
+      },
+      "training_data_ready": true,
+      "calibration_data_ready": true,
+      "isolation_passed": true
+    },
+    "m1": {
+      "train_positive": 175,
+      "train_negative": 29787,
+      "train_censored": 149,
+      "train_positive_vehicles": 72,
+      "splits": {
+        "train": {
+          "positive": 175,
+          "negative": 29787,
+          "positive_vehicles": 72
+        },
+        "validation": {
+          "positive": 509,
+          "negative": 25784,
+          "positive_vehicles": 158
+        },
+        "test": {
+          "positive": 90,
+          "negative": 28885,
+          "positive_vehicles": 23
+        }
+      },
+      "training_data_ready": true,
+      "calibration_data_ready": true,
+      "isolation_passed": true
+    }
+  },
+  "validation_test_audits_and_calibration_match_base": true,
+  "server_frozen_evaluation_sha256_entries": 16,
+  "server_summary_evaluation_unchanged": true,
+  "raw_jsonl_location": "Retained on server, intentionally excluded from Git; not re-audited locally",
+  "evidence_review": "Checked source/checkpoint hashes, all reported exitcodes, collection status/count sums, protocol, environment, frozen split/calibration equality and SVG structure. Raw event-label reconstruction and isolation executed by the verified server audit code.",
+  "p5_started": false,
+  "p5_requires_user_confirmation": true,
+  "remaining_research_limits": [
+    "P3 diagnostic risk checkpoints had zero natural optimizer updates; calibration is a P4 toolchain diagnostic",
+    "Window counts are correlated and support thresholds do not establish statistical power",
+    "No geographic-network generalization or multi-seed retraining/closed-loop effectiveness conclusion"
+  ]
+}
