@@ -1,2 +1,4 @@
 *.sh text eol=lf
+*.sha256 text eol=lf
+*.jsonl text eol=lf
 /references/** -text

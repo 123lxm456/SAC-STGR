@@ -21,7 +21,7 @@ def export(run, destination):
         digest = hashlib.sha256()
         for block in iter(lambda: stream.read(1024 * 1024), b''):
             digest.update(block)
-    archive.with_suffix(archive.suffix + '.sha256').write_text(digest.hexdigest() + '  ' + archive.name + '\n')
+    archive.with_suffix(archive.suffix + '.sha256').write_bytes((digest.hexdigest() + '  ' + archive.name + '\n').encode('utf-8'))
     print(str(archive))
 
 

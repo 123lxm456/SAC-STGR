@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-23",
+  "performed": true,
+  "deleted_files": [
+    {
+      "path": "plan/p5/transfer/p5-smoke-fix-20261122.tar.gz",
+      "bytes": 2395264,
+      "sha256": "abc996cdaffb933cfef43fa2d9725d30e0f5cb7b1d0e4a0382d32132dc73e822",
+      "kind": "retired delivery; source/evidence kept",
+      "recovery": "git show 545e8c4:p5-smoke-fix-20261122.tar.gz"
+    },
+    {
+      "path": "plan/p5/transfer/p5-smoke-fix-20261122.tar.gz.sha256",
+      "bytes": 95,
+      "sha256": "aa26fbc54e95650ed8694771c8068fbaacb2549636a2d63b2e24f2f10360883b",
+      "kind": "retired delivery; source/evidence kept",
+      "recovery": "git show 545e8c4:p5-smoke-fix-20261122.tar.gz.sha256"
+    },
+    {
+      "path": "plan/review/p5-entry-audit-20261121/transfer/p5-entry-review-20261121.tar.gz",
+      "bytes": 76127,
+      "sha256": "4f35439923cda2e7e573d5a19aaa56c8c0a4381639dd3cb5b826b9e6baf41147",
+      "kind": "retired delivery; source/evidence kept",
+      "recovery": "git show 545e8c4:plan/review/p5-entry-audit-20261121/transfer/p5-entry-review-20261121.tar.gz"
+    },
+    {
+      "path": "plan/review/p5-entry-audit-20261121/transfer/p5-entry-review-20261121.tar.gz.sha256",
+      "bytes": 98,
+      "sha256": "3251a861e1d7bc2d2b11a4f01ba4f62ad85eafd2e8dde0622c11497b5c8de232",
+      "kind": "retired delivery; source/evidence kept",
+      "recovery": "git show 545e8c4:plan/review/p5-entry-audit-20261121/transfer/p5-entry-review-20261121.tar.gz.sha256"
+    },
+    {
+      "path": "scripts/__pycache__/accept_p012.cpython-313.pyc",
+      "bytes": 13074,
+      "sha256": "a49d2e8ea3805d3c3d3e3282b7ea96d0a6a18418711d0d3b3e4bc5714e9627a4",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/verify_p01234.cpython-313.pyc",
+      "bytes": 30680,
+      "sha256": "fd2b4aff7687a16b74f7872f290702519353573a2196db9b9547bd7618d47163",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 173,
+      "sha256": "ef7bd4e3b06767ec6b52261957656c757db45d7e36c96a08354847bce98397b0",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/p4_data.cpython-313.pyc",
+      "bytes": 34693,
+      "sha256": "e55a38dd9e7e2c95c55b357912dbd0acf1723cbc15aa49eeb67bf195b518d176",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/transformer_risk_model.cpython-313.pyc",
+      "bytes": 13839,
+      "sha256": "77cd5ac77a1fbebaa6a420140c6fa3768a0932fb97f1ed19f1a8aa4806914006",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/spatiotemporal_risk_model.cpython-313.pyc",
+      "bytes": 10995,
+      "sha256": "0f7c2ebc4ddb9de5785bbc69c38194af75f6e21bf5c19fc3f1597daa2e0d6ee3",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/risk_training.cpython-313.pyc",
+      "bytes": 3364,
+      "sha256": "ae4bcef6b2c8242c686c6a6d0b97dae29ba12d4eb9e96e99c2edc219c33015d4",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/online_risk.cpython-313.pyc",
+      "bytes": 10040,
+      "sha256": "d357b59c0c7b479649a22740229b13cabddfa8795fc510dab5852d6967c5629c",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/p5_models.cpython-313.pyc",
+      "bytes": 5309,
+      "sha256": "298113d0e129610fad468956aa4d781ed9c72df7d9fbe8b50bdcb98662319b63",
+      "kind": "regenerable Python bytecode"
+    },
+    {
+      "path": "src/sac_rwb/algos/__pycache__/horizon_risk.cpython-313.pyc",
+      "bytes": 13775,
+      "sha256": "94976f633438b637d1d88f0aac94af70935b5be73a06b8a56d7cbdb827f81359",
+      "kind": "regenerable Python bytecode"
+    }
+  ],
+  "total_file_bytes": 2607526,
+  "preserved": [
+    "P0-P4 acceptance, original inputs, cold recovery archive, references, chapters",
+    "all P5 runs/checkpoints/data/logs/source snapshots",
+    "local test dependencies, Git history and stash"
+  ]
+}

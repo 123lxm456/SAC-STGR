@@ -1,5 +1,7 @@
 # P5：多种子风险识别及闭环对照
 
+> 2026-11-23 复核：工程 smoke 通过；正式运行已停止，种子 11 有六组完整训练凭据及一组 S0 结果待补命令凭据，尚无正式离线/闭环结果，P5 未验收。见 [本轮评估及清理](review-20261123.md)。
+
 2026-11-22 用户已正式授权 P5。当前是**工程实现，待目标实验验收**；P0–P4 历史验收保持原有范围。主入口为 `scripts/accept_p5.py`，不会连接 SSH 或覆盖旧运行。实验定义锁定在 [protocol.json](protocol.json)。
 
 ## 任务与执行顺序
@@ -30,11 +32,13 @@ P5 使用独立工厂及 worker，不扩展旧 `train_sac.py` 的参数选项。
 
 ## 上传和执行（由用户完成 SSH）
 
-本机已准备的交付包及校验文件在 `plan/p5/transfer/`。它包含活跃代码/测试及文档，不包含 P4 原始 JSONL、旧运行权重或 references。必须在**原有服务器项目目录**更新，以保留 P4 原始数据和历史验收；不要解压到缺少这些证据的新空项目。上传前可按当前代码重新生成新命名的包：
+历史交付包已于 2026-11-23 清理，清单见 [退役交付及缓存清理](cleanup-retired-deliveries-20261123.json)。仅评估当前进度时，直接将 `scripts/review_p5_progress.py` 上传服务器同路径，执行 `python -B scripts/review_p5_progress.py plan/p5/runs/20261122T141242292188Z plan/p5/runs/20261122T144249871603Z --output 新命名的报告.json`；该命令不启动训练，也不授予完整 P5 验收。
+
+如后续需要同步完整工程，可按下例重新生成新命名包。包包含活跃代码/测试及文档，不包含 P4 原始 JSONL、旧运行权重或 references。必须在**原有服务器项目目录**更新，以保留 P4 原始数据和历史验收；不要解压到缺少这些证据的新空项目：
 
 ```powershell
-python -B scripts/package_p5.py --output plan/p5/transfer/p5-implementation-20261122-final.tar.gz
-scp -P 5000 plan/p5/transfer/p5-implementation-20261122-final.tar.gz plan/p5/transfer/p5-implementation-20261122-final.tar.gz.sha256 lab2439@121.36.39.81:~/Work/LXM/SAC-STGR/
+python -B scripts/package_p5.py --output plan/p5/transfer/p5-current-source.tar.gz
+scp -P 5000 plan/p5/transfer/p5-current-source.tar.gz plan/p5/transfer/p5-current-source.tar.gz.sha256 lab2439@121.36.39.81:~/Work/LXM/SAC-STGR/
 ```
 
 服务器执行：
@@ -43,8 +47,8 @@ scp -P 5000 plan/p5/transfer/p5-implementation-20261122-final.tar.gz plan/p5/tra
 ssh -p 5000 lab2439@121.36.39.81
 cd ~/Work/LXM/SAC-STGR
 conda activate SAC_RWB
-sha256sum -c p5-implementation-20261122-final.tar.gz.sha256
-tar -xzf p5-implementation-20261122-final.tar.gz
+sha256sum -c p5-current-source.tar.gz.sha256
+tar -xzf p5-current-source.tar.gz
 python - <<'PY'
 import hashlib, json
 from pathlib import Path

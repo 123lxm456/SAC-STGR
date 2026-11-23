@@ -15,7 +15,7 @@ def build(output):
     if output.exists() or output.with_suffix(output.suffix + '.sha256').exists():
         raise ValueError('Refusing to overwrite delivery artifact')
     files = {ROOT / entry['path'] for entry in source_manifest()}
-    files.update(ROOT / name for name in ('README.md', 'research_implementation_plan.md', '.gitignore'))
+    files.update(ROOT / name for name in ('README.md', 'research_implementation_plan.md', '.gitignore', '.gitattributes'))
     files.update((ROOT / 'chapters').glob('*.md'))
     files.update((ROOT / 'chapters').glob('*.docx'))
     excluded = {'runs', 'remote-run', 'transfer', 'archive', 'acceptance'}
@@ -42,7 +42,7 @@ def build(output):
             if hashlib.sha256(data).hexdigest() != entry['sha256']:
                 raise ValueError('Delivery member mismatch')
     checksum = hashlib.sha256(output.read_bytes()).hexdigest()
-    output.with_suffix(output.suffix + '.sha256').write_text(checksum + '  ' + output.name + '\n', encoding='utf-8')
+    output.with_suffix(output.suffix + '.sha256').write_bytes((checksum + '  ' + output.name + '\n').encode('utf-8'))
     print(json.dumps(dict(path=str(output.resolve()), files=len(entries), bytes=output.stat().st_size, sha256=checksum)))
 
 

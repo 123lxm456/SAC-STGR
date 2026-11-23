@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-23",
+  "deleted_files": [
+    {
+      "path": "p5-smoke-fix-20261122.tar.gz",
+      "bytes": 2395264,
+      "sha256": "abc996cdaffb933cfef43fa2d9725d30e0f5cb7b1d0e4a0382d32132dc73e822",
+      "reason": "duplicate of retained delivery artifact or superseded initial source package",
+      "recovery": "git show 545e8c4:p5-smoke-fix-20261122.tar.gz"
+    },
+    {
+      "path": "p5-smoke-fix-20261122.tar.gz.sha256",
+      "bytes": 96,
+      "sha256": "870c6bbba37aa5be5e74a853439bade909f1c89fcda5c9d417a3dd47318bfd7c",
+      "reason": "duplicate of retained delivery artifact or superseded initial source package",
+      "recovery": "git show 545e8c4:p5-smoke-fix-20261122.tar.gz.sha256"
+    },
+    {
+      "path": "p5-delivery-manifest.json",
+      "bytes": 29535,
+      "sha256": "3da58a9d78b21fc680f139e582a71e6acbb783e466bf990d8cd6732f2daeebc1",
+      "reason": "duplicate of retained delivery artifact or superseded initial source package",
+      "recovery": "git show 545e8c4:p5-delivery-manifest.json"
+    },
+    {
+      "path": "plan/p5/transfer/p5-implementation-20261122-final.tar.gz",
+      "bytes": 2393272,
+      "sha256": "3aa336d8e87b2baabdba70f7dc771ef8f3e51a6aa945d4979e425ddc23a1156e",
+      "reason": "duplicate of retained delivery artifact or superseded initial source package",
+      "recovery": "git show 545e8c4:plan/p5/transfer/p5-implementation-20261122-final.tar.gz"
+    },
+    {
+      "path": "plan/p5/transfer/p5-implementation-20261122-final.tar.gz.sha256",
+      "bytes": 106,
+      "sha256": "a7832afc9dc366ce3b8c858bd8f2026cbed1a037e5d1d94015e45e80a688b840",
+      "reason": "duplicate of retained delivery artifact or superseded initial source package",
+      "recovery": "git show 545e8c4:plan/p5/transfer/p5-implementation-20261122-final.tar.gz.sha256"
+    }
+  ],
+  "total_file_bytes": 4818273,
+  "kept_current_delivery": "plan/p5/transfer/p5-smoke-fix-20261122.tar.gz",
+  "kept_delivery_sha256": "abc996cdaffb933cfef43fa2d9725d30e0f5cb7b1d0e4a0382d32132dc73e822",
+  "dependency_check": "no runtime readers; root manifest is also inside retained archive; old filenames in historical prose are historical records",
+  "history_and_models_preserved": true,
+  "performed": true,
+  "scope": "Local workspace only; server and experiment artifacts untouched"
+}
