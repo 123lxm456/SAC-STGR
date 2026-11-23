@@ -1,0 +1,133 @@
+[
+  {
+    "name": "unit",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/run_unit_checks.py",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/unit-results.json",
+      "--require-cuda"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "static",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/verify_plan.py",
+      "--report",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/static.json"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-b0-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "b0",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-m1-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "m1",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-a_b-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "a_b",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-c1-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "c1",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c1/11"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-c2-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "c2",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c2/11"
+    ],
+    "exitcode": 0
+  },
+  {
+    "name": "train-c3-11",
+    "argv": [
+      "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+      "-B",
+      "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+      "train",
+      "--plan",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+      "--variant",
+      "c3",
+      "--seed",
+      "11",
+      "--output",
+      "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c3/11"
+    ],
+    "exitcode": 0
+  }
+]
