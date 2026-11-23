@@ -1,0 +1,194 @@
+[
+  {
+    "run": "20261122T141242292188Z",
+    "snapshot_checks_passed": true,
+    "p5_accepted": false,
+    "target_tests": 107,
+    "online": [
+      {
+        "variant": "b0",
+        "seed": 11,
+        "decision_steps": 1000,
+        "sac_updates": 90,
+        "risk_updates": 0,
+        "risk_update_attempts": 54,
+        "positive_windows": 16,
+        "windows": 3712,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "m1",
+        "seed": 11,
+        "decision_steps": 1000,
+        "sac_updates": 90,
+        "risk_updates": 0,
+        "risk_update_attempts": 54,
+        "positive_windows": 17,
+        "windows": 3743,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "s0",
+        "seed": 11,
+        "decision_steps": 1000,
+        "sac_updates": 90,
+        "risk_updates": 0,
+        "risk_update_attempts": 0,
+        "positive_windows": 10,
+        "windows": 3706,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      }
+    ],
+    "offline": [
+      {
+        "variant": "b0",
+        "seed": 11,
+        "updates": 2
+      },
+      {
+        "variant": "m1",
+        "seed": 11,
+        "updates": 2
+      }
+    ],
+    "closed_loop": [
+      {
+        "variant": "b0",
+        "seed": 11,
+        "density": "nominal",
+        "evaluation_seed": 3000
+      },
+      {
+        "variant": "m1",
+        "seed": 11,
+        "density": "nominal",
+        "evaluation_seed": 3000
+      },
+      {
+        "variant": "s0",
+        "seed": 11,
+        "density": "nominal",
+        "evaluation_seed": 3000
+      }
+    ],
+    "expected": {
+      "online": 3,
+      "offline": 2,
+      "closed_loop": 3
+    },
+    "pending_command_proofs": [],
+    "final_summary_present": true,
+    "system_references_present": false,
+    "local_line_ending_copies": [],
+    "scope": "Partial local snapshot; no server liveness assertion, no raw P4/online stream re-audit; use audit_p5 on server for full acceptance"
+  },
+  {
+    "run": "20261122T144249871603Z",
+    "snapshot_checks_passed": true,
+    "p5_accepted": false,
+    "target_tests": 107,
+    "online": [
+      {
+        "variant": "b0",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5802,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2855,
+        "windows": 691916,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "m1",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5724,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2891,
+        "windows": 727215,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "a_b",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5790,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2967,
+        "windows": 704449,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "c1",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5724,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2727,
+        "windows": 729804,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "c2",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5721,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2798,
+        "windows": 663962,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "c3",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 5775,
+        "risk_update_attempts": 5994,
+        "positive_windows": 2918,
+        "windows": 638408,
+        "execution_confirmed": true,
+        "raw_online_streams_present": true
+      },
+      {
+        "variant": "s0",
+        "seed": 11,
+        "decision_steps": 100000,
+        "sac_updates": 9990,
+        "risk_updates": 0,
+        "risk_update_attempts": 0,
+        "positive_windows": 2809,
+        "windows": 761164,
+        "execution_confirmed": false,
+        "raw_online_streams_present": true
+      }
+    ],
+    "offline": [],
+    "closed_loop": [],
+    "expected": {
+      "online": 21,
+      "offline": 18,
+      "closed_loop": 189
+    },
+    "pending_command_proofs": [
+      "train-s0-11"
+    ],
+    "final_summary_present": false,
+    "system_references_present": false,
+    "local_line_ending_copies": [],
+    "scope": "Partial local snapshot; no server liveness assertion, no raw P4/online stream re-audit; use audit_p5 on server for full acceptance"
+  }
+]
