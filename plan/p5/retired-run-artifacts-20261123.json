@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-23",
+  "performed": true,
+  "files": [
+    {
+      "path": "plan/p5/runs/20261122T091531727475Z/source.tar.gz",
+      "bytes": 2238295,
+      "sha256": "2b03c33f916bc3398e708fc87978f1c62832cb5406b7cf317e56e03203c41c09",
+      "git_blob_sha256": "2b03c33f916bc3398e708fc87978f1c62832cb5406b7cf317e56e03203c41c09",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T092014428044Z/source.tar.gz",
+      "bytes": 2238795,
+      "sha256": "885805141289c0c0234a22fc6aad320b93485e9ab3fc9dd76ef238be2d3d45a7",
+      "git_blob_sha256": "885805141289c0c0234a22fc6aad320b93485e9ab3fc9dd76ef238be2d3d45a7",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T092249404846Z/source.tar.gz",
+      "bytes": 2238823,
+      "sha256": "c3cbcd1527a4bccdc5d4ef115193b55ab641b3e3a40d2e70d9057778e91630bb",
+      "git_blob_sha256": "c3cbcd1527a4bccdc5d4ef115193b55ab641b3e3a40d2e70d9057778e91630bb",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T140654903738Z/source.tar.gz",
+      "bytes": 2239105,
+      "sha256": "e7fc535af0b7135e2aba1912fbead7ebd4354314c32254f9363368ec2561d25c",
+      "git_blob_sha256": "e7fc535af0b7135e2aba1912fbead7ebd4354314c32254f9363368ec2561d25c",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z/source.tar.gz",
+      "bytes": 2236073,
+      "sha256": "7ae6fd07ef1cccec0ab1e9c3665da885aa670710bcf0da5e376e9c382b7815ae",
+      "git_blob_sha256": "7ae6fd07ef1cccec0ab1e9c3665da885aa670710bcf0da5e376e9c382b7815ae",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z/closed-loop/s0/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z/closed-loop/b0/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z/closed-loop/m1/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z/source.tar.gz",
+      "bytes": 2236073,
+      "sha256": "1597a2cb2d1c37a823a721519769c0a662f26bad31373e0103d7e149749f7145",
+      "git_blob_sha256": "1597a2cb2d1c37a823a721519769c0a662f26bad31373e0103d7e149749f7145",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z/closed-loop/s0/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z/closed-loop/b0/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z/closed-loop/m1/11/nominal/3000/physical.jsonl",
+      "bytes": 19235,
+      "sha256": "b121f6119f0690d9ddabc8524edc6f48def33b88fbed03e991659560caabf69e",
+      "git_blob_sha256": "66978f96c32c2520a48e793e3d17381805d8419dc8d285926f862a6ed2ecb0d2",
+      "reason": "retired pre-repair local/failed-smoke intermediate; logs and results kept",
+      "recovery_commit": "c36de28d969f731d22416f51e64ebf015abacf0b"
+    }
+  ],
+  "total_bytes": 13542574,
+  "preserved_runs": [
+    "20261122T141242292188Z",
+    "20261122T144249871603Z"
+  ],
+  "preserved": "All formal weights and journals, successful smoke, failure/local logs, metadata and Git history"
+}

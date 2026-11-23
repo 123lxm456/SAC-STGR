@@ -27,6 +27,19 @@ def protocol_hash(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
 
 
+def active_worker_pids(proc_root=Path('/proc'), worker_path=None):
+    worker = str(worker_path or (ROOT / 'scripts/p5_worker.py'))
+    found = []
+    for folder in Path(proc_root).glob('[0-9]*'):
+        try:
+            argv = (folder / 'cmdline').read_bytes().decode('utf-8', errors='replace').split('\0')
+            if worker in argv:
+                found.append(int(folder.name))
+        except (OSError, ValueError):
+            continue
+    return found
+
+
 def smoke_protocol(locked):
     protocol = copy.deepcopy(locked)
     protocol.update(research_run=False, training_seeds=[11], risk_variants=['b0', 'm1'],
@@ -150,6 +163,7 @@ def main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--local', action='store_true')
     group.add_argument('--smoke', action='store_true')
+    group.add_argument('--reuse-from', type=Path, help='New formal run reuses only verified complete tasks from this run')
     args = parser.parse_args()
     sys.path.insert(0, str(ROOT / 'src/sac_rwb'))
     from algos.p5_experiment import corpus_fingerprint
@@ -172,13 +186,23 @@ def main():
     write_json(run / 'source-snapshot.json', {'sha256': hashlib.sha256(archive.read_bytes()).hexdigest()})
     report = dict(mode='local' if args.local else ('smoke' if args.smoke else 'research'),
                   passed=False, p5_started=not args.local, commands=[], status='running')
+    if args.reuse_from:
+        report['reuse_origin'] = str(args.reuse_from.resolve())
+    write_json(run / 'summary.json', report)
     print('Evidence: {}'.format(run), flush=True)
+    experiment_lock = None
     try:
         if not args.local:
             env = collect_environment(True)
             write_json(run / 'environment.json', env)
             if env.get('target_errors'):
                 raise ValueError('Target environment differs from P0 lock')
+            import fcntl
+            experiment_lock = (ROOT / 'plan/p5/.experiment.lock').open('a')
+            fcntl.flock(experiment_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            active = active_worker_pids()
+            if active:
+                raise RuntimeError('Existing P5 workers still active: {}'.format(active))
         unit = [sys.executable, '-B', ROOT / 'scripts/run_unit_checks.py', '--output', run / 'unit-results.json']
         if not args.local:
             unit.append('--require-cuda')
@@ -198,6 +222,24 @@ def main():
             plan = dict(protocol=protocol, protocol_sha256=protocol_hash(protocol), scenarios=scenes,
                         common_corpus=[str(path) for path in paths], common_corpus_sha256=fingerprint)
             write_json(run / 'plan.json', plan)
+            reuse = None
+            if args.reuse_from:
+                from p5_reuse import ReuseManager
+                reuse = ReuseManager(args.reuse_from, run, plan)
+                write_json(run / 'reuse-proposal.json', reuse.proposal)
+
+            def task(name, argv, destination, seconds, work=None):
+                report['last_task'] = name
+                write_json(run / 'summary.json', report)
+                if reuse is not None and reuse.reuse(name, destination, report['commands']):
+                    write_json(run / 'summary.json', report)
+                    return
+                if work is not None:
+                    work.mkdir()
+                print('Executing new task: ' + name, flush=True)
+                execute(run, name, argv, seconds, report['commands'], work or ROOT)
+                write_json(run / 'summary.json', report)
+
             worker = ROOT / 'scripts/p5_worker.py'
             for seed in protocol['training_seeds']:
                 for variant in protocol['policy_variants']:
@@ -205,37 +247,41 @@ def main():
                     argv = [sys.executable, '-B', worker, 'train', '--plan', run / 'plan.json',
                             '--variant', variant, '--seed', seed, '--output', destination]
                     work = run / ('work-' + variant + '-' + str(seed))
-                    work.mkdir()
                     print('Training {} seed {}'.format(variant, seed), flush=True)
-                    execute(run, 'train-{}-{}'.format(variant, seed), argv, 172800, report['commands'], work)
+                    task('train-{}-{}'.format(variant, seed), argv, destination, 172800, work)
                 for variant in protocol['risk_variants']:
-                    execute(run, 'offline-{}-{}'.format(variant, seed), [sys.executable, '-B', worker,
+                    destination = run / 'offline' / variant / str(seed)
+                    task('offline-{}-{}'.format(variant, seed), [sys.executable, '-B', worker,
                             'offline', '--plan', run / 'plan.json', '--variant', variant, '--seed', seed,
-                            '--output', run / 'offline' / variant / str(seed)], 86400, report['commands'])
+                            '--output', destination], destination, 86400)
                 for variant in protocol['policy_variants']:
                     for density in protocol['evaluation']['densities']:
                         for evaluation_seed in protocol['evaluation']['seeds']:
                             destination = run / 'closed-loop' / variant / str(seed) / density / str(evaluation_seed)
                             work = run / ('eval-work-{}-{}-{}-{}'.format(variant, seed, density, evaluation_seed))
-                            work.mkdir()
-                            execute(run, 'eval-{}-{}-{}-{}'.format(variant, seed, density, evaluation_seed),
+                            task('eval-{}-{}-{}-{}'.format(variant, seed, density, evaluation_seed),
                                     [sys.executable, '-B', worker, 'evaluate', '--plan', run / 'plan.json',
                                      '--variant', variant, '--seed', evaluation_seed, '--density', density,
                                      '--model-dir', run / 'online' / variant / str(seed), '--output', destination],
-                                    14400, report['commands'], work)
+                                    destination, 14400, work)
             if corpus_fingerprint(paths) != fingerprint:
                 raise ValueError('Frozen common corpus changed during experiment')
             from audit_p5 import audit
             verdict = audit(run, require_full=not args.smoke)
             write_json(run / 'audit.json', verdict)
             report.update(passed=verdict['passed'], status=verdict['status'],
-                          engineering_passed=True, research_matrix_completed=not args.smoke)
+                          engineering_passed=True, research_matrix_completed=not args.smoke,
+                          reused_tasks=len(reuse.manifest['jobs']) if reuse is not None else 0)
         if source_manifest() != before:
             raise ValueError('Active sources changed during execution')
+    except KeyboardInterrupt:
+        report.update(passed=False, status='interrupted', error='KeyboardInterrupt; completed task evidence retained')
     except Exception as error:
         report.update(passed=False, status='failed', error='{}: {}'.format(type(error).__name__, error))
         print(report['error'], file=sys.stderr)
     write_json(run / 'summary.json', report)
+    if experiment_lock is not None:
+        experiment_lock.close()
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
     return 1 if report.get('error') else (0 if args.local or report['passed'] else 2)
 

@@ -26,6 +26,7 @@ venv/
 /plan/p5/runs/**/online-data/samples.jsonl
 /plan/p5/runs/**/online-data/events.jsonl
 /plan/p5/returns/
+/plan/p5/.experiment.lock
 
 
 # Temporary files

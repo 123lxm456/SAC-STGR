@@ -1,0 +1,25 @@
+{
+  "tests_run": 122,
+  "skipped": [
+    [
+      "test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_forward_and_backward (test_p2.P2Tests.test_cuda_forward_and_backward)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_cuda_m1_online_scoring_and_optimizer (test_p3.P3Tests.test_cuda_m1_online_scoring_and_optimizer)",
+      "CUDA is unavailable"
+    ],
+    [
+      "test_ablation_cuda_real_update (test_p5.P5Tests.test_ablation_cuda_real_update)",
+      "CUDA is unavailable"
+    ]
+  ],
+  "failures": [],
+  "errors": [],
+  "require_cuda": false,
+  "passed": true
+}

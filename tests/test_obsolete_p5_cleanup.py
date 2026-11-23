@@ -1,5 +1,6 @@
 """Cleanup must refuse research runs and retain logs and the successful run."""
 import json
+import hashlib
 from pathlib import Path
 import sys
 import tempfile
@@ -7,7 +8,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from clean_obsolete_p5_results import OBSOLETE_RUNS, clean, candidates
+from clean_obsolete_p5_results import OBSOLETE_RUNS, LOCAL_RUNS, clean, candidates
 
 
 class CleanupTests(unittest.TestCase):
@@ -47,6 +48,18 @@ class CleanupTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             clean(self.root, True)
         self.assertTrue((first / 'risk.pth').is_file())
+
+    def test_retired_local_snapshot_requires_unchanged_hash_and_keeps_summary(self):
+        run = self.root / 'plan/p5/runs' / LOCAL_RUNS[0]
+        run.mkdir()
+        (run / 'summary.json').write_text('{"mode":"local"}')
+        (run / 'source.tar.gz').write_bytes(b'synthetic snapshot')
+        (run / 'source-snapshot.json').write_text(json.dumps({'sha256': hashlib.sha256(b'synthetic snapshot').hexdigest()}))
+        self.assertEqual(clean(self.root)['file_count'], 5)
+        (run / 'source.tar.gz').write_bytes(b'changed snapshot')
+        with self.assertRaisesRegex(ValueError, 'snapshot has changed'):
+            clean(self.root, True)
+        self.assertTrue((run / 'summary.json').is_file())
 
 
 if __name__ == '__main__':

@@ -142,8 +142,11 @@ def review(run):
                     require(equivalent(score_metrics(data['labels'], data['scores']), value['splits'][split]['raw']) and
                             equivalent(score_metrics(data['labels'], apply_calibration(data['scores'], calibration)),
                                        value['splits'][split]['calibrated']), 'Offline metric mismatch')
-            require(execution('offline-{}-{}'.format(variant, seed)), 'Offline execution proof missing')
-            offline.append(dict(variant=variant, seed=seed, updates=value['updates']))
+            name = 'offline-{}-{}'.format(variant, seed)
+            confirmed = execution(name)
+            if not confirmed:
+                pending.append(name)
+            offline.append(dict(variant=variant, seed=seed, updates=value['updates'], execution_confirmed=confirmed))
         for variant in protocol['policy_variants']:
             for density in protocol['evaluation']['densities']:
                 for evaluation_seed in protocol['evaluation']['seeds']:
@@ -161,8 +164,12 @@ def review(run):
                     metrics = audit_physical(folder / 'physical.jsonl')
                     require(equivalent(metrics, value['metrics']) and
                             metrics['simulation_steps'] == protocol['evaluation']['simulation_steps'], 'Physical metrics mismatch')
-                    require(execution('eval-{}-{}-{}-{}'.format(variant, seed, density, evaluation_seed)), 'Evaluation exitcode missing')
-                    closed.append(dict(variant=variant, seed=seed, density=density, evaluation_seed=evaluation_seed))
+                    name = 'eval-{}-{}-{}-{}'.format(variant, seed, density, evaluation_seed)
+                    confirmed = execution(name)
+                    if not confirmed:
+                        pending.append(name)
+                    closed.append(dict(variant=variant, seed=seed, density=density, evaluation_seed=evaluation_seed,
+                                       execution_confirmed=confirmed))
     return dict(run=run.name, snapshot_checks_passed=True, p5_accepted=False,
                 target_tests=units['tests_run'], online=online, offline=offline, closed_loop=closed,
                 expected=dict(online=len(protocol['training_seeds']) * len(protocol['policy_variants']),

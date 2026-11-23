@@ -98,6 +98,8 @@ def audit(run, require_full=True):
         name = command['name']
         require(command['exitcode'] == 0 and int((run / (name + '.exitcode')).read_text()) == 0 and
                 (run / (name + '.log')).is_file(), 'Failed/missing worker execution proof')
+    from p5_reuse import verify_reuse
+    verify_reuse(run)
     require(corpus_fingerprint(plan['common_corpus']) == plan['common_corpus_sha256'], 'Common corpus changed')
     if require_full:
         validate_protocol(protocol)
