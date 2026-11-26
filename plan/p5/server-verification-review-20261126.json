@@ -1,0 +1,50 @@
+{
+  "source_attachment_sha256": "0fb5be0cc6a3e4500575a58d7f064202c21f392634b0bccd1075575025de2086",
+  "evidence": "User supplied remote terminal transcript; remote JSON files not yet returned",
+  "target_unit_tests": {
+    "tests_run": 129,
+    "passed": 129,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 6.377
+  },
+  "static": {
+    "passed": true,
+    "checks": 13
+  },
+  "progress": {
+    "run": "20261123T094822803672Z",
+    "checked": true,
+    "online": 12,
+    "offline": 9,
+    "closed_loop": 108,
+    "pending": []
+  },
+  "full_audit": {
+    "report": "plan/p5/server-audit-20261126T052923Z.json",
+    "passed": false,
+    "status": "needs_research_evidence",
+    "primary_matrix_integrity_passed": true,
+    "missing_natural_risk_updates": [],
+    "system_references": {
+      "passed": false,
+      "missing": [
+        "ppo",
+        "fcfs",
+        "mixed"
+      ]
+    },
+    "evidence": "User supplied audit field output from remote server"
+  },
+  "cleanup": {
+    "confirmed_completed": true,
+    "status": "completed",
+    "deleted_logical_bytes": 36029285960,
+    "filesystem_free_delta": 36029534208,
+    "remaining_p5_du": "52G",
+    "filesystem_available": "172G",
+    "filesystem_use_percent": 91,
+    "evidence": "User supplied cleanup receipt fields and du/df; free-space delta may include concurrent filesystem activity"
+  }
+}

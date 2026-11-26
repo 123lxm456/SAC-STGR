@@ -65,3 +65,10 @@ python -B scripts/audit_p5.py plan/p5/runs/20261123T094822803672Z --output "plan
 ## 验证与限制
 
 本机最终回归 129 项：122 通过、7 跳过、0 失败/错误，见 [单测报告](removal-final-unit-20261126.json)。跳过为 4 个 CUDA、2 个 Linux 删除专项及 1 个 Windows 符号链接权限测试；Linux 清理保护在 WSL 独立运行 5 项全部通过。静态保护检查通过，64 个活跃 Python 文件通过 Python 3.7 语法解析，章节 docx 没有退役实验引用。另已核实并移除旧 source-only 交付包及校验文件 2 个，共 80,912 字节；本地累计删除 497 文件、146,556,687 字节（139.77 MiB），见 [旧交付清理](obsolete-patch-cleanup-20261126.json)。远端未执行清理前，不报告已释放服务器磁盘空间。Windows 跳过 CUDA/Linux 专项不等于目标通过；Linux 清理保护在本机 WSL 的临时目录独立验证。
+
+
+## 服务器最终回传确认
+
+用户回传的清理回执为 completed：删除逻辑大小 36,029,285,960 字节，文件系统空闲差值增加 36,029,534,208 字节（约 33.55 GiB；差值可能包含同期文件系统活动）。`du -sh plan/p5` 为 52G，根文件系统可用 172G、使用率 91%。盘点中的退役专用文件共 24 个，已由受限策略清理；其他组训练流、权重及混合历史凭据保留。
+
+目标环境 129 项测试全部通过且无跳过，13 项静态保护检查通过；保留矩阵为 12 online / 9 offline / 108 closed-loop，pending 为空。服务器 `server-audit-20261126T052923Z.json` 确认 `primary_matrix_integrity_passed=true`、`missing_natural_risk_updates=[]`。完整研究验收唯一报告缺项为 PPO、FCFS、mixed 原系统参照；因此仍为 `passed=false / needs_research_evidence`。无需因本轮删组重新训练现有四组。工程删组与清理验证完成，不把完整主矩阵等同于完整 P5 通过。详见 [服务器结果记录](server-verification-review-20261126.json)。

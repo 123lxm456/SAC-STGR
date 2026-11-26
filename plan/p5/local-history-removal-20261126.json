@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "targets": [
+    {
+      "path": "plan/p5/runs/20261122T091531727475Z",
+      "files": 7,
+      "bytes": 41995.0
+    },
+    {
+      "path": "plan/p5/runs/20261122T092014428044Z",
+      "files": 24,
+      "bytes": 26267069.0
+    },
+    {
+      "path": "plan/p5/runs/20261122T092249404846Z",
+      "files": 24,
+      "bytes": 26267069.0
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z",
+      "files": 62,
+      "bytes": 26412885.0
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z",
+      "files": 62,
+      "bytes": 26412877.0
+    },
+    {
+      "path": "plan/p5/runs/20261122T140654903738Z",
+      "files": 24,
+      "bytes": 26267267.0
+    },
+    {
+      "path": "plan/archive",
+      "files": 3,
+      "bytes": 46202434.0
+    }
+  ],
+  "total_files": 206.0,
+  "total_bytes": 177871596.0
+}
