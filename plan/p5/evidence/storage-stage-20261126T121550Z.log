@@ -1,0 +1,64 @@
+MANIFEST: /home/lab2439/Work/LXM/SAC-STGR/plan/p5/storage/primary-20261123T094822803672Z/stage-20261126T121550709575Z.json
+Staging 1/31: plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/samples.jsonl
+Verified 21269606 -> 474646 bytes
+Staging 2/31: plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/events.jsonl
+Verified 253604 -> 55889 bytes
+Staging 3/31: plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/samples.jsonl
+Verified 21078739 -> 471375 bytes
+Staging 4/31: plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/events.jsonl
+Verified 252543 -> 55536 bytes
+Staging 5/31: plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/samples.jsonl
+Verified 20988524 -> 430223 bytes
+Staging 6/31: plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/events.jsonl
+Verified 252138 -> 55529 bytes
+Staging 7/31: plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl
+Verified 4148948774 -> 183832399 bytes
+Staging 8/31: plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl
+Verified 38206357 -> 9037314 bytes
+Staging 9/31: plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl
+Verified 4289222892 -> 194111472 bytes
+Staging 10/31: plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl
+Verified 39097273 -> 9271092 bytes
+Staging 11/31: plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl
+Verified 4072507642 -> 176077286 bytes
+Staging 12/31: plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl
+Verified 37719031 -> 8876512 bytes
+Staging 13/31: plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/samples.jsonl
+Verified 4490362216 -> 197984260 bytes
+Staging 14/31: plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/events.jsonl
+Verified 40394998 -> 9623875 bytes
+Staging 15/31: plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/samples.jsonl
+Verified 3885581494 -> 165794999 bytes
+Staging 16/31: plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/events.jsonl
+Verified 36672270 -> 8579563 bytes
+Staging 17/31: plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/samples.jsonl
+Verified 4133694900 -> 183402651 bytes
+Staging 18/31: plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/events.jsonl
+Verified 38229680 -> 9018607 bytes
+Staging 19/31: plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/samples.jsonl
+Verified 3922770468 -> 168470188 bytes
+Staging 20/31: plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/events.jsonl
+Verified 36877880 -> 8637076 bytes
+Staging 21/31: plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/samples.jsonl
+Verified 3910758431 -> 167203224 bytes
+Staging 22/31: plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/events.jsonl
+Verified 36815563 -> 8611695 bytes
+Staging 23/31: plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/samples.jsonl
+Verified 3921821369 -> 166714144 bytes
+Staging 24/31: plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/events.jsonl
+Verified 36879013 -> 8629472 bytes
+Staging 25/31: plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/samples.jsonl
+Verified 4345049127 -> 195745486 bytes
+Staging 26/31: plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/events.jsonl
+Verified 39540431 -> 9373717 bytes
+Staging 27/31: plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/samples.jsonl
+Verified 4492914942 -> 199698855 bytes
+Staging 28/31: plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/events.jsonl
+Verified 40520180 -> 9656981 bytes
+Staging 29/31: plan/p5/runs/20261123T094822803672Z/online/s0/11/online-data/events.jsonl
+Verified 40394998 -> 9623875 bytes
+Staging 30/31: plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/samples.jsonl
+Verified 4235243032 -> 182203329 bytes
+Staging 31/31: plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/events.jsonl
+Verified 38904632 -> 9179523 bytes
+SUMMARY: {"completed": true, "sources_unchanged": true, "inventory": "plan/p5/evidence/storage-inventory-20261126T120536536277Z/files.json", "source_paths": 38, "unique_source_inodes": 31, "original_bytes": 50413222747, "gzip_bytes": 2291276918, "filesystem_free_before": 194279292928, "filesystem_free_after": 191986065408}

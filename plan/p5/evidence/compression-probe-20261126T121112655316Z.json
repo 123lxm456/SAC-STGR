@@ -1,0 +1,225 @@
+{
+  "scope": "Sample-based estimate only; original files unchanged",
+  "files": 31,
+  "original_bytes": 50413222747,
+  "estimated_compressed_bytes": 2082925628,
+  "results": [
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/samples.jsonl",
+      "original_bytes": 21269606,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.0224304993947347,
+      "estimated_compressed_bytes": 477087
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/events.jsonl",
+      "original_bytes": 253604,
+      "sampled_bytes": 253604,
+      "gzip_ratio": 0.22037901610384694,
+      "estimated_compressed_bytes": 55889
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/samples.jsonl",
+      "original_bytes": 21078739,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.022237221399943035,
+      "estimated_compressed_bytes": 468732
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/events.jsonl",
+      "original_bytes": 252543,
+      "sampled_bytes": 252543,
+      "gzip_ratio": 0.2199071049286656,
+      "estimated_compressed_bytes": 55536
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/samples.jsonl",
+      "original_bytes": 20988524,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.02037946383158366,
+      "estimated_compressed_bytes": 427734
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/events.jsonl",
+      "original_bytes": 252138,
+      "sampled_bytes": 252138,
+      "gzip_ratio": 0.22023257105236022,
+      "estimated_compressed_bytes": 55529
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl",
+      "original_bytes": 4148948774,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.04478923479715983,
+      "estimated_compressed_bytes": 185828240
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl",
+      "original_bytes": 38206357,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23495864868164062,
+      "estimated_compressed_bytes": 8976914
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl",
+      "original_bytes": 4289222892,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03798937797546387,
+      "estimated_compressed_bytes": 162944909
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl",
+      "original_bytes": 39097273,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23830461502075195,
+      "estimated_compressed_bytes": 9317060
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl",
+      "original_bytes": 4072507642,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03559684753417969,
+      "estimated_compressed_bytes": 144968433
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl",
+      "original_bytes": 37719031,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23349245389302573,
+      "estimated_compressed_bytes": 8807109
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/samples.jsonl",
+      "original_bytes": 4490362216,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03809269269307455,
+      "estimated_compressed_bytes": 171049987
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/events.jsonl",
+      "original_bytes": 40394998,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.2422020435333252,
+      "estimated_compressed_bytes": 9783751
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/samples.jsonl",
+      "original_bytes": 3885581494,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03867840766906738,
+      "estimated_compressed_bytes": 150288105
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/events.jsonl",
+      "original_bytes": 36672270,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.2319620450337728,
+      "estimated_compressed_bytes": 8506574
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/samples.jsonl",
+      "original_bytes": 4133694900,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.04554152488708496,
+      "estimated_compressed_bytes": 188254769
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/events.jsonl",
+      "original_bytes": 38229680,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23392375310262045,
+      "estimated_compressed_bytes": 8942830
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/samples.jsonl",
+      "original_bytes": 3922770468,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03307898839314779,
+      "estimated_compressed_bytes": 129761278
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/events.jsonl",
+      "original_bytes": 36877880,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23202117284138998,
+      "estimated_compressed_bytes": 8556448
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/samples.jsonl",
+      "original_bytes": 3910758431,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.037261962890625,
+      "estimated_compressed_bytes": 145722535
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/events.jsonl",
+      "original_bytes": 36815563,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23199065526326498,
+      "estimated_compressed_bytes": 8540866
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/samples.jsonl",
+      "original_bytes": 3921821369,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.034003893534342446,
+      "estimated_compressed_bytes": 133357196
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/events.jsonl",
+      "original_bytes": 36879013,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.2318852742513021,
+      "estimated_compressed_bytes": 8551700
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/samples.jsonl",
+      "original_bytes": 4345049127,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.046782732009887695,
+      "estimated_compressed_bytes": 203273268
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/events.jsonl",
+      "original_bytes": 39540431,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23661279678344727,
+      "estimated_compressed_bytes": 9355771
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/samples.jsonl",
+      "original_bytes": 4492914942,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.04074883460998535,
+      "estimated_compressed_bytes": 183081047
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/events.jsonl",
+      "original_bytes": 40520180,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.24208362897237143,
+      "estimated_compressed_bytes": 9809272
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/online-data/events.jsonl",
+      "original_bytes": 40394998,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.2422020435333252,
+      "estimated_compressed_bytes": 9783751
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/samples.jsonl",
+      "original_bytes": 4235243032,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.03888495763142904,
+      "estimated_compressed_bytes": 164687245
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/events.jsonl",
+      "original_bytes": 38904632,
+      "sampled_bytes": 12582912,
+      "gzip_ratio": 0.23740267753601074,
+      "estimated_compressed_bytes": 9236063
+    }
+  ]
+}

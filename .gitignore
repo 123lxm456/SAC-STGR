@@ -34,3 +34,6 @@ venv/
 
 .DS_Store
 Thumbs.db
+
+# Raw compressed data stays on server
+/plan/p5/storage/**/objects/
