@@ -66,10 +66,13 @@ def system_references(run, plan):
 
 
 def audit(run, require_full=True):
+    from p5_scope import projected, included_job, canonical_runtime
     run = Path(run).resolve()
     plan = read(run / 'plan.json')
     protocol = plan['protocol']
     require(protocol_hash(protocol) == plan['protocol_sha256'], 'Changed protocol')
+    original_protocol = protocol
+    protocol = projected(protocol)
     environment = read(run / 'environment.json')
     require(environment.get('target_required') and not environment.get('target_errors') and
             environment.get('cuda_available') and environment.get('gpu') == 'NVIDIA GeForce RTX 4090',
@@ -78,13 +81,19 @@ def audit(run, require_full=True):
     require(sha_file(run / 'source.tar.gz') == read(run / 'source-snapshot.json')['sha256'], 'Source snapshot changed')
     with tarfile.open(str(run / 'source.tar.gz'), 'r:gz') as archive:
         for entry in source_entries:
-            require(hashlib.sha256(archive.extractfile(entry['path']).read()).hexdigest() == entry['sha256'],
+            saved = archive.extractfile(entry['path']).read()
+            require(hashlib.sha256(saved).hexdigest() == entry['sha256'],
                     'Captured source does not match execution manifest')
+            if original_protocol != protocol and entry['path'].startswith('src/'):
+                require(canonical_runtime(entry['path'], saved) ==
+                        canonical_runtime(entry['path'], (ROOT / entry['path']).read_bytes()),
+                        'Historical runtime differs outside reviewed scope change')
     units = read(run / 'unit-results.json')
     require(units.get('passed') and units.get('require_cuda') and units.get('tests_run', 0) > 0 and
             not any(units.get(k) for k in ('skipped', 'errors', 'failures')), 'Incomplete target regression')
     require(read(run / 'static.json')['passed'], 'Failed protection/static check')
     commands = read(run / 'commands.json')
+    commands = [c for c in commands if included_job(c['name'], original_protocol)]
     expected_commands = {'unit', 'static'}
     for seed in protocol['training_seeds']:
         expected_commands.update('train-{}-{}'.format(v, seed) for v in protocol['policy_variants'])
@@ -181,11 +190,6 @@ def audit(run, require_full=True):
                         score_metrics(labels, apply_calibration(scores, calibration)) == result['splits'][split]['calibrated'],
                         'Offline metrics disagree with saved predictions')
             offline[variant, seed] = result
-    if require_full:
-        seed = protocol['training_seeds'][0]
-        counts = {v: offline[v, seed]['engineering']['parameter_count'] for v in ('m1', 'c1')}
-        require(abs(counts['c1'] / counts['m1'] - 1) <= protocol['c1_max_parameter_relative_difference'],
-                'C1 capacity is not matched to M1')
     aggregate = {'offline': {}, 'closed_loop': {}, 'paired_m1_minus_comparator': {}}
     if len(protocol['training_seeds']) >= 3:
         for variant in protocol['risk_variants']:
@@ -216,6 +220,8 @@ def audit(run, require_full=True):
     references = system_references(run, plan) if require_full else {'passed': False, 'scope': 'smoke'}
     passed = bool(require_full and protocol['research_run'] and not missing_learning and references['passed'])
     return dict(passed=passed, status='passed' if passed else ('smoke_passed_not_research' if not require_full else 'needs_research_evidence'),
+                original_protocol_sha256=plan['protocol_sha256'], assessed_protocol_sha256=protocol_hash(protocol),
+                scope_projected=original_protocol != protocol,
                 primary_matrix_integrity_passed=True, missing_natural_risk_updates=missing_learning,
                 system_references=references, aggregate=aggregate,
                 scope='Fixed-budget final checkpoints, common offline corpus, paired training seeds; effect direction does not control acceptance')

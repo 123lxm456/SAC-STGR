@@ -62,15 +62,13 @@ class P5Tests(unittest.TestCase):
                 copy.load_state_dict(torch.load(str(path), map_location='cpu'))
                 self.assertTrue(torch.equal(scores, copy(states, actions, mask)))
 
-    def test_c1_capacity_matches_m1_and_removed_ablation_modules_are_absent(self):
-        counts = {v: sum(p.numel() for p in create_p5_predictor(v).parameters()) for v in ('m1', 'c1')}
-        self.assertLessEqual(abs(counts['c1'] / counts['m1'] - 1), .1)
-        for variant in ('c2', 'c3'):
-            self.assertFalse(hasattr(create_p5_predictor(variant), 'readout_attention'))
+    def test_remaining_ablation_disables_only_recency_and_unknown_groups_fail(self):
         self.assertTrue((create_p5_predictor('a_b').temporal_attention_bias == 0).all())
+        with self.assertRaises(ValueError):
+            create_p5_predictor('unsupported')
 
     def test_ablation_optimizer_owns_exactly_current_parameters_and_updates(self):
-        for variant in ('a_b', 'c1', 'c2', 'c3'):
+        for variant in ('a_b',):
             model = create_p5_predictor(variant)
             actual = {id(p) for group in model.optimizer.param_groups for p in group['params']}
             self.assertEqual(actual, {id(p) for p in model.parameters()})
@@ -83,9 +81,9 @@ class P5Tests(unittest.TestCase):
         batch = self.batch()
         corpus = {split: batch for split in ('train', 'validation', 'test')}
         with patch('algos.p5_experiment.benchmark', return_value={'fixture': True}):
-            first = fit_offline('c1', 3, corpus, 2, 4, 'cpu', self.path / 'one', corpus_id='same')
+            first = fit_offline('a_b', 3, corpus, 2, 4, 'cpu', self.path / 'one', corpus_id='same')
             changed = dict(corpus, test=batch[:3] + (1 - batch[3],))
-            second = fit_offline('c1', 3, changed, 2, 4, 'cpu', self.path / 'two', corpus_id='same')
+            second = fit_offline('a_b', 3, changed, 2, 4, 'cpu', self.path / 'two', corpus_id='same')
         self.assertEqual(first['updates'], 2)
         self.assertEqual(first['checkpoint_sha256'], second['checkpoint_sha256'])
         self.assertEqual(first['calibration'], second['calibration'])
@@ -128,6 +126,14 @@ class P5Tests(unittest.TestCase):
     def test_locked_protocol_rejects_missing_groups_duplicate_seeds_and_test_overlap(self):
         original = json.loads((ROOT / 'plan/p5/protocol.json').read_text())
         validate_protocol(original)
+        self.assertEqual(original['version'], 'p5-v2')
+        self.assertEqual(tuple(original['policy_variants']), ('b0', 'm1', 'a_b', 's0'))
+        seeds = len(original['training_seeds'])
+        self.assertEqual(seeds * len(original['policy_variants']), 12)
+        self.assertEqual(seeds * len(original['risk_variants']), 9)
+        self.assertEqual(seeds * len(original['policy_variants']) *
+                         len(original['evaluation']['seeds']) *
+                         len(original['evaluation']['densities']), 108)
         for key, value in (('training_seeds', [1, 1, 2]), ('training_seeds', [3000, 2, 3]),
                            ('policy_variants', ['b0', 'm1']), ('research_run', False)):
             changed = json.loads(json.dumps(original))
@@ -184,7 +190,7 @@ class P5Tests(unittest.TestCase):
 
     @unittest.skipUnless(torch.cuda.is_available(), 'CUDA is unavailable')
     def test_ablation_cuda_real_update(self):
-        for variant in ('a_b', 'c1', 'c2', 'c3'):
+        for variant in ('a_b',):
             model = create_p5_predictor(variant).cuda()
             self.assertTrue(np.isfinite(balanced_update(model, self.batch(), 'cuda')))
 

@@ -1,0 +1,16 @@
+{
+  "reason": "Superseded source-only patch, no experiment artifacts",
+  "files": [
+    {
+      "path": "transfer/p5-continuation-20261123.tar.gz",
+      "bytes": 80814,
+      "sha256": "131e273bb5cc93456ca2362d6b1fbbd96c181c66c68d9bbeabe29201904756cd"
+    },
+    {
+      "path": "transfer/p5-continuation-20261123.tar.gz.sha256",
+      "bytes": 98,
+      "sha256": "aadfea1c063737ccdbae7064a00b7c1117fedc0041390670a2714031baa09d49"
+    }
+  ],
+  "deleted_logical_bytes": 80912.0
+}

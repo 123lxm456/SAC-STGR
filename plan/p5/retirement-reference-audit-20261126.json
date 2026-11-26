@@ -1,0 +1,149 @@
+{
+  "unexpected_active_references": [],
+  "remaining_references": [
+    {
+      "path": "scripts/clean_retired_p5.py",
+      "classification": "deletion_policy_only"
+    },
+    {
+      "path": "plan/p4/runs/20261121T115438612730Z/b0-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p4/runs/20261121T115438612730Z/m1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/acceptance/20261120T104147769112Z/p0/work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p5/local-retirement-scan-20261126.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/assessment-20261123T074118Z.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/progress-audit-20261123.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/local-post-cleanup-20261126.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/review-20261123.md",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/assessment-after-cleanup-20261123.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/progress-audit-final-20261123.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/local-retirement-receipt-20261126.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/removal-unit-20261126.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/reuse-plan-20261123.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T092014428044Z/protocol.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/commands.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T144249871603Z/plan.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T140654903738Z/protocol.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T092249404846Z/protocol.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/reuse-manifest.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/audit.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/reuse-proposal.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/commands.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/summary.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261123T094822803672Z/plan.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T132941429168Z/plan.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T123630783825Z/plan.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p5/runs/20261122T141242292188Z/plan.json",
+      "classification": "historical_or_cleanup_record"
+    },
+    {
+      "path": "plan/p3/runs/20261121T092656852782Z/b0-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p3/runs/20261121T092656852782Z/m1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p3/runs/20261120T132252406987Z/b0-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p3/runs/20261120T132252406987Z/m1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/b0-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "plan/p3/runs/20261120T112031917855Z/m1-work/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    },
+    {
+      "path": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml",
+      "classification": "SUMO pedestrian crossing identifiers; unrelated to experiments"
+    }
+  ]
+}

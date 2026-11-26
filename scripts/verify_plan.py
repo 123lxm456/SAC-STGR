@@ -74,7 +74,7 @@ trace = read("plan/review/method-experiment-traceability.md")
 check("technical specification has connected spatiotemporal pipeline",
       all(term in spec for term in
           ("[B,10,9,64]", "Encoder}_S", "Encoder}_T",
-           "末步读出", "有效步掩码", "M1", "C1", "C2", "C3")))
+           "末步读出", "有效步掩码", "M1", "B0", "A-B", "S0")))
 acceptance = json.loads(read('plan/acceptance/p012-accepted-20261120.json'))
 check("README and stage identify phases backed by P012 acceptance record",
       all('P{}'.format(i) in item for i in range(6) for item in (readme, stage))
@@ -82,7 +82,7 @@ check("README and stage identify phases backed by P012 acceptance record",
       and all(acceptance.get('stages', {}).get('P{}'.format(i)) == 'passed' for i in range(3)))
 check("method claims map to experiments",
       all(term in trace for term in
-          ("M1", "B0", "C1", "C2", "C3", "A-B", "校准")))
+          ("M1", "B0", "S0", "A-B", "校准")))
 check("required project planning files",
       all((ROOT / rel).is_file() for rel in
           ("plan/project-overview.md", "plan/outline.md",

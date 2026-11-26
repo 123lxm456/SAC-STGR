@@ -1,0 +1,9 @@
+{
+  "environment": "local WSL Ubuntu, not remote research server",
+  "command": "python3 -B -m unittest discover -s tests -p test_clean_retired_p5.py",
+  "tests_run": 5,
+  "passed": true,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0
+}

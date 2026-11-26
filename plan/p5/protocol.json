@@ -1,8 +1,8 @@
 {
-  "version": "p5-v1",
+  "version": "p5-v2",
   "research_run": true,
-  "risk_variants": ["b0", "m1", "a_b", "c1", "c2", "c3"],
-  "policy_variants": ["b0", "m1", "a_b", "c1", "c2", "c3", "s0"],
+  "risk_variants": ["b0", "m1", "a_b"],
+  "policy_variants": ["b0", "m1", "a_b", "s0"],
   "training_seeds": [11, 23, 37],
   "offline": {"updates": 5000, "batch_size": 128, "lr": 0.00001, "weight_decay": 0.00001},
   "online": {"decision_steps": 100000, "episode_decisions": 1000, "update_every": 50, "risk_updates_per_trigger": 3},
@@ -11,7 +11,6 @@
   "label_protocol": "p4-h10-v1",
   "checkpoint_selection": "fixed final budget, never test selection",
   "calibration": "validation-only Platt, diagnostic offline only",
-  "c1_max_parameter_relative_difference": 0.1,
   "system_references_required": ["ppo", "fcfs", "mixed"],
   "acceptance": "complete paired experiments and auditable evidence, independent of favorable effect; full P5 also requires original system-reference evidence"
 }

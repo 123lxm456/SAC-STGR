@@ -1,0 +1,27 @@
+test_inbound_preserved_link_blocks_deletion (test_clean_retired_p5.CleanupTests.test_inbound_preserved_link_blocks_deletion) ... skipped 'OS does not permit symlink creation'
+test_inventory_hashes_candidates_and_preserves_mixed_records (test_clean_retired_p5.CleanupTests.test_inventory_hashes_candidates_and_preserves_mixed_records) ... ok
+test_policy_is_scoped_to_dedicated_products (test_clean_retired_p5.CleanupTests.test_policy_is_scoped_to_dedicated_products) ... ok
+test_projection_keeps_budgets_seeds_and_data_definition (test_p5_scope.ScopeTests.test_projection_keeps_budgets_seeds_and_data_definition) ... ok
+test_runtime_mapping_does_not_hide_other_source_changes (test_p5_scope.ScopeTests.test_runtime_mapping_does_not_hide_other_source_changes) ... ok
+test_changed_protocol_or_common_corpus_refuses_reuse (test_p5_reuse.ReuseTests.test_changed_protocol_or_common_corpus_refuses_reuse) ... ok
+Validating reusable task: offline-b0-11
+Reused verified task: offline-b0-11
+test_complete_task_is_copied_with_original_argv_log_exitcode_and_hashes (test_p5_reuse.ReuseTests.test_complete_task_is_copied_with_original_argv_log_exitcode_and_hashes) ... ok
+Validating reusable task: train-b0-11
+test_missing_raw_journals_cannot_turn_a_review_snapshot_into_training_evidence (test_p5_reuse.ReuseTests.test_missing_raw_journals_cannot_turn_a_review_snapshot_into_training_evidence) ... ok
+Validating reusable task: offline-b0-11
+Reused verified task: offline-b0-11
+test_modified_inherited_weights_or_original_failure_are_rejected (test_p5_reuse.ReuseTests.test_modified_inherited_weights_or_original_failure_are_rejected) ... ok
+Validating reusable task: train-b0-11
+Reused verified task: train-b0-11
+test_online_reuse_keeps_raw_journal_links_and_origin_metadata (test_p5_reuse.ReuseTests.test_online_reuse_keeps_raw_journal_links_and_origin_metadata) ... ok
+test_only_complete_commands_and_matching_training_dependencies_are_selected (test_p5_reuse.ReuseTests.test_only_complete_commands_and_matching_training_dependencies_are_selected) ... ok
+test_orphan_worker_detection_matches_exact_project_script (test_p5_reuse.ReuseTests.test_orphan_worker_detection_matches_exact_project_script) ... ok
+Validating reusable task: offline-b0-11
+Reused verified task: offline-b0-11
+test_runtime_change_and_missing_provenance_are_rejected (test_p5_reuse.ReuseTests.test_runtime_change_and_missing_provenance_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 25.612s
+
+OK (skipped=1)

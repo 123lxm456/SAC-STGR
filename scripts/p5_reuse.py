@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src/sac_rwb'))
 from accept_p5 import read, protocol_hash
 from algos.p5_experiment import make_directory
+from p5_scope import projected, canonical_runtime, included_job
 
 
 def require(value, message):
@@ -34,7 +35,7 @@ def digest(path):
 
 def runtime_signature(archive_path):
     with tarfile.open(str(archive_path), 'r:gz') as archive:
-        return {member.name: hashlib.sha256(archive.extractfile(member).read().replace(b'\r\n', b'\n')).hexdigest()
+        return {member.name: canonical_runtime(member.name, archive.extractfile(member).read())
                 for member in archive if member.isfile() and
                 (member.name.startswith('src/') or member.name == 'scripts/p5_worker.py')}
 
@@ -95,7 +96,8 @@ def verify_reuse(run, visited=None):
     require(str(run) not in visited, 'Cyclic continuation provenance')
     visited.add(str(run))
     commands = read(run / 'commands.json')
-    inherited = {c['name']: c for c in commands if c.get('reused_from')}
+    protocol = read(run / 'plan.json')['protocol']
+    inherited = {c['name']: c for c in commands if c.get('reused_from') and included_job(c['name'], protocol)}
     path = run / 'reuse-manifest.json'
     if not path.is_file():
         require(not inherited, 'Inherited commands lack provenance')
@@ -110,7 +112,7 @@ def verify_reuse(run, visited=None):
         origin.relative_to((ROOT / 'plan/p5/runs').resolve())
         require(command['reused_from'] == str(origin) and origin != run, 'Reuse origin mismatch')
         origin_plan, current_plan = read(origin / 'plan.json'), read(run / 'plan.json')
-        require(origin_plan['protocol_sha256'] == current_plan['protocol_sha256'] and
+        require(projected(origin_plan['protocol']) == projected(current_plan['protocol']) and
                 origin_plan['common_corpus_sha256'] == current_plan['common_corpus_sha256'], 'Mixed reuse protocol/data')
         original = [c for c in read(origin / 'commands.json') if c['name'] == name]
         require(len(original) == 1 and original[0] == record['original_command'] and original[0]['exitcode'] == 0 and
@@ -134,7 +136,7 @@ class ReuseManager:
         self.origin, self.run = Path(origin).resolve(), Path(run).resolve()
         self.proposal = inspect(self.origin)
         old = read(self.origin / 'plan.json')
-        require(old['protocol'] == plan['protocol'] and old['common_corpus_sha256'] == plan['common_corpus_sha256'],
+        require(projected(old['protocol']) == plan['protocol'] and old['common_corpus_sha256'] == plan['common_corpus_sha256'],
                 'Continuation changed locked budget or common data')
         for key in plan['scenarios']:
             require(old['scenarios'][key]['scenario_id'] == plan['scenarios'][key]['scenario_id'] and

@@ -1,0 +1,357 @@
+{
+  "scope": "metadata of retained checkpoints; content hashes checked by retained-progress review for formal continuation",
+  "duplicate_groups": [
+    {
+      "sha256": "5fcd5817283c3990e27fe2e26b74ee3aa0a7c40617422eb48e24c6364cfd5274",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/b0/11/actor.pth",
+          "role": "actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/b0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/m1/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/b0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/m1/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/s0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/b0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/m1/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/s0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/b0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/m1/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/s0/11/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "c19ff92cf1e720f095dcf8f23d10b0544c6daa26749ef9865f7dfe07b6361e72",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/b0/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "130c4bc23fe3260c09b91590ef1f888d0209691719ce4703ad383db6a868f84d",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/m1/11/actor.pth",
+          "role": "actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "29c2adb0806f5b8a74c2b5adf030866e4468c13948754479312e803760466c64",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/m1/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "3ddd3ea8e8fa5b56097151454d5720e8515a29ec08b3794f6cc15a398f5f26d6",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/11/actor.pth",
+          "role": "actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "f8381ad7c474f00d621522e885e782ad3c45a78ba1b7c3bd1fe080d3d8490c29",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "cd248ef4cb49cde8a259f0977eff01411f9f19fb78c093db59d1c3724ba71a3c",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/actor.pth",
+          "role": "actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "31ebd614086bc7dae93db25b60397bd1fecb2afad57fee7e832d6ab4e33b94b6",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/s0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/s0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/s0/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "b326f22946fa049fcbd637f75f3794cd55f38e2f1f41d40cc35fd66098ed624e",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/b0/37/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/m1/37/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/37/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "7dc7ed0c6e15ed9186b2ebb82932b5d79e7c509e89d4d6bd6590f762765d5186",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/b0/23/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/m1/23/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/23/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/actor-initial.pth",
+          "role": "initial_actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "cc8f9ccc6ce80a0519c0ef2bba4565ff46b36d03287c7433ba96185c0fa6db83",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/b0/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/m1/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/s0/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/b0/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/m1/11/actor.pth",
+          "role": "actor_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/s0/11/actor.pth",
+          "role": "actor_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "616ec1fc9aeeeecbf5cf28a81e5a21be1aa71c9a09fe4053ded296b9dc5e1357",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/b0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/b0/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/b0/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "47af121b61966bea84765b1bcacf4e61ea58b6b755b23deda1cda1fb4a47f653",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/online/m1/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/online/m1/11/risk.pth",
+          "role": "risk_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/online/m1/11/risk.pth",
+          "role": "risk_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "f6f56d26cac6d555733213453ca6590fb311888a3047a470df71432cde28267b",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/offline/b0/11/risk.pth",
+          "role": "checkpoint_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/offline/b0/11/risk.pth",
+          "role": "checkpoint_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/offline/b0/11/risk.pth",
+          "role": "checkpoint_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    },
+    {
+      "sha256": "ad50d13802fee4482fee12618ff689aec71c99fd464eee93490949de8e4a97c3",
+      "artifacts": [
+        {
+          "path": "plan/p5/runs/20261122T132941429168Z/offline/m1/11/risk.pth",
+          "role": "checkpoint_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T123630783825Z/offline/m1/11/risk.pth",
+          "role": "checkpoint_sha256"
+        },
+        {
+          "path": "plan/p5/runs/20261122T141242292188Z/offline/m1/11/risk.pth",
+          "role": "checkpoint_sha256"
+        }
+      ],
+      "decision": "preserve: paired initialization or audited reuse provenance"
+    }
+  ]
+}

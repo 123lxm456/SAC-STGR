@@ -49,10 +49,12 @@ def physical_digest(path, expected):
 
 
 def review(run):
+    from p5_scope import projected, canonical_runtime
     run = Path(run).resolve()
     plan = read(run / 'plan.json')
     protocol = plan['protocol']
     require(protocol_hash(protocol) == plan['protocol_sha256'], 'Protocol hash mismatch')
+    protocol = projected(protocol)
     locked = read(ROOT / 'plan/p5/protocol.json')
     require(protocol == (locked if protocol['research_run'] else smoke_protocol(locked)), 'Protocol differs from locked budget')
     # Stat on a deeply missing Windows UNC path may raise WinError 65 rather
@@ -74,7 +76,7 @@ def review(run):
             require(hashlib.sha256(saved).hexdigest() == entry['sha256'], 'Captured source hash mismatch')
             current = ROOT / entry['path']
             if entry['path'].startswith('src/') and (not current.is_file() or
-                    saved.replace(b'\r\n', b'\n') != current.read_bytes().replace(b'\r\n', b'\n')):
+                    canonical_runtime(entry['path'], saved) != canonical_runtime(entry['path'], current.read_bytes())):
                 runtime_deltas.append(entry['path'])
     require(not runtime_deltas, 'Runtime source differs from captured target source: ' + str(runtime_deltas))
     commands = {row['name']: row for row in read(run / 'commands.json')}
@@ -171,6 +173,9 @@ def review(run):
                     closed.append(dict(variant=variant, seed=seed, density=density, evaluation_seed=evaluation_seed,
                                        execution_confirmed=confirmed))
     return dict(run=run.name, snapshot_checks_passed=True, p5_accepted=False,
+                original_protocol_sha256=plan['protocol_sha256'],
+                assessed_protocol_sha256=protocol_hash(protocol),
+                scope_projected=plan['protocol'] != protocol,
                 target_tests=units['tests_run'], online=online, offline=offline, closed_loop=closed,
                 expected=dict(online=len(protocol['training_seeds']) * len(protocol['policy_variants']),
                               offline=len(protocol['training_seeds']) * len(protocol['risk_variants']),

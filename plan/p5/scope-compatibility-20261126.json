@@ -1,0 +1,15 @@
+{
+  "legacy_protocol_sha256": "e58c5b1bc7f77c0f7fd234889d8ca9096375ef42a9ce2a4bd7e532444be7dba8",
+  "current_protocol_sha256": "6a8407169867962225503ef00bafa480bc60f5a3db7e5fee3d0392b5370bb05a",
+  "runtime_path": "src/sac_rwb/algos/p5_models.py",
+  "legacy_runtime_sha256": "99ce50577fa04318c353d5509d97e1b7b0afedb4c62d49a7b4bf2a72d904a269",
+  "current_runtime_sha256": "235402a975b2ac59f447b017a9b882d602db6a03247a77c3d128f17c8269e833",
+  "retained_variants": [
+    "b0",
+    "m1",
+    "a_b",
+    "s0"
+  ],
+  "equivalence_report": "plan/p5/retained-model-equivalence-20261126.json",
+  "legacy_smoke_protocol_sha256": "bfe00282a8bf12082c6a6a428e75c358d89b3d82c1c3689a86029f08f984579b"
+}
