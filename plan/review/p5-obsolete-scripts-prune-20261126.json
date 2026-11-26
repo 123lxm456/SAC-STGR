@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "reason": "Fixed-scope P5 cleanup finished locally and on server; no runtime imports",
+  "files": [
+    {
+      "path": "scripts/clean_obsolete_p5_results.py",
+      "bytes": 4375,
+      "sha256": "fec7fff1bf6bd6f961c562f7ef04309b04a3753b2bc5853a1321323ad7accfb1"
+    },
+    {
+      "path": "scripts/clean_retired_p5.py",
+      "bytes": 8965,
+      "sha256": "2642a540eb12eb168e7b8066785292d0149442114b84a6c8810d952d5998e8e5"
+    },
+    {
+      "path": "tests/test_obsolete_p5_cleanup.py",
+      "bytes": 3130,
+      "sha256": "32400f977ad23f526076ed9092bd814674a24302e5f9e5dd1422f05591a55ae4"
+    },
+    {
+      "path": "tests/test_clean_retired_p5.py",
+      "bytes": 4287,
+      "sha256": "08ff8b5b647dc408c2b65dfc996a0305969fecc596ca00541a3346024158dce4"
+    }
+  ],
+  "total_bytes": 20757.0
+}

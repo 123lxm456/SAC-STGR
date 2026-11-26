@@ -1,0 +1,975 @@
+{
+  "historical": {
+    "historical_stages": {
+      "P0": "passed",
+      "P1": "passed",
+      "P2": "passed",
+      "P3": "passed",
+      "P4": "passed"
+    },
+    "historical_gpu_test_runs": [
+      35,
+      53,
+      74
+    ],
+    "reviewed_source_deltas": [
+      {
+        "path": "scripts/audit_p0123.py",
+        "scope": "pinned cold-archive retirement handling only"
+      },
+      {
+        "path": "scripts/verify_plan.py",
+        "scope": "pinned P5 four-group document checks only"
+      },
+      {
+        "path": "src/sac_rwb/Env.py",
+        "scope": "unused imports and exact optional P5 physical-observer callback; legacy default unchanged"
+      },
+      {
+        "path": "src/sac_rwb/README.md",
+        "scope": "documentation status only"
+      },
+      {
+        "path": "src/sac_rwb/algos/p4_data.py",
+        "scope": "reader integrity checks and line-wise parsing only"
+      },
+      {
+        "path": "src/sac_rwb/core/costomized_data_structures.py",
+        "scope": "unused imports / uncalled timer only"
+      },
+      {
+        "path": "src/sac_rwb/core/monitor.py",
+        "scope": "unused imports / uncalled timer only"
+      },
+      {
+        "path": "src/sac_rwb/core/sumo_interface.py",
+        "scope": "unused imports / uncalled timer only"
+      },
+      {
+        "path": "src/sac_rwb/core/utils.py",
+        "scope": "unused imports / uncalled timer only"
+      }
+    ],
+    "frozen_metadata_fingerprints": 16,
+    "raw_streams_absent_locally": [
+      "plan\\p4\\runs\\20261121T115438612730Z\\b0\\validation-0\\samples.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\b0\\validation-0\\events.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\b0\\test-0\\samples.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\b0\\test-0\\events.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\m1\\validation-0\\samples.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\m1\\validation-0\\events.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\m1\\test-0\\samples.jsonl",
+      "plan\\p4\\runs\\20261121T115438612730Z\\m1\\test-0\\events.jsonl"
+    ],
+    "raw_reaudited": false,
+    "variants": {
+      "b0": {
+        "counts": {
+          "train": {
+            "positive": 145,
+            "negative": 82696,
+            "censored": 636,
+            "windows": 83477
+          },
+          "validation": {
+            "positive": 81,
+            "negative": 29968,
+            "censored": 512,
+            "windows": 30561
+          },
+          "test": {
+            "positive": 24,
+            "negative": 33570,
+            "censored": 419,
+            "windows": 34013
+          }
+        },
+        "frozen_evaluation_and_models_verified": true,
+        "strict_raw_reaudit_passed": false
+      },
+      "m1": {
+        "counts": {
+          "train": {
+            "positive": 175,
+            "negative": 29787,
+            "censored": 149,
+            "windows": 30111
+          },
+          "validation": {
+            "positive": 509,
+            "negative": 25784,
+            "censored": 485,
+            "windows": 26778
+          },
+          "test": {
+            "positive": 90,
+            "negative": 28885,
+            "censored": 538,
+            "windows": 29513
+          }
+        },
+        "frozen_evaluation_and_models_verified": true,
+        "strict_raw_reaudit_passed": false
+      }
+    },
+    "scope": "Historical SUMO/GPU executions + current tests; no fresh training trajectory"
+  },
+  "structural": {
+    "passed": true,
+    "counts": {
+      "python_ast": 263,
+      "xml": 102,
+      "json": 504,
+      "gzip_crc": 2,
+      "checkpoint_or_docx_zip_crc": 116,
+      "pickle_structure_only": 8,
+      "cold_archive_members_retired_unverifiable": 89
+    },
+    "active_imports": {
+      "src/sac_rwb/algos/__init__.py": [],
+      "src/sac_rwb/algos/horizon_risk.py": [
+        "algos.transformer_risk_model",
+        "collections",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "src/sac_rwb/algos/online_risk.py": [
+        "algos.risk_training",
+        "algos.spatiotemporal_risk_model",
+        "algos.transformer_risk_model",
+        "collections",
+        "numpy",
+        "time",
+        "torch"
+      ],
+      "src/sac_rwb/algos/p4_data.py": [
+        "algos.horizon_risk",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "xml.etree.ElementTree"
+      ],
+      "src/sac_rwb/algos/p5_experiment.py": [
+        "algos.online_risk",
+        "algos.p4_data",
+        "algos.p5_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "random",
+        "time",
+        "torch"
+      ],
+      "src/sac_rwb/algos/p5_metrics.py": [
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "src/sac_rwb/algos/p5_models.py": [
+        "algos.online_risk",
+        "algos.transformer_risk_model",
+        "torch"
+      ],
+      "src/sac_rwb/algos/risk_training.py": [
+        "torch"
+      ],
+      "src/sac_rwb/algos/spatiotemporal_risk_model.py": [
+        "math",
+        "torch"
+      ],
+      "src/sac_rwb/algos/transformer_risk_model.py": [
+        "algos.risk_training",
+        "collections",
+        "math",
+        "numpy",
+        "random",
+        "torch",
+        "torch.nn"
+      ],
+      "src/sac_rwb/core/__init__.py": [],
+      "src/sac_rwb/core/costomized_data_structures.py": [
+        "collections",
+        "core.utils",
+        "numpy",
+        "sys"
+      ],
+      "src/sac_rwb/core/monitor.py": [
+        "numpy",
+        "pickle"
+      ],
+      "src/sac_rwb/core/NetMap.py": [
+        "copy",
+        "core.utils",
+        "math",
+        "os",
+        "sys"
+      ],
+      "src/sac_rwb/core/runtime.py": [
+        "pathlib"
+      ],
+      "src/sac_rwb/core/sumo_interface.py": [
+        "copy",
+        "core.costomized_data_structures",
+        "inspect",
+        "os",
+        "sumolib",
+        "sys",
+        "traci",
+        "traci.constants"
+      ],
+      "src/sac_rwb/core/utils.py": [
+        "lxml",
+        "xml.etree.ElementTree"
+      ],
+      "src/sac_rwb/Env.py": [
+        "copy",
+        "core.NetMap",
+        "core.costomized_data_structures",
+        "core.monitor",
+        "core.sumo_interface",
+        "core.utils",
+        "gym",
+        "gym.spaces.box",
+        "numpy",
+        "random"
+      ],
+      "src/sac_rwb/sac/__init__.py": [],
+      "src/sac_rwb/sac/SAC.py": [
+        "copy",
+        "numpy",
+        "os",
+        "sac.utils",
+        "torch",
+        "torch.nn.functional"
+      ],
+      "src/sac_rwb/sac/utils.py": [
+        "argparse",
+        "numpy",
+        "torch",
+        "torch.distributions",
+        "torch.nn",
+        "torch.nn.functional"
+      ],
+      "src/sac_rwb/test_sac.py": [
+        "Env",
+        "argparse",
+        "core.runtime",
+        "numpy",
+        "random",
+        "sac.SAC",
+        "sac.utils",
+        "torch"
+      ],
+      "src/sac_rwb/train_sac.py": [
+        "Env",
+        "algos.horizon_risk",
+        "algos.online_risk",
+        "argparse",
+        "core.runtime",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "sac.SAC",
+        "sac.utils",
+        "time",
+        "torch",
+        "torch.utils.tensorboard"
+      ],
+      "scripts/accept_p012.py": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "importlib_metadata",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "re",
+        "shutil",
+        "subprocess",
+        "sys",
+        "torch"
+      ],
+      "scripts/accept_p3.py": [
+        "accept_p012",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "xml.etree.ElementTree"
+      ],
+      "scripts/accept_p4.py": [
+        "accept_p012",
+        "algos.horizon_risk",
+        "algos.p4_data",
+        "argparse",
+        "datetime",
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "xml.etree.ElementTree"
+      ],
+      "scripts/accept_p5.py": [
+        "accept_p012",
+        "algos.p4_data",
+        "algos.p5_experiment",
+        "algos.p5_models",
+        "argparse",
+        "audit_p5",
+        "copy",
+        "datetime",
+        "fcntl",
+        "hashlib",
+        "json",
+        "os",
+        "p5_reuse",
+        "pathlib",
+        "signal",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "xml.etree.ElementTree"
+      ],
+      "scripts/audit_p0123.py": [
+        "argparse",
+        "ast",
+        "gzip",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "pickletools",
+        "re",
+        "tarfile",
+        "xml.etree.ElementTree",
+        "zipfile"
+      ],
+      "scripts/audit_p4.py": [
+        "algos.p4_data",
+        "argparse",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "scripts/audit_p5.py": [
+        "accept_p5",
+        "algos.p4_data",
+        "algos.p5_experiment",
+        "algos.p5_metrics",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "p5_reuse",
+        "p5_scope",
+        "pathlib",
+        "sys",
+        "tarfile"
+      ],
+      "scripts/benchmark_risk.py": [
+        "algos.online_risk",
+        "argparse",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "scripts/collect_p4.py": [
+        "Env",
+        "algos.horizon_risk",
+        "algos.online_risk",
+        "algos.p4_data",
+        "argparse",
+        "core.runtime",
+        "json",
+        "numpy",
+        "pathlib",
+        "random",
+        "sac.utils",
+        "shutil",
+        "sys",
+        "torch"
+      ],
+      "scripts/export_p5.py": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "pathlib",
+        "tarfile"
+      ],
+      "scripts/extend_p4_train.py": [
+        "accept_p012",
+        "algos.horizon_risk",
+        "algos.p4_data",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "scripts/format_chapter_docx.py": [
+        "io",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "xml.etree.ElementTree",
+        "zipfile"
+      ],
+      "scripts/p0_snapshot.py": [
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "tarfile",
+        "xml.etree.ElementTree"
+      ],
+      "scripts/p5_reuse.py": [
+        "accept_p5",
+        "algos.p5_experiment",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "p5_scope",
+        "pathlib",
+        "review_p5_progress",
+        "shutil",
+        "sys",
+        "tarfile"
+      ],
+      "scripts/p5_scope.py": [
+        "accept_p5",
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "scripts/p5_worker.py": [
+        "Env",
+        "algos.horizon_risk",
+        "algos.online_risk",
+        "algos.p4_data",
+        "algos.p5_experiment",
+        "algos.p5_metrics",
+        "algos.p5_models",
+        "argparse",
+        "core.runtime",
+        "json",
+        "numpy",
+        "pathlib",
+        "sac.SAC",
+        "sac.utils",
+        "sys",
+        "torch"
+      ],
+      "scripts/package_p5.py": [
+        "accept_p012",
+        "argparse",
+        "hashlib",
+        "io",
+        "json",
+        "pathlib",
+        "tarfile"
+      ],
+      "scripts/review_p5_progress.py": [
+        "accept_p5",
+        "algos.p4_data",
+        "algos.p5_metrics",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "p5_scope",
+        "pathlib",
+        "sys",
+        "tarfile",
+        "zipfile"
+      ],
+      "scripts/run_unit_checks.py": [
+        "argparse",
+        "json",
+        "pathlib",
+        "sys",
+        "unittest"
+      ],
+      "scripts/verify_p01234.py": [
+        "accept_p012",
+        "algos.horizon_risk",
+        "algos.p4_data",
+        "argparse",
+        "ast",
+        "datetime",
+        "gzip",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "pickletools",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "xml.etree.ElementTree",
+        "zipfile"
+      ],
+      "scripts/verify_plan.py": [
+        "argparse",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "tests/test_acceptance.py": [
+        "contextlib",
+        "importlib.util",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_delivery_checksums.py": [
+        "export_p5",
+        "hashlib",
+        "package_p5",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_extend_p4.py": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p1.py": [
+        "Env",
+        "algos.transformer_risk_model",
+        "importlib",
+        "numpy",
+        "pathlib",
+        "sys",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p2.py": [
+        "algos.spatiotemporal_risk_model",
+        "numpy",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "torch",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p3.py": [
+        "Env",
+        "algos.online_risk",
+        "algos.p4_data",
+        "algos.spatiotemporal_risk_model",
+        "importlib",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "runpy",
+        "sys",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p4.py": [
+        "algos.horizon_risk",
+        "algos.online_risk",
+        "algos.p4_data",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pathlib",
+        "sac.utils",
+        "sys",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock",
+        "xml.etree.ElementTree"
+      ],
+      "tests/test_p4_integrity.py": [
+        "algos.horizon_risk",
+        "algos.p4_data",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "tests/test_p5.py": [
+        "accept_p5",
+        "algos.p5_experiment",
+        "algos.p5_metrics",
+        "algos.p5_models",
+        "audit_p5",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "torch",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p5_progress.py": [
+        "hashlib",
+        "pathlib",
+        "review_p5_progress",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "tests/test_p5_reuse.py": [
+        "accept_p5",
+        "algos.p5_experiment",
+        "copy",
+        "json",
+        "p5_reuse",
+        "pathlib",
+        "shutil",
+        "sys",
+        "tarfile",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_p5_scope.py": [
+        "copy",
+        "json",
+        "p5_scope",
+        "pathlib",
+        "sys",
+        "tarfile",
+        "unittest"
+      ],
+      "tests/test_p5_worker.py": [
+        "accept_p5",
+        "algos.p5_experiment",
+        "algos.p5_metrics",
+        "audit_p5",
+        "hashlib",
+        "json",
+        "numpy",
+        "p5_worker",
+        "pathlib",
+        "sac.utils",
+        "sys",
+        "tarfile",
+        "tempfile",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_repairs.py": [
+        "Env",
+        "algos.transformer_risk_model",
+        "contextlib",
+        "core.monitor",
+        "core.runtime",
+        "hashlib",
+        "importlib.util",
+        "io",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "tempfile",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_review.py": [
+        "Env",
+        "algos.online_risk",
+        "algos.transformer_risk_model",
+        "core.costomized_data_structures",
+        "core.sumo_interface",
+        "importlib",
+        "numpy",
+        "pathlib",
+        "runpy",
+        "sys",
+        "torch",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "tests/test_verify_p01234.py": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ]
+    },
+    "relocated_historical_config_inputs": [
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T095849488178Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T095849488178Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T095849488178Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T095849488178Z/scenarios/validation/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T100227699144Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T100227699144Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T100227699144Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T100227699144Z/scenarios/validation/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T115438612730Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T115438612730Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p4/runs/20261121T115438612730Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p4/runs/20261121T115438612730Z/scenarios/validation/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-high/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-high/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/test-high/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-low/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-low/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/test-low/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/test-nominal/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T141242292188Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T141242292188Z/scenarios/validation/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-high/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-high/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/test-high/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-low/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-low/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/test-low/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/test-nominal/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261122T144249871603Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p5/runs/20261122T144249871603Z/scenarios/validation/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/test/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-high/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-high/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/test-high/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-low/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-low/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/test-low/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/test-nominal/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/test-nominal/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/train/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/train/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/train/routes.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/validation/osm.sumocfg",
+        "input": "src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml"
+      },
+      {
+        "config": "plan/p5/runs/20261123T094822803672Z/scenarios/validation/osm.sumocfg",
+        "input": "plan/p5/runs/20261123T094822803672Z/scenarios/validation/routes.xml"
+      }
+    ],
+    "scope": "Static structures, active local imports and original recovery artifacts; no pickle execution"
+  }
+}

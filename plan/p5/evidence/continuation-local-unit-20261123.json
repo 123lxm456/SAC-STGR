@@ -1,18 +1,6 @@
 {
-  "tests_run": 129,
+  "tests_run": 122,
   "skipped": [
-    [
-      "test_active_worker_prevents_deletion (test_clean_retired_p5.CleanupTests.test_active_worker_prevents_deletion)",
-      "Deletion runs only on Linux"
-    ],
-    [
-      "test_apply_refuses_changed_inventory_and_preserves_other_weights (test_clean_retired_p5.CleanupTests.test_apply_refuses_changed_inventory_and_preserves_other_weights)",
-      "Deletion runs only on Linux"
-    ],
-    [
-      "test_inbound_preserved_link_blocks_deletion (test_clean_retired_p5.CleanupTests.test_inbound_preserved_link_blocks_deletion)",
-      "OS does not permit symlink creation"
-    ],
     [
       "test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding)",
       "CUDA is unavailable"

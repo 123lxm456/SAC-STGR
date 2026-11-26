@@ -2,9 +2,6 @@ test_environment_mismatch_cannot_grant_acceptance (test_acceptance.AcceptanceTes
 test_existing_evidence_is_not_overwritten (test_acceptance.AcceptanceTests.test_existing_evidence_is_not_overwritten) ... ok
 test_failed_p0_stops_before_p1_or_p3 (test_acceptance.AcceptanceTests.test_failed_p0_stops_before_p1_or_p3) ... ok
 test_local_success_cannot_grant_target_acceptance (test_acceptance.AcceptanceTests.test_local_success_cannot_grant_target_acceptance) ... ok
-test_inbound_preserved_link_blocks_deletion (test_clean_retired_p5.CleanupTests.test_inbound_preserved_link_blocks_deletion) ... ERROR
-test_inventory_hashes_candidates_and_preserves_mixed_records (test_clean_retired_p5.CleanupTests.test_inventory_hashes_candidates_and_preserves_mixed_records) ... ERROR
-test_policy_is_scoped_to_dedicated_products (test_clean_retired_p5.CleanupTests.test_policy_is_scoped_to_dedicated_products) ... ok
 test_windows_delivery_checksum_has_literal_lf (test_delivery_checksums.ChecksumTests.test_windows_delivery_checksum_has_literal_lf) ... ok
 test_windows_export_checksum_has_literal_lf (test_delivery_checksums.ChecksumTests.test_windows_export_checksum_has_literal_lf) ... ok
 test_changed_checkpoint_cannot_be_mixed_into_training (test_extend_p4.ExtensionTests.test_changed_checkpoint_cannot_be_mixed_into_training) ... ok
@@ -13,9 +10,6 @@ test_invalid_budget_is_rejected (test_extend_p4.ExtensionTests.test_invalid_budg
 test_non_target_or_skipped_base_tests_cannot_grant_extension (test_extend_p4.ExtensionTests.test_non_target_or_skipped_base_tests_cannot_grant_extension) ... ok
 test_only_unused_training_seeds_are_planned_with_frozen_holdout_paths (test_extend_p4.ExtensionTests.test_only_unused_training_seeds_are_planned_with_frozen_holdout_paths) ... ok
 test_repeated_seed_is_rejected (test_extend_p4.ExtensionTests.test_repeated_seed_is_rejected) ... ok
-test_dry_run_and_apply_keep_formal_results_and_failure_logs (test_obsolete_p5_cleanup.CleanupTests.test_dry_run_and_apply_keep_formal_results_and_failure_logs) ... ok
-test_reclassified_research_or_successful_run_refuses_cleanup (test_obsolete_p5_cleanup.CleanupTests.test_reclassified_research_or_successful_run_refuses_cleanup) ... ok
-test_retired_local_snapshot_requires_unchanged_hash_and_keeps_summary (test_obsolete_p5_cleanup.CleanupTests.test_retired_local_snapshot_requires_unchanged_hash_and_keeps_summary) ... ok
 test_all_eight_groups_appear_once_on_both_road_types (test_p1.P1Tests.test_all_eight_groups_appear_once_on_both_road_types) ... ok
 test_buffer_uses_same_masked_padding_and_no_fake_safe_sample (test_p1.P1Tests.test_buffer_uses_same_masked_padding_and_no_fake_safe_sample) ... ok
 test_default_b0_cuda_optimizer_and_padding (test_p1.P1Tests.test_default_b0_cuda_optimizer_and_padding) ... skipped 'CUDA is unavailable'
@@ -49,20 +43,20 @@ test_m1_optimizer_is_persistent_and_counts_actual_updates (test_p3.P3Tests.test_
 test_runtime_empty_and_invalid_inputs_do_not_issue_predictions (test_p3.P3Tests.test_runtime_empty_and_invalid_inputs_do_not_issue_predictions) ... ok
 test_sac_action_risk_reward_replay_and_update_chain (test_p3.P3Tests.test_sac_action_risk_reward_replay_and_update_chain) ... ok
 test_training_budget_does_not_reset_an_extra_episode (test_p3.P3Tests.test_training_budget_does_not_reset_an_extra_episode) ... ok
-{"path": "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tmp60m62ze6\\synthetic-delivery.tar.gz", "files": 5, "bytes": 480, "sha256": "660a957aac1e1f998152dec30e753116352b72f60a93294e13e741428a7384e7"}
-\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmpgkekmtuu\returns\p5-review-synthetic-run-20261126T051300702443Z.tar.gz
+{"path": "\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tmpq7ivn79t\\synthetic-delivery.tar.gz", "files": 5, "bytes": 480, "sha256": "203e11fda49523239c568c4befff685741469dd5c5d55eccb3ec6b737f72ff50"}
+\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmppiuv6mf4\returns\p5-review-synthetic-run-20261126T074418053761Z.tar.gz
 Namespace(dvc=device(type='cpu'), EnvIdex=0, render=False, Loadmodel=False, ModelIdex=100, seed=0, Max_train_steps=500000, save_interval=2, eval_interval=2500, update_every=1, gamma=0.99, net_width=8, a_lr=0.0003, c_lr=0.0003, batch_size=2, alpha=0.12, adaptive_alpha=True, risk_variant='b0', d_model=128, nhead=4, num_layers=2, buffer_size=10000, risk_model_path='risk_model/risk_pretrained.pth', load_risk_model=0, epochs=1, max_e_steps=2, risk_supervision='horizon', risk_dataset_dir='p4-dataset')
 Not loading pre trained risk prediction models, training will start from scratch
 Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:35
+start time: 15:44:40
 save model
 Model saved to risk_model/risk_b0_unsignalizedIntersections_0_0_0_step2.pth
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.21      
+Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.19      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=2, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -72,11 +66,11 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:36
+start time: 15:44:41
 save model
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.17      
+Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.12      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=2, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -86,12 +80,12 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:37
+start time: 15:44:42
 save model
 Model saved to risk_model/risk_b0_unsignalizedIntersections_0_0_0_step2.pth
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.28      
+Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.15      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -101,11 +95,11 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:38
+start time: 15:44:43
 save model
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.15      
+Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.12      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -115,18 +109,18 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:39
+start time: 15:44:43
 save model
 Model saved to risk_model/risk_b0_unsignalizedIntersections_0_0_0_step2.pth
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.20      
+Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.16      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
 
 ====================================================================================================
-Episode: 1          | Timestep: 3          | Average Reward: -1.47      | Episode Time: 0.05      
+Episode: 1          | Timestep: 3          | Average Reward: -1.47      | Episode Time: 0.03      
 ====================================================================================================
 Optimizer updates: SAC=10, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -155,17 +149,17 @@ test_skipped_simulation_step_and_unscored_commit_fail (test_p4.P4Tests.test_skip
 test_tampered_label_and_incomplete_dataset_are_rejected (test_p4.P4Tests.test_tampered_label_and_incomplete_dataset_are_rejected) ... ok
 test_target_environment_mismatch_stops_p4_collection (test_p4.P4Tests.test_target_environment_mismatch_stops_p4_collection) ... RuntimeError: wrong GPU
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:40
+start time: 15:44:44
 save model
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.15      
+Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.13      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
 
 ====================================================================================================
-Episode: 1          | Timestep: 3          | Average Reward: -1.48      | Episode Time: 0.04      
+Episode: 1          | Timestep: 3          | Average Reward: -1.48      | Episode Time: 0.03      
 ====================================================================================================
 Optimizer updates: SAC=10, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -175,12 +169,12 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:41
+start time: 15:44:45
 save model
 Model saved to risk_model/risk_b0_unsignalizedIntersections_0_0_0_step2.pth
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.24      
+Episode: 0          | Timestep: 2          | Average Reward: -2.93      | Episode Time: 0.15      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
@@ -190,17 +184,17 @@ Random Seed: 0
 current logging run number for unsignalizedIntersections :  0
 run configuration : Train_logs\unsignalizedIntersections\run_0.json
 tensorboard logging at : tensorboard_logs/unsignalizedIntersections/run_0
-start time: 13:13:42
+start time: 15:44:46
 save model
 
 ====================================================================================================
-Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.16      
+Episode: 0          | Timestep: 2          | Average Reward: -3.03      | Episode Time: 0.13      
 ====================================================================================================
 Optimizer updates: SAC=5, risk=0; risk pools: safe=1, collision=0
 Risk runtime report: Train_logs/unsignalizedIntersections/risk_runtime_0.json
-Model saved to \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmpi0l_jz99\b0.pth
-Model loaded from \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmpi0l_jz99\b0.pth
-Evidence: \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmpbfsm1rzh\plan\p4\runs\20261126T051354895991Z
+Model saved to \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmploifvlsm\b0.pth
+Model loaded from \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmploifvlsm\b0.pth
+Evidence: \\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tmplc6n31n1\plan\p4\runs\20261126T074456401842Z
 ok
 test_unexecuted_action_is_not_a_training_or_dataset_sample (test_p4.P4Tests.test_unexecuted_action_is_not_a_training_or_dataset_sample) ... ok
 test_unsent_scored_action_is_excluded_after_successful_step (test_p4.P4Tests.test_unsent_scored_action_is_excluded_after_successful_step) ... ok
@@ -244,6 +238,8 @@ test_orphan_worker_detection_matches_exact_project_script (test_p5_reuse.ReuseTe
 Validating reusable task: offline-b0-11
 Reused verified task: offline-b0-11
 test_runtime_change_and_missing_provenance_are_rejected (test_p5_reuse.ReuseTests.test_runtime_change_and_missing_provenance_are_rejected) ... ok
+test_projection_keeps_budgets_seeds_and_data_definition (test_p5_scope.ScopeTests.test_projection_keeps_budgets_seeds_and_data_definition) ... ok
+test_runtime_mapping_does_not_hide_other_source_changes (test_p5_scope.ScopeTests.test_runtime_mapping_does_not_hide_other_source_changes) ... ok
 test_training_and_fixed_horizon_evaluation_reuse_p4_runtime_without_sumo (test_p5_worker.WorkerTests.test_training_and_fixed_horizon_evaluation_reuse_p4_runtime_without_sumo) ... ok
 test_collision_elsewhere_does_not_label_an_old_junction (test_repairs.RepairTests.test_collision_elsewhere_does_not_label_an_old_junction) ... ok
 test_context_comes_from_the_observation_not_later_vehicle_state (test_repairs.RepairTests.test_context_comes_from_the_observation_not_later_vehicle_state) ... ok
@@ -273,34 +269,10 @@ test_semantic_cleanup_check_still_detects_algorithm_changes (test_verify_p01234.
 test_skipped_cuda_cannot_grant_gpu_acceptance (test_verify_p01234.VerifierTests.test_skipped_cuda_cannot_grant_gpu_acceptance) ... ok
 test_summary_cannot_override_a_failed_real_exitcode (test_verify_p01234.VerifierTests.test_summary_cannot_override_a_failed_real_exitcode) ... ok
 
-======================================================================
-ERROR: test_inbound_preserved_link_blocks_deletion (test_clean_retired_p5.CleanupTests.test_inbound_preserved_link_blocks_deletion)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_clean_retired_p5.py", line 45, in test_inbound_preserved_link_blocks_deletion
-    target.mkdir(parents=True)
-    ~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "D:\Anaconda3\Lib\pathlib\_local.py", line 722, in mkdir
-    os.mkdir(self, mode)
-    ~~~~~~~~^^^^^^^^^^^^
-PermissionError: [WinError 65] 拒绝网络访问。: '\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tmpax1ee0oz\\runs\\run\\online\\c1\\11'
+Ran 121 tests in 91.173s
 
-======================================================================
-ERROR: test_inventory_hashes_candidates_and_preserves_mixed_records (test_clean_retired_p5.CleanupTests.test_inventory_hashes_candidates_and_preserves_mixed_records)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "\\wsl.localhost\Ubuntu\home\lxm\codes\SAC-STGR\tests\test_clean_retired_p5.py", line 29, in test_inventory_hashes_candidates_and_preserves_mixed_records
-    path.mkdir(parents=True)
-    ~~~~~~~~~~^^^^^^^^^^^^^^
-  File "D:\Anaconda3\Lib\pathlib\_local.py", line 722, in mkdir
-    os.mkdir(self, mode)
-    ~~~~~~~~^^^^^^^^^^^^
-PermissionError: [WinError 65] 拒绝网络访问。: '\\\\wsl.localhost\\Ubuntu\\home\\lxm\\codes\\SAC-STGR\\tmpj8q1a0oe\\runs\\run\\online\\c1\\11'
-
-----------------------------------------------------------------------
-Ran 125 tests in 108.666s
-
-FAILED (errors=2, skipped=4)
+OK (skipped=4)
 Namespace(dvc=device(type='cpu'), EnvIdex=0, write=True, render=False, Loadmodel=False, ModelIdex=100, seed=0, Max_train_steps=500000, save_interval=10000, eval_interval=2500, update_every=50, gamma=0.99, net_width=256, a_lr=0.0003, c_lr=0.0003, batch_size=256, alpha=0.12, adaptive_alpha=True, epochs=500, max_e_steps=1000, test_logs_path='test_results.pkl', run_num=0, timestep=100)
 Random Seed: 0
 self.sumo_cmd

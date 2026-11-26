@@ -12,6 +12,7 @@ import ast
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import pickletools
 import gzip
@@ -102,7 +103,7 @@ def semantic_body(text):
 
 
 def structural_proof():
-    """Check dependency inputs and recoverability without executing artifacts."""
+    """Check dependency inputs and retained artifacts without executing them."""
     counts, relocated, imports = {}, [], {}
     remote_root = read(ROOT / EXTENSION / 'summary.json')['base_run'].split('/plan/p4/runs/', 1)[0]
     known_origins = (remote_root + '/', '//wsl.localhost/Ubuntu/home/lxm/codes/SAC-STGR/')
@@ -169,27 +170,35 @@ def structural_proof():
                 counts[kind] = counts.get(kind, 0) + 1
     cold = read(ROOT / 'plan/review/cold-snapshot-cleanup-20261120.json')
     archive_path = ROOT / cold['archive']['path']
-    require(digest(archive_path) == cold['archive']['sha256'], 'Cold recovery archive hash changed')
-    expected = {item['path']: item for item in cold['files']}
-    verified = set()
-    # Stream once instead of repeatedly rewinding a large gzip on the UNC share.
-    with tarfile.open(str(archive_path), 'r|gz') as archive:
-        for member in archive:
-            if member.name not in expected:
-                continue
-            item = expected[member.name]
-            require(member.isfile(), 'Cold archive member is not a regular file')
-            stream = archive.extractfile(member)
-            hasher = hashlib.sha256()
-            size = 0
-            for block in iter(lambda: stream.read(1024 * 1024), b''):
-                size += len(block)
-                hasher.update(block)
-            require(size == item['bytes'] and hasher.hexdigest() == item['sha256'],
-                    'Cold archive member changed: ' + member.name)
-            verified.add(member.name)
-    require(verified == set(expected), 'Cold archive members missing')
-    counts['cold_archive_members'] = len(cold['files'])
+    if os.path.isfile(str(archive_path)):
+        require(digest(archive_path) == cold['archive']['sha256'], 'Cold recovery archive hash changed')
+        expected = {item['path']: item for item in cold['files']}
+        verified = set()
+        # Stream once instead of repeatedly rewinding a large gzip on the UNC share.
+        with tarfile.open(str(archive_path), 'r|gz') as archive:
+            for member in archive:
+                if member.name not in expected:
+                    continue
+                item = expected[member.name]
+                require(member.isfile(), 'Cold archive member is not a regular file')
+                stream = archive.extractfile(member)
+                hasher = hashlib.sha256()
+                size = 0
+                for block in iter(lambda: stream.read(1024 * 1024), b''):
+                    size += len(block)
+                    hasher.update(block)
+                require(size == item['bytes'] and hasher.hexdigest() == item['sha256'],
+                        'Cold archive member changed: ' + member.name)
+                verified.add(member.name)
+        require(verified == set(expected), 'Cold archive members missing')
+        counts['cold_archive_members_verified'] = len(cold['files'])
+    else:
+        receipt = read(ROOT / 'plan/p5/evidence/local-history-removal-20261126.json')
+        retired = [item for item in receipt.get('targets', []) if item.get('path') == 'plan/archive']
+        require(receipt.get('completed') is True and len(retired) == 1 and
+                retired[0].get('bytes') == 46202434 and retired[0].get('files') == 3 and
+                not os.path.exists(str(archive_path.parent)), 'Cold archive missing without reviewed retirement')
+        counts['cold_archive_members_retired_unverifiable'] = len(cold['files'])
     original = ROOT / 'plan/p0/transfer/reference-inputs-20261120.tar.gz'
     require(digest(original) == original.with_name(original.name + '.sha256').read_text().split()[0],
             'Protected original-input bundle checksum failed')
@@ -225,6 +234,19 @@ def historical_proof(target=False):
             # Stage-status corrections do not change executable source. Keep
             # every other unreviewed source delta fail-closed below.
             deltas.append({'path': relative, 'scope': 'documentation status only'})
+        elif relative == 'scripts/verify_plan.py':
+            # P5 v2 replaced the retired C1/C2/C3 document terms with the
+            # reviewed four-group vocabulary. Pin both sides so this cannot
+            # become a general exemption for later verifier changes.
+            require(entry['sha256'] == 'b082e1d45883832826dc4144c16797553401e362e0be284fe60dd856a8022175'
+                    and digest(path, True) == 'a69fe6a1b1a2ff0472e4a8f4e183bba4efd873025d96b8cce20665ba19c7fc6d',
+                    'Unreviewed plan verifier change')
+            deltas.append({'path': relative, 'scope': 'pinned P5 four-group document checks only'})
+        elif relative == 'scripts/audit_p0123.py':
+            require(entry['sha256'] == 'c526b687a40a43693e2dcdf885c121b04c5e33aedae9d2d33aef5f324d72b90a'
+                    and digest(path, True) == 'bbf2f3e7e30b352cef872e2233c297b9e0eaf77aac7edea6b5cf54dfa0554db2',
+                    'Unreviewed historical audit change')
+            deltas.append({'path': relative, 'scope': 'pinned cold-archive retirement handling only'})
         elif relative in IMPORT_CLEANUP:
             require(semantic_body(path.read_text(encoding='utf-8')) ==
                     semantic_body(snapshot.read_text(encoding='utf-8')),

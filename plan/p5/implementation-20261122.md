@@ -33,13 +33,13 @@
 
 ## 实际验证记录
 
-执行 `python -B scripts/accept_p5.py --local`。首轮集成暴露 Windows/WSL UNC 深层目录创建问题，已修复为逐层创建；失败证据 [20261122T091531727475Z](runs/20261122T091531727475Z/summary.json) 保留。
+执行 `python -B scripts/accept_p5.py --local`。首轮集成暴露 Windows/WSL UNC 深层目录创建问题，已修复为逐层创建；失败运行 `20261122T091531727475Z` 后经用户确认清理，见[删除记录](evidence/local-history-removal-20261126.json)。
 
-修复后完整本机回归 [20261122T092014428044Z](runs/20261122T092014428044Z/summary.json)：106 项，102 通过、4 CUDA 跳过，0 失败/错误；unit/static 均退出 0，`local_checks_passed=true`，`passed=false`。新增 CUDA 测试要求保留的消融各做真实 GPU 更新，本机不能执行；目标模式禁止这些跳过。
+修复后完整本机回归 `20261122T092014428044Z`：106 项，102 通过、4 CUDA 跳过，0 失败/错误；unit/static 均退出 0，`local_checks_passed=true`，`passed=false`。该辅助运行目录后经用户确认清理，见[删除记录](evidence/local-history-removal-20261126.json)。新增 CUDA 测试要求保留的消融各做真实 GPU 更新，本机不能执行；目标模式禁止这些跳过。
 
-最后修订系统参照接口说明后，再次完整验证：[最终运行](runs/20261122T092249404846Z/summary.json) 退出 0，unit/static 均退出 0，运行期间源码未变；[最终测试](runs/20261122T092249404846Z/unit-results.json) 仍为 106 项、102 通过、4 CUDA 跳过、0 失败/错误。结果为 `auxiliary_passed_not_p5_acceptance`，没有授予目标 P5 验收。
+最后修订系统参照接口说明后，再次完整验证：辅助运行 `20261122T092249404846Z` 退出 0，unit/static 均退出 0，运行期间源码未变；测试仍为 106 项、102 通过、4 CUDA 跳过、0 失败/错误。结果为 `auxiliary_passed_not_p5_acceptance`，没有授予目标 P5 验收。该目录后经用户确认清理，见[删除记录](evidence/local-history-removal-20261126.json)。
 
-独立调用 `historical_proof(False)`、`structural_proof()` 已实际通过：[默认兼容及结构报告](legacy-compatibility-20261122.json)。验证默认 Env 语义、既有目标日志、冻结检查点/评估元数据、活跃依赖、SUMO 输入及恢复包；本机不冒充重新读取服务器原始 JSONL。活跃 Python 文件也已按 Python 3.7 语法解析通过；真实 Python 3.7/PyTorch 1.13/CUDA/SUMO 联调仍由服务器执行。
+独立调用 `historical_proof(False)`、`structural_proof()` 已实际通过：[默认兼容及结构报告](evidence/legacy-compatibility-20261122.json)。验证默认 Env 语义、既有目标日志、冻结检查点/评估元数据、活跃依赖、SUMO 输入及恢复包；本机不冒充重新读取服务器原始 JSONL。活跃 Python 文件也已按 Python 3.7 语法解析通过；真实 Python 3.7/PyTorch 1.13/CUDA/SUMO 联调仍由服务器执行。
 
 `test_p5_worker` 使用替代 Env/SAC，覆盖三组 60 决策训练调用、30 仿真步冻结评价、离线两次真实 CPU 优化及完整 smoke 审计，明确为 synthetic fixture。它不代表真实 SAC 已收敛、SUMO 已运行或风险学习改善。模型专项实际 CPU 更新、掩码/梯度及保存加载测试均已执行。
 

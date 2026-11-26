@@ -10,6 +10,6 @@
     "a_b",
     "s0"
   ],
-  "equivalence_report": "plan/p5/retained-model-equivalence-20261126.json",
+  "equivalence_report": "plan/p5/evidence/retained-model-equivalence-20261126.json",
   "legacy_smoke_protocol_sha256": "bfe00282a8bf12082c6a6a428e75c358d89b3d82c1c3689a86029f08f984579b"
 }

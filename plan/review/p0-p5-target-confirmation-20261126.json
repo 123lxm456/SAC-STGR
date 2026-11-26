@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-26",
+  "evidence_source": "User-supplied remote terminal field output; remote JSON files have not been copied into this workspace",
+  "target_run": "plan/review/p5-entry-runs/20261126T082100264993Z",
+  "p01234_summary": {
+    "passed": true,
+    "p5_ready": true,
+    "local_checks_passed": true,
+    "error": null,
+    "commands": [
+      {"name": "unit", "exitcode": 0},
+      {"name": "static", "exitcode": 0}
+    ]
+  },
+  "target_unit": {
+    "tests_run": 121,
+    "passed": true,
+    "skipped": [],
+    "failures": [],
+    "errors": []
+  },
+  "historical_audit": {
+    "historical_stages": {"P0": "passed", "P1": "passed", "P2": "passed", "P3": "passed", "P4": "passed"},
+    "raw_reaudited": true,
+    "raw_streams_absent_locally_on_server": []
+  },
+  "structure": {
+    "passed": true,
+    "counts": {
+      "python_ast": 263,
+      "xml": 102,
+      "json": 522,
+      "gzip_crc": 2,
+      "checkpoint_or_docx_zip_crc": 116,
+      "pickle_structure_only": 8,
+      "cold_archive_members_retired_unverifiable": 89
+    }
+  },
+  "p5_audit_path": "plan/p5/runs/20261123T094822803672Z/audit-after-fix-20261126T082206Z.json",
+  "p5_audit_exitcode": 2,
+  "p5_audit": {
+    "passed": false,
+    "status": "needs_research_evidence",
+    "primary_matrix_integrity_passed": true,
+    "missing_natural_risk_updates": [],
+    "system_references": {"passed": false, "missing": ["ppo", "fcfs", "mixed"]}
+  },
+  "filesystem_available_reported": "182G",
+  "conclusion": "Current P0-P4 target regression and raw re-audit passed; P5 primary matrix integrity passed but full research acceptance remains pending original system-reference evidence"
+}

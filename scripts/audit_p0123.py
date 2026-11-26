@@ -10,6 +10,7 @@ import ast
 import gzip
 import hashlib
 import json
+import os
 from pathlib import Path
 import pickletools
 import re
@@ -77,16 +78,23 @@ def audit(output=None):
         except Exception as error:
             errors.append({'path': rel, 'error': str(error)})
 
-    # Check recoverability of the previously removed expanded run copies.
+    # Check the cold copy while retained, or the reviewed retirement receipt.
     cold = json.loads((ROOT / 'plan/review/cold-snapshot-cleanup-20261120.json').read_text(encoding='utf-8'))
     archive_path = ROOT / cold['archive']['path']
     try:
-        assert sha(archive_path.read_bytes()) == cold['archive']['sha256'], 'cold archive SHA-256'
-        with tarfile.open(str(archive_path), 'r:gz') as archive:
-            for item in cold['files']:
-                data = archive.extractfile(item['path']).read()
-                assert len(data) == item['bytes'] and sha(data) == item['sha256'], item['path']
-        counts['cold_archive_members_verified'] = len(cold['files'])
+        if os.path.isfile(str(archive_path)):
+            assert sha(archive_path.read_bytes()) == cold['archive']['sha256'], 'cold archive SHA-256'
+            with tarfile.open(str(archive_path), 'r:gz') as archive:
+                for item in cold['files']:
+                    data = archive.extractfile(item['path']).read()
+                    assert len(data) == item['bytes'] and sha(data) == item['sha256'], item['path']
+            counts['cold_archive_members_verified'] = len(cold['files'])
+        else:
+            receipt = json.loads((ROOT / 'plan/p5/evidence/local-history-removal-20261126.json').read_text(encoding='utf-8'))
+            retired = [item for item in receipt.get('targets', []) if item.get('path') == 'plan/archive']
+            assert receipt.get('completed') is True and len(retired) == 1 and retired[0].get('bytes') == 46202434
+            assert retired[0].get('files') == 3 and not os.path.exists(str(archive_path.parent))
+            counts['cold_archive_members_retired_unverifiable'] = len(cold['files'])
     except Exception as error:
         errors.append({'path': str(archive_path.relative_to(ROOT)), 'error': str(error)})
 
