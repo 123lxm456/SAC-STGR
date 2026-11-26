@@ -1,0 +1,710 @@
+{
+  "runs": {
+    "20261122T141242292188Z": {
+      "regular_files": 91,
+      "unique_inode_allocated": 114020352,
+      "symlinks": 0,
+      "largest_categories": [
+        [
+          "online",
+          [
+            76907420,
+            27
+          ]
+        ],
+        [
+          "scenarios",
+          [
+            26028120,
+            13
+          ]
+        ],
+        [
+          "offline",
+          [
+            8420820,
+            8
+          ]
+        ],
+        [
+          "source.tar.gz",
+          [
+            2236831,
+            1
+          ]
+        ],
+        [
+          "closed-loop",
+          [
+            83239,
+            6
+          ]
+        ],
+        [
+          "unit.log",
+          [
+            21654,
+            1
+          ]
+        ],
+        [
+          "plan.json",
+          [
+            13941,
+            1
+          ]
+        ],
+        [
+          "common-corpus-audit.json",
+          [
+            13718,
+            1
+          ]
+        ],
+        [
+          "source-manifest.json",
+          [
+            9391,
+            1
+          ]
+        ],
+        [
+          "summary.json",
+          [
+            5675,
+            1
+          ]
+        ],
+        [
+          "commands.json",
+          [
+            5128,
+            1
+          ]
+        ],
+        [
+          "static.log",
+          [
+            1551,
+            1
+          ]
+        ],
+        [
+          "static.json",
+          [
+            1550,
+            1
+          ]
+        ],
+        [
+          "eval-m1-11-nominal-3000.log",
+          [
+            1257,
+            1
+          ]
+        ],
+        [
+          "eval-b0-11-nominal-3000.log",
+          [
+            1257,
+            1
+          ]
+        ]
+      ]
+    },
+    "20261122T144249871603Z": {
+      "regular_files": 73,
+      "unique_inode_allocated": 17204838400,
+      "symlinks": 0,
+      "largest_categories": [
+        [
+          "online",
+          [
+            17176017986,
+            36
+          ]
+        ],
+        [
+          "scenarios",
+          [
+            26028120,
+            13
+          ]
+        ],
+        [
+          "source.tar.gz",
+          [
+            2236831,
+            1
+          ]
+        ],
+        [
+          "work-s0-11",
+          [
+            59157,
+            1
+          ]
+        ],
+        [
+          "work-b0-11",
+          [
+            59151,
+            1
+          ]
+        ],
+        [
+          "work-m1-11",
+          [
+            59149,
+            1
+          ]
+        ],
+        [
+          "work-a_b-11",
+          [
+            59119,
+            1
+          ]
+        ],
+        [
+          "unit.log",
+          [
+            21654,
+            1
+          ]
+        ],
+        [
+          "plan.json",
+          [
+            14133,
+            1
+          ]
+        ],
+        [
+          "common-corpus-audit.json",
+          [
+            13718,
+            1
+          ]
+        ],
+        [
+          "source-manifest.json",
+          [
+            9391,
+            1
+          ]
+        ],
+        [
+          "commands.json",
+          [
+            3595,
+            1
+          ]
+        ],
+        [
+          "static.log",
+          [
+            1551,
+            1
+          ]
+        ],
+        [
+          "static.json",
+          [
+            1550,
+            1
+          ]
+        ],
+        [
+          "train-m1-11.log",
+          [
+            1239,
+            1
+          ]
+        ]
+      ]
+    },
+    "20261123T094822803672Z": {
+      "regular_files": 760,
+      "unique_inode_allocated": 37932175360,
+      "symlinks": 6,
+      "largest_categories": [
+        [
+          "online",
+          [
+            37741735322,
+            102
+          ]
+        ],
+        [
+          "closed-loop",
+          [
+            130491209,
+            216
+          ]
+        ],
+        [
+          "offline",
+          [
+            27952105,
+            36
+          ]
+        ],
+        [
+          "scenarios",
+          [
+            26028120,
+            13
+          ]
+        ],
+        [
+          "source.tar.gz",
+          [
+            2248091,
+            1
+          ]
+        ],
+        [
+          "summary.json",
+          [
+            156319,
+            1
+          ]
+        ],
+        [
+          "commands.json",
+          [
+            146203,
+            1
+          ]
+        ],
+        [
+          "audit.json",
+          [
+            116513,
+            1
+          ]
+        ],
+        [
+          "audit-after-fix-20261126T082206Z.json",
+          [
+            62143,
+            1
+          ]
+        ],
+        [
+          "work-a_b-23",
+          [
+            59166,
+            1
+          ]
+        ],
+        [
+          "work-s0-37",
+          [
+            59160,
+            1
+          ]
+        ],
+        [
+          "work-b0-23",
+          [
+            59157,
+            1
+          ]
+        ],
+        [
+          "work-b0-37",
+          [
+            59157,
+            1
+          ]
+        ],
+        [
+          "work-s0-11",
+          [
+            59156,
+            1
+          ]
+        ],
+        [
+          "work-m1-37",
+          [
+            59155,
+            1
+          ]
+        ]
+      ]
+    }
+  },
+  "total_unique_inode_allocated": 50760667136,
+  "comparison": {
+    "different_size": 6,
+    "identical_bytes": 45,
+    "different_bytes": 12,
+    "same_inode": 1
+  },
+  "largest_files": [
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/samples.jsonl",
+      "relative": "online/s0/23/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4492914942,
+      "allocated": 4492922880,
+      "device": 66306,
+      "inode": 62425749,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/samples.jsonl",
+      "relative": "online/s0/11/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4490362216,
+      "allocated": 4490366976,
+      "device": 66306,
+      "inode": 62421903,
+      "nlink": 2
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/online-data/samples.jsonl",
+      "relative": "online/s0/11/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4490362216,
+      "allocated": 4490366976,
+      "device": 66306,
+      "inode": 62421903,
+      "nlink": 2
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/samples.jsonl",
+      "relative": "online/b0/37/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4345049127,
+      "allocated": 4345057280,
+      "device": 66306,
+      "inode": 62430487,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl",
+      "relative": "online/m1/11/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4289222892,
+      "allocated": 4289228800,
+      "device": 66306,
+      "inode": 62421550,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/samples.jsonl",
+      "relative": "online/s0/37/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4235243032,
+      "allocated": 4235247616,
+      "device": 66306,
+      "inode": 62430577,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl",
+      "relative": "online/a_b/11/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4148948774,
+      "allocated": 4148953088,
+      "device": 66306,
+      "inode": 62421566,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/samples.jsonl",
+      "relative": "online/a_b/37/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4133694900,
+      "allocated": 4133699584,
+      "device": 66306,
+      "inode": 62430517,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl",
+      "relative": "online/b0/11/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 4072507642,
+      "allocated": 4072513536,
+      "device": 66306,
+      "inode": 62421534,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/samples.jsonl",
+      "relative": "online/m1/23/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 3922770468,
+      "allocated": 3922776064,
+      "device": 66306,
+      "inode": 62425674,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/samples.jsonl",
+      "relative": "online/b0/23/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 3921821369,
+      "allocated": 3921825792,
+      "device": 66306,
+      "inode": 62425659,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/samples.jsonl",
+      "relative": "online/m1/37/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 3910758431,
+      "allocated": 3910766592,
+      "device": 66306,
+      "inode": 62430502,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/samples.jsonl",
+      "relative": "online/a_b/23/online-data/samples.jsonl",
+      "kind": "file",
+      "bytes": 3885581494,
+      "allocated": 3885588480,
+      "device": 66306,
+      "inode": 62425689,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/events.jsonl",
+      "relative": "online/s0/23/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 40520180,
+      "allocated": 40525824,
+      "device": 66306,
+      "inode": 62425750,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/events.jsonl",
+      "relative": "online/s0/11/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 40394998,
+      "allocated": 40402944,
+      "device": 66306,
+      "inode": 62421631,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/11/online-data/events.jsonl",
+      "relative": "online/s0/11/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 40394998,
+      "allocated": 40402944,
+      "device": 66306,
+      "inode": 62421904,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/events.jsonl",
+      "relative": "online/b0/37/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 39540431,
+      "allocated": 39546880,
+      "device": 66306,
+      "inode": 62430488,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl",
+      "relative": "online/m1/11/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 39097273,
+      "allocated": 39104512,
+      "device": 66306,
+      "inode": 62421551,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/events.jsonl",
+      "relative": "online/s0/37/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 38904632,
+      "allocated": 38912000,
+      "device": 66306,
+      "inode": 62430578,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/events.jsonl",
+      "relative": "online/a_b/37/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 38229680,
+      "allocated": 38236160,
+      "device": 66306,
+      "inode": 62430518,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl",
+      "relative": "online/a_b/11/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 38206357,
+      "allocated": 38211584,
+      "device": 66306,
+      "inode": 62421567,
+      "nlink": 1
+    },
+    {
+      "run": "20261122T144249871603Z",
+      "path": "plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl",
+      "relative": "online/b0/11/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 37719031,
+      "allocated": 37724160,
+      "device": 66306,
+      "inode": 62421535,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/events.jsonl",
+      "relative": "online/b0/23/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 36879013,
+      "allocated": 36884480,
+      "device": 66306,
+      "inode": 62425660,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/events.jsonl",
+      "relative": "online/m1/23/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 36877880,
+      "allocated": 36884480,
+      "device": 66306,
+      "inode": 62425675,
+      "nlink": 1
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/events.jsonl",
+      "relative": "online/m1/37/online-data/events.jsonl",
+      "kind": "file",
+      "bytes": 36815563,
+      "allocated": 36823040,
+      "device": 66306,
+      "inode": 62430503,
+      "nlink": 1
+    }
+  ],
+  "links": [
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/11/online-data/samples.jsonl",
+      "relative": "online/a_b/11/online-data/samples.jsonl",
+      "kind": "symlink",
+      "bytes": 107,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421850,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl",
+      "target_exists": true
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/a_b/11/online-data/events.jsonl",
+      "relative": "online/a_b/11/online-data/events.jsonl",
+      "kind": "symlink",
+      "bytes": 106,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421848,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl",
+      "target_exists": true
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/11/online-data/samples.jsonl",
+      "relative": "online/m1/11/online-data/samples.jsonl",
+      "kind": "symlink",
+      "bytes": 106,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421836,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl",
+      "target_exists": true
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/m1/11/online-data/events.jsonl",
+      "relative": "online/m1/11/online-data/events.jsonl",
+      "kind": "symlink",
+      "bytes": 105,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421834,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl",
+      "target_exists": true
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/11/online-data/samples.jsonl",
+      "relative": "online/b0/11/online-data/samples.jsonl",
+      "kind": "symlink",
+      "bytes": 106,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421822,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl",
+      "target_exists": true
+    },
+    {
+      "run": "20261123T094822803672Z",
+      "path": "plan/p5/runs/20261123T094822803672Z/online/b0/11/online-data/events.jsonl",
+      "relative": "online/b0/11/online-data/events.jsonl",
+      "kind": "symlink",
+      "bytes": 105,
+      "allocated": 4096,
+      "device": 66306,
+      "inode": 62421820,
+      "nlink": 1,
+      "target": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl",
+      "resolved": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl",
+      "target_exists": true
+    }
+  ]
+}

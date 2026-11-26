@@ -1,0 +1,322 @@
+[
+  {
+    "relative": "commands.json",
+    "bytes": 3595,
+    "verdict": "different_size"
+  },
+  {
+    "relative": "common-corpus-audit.json",
+    "bytes": 13718,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "environment.json",
+    "bytes": 735,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/actor-initial.pth",
+    "bytes": 369547,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/actor.pth",
+    "bytes": 369083,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/critic.pth",
+    "bytes": 736627,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/online-data/counts.json",
+    "bytes": 174,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/online-data/manifest.json",
+    "bytes": 2549,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/result.json",
+    "bytes": 1273908,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/a_b/11/risk.pth",
+    "bytes": 526317,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/actor-initial.pth",
+    "bytes": 369547,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/actor.pth",
+    "bytes": 369083,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/critic.pth",
+    "bytes": 736627,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/online-data/counts.json",
+    "bytes": 174,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/online-data/manifest.json",
+    "bytes": 2548,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/result.json",
+    "bytes": 1278267,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/b0/11/risk.pth",
+    "bytes": 7465107,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/actor-initial.pth",
+    "bytes": 369547,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/actor.pth",
+    "bytes": 369083,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/critic.pth",
+    "bytes": 736627,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/online-data/counts.json",
+    "bytes": 174,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/online-data/manifest.json",
+    "bytes": 2548,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/result.json",
+    "bytes": 1273976,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/m1/11/risk.pth",
+    "bytes": 526317,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/actor-initial.pth",
+    "bytes": 369547,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/actor.pth",
+    "bytes": 369083,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/critic.pth",
+    "bytes": 736627,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/online-data/counts.json",
+    "bytes": 174,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/online-data/events.jsonl",
+    "bytes": 40394998,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "online/s0/11/online-data/manifest.json",
+    "bytes": 2548,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "online/s0/11/online-data/samples.jsonl",
+    "bytes": 4490362216,
+    "verdict": "same_inode"
+  },
+  {
+    "relative": "online/s0/11/result.json",
+    "bytes": 1302505,
+    "verdict": "different_size"
+  },
+  {
+    "relative": "online/s0/11/risk.pth",
+    "bytes": 489,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "plan.json",
+    "bytes": 14133,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/scenarios.json",
+    "bytes": 6804,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/test-high/osm.sumocfg",
+    "bytes": 769,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/test-high/routes.xml",
+    "bytes": 4797011,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "scenarios/test-low/osm.sumocfg",
+    "bytes": 768,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/test-low/routes.xml",
+    "bytes": 4797009,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "scenarios/test-nominal/osm.sumocfg",
+    "bytes": 772,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/test-nominal/routes.xml",
+    "bytes": 4797011,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "scenarios/test/osm.sumocfg",
+    "bytes": 764,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/test/routes.xml",
+    "bytes": 4797011,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "scenarios/train/osm.sumocfg",
+    "bytes": 765,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/train/routes.xml",
+    "bytes": 1481069,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "scenarios/validation/osm.sumocfg",
+    "bytes": 770,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "scenarios/validation/routes.xml",
+    "bytes": 5347597,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "source-manifest.json",
+    "bytes": 9391,
+    "verdict": "different_size"
+  },
+  {
+    "relative": "source-snapshot.json",
+    "bytes": 82,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "source.tar.gz",
+    "bytes": 2236831,
+    "verdict": "different_size"
+  },
+  {
+    "relative": "static.exitcode",
+    "bytes": 2,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "static.json",
+    "bytes": 1550,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "static.log",
+    "bytes": 1551,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-a_b-11.exitcode",
+    "bytes": 2,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-a_b-11.log",
+    "bytes": 1239,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-b0-11.exitcode",
+    "bytes": 2,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-b0-11.log",
+    "bytes": 1239,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-m1-11.exitcode",
+    "bytes": 2,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-m1-11.log",
+    "bytes": 1239,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "train-s0-11.log",
+    "bytes": 1239,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "unit-results.json",
+    "bytes": 115,
+    "verdict": "different_bytes"
+  },
+  {
+    "relative": "unit.exitcode",
+    "bytes": 2,
+    "verdict": "identical_bytes"
+  },
+  {
+    "relative": "unit.log",
+    "bytes": 21654,
+    "verdict": "different_size"
+  },
+  {
+    "relative": "work-s0-11/sumolog",
+    "bytes": 59157,
+    "verdict": "different_size"
+  }
+]
