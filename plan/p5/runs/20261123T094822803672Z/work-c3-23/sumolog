@@ -1,0 +1,2323 @@
+***Starting server on port 35153 ***
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (568ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.51s
+ TraCI-Duration: 0.51s
+ Real time factor: 1.96078
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 29.80s
+ TraCI-Duration: 28.27s
+ Real time factor: 36.2813
+ UPS: 9356.402081
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 314
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1835.02
+ Speed: 9.08
+ Duration: 200.55
+ WaitingTime: 0.77
+ TimeLoss: 16.55
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (520ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1094.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 29.66s
+ TraCI-Duration: 28.22s
+ Real time factor: 36.881
+ UPS: 9520.547483
+Vehicles: 
+ Inserted: 1411 (Loaded: 1561)
+ Running: 310
+ Waiting: 1
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1835.65
+ Speed: 9.09
+ Duration: 200.23
+ WaitingTime: 0.61
+ TimeLoss: 16.16
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1095.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 29.79s
+ TraCI-Duration: 28.29s
+ Real time factor: 36.7585
+ UPS: 9494.041425
+Vehicles: 
+ Inserted: 1412 (Loaded: 1561)
+ Running: 310
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1835.98
+ Speed: 9.09
+ Duration: 200.36
+ WaitingTime: 0.67
+ TimeLoss: 16.27
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (519ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1087.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.07s
+ TraCI-Duration: 28.58s
+ Real time factor: 36.1526
+ UPS: 9337.213556
+Vehicles: 
+ Inserted: 1404 (Loaded: 1561)
+ Running: 317
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1828.00
+ Speed: 9.07
+ Duration: 199.89
+ WaitingTime: 0.65
+ TimeLoss: 16.59
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1086.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.99s
+ TraCI-Duration: 29.49s
+ Real time factor: 35.0447
+ UPS: 9079.544354
+Vehicles: 
+ Inserted: 1401 (Loaded: 1561)
+ Running: 316
+ Waiting: 1
+Teleports: 9 (Collisions: 9)
+Statistics (avg):
+ RouteLength: 1823.25
+ Speed: 9.05
+ Duration: 200.20
+ WaitingTime: 0.91
+ TimeLoss: 17.38
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.12s
+ TraCI-Duration: 29.60s
+ Real time factor: 34.7099
+ UPS: 8983.352081
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 319
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1809.28
+ Speed: 9.06
+ Duration: 198.71
+ WaitingTime: 0.86
+ TimeLoss: 17.28
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (531ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.29s
+ TraCI-Duration: 29.79s
+ Real time factor: 34.5808
+ UPS: 8971.427658
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 324
+ Waiting: 0
+Teleports: 9 (Collisions: 9)
+Statistics (avg):
+ RouteLength: 1818.25
+ Speed: 9.05
+ Duration: 200.20
+ WaitingTime: 1.22
+ TimeLoss: 17.89
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.04s
+ TraCI-Duration: 29.52s
+ Real time factor: 34.856
+ UPS: 9029.605051
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 322
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1823.20
+ Speed: 9.05
+ Duration: 200.37
+ WaitingTime: 0.99
+ TimeLoss: 17.54
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (519ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.97s
+ TraCI-Duration: 29.49s
+ Real time factor: 34.9727
+ UPS: 9058.901411
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 318
+ Waiting: 1
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1825.32
+ Speed: 9.05
+ Duration: 200.58
+ WaitingTime: 0.99
+ TimeLoss: 17.55
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.53s
+ TraCI-Duration: 30.01s
+ Real time factor: 34.3493
+ UPS: 8898.284119
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 318
+ Waiting: 1
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1825.30
+ Speed: 9.05
+ Duration: 200.60
+ WaitingTime: 1.01
+ TimeLoss: 17.58
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1088.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.73s
+ TraCI-Duration: 30.19s
+ Real time factor: 34.2872
+ UPS: 8911.351317
+Vehicles: 
+ Inserted: 1405 (Loaded: 1561)
+ Running: 315
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1829.69
+ Speed: 9.04
+ Duration: 201.66
+ WaitingTime: 1.27
+ TimeLoss: 18.20
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1077.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.92s
+ TraCI-Duration: 29.42s
+ Real time factor: 34.8341
+ UPS: 9014.069474
+Vehicles: 
+ Inserted: 1387 (Loaded: 1559)
+ Running: 319
+ Waiting: 1
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1817.54
+ Speed: 9.05
+ Duration: 199.73
+ WaitingTime: 0.91
+ TimeLoss: 17.49
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (520ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1084.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.10s
+ TraCI-Duration: 29.60s
+ Real time factor: 34.8609
+ UPS: 9031.870076
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 319
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1824.78
+ Speed: 9.04
+ Duration: 200.51
+ WaitingTime: 0.96
+ TimeLoss: 17.53
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.88s
+ TraCI-Duration: 29.37s
+ Real time factor: 35.0366
+ UPS: 9050.514863
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 321
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1819.61
+ Speed: 9.07
+ Duration: 199.25
+ WaitingTime: 0.54
+ TimeLoss: 16.80
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.73s
+ TraCI-Duration: 30.23s
+ Real time factor: 34.1034
+ UPS: 8857.534592
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 320
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1823.33
+ Speed: 9.05
+ Duration: 201.08
+ WaitingTime: 1.34
+ TimeLoss: 18.24
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.03s
+ TraCI-Duration: 29.52s
+ Real time factor: 34.8672
+ UPS: 9029.614591
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 320
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1827.41
+ Speed: 9.06
+ Duration: 200.79
+ WaitingTime: 0.91
+ TimeLoss: 17.57
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.50s
+ TraCI-Duration: 29.99s
+ Real time factor: 34.4455
+ UPS: 8932.093082
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 320
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1811.98
+ Speed: 9.05
+ Duration: 199.22
+ WaitingTime: 0.96
+ TimeLoss: 17.52
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (520ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.36s
+ TraCI-Duration: 29.86s
+ Real time factor: 34.53
+ UPS: 8956.191812
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 320
+ Waiting: 1
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1828.60
+ Speed: 9.04
+ Duration: 201.24
+ WaitingTime: 1.18
+ TimeLoss: 17.88
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.29s
+ TraCI-Duration: 29.78s
+ Real time factor: 34.5445
+ UPS: 8957.083054
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 319
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1811.81
+ Speed: 9.04
+ Duration: 199.42
+ WaitingTime: 1.19
+ TimeLoss: 17.75
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.02s
+ TraCI-Duration: 29.53s
+ Real time factor: 34.7473
+ UPS: 8995.132800
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 320
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1818.52
+ Speed: 9.05
+ Duration: 199.87
+ WaitingTime: 0.94
+ TimeLoss: 17.52
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1086.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.63s
+ TraCI-Duration: 30.10s
+ Real time factor: 34.3334
+ UPS: 8908.412633
+Vehicles: 
+ Inserted: 1402 (Loaded: 1561)
+ Running: 318
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1824.55
+ Speed: 9.05
+ Duration: 200.75
+ WaitingTime: 1.11
+ TimeLoss: 17.80
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.99s
+ TraCI-Duration: 29.49s
+ Real time factor: 34.8845
+ UPS: 9035.562153
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 321
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1816.86
+ Speed: 9.05
+ Duration: 199.68
+ WaitingTime: 0.93
+ TimeLoss: 17.50
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.13s
+ TraCI-Duration: 29.60s
+ Real time factor: 34.6888
+ UPS: 8986.317209
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 317
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1811.82
+ Speed: 9.04
+ Duration: 199.23
+ WaitingTime: 0.96
+ TimeLoss: 17.56
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.84s
+ TraCI-Duration: 29.35s
+ Real time factor: 34.9546
+ UPS: 9038.132296
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 320
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1819.72
+ Speed: 9.05
+ Duration: 199.73
+ WaitingTime: 0.87
+ TimeLoss: 17.28
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.96s
+ TraCI-Duration: 29.47s
+ Real time factor: 34.8894
+ UPS: 9022.936521
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 315
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1819.28
+ Speed: 9.06
+ Duration: 199.64
+ WaitingTime: 0.79
+ TimeLoss: 17.24
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1084.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.62s
+ TraCI-Duration: 30.09s
+ Real time factor: 34.2864
+ UPS: 8903.371711
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 323
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1805.42
+ Speed: 9.04
+ Duration: 198.87
+ WaitingTime: 1.19
+ TimeLoss: 17.84
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1086.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.42s
+ TraCI-Duration: 29.92s
+ Real time factor: 34.5662
+ UPS: 8951.524604
+Vehicles: 
+ Inserted: 1402 (Loaded: 1561)
+ Running: 323
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1804.15
+ Speed: 9.06
+ Duration: 197.92
+ WaitingTime: 0.78
+ TimeLoss: 17.01
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1087.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.19s
+ TraCI-Duration: 30.65s
+ Real time factor: 33.7641
+ UPS: 8825.650742
+Vehicles: 
+ Inserted: 1404 (Loaded: 1561)
+ Running: 325
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1797.29
+ Speed: 9.01
+ Duration: 199.47
+ WaitingTime: 2.26
+ TimeLoss: 19.26
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.88s
+ TraCI-Duration: 30.35s
+ Real time factor: 33.9765
+ UPS: 8832.376471
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 329
+ Waiting: 1
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1804.41
+ Speed: 9.05
+ Duration: 199.06
+ WaitingTime: 1.47
+ TimeLoss: 18.13
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.48s
+ TraCI-Duration: 29.94s
+ Real time factor: 34.4039
+ UPS: 8927.507227
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 321
+ Waiting: 1
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1821.74
+ Speed: 9.05
+ Duration: 200.60
+ WaitingTime: 1.30
+ TimeLoss: 17.94
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (521ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1077.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.04s
+ TraCI-Duration: 29.53s
+ Real time factor: 34.6983
+ UPS: 8975.418022
+Vehicles: 
+ Inserted: 1387 (Loaded: 1559)
+ Running: 315
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1821.13
+ Speed: 9.05
+ Duration: 200.05
+ WaitingTime: 0.97
+ TimeLoss: 17.45
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.23s
+ TraCI-Duration: 29.73s
+ Real time factor: 34.7389
+ UPS: 9007.075849
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 317
+ Waiting: 1
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1826.04
+ Speed: 9.05
+ Duration: 200.78
+ WaitingTime: 1.06
+ TimeLoss: 17.68
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.50s
+ TraCI-Duration: 29.98s
+ Real time factor: 34.4499
+ UPS: 8940.752500
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 318
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1822.43
+ Speed: 9.04
+ Duration: 200.62
+ WaitingTime: 1.21
+ TimeLoss: 17.89
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.71s
+ TraCI-Duration: 29.21s
+ Real time factor: 35.1014
+ UPS: 9081.762235
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 316
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1823.94
+ Speed: 9.06
+ Duration: 200.37
+ WaitingTime: 0.88
+ TimeLoss: 17.49
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1088.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.36s
+ TraCI-Duration: 29.86s
+ Real time factor: 34.6906
+ UPS: 9011.733571
+Vehicles: 
+ Inserted: 1405 (Loaded: 1561)
+ Running: 317
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1823.01
+ Speed: 9.04
+ Duration: 200.78
+ WaitingTime: 1.17
+ TimeLoss: 17.99
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.03s
+ TraCI-Duration: 29.51s
+ Real time factor: 34.8073
+ UPS: 9002.449401
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 318
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1811.47
+ Speed: 9.05
+ Duration: 198.76
+ WaitingTime: 0.78
+ TimeLoss: 17.13
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.01s
+ TraCI-Duration: 29.52s
+ Real time factor: 34.9287
+ UPS: 9051.280397
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 316
+ Waiting: 1
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1827.83
+ Speed: 9.05
+ Duration: 200.94
+ WaitingTime: 1.05
+ TimeLoss: 17.68
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.51s
+ TraCI-Duration: 29.99s
+ Real time factor: 34.3657
+ UPS: 8922.669290
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 326
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1817.09
+ Speed: 9.04
+ Duration: 200.16
+ WaitingTime: 1.22
+ TimeLoss: 17.95
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.19s
+ TraCI-Duration: 29.67s
+ Real time factor: 34.7879
+ UPS: 9004.681138
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 315
+ Waiting: 1
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1823.83
+ Speed: 9.06
+ Duration: 200.10
+ WaitingTime: 0.77
+ TimeLoss: 17.22
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1084.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.98s
+ TraCI-Duration: 29.47s
+ Real time factor: 34.996
+ UPS: 9052.074253
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 316
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1825.23
+ Speed: 9.06
+ Duration: 200.14
+ WaitingTime: 0.70
+ TimeLoss: 17.13
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.62s
+ TraCI-Duration: 29.15s
+ Real time factor: 35.2373
+ UPS: 9105.254564
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 314
+ Waiting: 0
+Teleports: 10 (Collisions: 10)
+Statistics (avg):
+ RouteLength: 1830.53
+ Speed: 9.06
+ Duration: 200.69
+ WaitingTime: 0.73
+ TimeLoss: 17.16
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.71s
+ TraCI-Duration: 29.22s
+ Real time factor: 35.1654
+ UPS: 9086.448294
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 317
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1827.93
+ Speed: 9.06
+ Duration: 200.35
+ WaitingTime: 0.64
+ TimeLoss: 17.05
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.71s
+ TraCI-Duration: 29.23s
+ Real time factor: 35.1014
+ UPS: 9068.542216
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 315
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1827.77
+ Speed: 9.06
+ Duration: 200.40
+ WaitingTime: 0.67
+ TimeLoss: 17.14
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.17s
+ TraCI-Duration: 29.66s
+ Real time factor: 34.6531
+ UPS: 8986.299172
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 317
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1823.11
+ Speed: 9.05
+ Duration: 200.75
+ WaitingTime: 1.05
+ TimeLoss: 17.94
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (533ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.30s
+ TraCI-Duration: 29.78s
+ Real time factor: 34.5731
+ UPS: 8947.756902
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 321
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1828.39
+ Speed: 9.06
+ Duration: 200.70
+ WaitingTime: 0.75
+ TimeLoss: 17.36
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (534ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.09s
+ TraCI-Duration: 29.58s
+ Real time factor: 34.8321
+ UPS: 9014.441014
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 319
+ Waiting: 0
+Teleports: 10 (Collisions: 10)
+Statistics (avg):
+ RouteLength: 1823.76
+ Speed: 9.05
+ Duration: 200.16
+ WaitingTime: 0.85
+ TimeLoss: 17.31
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.06s
+ TraCI-Duration: 29.57s
+ Real time factor: 34.8635
+ UPS: 9024.047129
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 321
+ Waiting: 1
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1819.99
+ Speed: 9.06
+ Duration: 199.76
+ WaitingTime: 0.75
+ TimeLoss: 17.27
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.79s
+ TraCI-Duration: 29.28s
+ Real time factor: 35.0473
+ UPS: 9066.229253
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 316
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1824.30
+ Speed: 9.05
+ Duration: 200.30
+ WaitingTime: 0.79
+ TimeLoss: 17.37
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.59s
+ TraCI-Duration: 29.07s
+ Real time factor: 35.4014
+ UPS: 9151.902458
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 318
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1828.25
+ Speed: 9.07
+ Duration: 200.37
+ WaitingTime: 0.60
+ TimeLoss: 17.06
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.88s
+ TraCI-Duration: 29.39s
+ Real time factor: 35.0087
+ UPS: 9063.734698
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 319
+ Waiting: 0
+Teleports: 11 (Collisions: 11)
+Statistics (avg):
+ RouteLength: 1828.73
+ Speed: 9.06
+ Duration: 200.89
+ WaitingTime: 0.91
+ TimeLoss: 17.53
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1088.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.13s
+ TraCI-Duration: 29.61s
+ Real time factor: 34.9491
+ UPS: 9047.476792
+Vehicles: 
+ Inserted: 1405 (Loaded: 1561)
+ Running: 318
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1824.76
+ Speed: 9.06
+ Duration: 200.08
+ WaitingTime: 0.74
+ TimeLoss: 17.12
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 31.13s
+ TraCI-Duration: 29.65s
+ Real time factor: 34.8494
+ UPS: 9037.804330
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 315
+ Waiting: 1
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1824.41
+ Speed: 9.04
+ Duration: 200.68
+ WaitingTime: 1.02
+ TimeLoss: 17.75
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.74s
+ TraCI-Duration: 29.23s
+ Real time factor: 35.1693
+ UPS: 9091.225559
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 318
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1826.51
+ Speed: 9.07
+ Duration: 200.20
+ WaitingTime: 0.68
+ TimeLoss: 17.07
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.85s
+ TraCI-Duration: 29.33s
+ Real time factor: 34.9757
+ UPS: 9038.282010
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 318
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1822.88
+ Speed: 9.05
+ Duration: 199.85
+ WaitingTime: 0.70
+ TimeLoss: 17.07
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.97s
+ TraCI-Duration: 29.45s
+ Real time factor: 34.9104
+ UPS: 9038.430486
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 322
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1816.28
+ Speed: 9.06
+ Duration: 199.49
+ WaitingTime: 0.78
+ TimeLoss: 17.38
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.89s
+ TraCI-Duration: 29.41s
+ Real time factor: 35.0576
+ UPS: 9066.230739
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 317
+ Waiting: 1
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1833.08
+ Speed: 9.06
+ Duration: 200.97
+ WaitingTime: 0.66
+ TimeLoss: 17.16
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 30.87s
+ TraCI-Duration: 29.32s
+ Real time factor: 34.9206
+ UPS: 9025.526401
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 314
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1825.45
+ Speed: 9.06
+ Duration: 200.27
+ WaitingTime: 0.73
+ TimeLoss: 17.25
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.83s
+ TraCI-Duration: 34.17s
+ Real time factor: 30.1719
+ UPS: 7804.342972
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 317
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1831.28
+ Speed: 9.06
+ Duration: 200.91
+ WaitingTime: 0.76
+ TimeLoss: 17.30
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1077.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 40.79s
+ TraCI-Duration: 39.06s
+ Real time factor: 26.4042
+ UPS: 6814.631396
+Vehicles: 
+ Inserted: 1387 (Loaded: 1559)
+ Running: 319
+ Waiting: 1
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1814.46
+ Speed: 9.07
+ Duration: 198.69
+ WaitingTime: 0.55
+ TimeLoss: 16.74
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 42.70s
+ TraCI-Duration: 40.72s
+ Real time factor: 25.2951
+ UPS: 6538.247143
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 315
+ Waiting: 0
+Teleports: 9 (Collisions: 9)
+Statistics (avg):
+ RouteLength: 1819.28
+ Speed: 9.06
+ Duration: 199.50
+ WaitingTime: 0.65
+ TimeLoss: 17.09
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 42.02s
+ TraCI-Duration: 40.01s
+ Real time factor: 25.724
+ UPS: 6656.093092
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 323
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1816.12
+ Speed: 9.06
+ Duration: 199.31
+ WaitingTime: 0.75
+ TimeLoss: 17.23
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 41.88s
+ TraCI-Duration: 39.90s
+ Real time factor: 25.7904
+ UPS: 6663.506543
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 315
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1828.36
+ Speed: 9.07
+ Duration: 200.37
+ WaitingTime: 0.57
+ TimeLoss: 17.06
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (562ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 42.55s
+ TraCI-Duration: 40.55s
+ Real time factor: 25.4506
+ UPS: 6597.302188
+Vehicles: 
+ Inserted: 1398 (Loaded: 1561)
+ Running: 319
+ Waiting: 1
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1829.14
+ Speed: 9.04
+ Duration: 201.16
+ WaitingTime: 1.00
+ TimeLoss: 17.76
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (542ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 37.09s
+ TraCI-Duration: 35.23s
+ Real time factor: 29.0938
+ UPS: 7533.556233
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 321
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1807.62
+ Speed: 9.05
+ Duration: 198.67
+ WaitingTime: 0.95
+ TimeLoss: 17.40
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.56s
+ TraCI-Duration: 30.81s
+ Real time factor: 33.1972
+ UPS: 8588.612843
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 319
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1824.31
+ Speed: 9.06
+ Duration: 200.22
+ WaitingTime: 0.75
+ TimeLoss: 17.30
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (533ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.45s
+ TraCI-Duration: 30.70s
+ Real time factor: 33.3179
+ UPS: 8620.280475
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 317
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1830.03
+ Speed: 9.05
+ Duration: 200.87
+ WaitingTime: 0.83
+ TimeLoss: 17.37
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.50s
+ TraCI-Duration: 30.74s
+ Real time factor: 33.1672
+ UPS: 8572.887822
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 318
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1825.87
+ Speed: 9.07
+ Duration: 200.32
+ WaitingTime: 0.74
+ TimeLoss: 17.24
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (531ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1075.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 33.15s
+ TraCI-Duration: 31.42s
+ Real time factor: 32.4303
+ UPS: 8399.179438
+Vehicles: 
+ Inserted: 1386 (Loaded: 1559)
+ Running: 327
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1794.38
+ Speed: 9.05
+ Duration: 197.33
+ WaitingTime: 0.98
+ TimeLoss: 17.39
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (531ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.18s
+ TraCI-Duration: 32.41s
+ Real time factor: 31.6532
+ UPS: 8255.565632
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 331
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1800.37
+ Speed: 9.03
+ Duration: 199.43
+ WaitingTime: 1.67
+ TimeLoss: 18.90
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1084.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.98s
+ TraCI-Duration: 31.21s
+ Real time factor: 32.8684
+ UPS: 8509.672529
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 319
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1813.98
+ Speed: 9.05
+ Duration: 199.09
+ WaitingTime: 0.72
+ TimeLoss: 17.20
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.75s
+ TraCI-Duration: 32.98s
+ Real time factor: 31.0521
+ UPS: 8193.507540
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 337
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1752.90
+ Speed: 9.00
+ Duration: 196.76
+ WaitingTime: 2.94
+ TimeLoss: 20.98
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.13s
+ TraCI-Duration: 33.32s
+ Real time factor: 30.8025
+ UPS: 8184.928972
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 360
+ Waiting: 0
+Teleports: 2 (Collisions: 2)
+Statistics (avg):
+ RouteLength: 1704.81
+ Speed: 9.01
+ Duration: 191.07
+ WaitingTime: 2.99
+ TimeLoss: 20.09
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (531ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.56s
+ TraCI-Duration: 33.75s
+ Real time factor: 30.3746
+ UPS: 8144.166948
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 370
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1651.85
+ Speed: 9.01
+ Duration: 185.00
+ WaitingTime: 3.45
+ TimeLoss: 19.33
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 37.51s
+ TraCI-Duration: 35.69s
+ Real time factor: 28.7634
+ UPS: 7631.621038
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 366
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1651.42
+ Speed: 9.04
+ Duration: 182.48
+ WaitingTime: 1.71
+ TimeLoss: 16.85
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (535ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.84s
+ TraCI-Duration: 34.04s
+ Real time factor: 30.1872
+ UPS: 7997.795943
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 363
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1684.65
+ Speed: 9.03
+ Duration: 187.32
+ WaitingTime: 2.45
+ TimeLoss: 18.37
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 37.11s
+ TraCI-Duration: 35.30s
+ Real time factor: 29.1312
+ UPS: 7768.459631
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 371
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1651.06
+ Speed: 9.03
+ Duration: 183.48
+ WaitingTime: 2.46
+ TimeLoss: 17.89
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1084.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 36.40s
+ TraCI-Duration: 34.54s
+ Real time factor: 29.7769
+ UPS: 8065.404901
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 375
+ Waiting: 0
+Teleports: 9 (Collisions: 9)
+Statistics (avg):
+ RouteLength: 1640.97
+ Speed: 8.99
+ Duration: 185.50
+ WaitingTime: 4.75
+ TimeLoss: 20.93
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (533ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.81s
+ TraCI-Duration: 34.03s
+ Real time factor: 30.2472
+ UPS: 7937.885770
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 356
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1702.90
+ Speed: 9.05
+ Duration: 187.70
+ WaitingTime: 1.36
+ TimeLoss: 16.95
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 36.69s
+ TraCI-Duration: 34.85s
+ Real time factor: 29.4631
+ UPS: 7891.578087
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 377
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1636.70
+ Speed: 9.03
+ Duration: 182.02
+ WaitingTime: 2.93
+ TimeLoss: 17.87
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 40.23s
+ TraCI-Duration: 38.34s
+ Real time factor: 26.8208
+ UPS: 7395.973154
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 400
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1542.40
+ Speed: 9.04
+ Duration: 172.06
+ WaitingTime: 3.38
+ TimeLoss: 17.34
+ DepartDelay: 0.25
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 36.14s
+ TraCI-Duration: 34.34s
+ Real time factor: 29.9358
+ UPS: 7968.736166
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 360
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1695.30
+ Speed: 9.00
+ Duration: 190.41
+ WaitingTime: 3.32
+ TimeLoss: 20.39
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (524ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1078.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 36.70s
+ TraCI-Duration: 34.87s
+ Real time factor: 29.3709
+ UPS: 7856.823693
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 360
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1696.18
+ Speed: 8.99
+ Duration: 192.00
+ WaitingTime: 4.48
+ TimeLoss: 21.90
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (538ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.47s
+ TraCI-Duration: 33.67s
+ Real time factor: 30.5303
+ UPS: 8150.649790
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 372
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1668.53
+ Speed: 9.02
+ Duration: 186.47
+ WaitingTime: 3.22
+ TimeLoss: 19.12
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.19s
+ TraCI-Duration: 33.42s
+ Real time factor: 30.6647
+ UPS: 8114.871970
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 357
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1694.16
+ Speed: 9.02
+ Duration: 188.91
+ WaitingTime: 2.89
+ TimeLoss: 19.00
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.06s
+ TraCI-Duration: 33.30s
+ Real time factor: 30.7723
+ UPS: 8168.121150
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 355
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1692.11
+ Speed: 9.02
+ Duration: 189.36
+ WaitingTime: 2.97
+ TimeLoss: 19.64
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (534ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.47s
+ TraCI-Duration: 33.70s
+ Real time factor: 30.4175
+ UPS: 8025.004933
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 350
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1712.00
+ Speed: 9.03
+ Duration: 190.82
+ WaitingTime: 2.55
+ TimeLoss: 19.14
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (523ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1077.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.02s
+ TraCI-Duration: 33.21s
+ Real time factor: 30.7574
+ UPS: 8155.014850
+Vehicles: 
+ Inserted: 1388 (Loaded: 1559)
+ Running: 352
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1707.01
+ Speed: 9.00
+ Duration: 191.41
+ WaitingTime: 3.35
+ TimeLoss: 20.22
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1079.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.05s
+ TraCI-Duration: 33.26s
+ Real time factor: 30.7837
+ UPS: 8126.444324
+Vehicles: 
+ Inserted: 1390 (Loaded: 1559)
+ Running: 350
+ Waiting: 0
+Teleports: 10 (Collisions: 10)
+Statistics (avg):
+ RouteLength: 1713.23
+ Speed: 9.01
+ Duration: 191.19
+ WaitingTime: 2.41
+ TimeLoss: 19.39
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1080.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 35.08s
+ TraCI-Duration: 33.29s
+ Real time factor: 30.7912
+ UPS: 8133.143264
+Vehicles: 
+ Inserted: 1391 (Loaded: 1559)
+ Running: 350
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1707.71
+ Speed: 9.01
+ Duration: 190.50
+ WaitingTime: 2.46
+ TimeLoss: 19.23
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (528ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.69s
+ TraCI-Duration: 32.89s
+ Real time factor: 31.1878
+ UPS: 8209.091171
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 346
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1745.39
+ Speed: 9.01
+ Duration: 194.79
+ WaitingTime: 2.64
+ TimeLoss: 19.75
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (532ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1085.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 32.77s
+ TraCI-Duration: 31.03s
+ Real time factor: 33.1065
+ UPS: 8564.031367
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 317
+ Waiting: 1
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1821.44
+ Speed: 9.06
+ Duration: 199.63
+ WaitingTime: 0.63
+ TimeLoss: 16.99
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (535ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.65s
+ TraCI-Duration: 32.82s
+ Real time factor: 31.2284
+ UPS: 8189.159547
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 343
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1760.22
+ Speed: 9.03
+ Duration: 195.89
+ WaitingTime: 2.17
+ TimeLoss: 19.38
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (533ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1083.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.34s
+ TraCI-Duration: 32.51s
+ Real time factor: 31.5412
+ UPS: 8237.738816
+Vehicles: 
+ Inserted: 1399 (Loaded: 1561)
+ Running: 340
+ Waiting: 0
+Teleports: 8 (Collisions: 8)
+Statistics (avg):
+ RouteLength: 1766.72
+ Speed: 9.03
+ Duration: 195.52
+ WaitingTime: 1.68
+ TimeLoss: 18.35
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.98s
+ TraCI-Duration: 33.19s
+ Real time factor: 30.9293
+ UPS: 8155.246834
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 344
+ Waiting: 0
+Teleports: 6 (Collisions: 6)
+Statistics (avg):
+ RouteLength: 1745.12
+ Speed: 9.01
+ Duration: 195.19
+ WaitingTime: 2.71
+ TimeLoss: 20.20
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (527ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1075.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.59s
+ TraCI-Duration: 32.82s
+ Real time factor: 31.0801
+ UPS: 8177.402567
+Vehicles: 
+ Inserted: 1386 (Loaded: 1559)
+ Running: 338
+ Waiting: 0
+Teleports: 3 (Collisions: 3)
+Statistics (avg):
+ RouteLength: 1771.11
+ Speed: 9.00
+ Duration: 198.57
+ WaitingTime: 2.67
+ TimeLoss: 20.96
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.06s
+ TraCI-Duration: 32.29s
+ Real time factor: 31.7353
+ UPS: 8322.549394
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 345
+ Waiting: 0
+Teleports: 9 (Collisions: 9)
+Statistics (avg):
+ RouteLength: 1733.79
+ Speed: 9.03
+ Duration: 192.36
+ WaitingTime: 1.92
+ TimeLoss: 18.50
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (529ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1082.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.00s
+ TraCI-Duration: 32.21s
+ Real time factor: 31.8198
+ UPS: 8285.701682
+Vehicles: 
+ Inserted: 1397 (Loaded: 1561)
+ Running: 338
+ Waiting: 0
+Teleports: 7 (Collisions: 7)
+Statistics (avg):
+ RouteLength: 1764.44
+ Speed: 9.05
+ Duration: 194.52
+ WaitingTime: 1.27
+ TimeLoss: 17.59
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (525ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 33.89s
+ TraCI-Duration: 32.11s
+ Real time factor: 31.8992
+ UPS: 8255.016525
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 320
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1808.16
+ Speed: 9.06
+ Duration: 198.47
+ WaitingTime: 0.73
+ TimeLoss: 17.17
+ DepartDelay: 0.27
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (530ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1081.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 34.27s
+ TraCI-Duration: 32.48s
+ Real time factor: 31.5418
+ UPS: 8258.549253
+Vehicles: 
+ Inserted: 1393 (Loaded: 1559)
+ Running: 339
+ Waiting: 0
+Teleports: 4 (Collisions: 4)
+Statistics (avg):
+ RouteLength: 1759.92
+ Speed: 9.03
+ Duration: 195.34
+ WaitingTime: 1.74
+ TimeLoss: 18.86
+ DepartDelay: 0.26
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (526ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1077.00
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 34.99s
+ TraCI-Duration: 33.10s
+ Real time factor: 30.7811
+ UPS: 8129.440681
+Vehicles: 
+ Inserted: 1388 (Loaded: 1559)
+ Running: 350
+ Waiting: 0
+Teleports: 5 (Collisions: 5)
+Statistics (avg):
+ RouteLength: 1710.76
+ Speed: 9.02
+ Duration: 191.14
+ WaitingTime: 2.46
+ TimeLoss: 19.60
+ DepartDelay: 0.26
+

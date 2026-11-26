@@ -1,0 +1,22 @@
+{
+  "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+  "protocol_sha256": "e58c5b1bc7f77c0f7fd234889d8ca9096375ef42a9ce2a4bd7e532444be7dba8",
+  "common_corpus_sha256": "a1b4ffd07786ebecd59dd980d30bfc84290c2fe7e2f0c298a87cf36de5b1d845",
+  "jobs": {
+    "train-b0-11": "online/b0/11",
+    "train-m1-11": "online/m1/11",
+    "train-a_b-11": "online/a_b/11",
+    "train-c1-11": "online/c1/11",
+    "train-c2-11": "online/c2/11",
+    "train-c3-11": "online/c3/11"
+  },
+  "pending_proofs": [
+    "train-s0-11"
+  ],
+  "reused_online": 6,
+  "remaining_online": 15,
+  "remaining_offline": 18,
+  "remaining_closed_loop": 189,
+  "raw_journals_present_for_reused_online": true,
+  "scope": "Verified complete tasks only. Missing-proof tasks rerun from scratch. No optimizer/replay resumption."
+}

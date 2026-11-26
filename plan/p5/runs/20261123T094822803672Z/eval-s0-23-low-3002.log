@@ -1,0 +1,27 @@
+***Starting server on port 52911 ***
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (559ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.49s
+ TraCI-Duration: 0.49s
+ Real time factor: 2.04082
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/scenarios/test-low/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '3002', '-S', '--no-warnings']
+self.sumo_cmd
+['sumo', '--begin', '0', '--no-step-log', 'true', '--time-to-teleport', '-1', '--collision.check-junctions', 'true', '--configuration-file', '/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/scenarios/test-low/osm.sumocfg', '--step-length', '1', '--log', 'sumolog', '--seed', '3002', '-S', '--no-warnings']
+ Retrying in 1 seconds

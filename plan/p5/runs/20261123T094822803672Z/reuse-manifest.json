@@ -1,0 +1,420 @@
+{
+  "protocol_sha256": "e58c5b1bc7f77c0f7fd234889d8ca9096375ef42a9ce2a4bd7e532444be7dba8",
+  "jobs": {
+    "train-b0-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-b0-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "b0",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/b0/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/b0/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "5fcd5817283c3990e27fe2e26b74ee3aa0a7c40617422eb48e24c6364cfd5274"
+        },
+        {
+          "path": "online/b0/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "925e492874d96b880fe1a458026064b419c45e0941d172e3901a47dd589d2af4"
+        },
+        {
+          "path": "online/b0/11/online-data/counts.json",
+          "bytes": 174,
+          "sha256": "5475804229a75fd850c775e5cfcc54b50b3a91ffe95e8413bd30258ef4db77fb"
+        },
+        {
+          "path": "online/b0/11/online-data/events.jsonl",
+          "bytes": 37719031,
+          "sha256": "954ae11900725ad2e3c5ade032ebc6869c81ce33965fe0c22f4dcb9825d42eae"
+        },
+        {
+          "path": "online/b0/11/online-data/manifest.json",
+          "bytes": 2548,
+          "sha256": "0e1cadd2e803eb84be955899877f94010d9125e23b6e73ff75b1649a1bfa433c"
+        },
+        {
+          "path": "online/b0/11/online-data/samples.jsonl",
+          "bytes": 4072507642,
+          "sha256": "a2397c305d072c63ab9835f442f7da5b7d73b339ec002ebe4710fa00edc82ce3"
+        },
+        {
+          "path": "online/b0/11/result.json",
+          "bytes": 1278267,
+          "sha256": "487b083400cb398b69b0c368f0f8b7c4007943a399f7ca6911faf07766d60db0"
+        },
+        {
+          "path": "online/b0/11/risk.pth",
+          "bytes": 7465107,
+          "sha256": "c19ff92cf1e720f095dcf8f23d10b0544c6daa26749ef9865f7dfe07b6361e72"
+        }
+      ]
+    },
+    "train-m1-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-m1-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "m1",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/m1/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/m1/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "130c4bc23fe3260c09b91590ef1f888d0209691719ce4703ad383db6a868f84d"
+        },
+        {
+          "path": "online/m1/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "286df58818f9806267ae96d7ed0987ff3686ba6d95186e0a65c076ef850f8362"
+        },
+        {
+          "path": "online/m1/11/online-data/counts.json",
+          "bytes": 174,
+          "sha256": "e3fc12408036e649671046f8c7bfcb712e8068f310cad01738137cb70bf3f624"
+        },
+        {
+          "path": "online/m1/11/online-data/events.jsonl",
+          "bytes": 39097273,
+          "sha256": "5180245557ecaa541e9ae9efdd845c3d6ec3466d235a2f843d7e3d741c5670e3"
+        },
+        {
+          "path": "online/m1/11/online-data/manifest.json",
+          "bytes": 2548,
+          "sha256": "1bdb1bc0d5da57b249035d0da8dbdbb9216fc6ceb7995a698457f20084f12ea9"
+        },
+        {
+          "path": "online/m1/11/online-data/samples.jsonl",
+          "bytes": 4289222892,
+          "sha256": "f35783a732c2b09e3f941c4d5945a4104d566bbd462f17e07a3d916f809fa766"
+        },
+        {
+          "path": "online/m1/11/result.json",
+          "bytes": 1273976,
+          "sha256": "98c5c56b8e1f7b34ee8f69d71a57269002fcf54985dab75fad95eeeb61881fa7"
+        },
+        {
+          "path": "online/m1/11/risk.pth",
+          "bytes": 526317,
+          "sha256": "29c2adb0806f5b8a74c2b5adf030866e4468c13948754479312e803760466c64"
+        }
+      ]
+    },
+    "train-a_b-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-a_b-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "a_b",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/a_b/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/a_b/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "3ddd3ea8e8fa5b56097151454d5720e8515a29ec08b3794f6cc15a398f5f26d6"
+        },
+        {
+          "path": "online/a_b/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "fbb644cc5209cc9aef4a56b9f0b291f25f52a733dfd5d2b4182e2873df257ba7"
+        },
+        {
+          "path": "online/a_b/11/online-data/counts.json",
+          "bytes": 174,
+          "sha256": "f49f641217d6c2649283fd29b7d49f5abeccdc165ea6bb60a1a08fe0e93b22f4"
+        },
+        {
+          "path": "online/a_b/11/online-data/events.jsonl",
+          "bytes": 38206357,
+          "sha256": "e2b4db498555f9e854fa0358635afdce403029ad3549b5a967be6ce23bbcf038"
+        },
+        {
+          "path": "online/a_b/11/online-data/manifest.json",
+          "bytes": 2549,
+          "sha256": "acb00d344519a9e36a1df8b3963ef4c1f0859ba4318aa2cb2e8533c016db9e59"
+        },
+        {
+          "path": "online/a_b/11/online-data/samples.jsonl",
+          "bytes": 4148948774,
+          "sha256": "f15ea7975518bd7ee4b5891408d56b751a135bb6ccab77d88acc7d619bdcdcbb"
+        },
+        {
+          "path": "online/a_b/11/result.json",
+          "bytes": 1273908,
+          "sha256": "929b5a471fe4b85edb2de2a7dd22b420ad14eee0e46413d3331f891479a00e11"
+        },
+        {
+          "path": "online/a_b/11/risk.pth",
+          "bytes": 526317,
+          "sha256": "f8381ad7c474f00d621522e885e782ad3c45a78ba1b7c3bd1fe080d3d8490c29"
+        }
+      ]
+    },
+    "train-c1-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-c1-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "c1",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c1/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/c1/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/c1/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "ee7604cbdb8a31caaf5b488ed12a88ce32f584de5f90dd363990d84024d5809c"
+        },
+        {
+          "path": "online/c1/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "838984407dc244917c11500d8afa096fcf7e36818fb3002120807b3a035a0280"
+        },
+        {
+          "path": "online/c1/11/online-data/counts.json",
+          "bytes": 174,
+          "sha256": "8cf165fddd7b151d23e326b5bdb57c26db4c71fbcc4ab29114508acd38175865"
+        },
+        {
+          "path": "online/c1/11/online-data/events.jsonl",
+          "bytes": 39198474,
+          "sha256": "1cace427d75a0893361c49a561c55512e0759ab7022a1359bba6f24c550089e7"
+        },
+        {
+          "path": "online/c1/11/online-data/manifest.json",
+          "bytes": 2548,
+          "sha256": "35a6708570b4dbb1bf9a2cf57f2ef3e1107a5c5b1fc3ff6c2ac0776bd908329d"
+        },
+        {
+          "path": "online/c1/11/online-data/samples.jsonl",
+          "bytes": 4305432444,
+          "sha256": "48ab8e9aa716be809f1dd3328948c3d4a6405216f1c726f0f36bd67bc9e7ca7f"
+        },
+        {
+          "path": "online/c1/11/result.json",
+          "bytes": 1274406,
+          "sha256": "ca3b36880a18e8323b3bd27837793ad56d6ff538c70c3ef21c10c5d1820e504e"
+        },
+        {
+          "path": "online/c1/11/risk.pth",
+          "bytes": 525853,
+          "sha256": "ebd6319266566c817ddcce2aa900cf6db32b23f71231f47e5fb6a077e00bf69f"
+        }
+      ]
+    },
+    "train-c2-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-c2-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "c2",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c2/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/c2/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/c2/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "5841d971516164831b8cc123871d673bf6b2b8b091f04fa43124a14dea7573fe"
+        },
+        {
+          "path": "online/c2/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "cca70dc80712cebd6638518269c505e01078fb09b2cf0a8e37016246b31100d4"
+        },
+        {
+          "path": "online/c2/11/online-data/counts.json",
+          "bytes": 173,
+          "sha256": "e4daec8573241f602addd3686c8d1078da030b61fc5207757e232eed813fb4b3"
+        },
+        {
+          "path": "online/c2/11/online-data/events.jsonl",
+          "bytes": 36639178,
+          "sha256": "eb7a5577dc20898abf552295eaabed2c791b10aeff9383b68b15c2ed2f86cf20"
+        },
+        {
+          "path": "online/c2/11/online-data/manifest.json",
+          "bytes": 2548,
+          "sha256": "98e082a15516e290d780ea459145a92b8c64c9815c7df0c00ff516281f866878"
+        },
+        {
+          "path": "online/c2/11/online-data/samples.jsonl",
+          "bytes": 3899721640,
+          "sha256": "4140ab0e67811eed6211d3dc734b8aca9d41d2b9dce244f7fefffd77c7d199ff"
+        },
+        {
+          "path": "online/c2/11/result.json",
+          "bytes": 1279997,
+          "sha256": "f3c1c18fac8cf6438a189648df94278d4c741655c9451b93338ea76276b8b99c"
+        },
+        {
+          "path": "online/c2/11/risk.pth",
+          "bytes": 475769,
+          "sha256": "cc7b6fc96a82651278a6a292c13591ae2833a072763090aa138ec930a731d5ff"
+        }
+      ]
+    },
+    "train-c3-11": {
+      "origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+      "original_command": {
+        "name": "train-c3-11",
+        "argv": [
+          "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+          "-B",
+          "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+          "train",
+          "--plan",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+          "--variant",
+          "c3",
+          "--seed",
+          "11",
+          "--output",
+          "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c3/11"
+        ],
+        "exitcode": 0
+      },
+      "origin_source_sha256": "77e169895c5d19299eb5874c0ce409d9bc1e44c6604df20b4f404eef3f1079a7",
+      "files": [
+        {
+          "path": "online/c3/11/actor-initial.pth",
+          "bytes": 369547,
+          "sha256": "006e94b855e13582ac6f6721f63ac5204e1b993cbb985df562fe632cd6e629aa"
+        },
+        {
+          "path": "online/c3/11/actor.pth",
+          "bytes": 369083,
+          "sha256": "703d96937fd10422579c9502e3484cf6d20786b51568d9a889effa70bffbef77"
+        },
+        {
+          "path": "online/c3/11/critic.pth",
+          "bytes": 736627,
+          "sha256": "22969ac4fe060874e7188163e899e7e0804d1f59c9c5d5e04d27f28aa837e2b4"
+        },
+        {
+          "path": "online/c3/11/online-data/counts.json",
+          "bytes": 173,
+          "sha256": "69220bfb2cccd7bd3b34e5882291cc25b131faa51dbd63be180190b397c07703"
+        },
+        {
+          "path": "online/c3/11/online-data/events.jsonl",
+          "bytes": 35667965,
+          "sha256": "1f94a87ccfa8a5c92d5e6d4106197ae3183944f0cdab627ec3a4de9cde390050"
+        },
+        {
+          "path": "online/c3/11/online-data/manifest.json",
+          "bytes": 2548,
+          "sha256": "d893764580ff9b6e25cbbde5833e415fbf94201545a866abf4f0fbeb3e981232"
+        },
+        {
+          "path": "online/c3/11/online-data/samples.jsonl",
+          "bytes": 3740288054,
+          "sha256": "9d51f0ea01a00a5b8deb9d79cb0da73f1f565ea9e940793edcc6acb78f528258"
+        },
+        {
+          "path": "online/c3/11/result.json",
+          "bytes": 1278945,
+          "sha256": "ef667a41759f5d78c902751aba81dcdabe8ebd8c115a8e5880f6d3dfdf5d4014"
+        },
+        {
+          "path": "online/c3/11/risk.pth",
+          "bytes": 442245,
+          "sha256": "70aedeed8cfe418e68bf8d6ed637288e45d3cec9afaa25b9b818443ff32fc527"
+        }
+      ]
+    }
+  },
+  "semantics": "Copied complete tasks, original actual argv/log/exitcodes retained; no SGD resumption"
+}

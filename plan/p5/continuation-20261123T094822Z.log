@@ -1,0 +1,5158 @@
+Evidence: /home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z
+Training b0 seed 11
+Validating reusable task: train-b0-11
+Reused verified task: train-b0-11
+Training m1 seed 11
+Validating reusable task: train-m1-11
+Reused verified task: train-m1-11
+Training a_b seed 11
+Validating reusable task: train-a_b-11
+Reused verified task: train-a_b-11
+Training c1 seed 11
+Validating reusable task: train-c1-11
+Reused verified task: train-c1-11
+Training c2 seed 11
+Validating reusable task: train-c2-11
+Reused verified task: train-c2-11
+Training c3 seed 11
+Validating reusable task: train-c3-11
+Reused verified task: train-c3-11
+Training s0 seed 11
+Executing new task: train-s0-11
+Executing new task: offline-b0-11
+Executing new task: offline-m1-11
+Executing new task: offline-a_b-11
+Executing new task: offline-c1-11
+Executing new task: offline-c2-11
+Executing new task: offline-c3-11
+Executing new task: eval-b0-11-low-3000
+Executing new task: eval-b0-11-low-3001
+Executing new task: eval-b0-11-low-3002
+Executing new task: eval-b0-11-nominal-3000
+Executing new task: eval-b0-11-nominal-3001
+Executing new task: eval-b0-11-nominal-3002
+Executing new task: eval-b0-11-high-3000
+Executing new task: eval-b0-11-high-3001
+Executing new task: eval-b0-11-high-3002
+Executing new task: eval-m1-11-low-3000
+Executing new task: eval-m1-11-low-3001
+Executing new task: eval-m1-11-low-3002
+Executing new task: eval-m1-11-nominal-3000
+Executing new task: eval-m1-11-nominal-3001
+Executing new task: eval-m1-11-nominal-3002
+Executing new task: eval-m1-11-high-3000
+Executing new task: eval-m1-11-high-3001
+Executing new task: eval-m1-11-high-3002
+Executing new task: eval-a_b-11-low-3000
+Executing new task: eval-a_b-11-low-3001
+Executing new task: eval-a_b-11-low-3002
+Executing new task: eval-a_b-11-nominal-3000
+Executing new task: eval-a_b-11-nominal-3001
+Executing new task: eval-a_b-11-nominal-3002
+Executing new task: eval-a_b-11-high-3000
+Executing new task: eval-a_b-11-high-3001
+Executing new task: eval-a_b-11-high-3002
+Executing new task: eval-c1-11-low-3000
+Executing new task: eval-c1-11-low-3001
+Executing new task: eval-c1-11-low-3002
+Executing new task: eval-c1-11-nominal-3000
+Executing new task: eval-c1-11-nominal-3001
+Executing new task: eval-c1-11-nominal-3002
+Executing new task: eval-c1-11-high-3000
+Executing new task: eval-c1-11-high-3001
+Executing new task: eval-c1-11-high-3002
+Executing new task: eval-c2-11-low-3000
+Executing new task: eval-c2-11-low-3001
+Executing new task: eval-c2-11-low-3002
+Executing new task: eval-c2-11-nominal-3000
+Executing new task: eval-c2-11-nominal-3001
+Executing new task: eval-c2-11-nominal-3002
+Executing new task: eval-c2-11-high-3000
+Executing new task: eval-c2-11-high-3001
+Executing new task: eval-c2-11-high-3002
+Executing new task: eval-c3-11-low-3000
+Executing new task: eval-c3-11-low-3001
+Executing new task: eval-c3-11-low-3002
+Executing new task: eval-c3-11-nominal-3000
+Executing new task: eval-c3-11-nominal-3001
+Executing new task: eval-c3-11-nominal-3002
+Executing new task: eval-c3-11-high-3000
+Executing new task: eval-c3-11-high-3001
+Executing new task: eval-c3-11-high-3002
+Executing new task: eval-s0-11-low-3000
+Executing new task: eval-s0-11-low-3001
+Executing new task: eval-s0-11-low-3002
+Executing new task: eval-s0-11-nominal-3000
+Executing new task: eval-s0-11-nominal-3001
+Executing new task: eval-s0-11-nominal-3002
+Executing new task: eval-s0-11-high-3000
+Executing new task: eval-s0-11-high-3001
+Executing new task: eval-s0-11-high-3002
+Training b0 seed 23
+Executing new task: train-b0-23
+Training m1 seed 23
+Executing new task: train-m1-23
+Training a_b seed 23
+Executing new task: train-a_b-23
+Training c1 seed 23
+Executing new task: train-c1-23
+Training c2 seed 23
+Executing new task: train-c2-23
+Training c3 seed 23
+Executing new task: train-c3-23
+Training s0 seed 23
+Executing new task: train-s0-23
+Executing new task: offline-b0-23
+Executing new task: offline-m1-23
+Executing new task: offline-a_b-23
+Executing new task: offline-c1-23
+Executing new task: offline-c2-23
+Executing new task: offline-c3-23
+Executing new task: eval-b0-23-low-3000
+Executing new task: eval-b0-23-low-3001
+Executing new task: eval-b0-23-low-3002
+Executing new task: eval-b0-23-nominal-3000
+Executing new task: eval-b0-23-nominal-3001
+Executing new task: eval-b0-23-nominal-3002
+Executing new task: eval-b0-23-high-3000
+Executing new task: eval-b0-23-high-3001
+Executing new task: eval-b0-23-high-3002
+Executing new task: eval-m1-23-low-3000
+Executing new task: eval-m1-23-low-3001
+Executing new task: eval-m1-23-low-3002
+Executing new task: eval-m1-23-nominal-3000
+Executing new task: eval-m1-23-nominal-3001
+Executing new task: eval-m1-23-nominal-3002
+Executing new task: eval-m1-23-high-3000
+Executing new task: eval-m1-23-high-3001
+Executing new task: eval-m1-23-high-3002
+Executing new task: eval-a_b-23-low-3000
+Executing new task: eval-a_b-23-low-3001
+Executing new task: eval-a_b-23-low-3002
+Executing new task: eval-a_b-23-nominal-3000
+Executing new task: eval-a_b-23-nominal-3001
+Executing new task: eval-a_b-23-nominal-3002
+Executing new task: eval-a_b-23-high-3000
+Executing new task: eval-a_b-23-high-3001
+Executing new task: eval-a_b-23-high-3002
+Executing new task: eval-c1-23-low-3000
+Executing new task: eval-c1-23-low-3001
+Executing new task: eval-c1-23-low-3002
+Executing new task: eval-c1-23-nominal-3000
+Executing new task: eval-c1-23-nominal-3001
+Executing new task: eval-c1-23-nominal-3002
+Executing new task: eval-c1-23-high-3000
+Executing new task: eval-c1-23-high-3001
+Executing new task: eval-c1-23-high-3002
+Executing new task: eval-c2-23-low-3000
+Executing new task: eval-c2-23-low-3001
+Executing new task: eval-c2-23-low-3002
+Executing new task: eval-c2-23-nominal-3000
+Executing new task: eval-c2-23-nominal-3001
+Executing new task: eval-c2-23-nominal-3002
+Executing new task: eval-c2-23-high-3000
+Executing new task: eval-c2-23-high-3001
+Executing new task: eval-c2-23-high-3002
+Executing new task: eval-c3-23-low-3000
+Executing new task: eval-c3-23-low-3001
+Executing new task: eval-c3-23-low-3002
+Executing new task: eval-c3-23-nominal-3000
+Executing new task: eval-c3-23-nominal-3001
+Executing new task: eval-c3-23-nominal-3002
+Executing new task: eval-c3-23-high-3000
+Executing new task: eval-c3-23-high-3001
+Executing new task: eval-c3-23-high-3002
+Executing new task: eval-s0-23-low-3000
+Executing new task: eval-s0-23-low-3001
+Executing new task: eval-s0-23-low-3002
+Executing new task: eval-s0-23-nominal-3000
+Executing new task: eval-s0-23-nominal-3001
+Executing new task: eval-s0-23-nominal-3002
+Executing new task: eval-s0-23-high-3000
+Executing new task: eval-s0-23-high-3001
+Executing new task: eval-s0-23-high-3002
+Training b0 seed 37
+Executing new task: train-b0-37
+Training m1 seed 37
+Executing new task: train-m1-37
+Training a_b seed 37
+Executing new task: train-a_b-37
+Training c1 seed 37
+Executing new task: train-c1-37
+Training c2 seed 37
+Executing new task: train-c2-37
+Training c3 seed 37
+Executing new task: train-c3-37
+Training s0 seed 37
+Executing new task: train-s0-37
+Executing new task: offline-b0-37
+Executing new task: offline-m1-37
+Executing new task: offline-a_b-37
+Executing new task: offline-c1-37
+Executing new task: offline-c2-37
+Executing new task: offline-c3-37
+Executing new task: eval-b0-37-low-3000
+Executing new task: eval-b0-37-low-3001
+Executing new task: eval-b0-37-low-3002
+Executing new task: eval-b0-37-nominal-3000
+Executing new task: eval-b0-37-nominal-3001
+Executing new task: eval-b0-37-nominal-3002
+Executing new task: eval-b0-37-high-3000
+Executing new task: eval-b0-37-high-3001
+Executing new task: eval-b0-37-high-3002
+Executing new task: eval-m1-37-low-3000
+Executing new task: eval-m1-37-low-3001
+Executing new task: eval-m1-37-low-3002
+Executing new task: eval-m1-37-nominal-3000
+Executing new task: eval-m1-37-nominal-3001
+Executing new task: eval-m1-37-nominal-3002
+Executing new task: eval-m1-37-high-3000
+Executing new task: eval-m1-37-high-3001
+Executing new task: eval-m1-37-high-3002
+Executing new task: eval-a_b-37-low-3000
+Executing new task: eval-a_b-37-low-3001
+Executing new task: eval-a_b-37-low-3002
+Executing new task: eval-a_b-37-nominal-3000
+Executing new task: eval-a_b-37-nominal-3001
+Executing new task: eval-a_b-37-nominal-3002
+Executing new task: eval-a_b-37-high-3000
+Executing new task: eval-a_b-37-high-3001
+Executing new task: eval-a_b-37-high-3002
+Executing new task: eval-c1-37-low-3000
+Executing new task: eval-c1-37-low-3001
+Executing new task: eval-c1-37-low-3002
+Executing new task: eval-c1-37-nominal-3000
+Executing new task: eval-c1-37-nominal-3001
+Executing new task: eval-c1-37-nominal-3002
+Executing new task: eval-c1-37-high-3000
+Executing new task: eval-c1-37-high-3001
+Executing new task: eval-c1-37-high-3002
+Executing new task: eval-c2-37-low-3000
+Executing new task: eval-c2-37-low-3001
+Executing new task: eval-c2-37-low-3002
+Executing new task: eval-c2-37-nominal-3000
+Executing new task: eval-c2-37-nominal-3001
+Executing new task: eval-c2-37-nominal-3002
+Executing new task: eval-c2-37-high-3000
+Executing new task: eval-c2-37-high-3001
+Executing new task: eval-c2-37-high-3002
+Executing new task: eval-c3-37-low-3000
+Executing new task: eval-c3-37-low-3001
+Executing new task: eval-c3-37-low-3002
+Executing new task: eval-c3-37-nominal-3000
+Executing new task: eval-c3-37-nominal-3001
+Executing new task: eval-c3-37-nominal-3002
+Executing new task: eval-c3-37-high-3000
+Executing new task: eval-c3-37-high-3001
+Executing new task: eval-c3-37-high-3002
+Executing new task: eval-s0-37-low-3000
+Executing new task: eval-s0-37-low-3001
+Executing new task: eval-s0-37-low-3002
+Executing new task: eval-s0-37-nominal-3000
+Executing new task: eval-s0-37-nominal-3001
+Executing new task: eval-s0-37-nominal-3002
+Executing new task: eval-s0-37-high-3000
+Executing new task: eval-s0-37-high-3001
+Executing new task: eval-s0-37-high-3002
+{
+  "mode": "research",
+  "passed": false,
+  "p5_started": true,
+  "commands": [
+    {
+      "name": "unit",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/run_unit_checks.py",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/unit-results.json",
+        "--require-cuda"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "static",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/verify_plan.py",
+        "--report",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/static.json"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-b0-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/b0/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-m1-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/m1/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-a_b-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/a_b/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-c1-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c1/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-c2-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c2/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-c3-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z/online/c3/11"
+      ],
+      "exitcode": 0,
+      "reused_from": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z"
+    },
+    {
+      "name": "train-s0-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-b0-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/b0/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-m1-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/m1/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-a_b-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/a_b/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c1-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c1/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c2-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c2/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c3-11",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c3/11"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-11-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/11",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/11/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-b0-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-m1-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-a_b-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c1-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c2-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c3-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-s0-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-b0-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/b0/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-m1-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/m1/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-a_b-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/a_b/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c1-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c1/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c2-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c2/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c3-23",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c3/23"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-23-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/23",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/23/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-b0-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-m1-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-a_b-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c1-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c2-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-c3-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "train-s0-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "train",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-b0-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/b0/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-m1-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/m1/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-a_b-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/a_b/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c1-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c1/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c2-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c2/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "offline-c3-37",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "offline",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/offline/c3/37"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-b0-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "b0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/b0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/b0/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-m1-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "m1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/m1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/m1/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-a_b-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "a_b",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/a_b/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/a_b/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c1-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c1",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c1/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c1/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c2-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c2",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c2/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c2/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-c3-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "c3",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/c3/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/c3/37/high/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-low-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/low/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-low-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/low/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-low-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "low",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/low/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-nominal-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/nominal/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-nominal-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/nominal/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-nominal-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "nominal",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/nominal/3002"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-high-3000",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3000",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/high/3000"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-high-3001",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3001",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/high/3001"
+      ],
+      "exitcode": 0
+    },
+    {
+      "name": "eval-s0-37-high-3002",
+      "argv": [
+        "/home/lab2439/anaconda3/envs/SAC_RWB/bin/python",
+        "-B",
+        "/home/lab2439/Work/LXM/SAC-STGR/scripts/p5_worker.py",
+        "evaluate",
+        "--plan",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/plan.json",
+        "--variant",
+        "s0",
+        "--seed",
+        "3002",
+        "--density",
+        "high",
+        "--model-dir",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/online/s0/37",
+        "--output",
+        "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/closed-loop/s0/37/high/3002"
+      ],
+      "exitcode": 0
+    }
+  ],
+  "status": "needs_research_evidence",
+  "reuse_origin": "/home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261122T144249871603Z",
+  "last_task": "eval-s0-37-high-3002",
+  "engineering_passed": true,
+  "research_matrix_completed": true,
+  "reused_tasks": 6
+}

@@ -1,0 +1,46 @@
+***Starting server on port 33485 ***
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (561ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 1.00
+Reason: TraCI issued load command.
+Performance: 
+ Duration: 0.50s
+ TraCI-Duration: 0.50s
+ Real time factor: 1.99601
+ UPS: 0.000000
+Vehicles: 
+ Inserted: 0
+ Running: 0
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+
+Loading net-file from '/home/lab2439/Work/LXM/SAC-STGR/src/sac_rwb/real_data/CSeditClean_1.net_threelegs.xml' ... done (522ms).
+Loading done.
+Simulation version 1.12.0 started with time: 0.00
+Simulation ended at time: 3600.00
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 629.24s
+ TraCI-Duration: 598.58s
+ Real time factor: 5.72122
+ UPS: 7059.308431
+Vehicles: 
+ Inserted: 5263 (Loaded: 11524)
+ Running: 2388
+ Waiting: 6261
+Teleports: 13 (Collisions: 13)
+Statistics (avg):
+ RouteLength: 2106.21
+ Speed: 7.59
+ Duration: 386.08
+ WaitingTime: 111.23
+ TimeLoss: 174.98
+ DepartDelay: 30.31
+
