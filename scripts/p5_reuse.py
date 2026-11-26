@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / 'src/sac_rwb'))
 from accept_p5 import read, protocol_hash
 from algos.p5_experiment import make_directory
 from p5_scope import projected, canonical_runtime, included_job
+from p5_storage import relocated, journal_digest_size, journal_record, journal_exists, open_journal
 
 
 def require(value, message):
@@ -26,6 +27,8 @@ def require(value, message):
 
 
 def digest(path):
+    if Path(path).name in ('samples.jsonl', 'events.jsonl'):
+        return journal_digest_size(path, ROOT)[0]
     value = hashlib.sha256()
     with Path(path).open('rb') as stream:
         for block in iter(lambda: stream.read(1024 * 1024), b''):
@@ -64,7 +67,7 @@ def completed_jobs(report):
 
 def inspect(origin):
     from review_p5_progress import review
-    origin = Path(origin).resolve()
+    origin = relocated(origin, ROOT).resolve()
     origin.relative_to((ROOT / 'plan/p5/runs').resolve())
     report = review(origin)
     plan = read(origin / 'plan.json')
@@ -91,7 +94,7 @@ def inspect(origin):
 
 def verify_reuse(run, visited=None):
     """Validate provenance whenever an acceptance command was inherited."""
-    run = Path(run).resolve()
+    run = relocated(run, ROOT).resolve()
     visited = set() if visited is None else set(visited)
     require(str(run) not in visited, 'Cyclic continuation provenance')
     visited.add(str(run))
@@ -108,9 +111,9 @@ def verify_reuse(run, visited=None):
     # Extra prepared records after an interrupted copy are not accepted tasks.
     for name, command in inherited.items():
         record = manifest['jobs'][name]
-        origin = Path(record['origin']).resolve()
+        origin = relocated(record['origin'], ROOT).resolve()
         origin.relative_to((ROOT / 'plan/p5/runs').resolve())
-        require(command['reused_from'] == str(origin) and origin != run, 'Reuse origin mismatch')
+        require(command['reused_from'] == record['origin'] and origin != run, 'Reuse origin mismatch')
         origin_plan, current_plan = read(origin / 'plan.json'), read(run / 'plan.json')
         require(projected(origin_plan['protocol']) == projected(current_plan['protocol']) and
                 origin_plan['common_corpus_sha256'] == current_plan['common_corpus_sha256'], 'Mixed reuse protocol/data')
@@ -125,15 +128,17 @@ def verify_reuse(run, visited=None):
         for entry in record['files']:
             target = run / entry['path']
             target.resolve().relative_to(ROOT.resolve())
-            require(target.stat().st_size == entry['bytes'] and digest(target) == entry['sha256'],
+            actual_hash, actual_size = (journal_digest_size(target, ROOT) if target.name in ('samples.jsonl', 'events.jsonl')
+                                        else (digest(target), target.stat().st_size))
+            require(actual_size == entry['bytes'] and actual_hash == entry['sha256'],
                     'Inherited artifact changed: ' + entry['path'])
-    for origin in {Path(manifest['jobs'][n]['origin']).resolve() for n in inherited}:
+    for origin in {relocated(manifest['jobs'][n]['origin'], ROOT).resolve() for n in inherited}:
         verify_reuse(origin, visited)
 
 
 class ReuseManager:
     def __init__(self, origin, run, plan):
-        self.origin, self.run = Path(origin).resolve(), Path(run).resolve()
+        self.origin, self.run = relocated(origin, ROOT).resolve(), Path(run).resolve()
         self.proposal = inspect(self.origin)
         old = read(self.origin / 'plan.json')
         require(projected(old['protocol']) == plan['protocol'] and old['common_corpus_sha256'] == plan['common_corpus_sha256'],
@@ -162,23 +167,30 @@ class ReuseManager:
         # Complete raw streams are needed on server; never silently reuse a
         # review-only copy with its online-data journals omitted.
         if name.startswith('train-'):
-            require(all((source / 'online-data' / file).is_file() for file in ('samples.jsonl', 'events.jsonl')),
+            require(all(journal_exists(source / 'online-data' / file, ROOT) for file in ('samples.jsonl', 'events.jsonl')),
                     'Raw training journals absent; use the original experiment server')
         inventory = sorted(source.rglob('*'))
+        if name.startswith('train-'):
+            inventory = sorted(set(inventory) | {source / 'online-data' / file for file in ('samples.jsonl', 'events.jsonl')})
         require(not any(p.is_dir() and p.is_symlink() for p in inventory), 'Directory symlinks are not accepted')
         for item in inventory:
-            if item.is_file():
+            if item.is_file() or journal_record(item, ROOT):
                 item.resolve().relative_to(ROOT.resolve())
+                size = journal_record(item, ROOT)['bytes'] if journal_record(item, ROOT) else item.stat().st_size
                 files.append(dict(path=(destination / item.relative_to(source)).relative_to(self.run).as_posix(),
-                                  bytes=item.stat().st_size, sha256=digest(item)))
+                                  bytes=size, sha256=digest(item)))
         make_directory(destination, new=True)
         for item in inventory:
-            if not item.is_file():
+            if not item.is_file() and not journal_record(item, ROOT):
                 continue
             target = destination / item.relative_to(source)
             make_directory(target.parent)
             if item.name in ('samples.jsonl', 'events.jsonl') and 'online-data' in item.parts:
-                link_journal(item, target)
+                if journal_record(item, ROOT):
+                    with open_journal(item, ROOT) as source_stream, target.open('xb') as output:
+                        shutil.copyfileobj(source_stream, output, 1024 * 1024)
+                else:
+                    link_journal(item, target)
             else:
                 shutil.copy2(str(item), str(target))
                 expected = next(row for row in files if row['path'] == target.relative_to(self.run).as_posix())

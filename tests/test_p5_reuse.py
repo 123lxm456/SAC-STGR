@@ -1,5 +1,7 @@
 """Task continuation preserves actual execution provenance and immutable data."""
 import copy
+import gzip
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -15,6 +17,7 @@ sys.path.insert(0, str(ROOT / 'src/sac_rwb'))
 import p5_reuse
 from algos.p5_experiment import make_directory
 from accept_p5 import active_worker_pids
+from p5_storage import INDEX
 
 
 class ReuseTests(unittest.TestCase):
@@ -104,6 +107,46 @@ class ReuseTests(unittest.TestCase):
         self.assertEqual(linker.call_count, 2)
         p5_reuse.verify_reuse(self.run)
         self.assertEqual((folder / 'online-data/samples.jsonl').read_text(), 'synthetic fixture\n')
+
+    def test_relocated_origin_and_compressed_journals_keep_provenance_checks(self):
+        name, relative = 'train-b0-11', 'online/b0/11'
+        folder = self.origin / relative
+        make_directory(folder / 'online-data', new=True)
+        raw = b'synthetic fixture\n'
+        for filename in ('samples.jsonl', 'events.jsonl'):
+            (folder / 'online-data' / filename).write_bytes(raw)
+        (folder / 'result.json').write_text('{"synthetic_fixture": true}')
+        command = dict(name=name, argv=['python', 'worker', 'train'], exitcode=0)
+        (self.origin / 'commands.json').write_text(json.dumps([command]))
+        (self.origin / (name + '.exitcode')).write_text('0')
+        (self.origin / (name + '.log')).write_text('actual prior command fixture')
+        manager = self.manager(proposal=dict(jobs={name: relative}))
+        with patch.object(p5_reuse, 'link_journal', side_effect=lambda a, b: shutil.copy2(str(a), str(b))):
+            manager.reuse(name, self.run / relative, [])
+        registry = self.root / INDEX
+        make_directory(registry.parent, new=True)
+        sha = hashlib.sha256(raw).hexdigest()
+        obj = registry.parent / (sha + '.jsonl.gz')
+        obj.write_bytes(gzip.compress(raw))
+        journals = {}
+        for directory in (self.origin, self.run):
+            for filename in ('samples.jsonl', 'events.jsonl'):
+                path = directory / relative / 'online-data' / filename
+                journals[path.relative_to(self.root).as_posix()] = dict(
+                    object=obj.relative_to(self.root).as_posix(), bytes=len(raw), sha256=sha)
+                path.unlink()
+        moved = self.run / 'provenance/origin'
+        make_directory(moved.parent, new=True)
+        self.origin.resolve().relative_to(self.root.resolve())
+        moved.resolve().relative_to(self.root.resolve())
+        self.origin.rename(moved)
+        registry.write_text(json.dumps(dict(version='p5-storage-v1', original_root=str(self.root),
+            relocations={self.origin.relative_to(self.root).as_posix(): moved.relative_to(self.root).as_posix()},
+            journals=journals)))
+        p5_reuse.verify_reuse(self.run)
+        obj.write_bytes(gzip.compress(raw + b'changed'))
+        with self.assertRaises(ValueError):
+            p5_reuse.verify_reuse(self.run)
 
     def test_orphan_worker_detection_matches_exact_project_script(self):
         proc = self.root / 'synthetic-proc'

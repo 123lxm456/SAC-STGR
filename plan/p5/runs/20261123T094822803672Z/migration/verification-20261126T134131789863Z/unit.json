@@ -1,0 +1,13 @@
+{
+  "tests_run": 133,
+  "skipped": [],
+  "failures": [
+    [
+      "test_snapshot_detects_source_replacement_before_deletion (test_p5_storage.StorageTests)",
+      "Traceback (most recent call last):\n  File \"/home/lab2439/Work/LXM/SAC-STGR/tests/test_p5_storage.py\", line 138, in test_snapshot_detects_source_replacement_before_deletion\n    migrate.unchanged(row)\nAssertionError: ValueError not raised\n"
+    ]
+  ],
+  "errors": [],
+  "require_cuda": true,
+  "passed": false
+}

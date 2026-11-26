@@ -104,7 +104,7 @@ def semantic_body(text):
 
 def structural_proof():
     """Check dependency inputs and retained artifacts without executing them."""
-    counts, relocated, imports = {}, [], {}
+    counts, relocated_inputs, imports = {}, [], {}
     remote_root = read(ROOT / EXTENSION / 'summary.json')['base_run'].split('/plan/p4/runs/', 1)[0]
     known_origins = (remote_root + '/', '//wsl.localhost/Ubuntu/home/lxm/codes/SAC-STGR/')
     for top in ('src', 'scripts', 'tests', 'plan', 'chapters', 'references'):
@@ -143,8 +143,10 @@ def structural_proof():
                                     if normalized.startswith(origin):
                                         candidate = (ROOT / normalized[len(origin):]).resolve()
                                         candidate.relative_to(ROOT.resolve())
-                                        relocated.append({'config': rel, 'input': candidate.relative_to(ROOT).as_posix()})
+                                        relocated_inputs.append({'config': rel, 'input': candidate.relative_to(ROOT).as_posix()})
                                         break
+                            from p5_storage import relocated as relocate_path
+                            candidate = relocate_path(candidate, ROOT)
                             require(not value or candidate.is_file(), 'Missing SUMO input: {} -> {}'.format(rel, value))
             elif suffix == '.json':
                 read(path)
@@ -203,7 +205,7 @@ def structural_proof():
     require(digest(original) == original.with_name(original.name + '.sha256').read_text().split()[0],
             'Protected original-input bundle checksum failed')
     return {'passed': True, 'counts': counts, 'active_imports': imports,
-            'relocated_historical_config_inputs': relocated,
+            'relocated_historical_config_inputs': relocated_inputs,
             'scope': 'Static structures, active local imports and original recovery artifacts; no pickle execution'}
 
 
@@ -244,9 +246,9 @@ def historical_proof(target=False):
             deltas.append({'path': relative, 'scope': 'pinned P5 four-group document checks only'})
         elif relative == 'scripts/audit_p0123.py':
             require(entry['sha256'] == 'c526b687a40a43693e2dcdf885c121b04c5e33aedae9d2d33aef5f324d72b90a'
-                    and digest(path, True) == 'bbf2f3e7e30b352cef872e2233c297b9e0eaf77aac7edea6b5cf54dfa0554db2',
+                    and digest(path, True) == 'd08d03035aa5e704e5300575520f3013da99b7a286810aa68736e78eb3115ef7',
                     'Unreviewed historical audit change')
-            deltas.append({'path': relative, 'scope': 'pinned cold-archive retirement handling only'})
+            deltas.append({'path': relative, 'scope': 'pinned cold-archive retirement and P5 relocated-input handling only'})
         elif relative in IMPORT_CLEANUP:
             require(semantic_body(path.read_text(encoding='utf-8')) ==
                     semantic_body(snapshot.read_text(encoding='utf-8')),

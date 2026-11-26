@@ -1,0 +1,11 @@
+{
+  "completed": true,
+  "removed_paths": 336,
+  "removed_logical_bytes": 57293334239,
+  "allocated_before": 53052616704,
+  "allocated_after": 2566201344,
+  "free_space_delta": 50486652928,
+  "full_audit_unchanged": true,
+  "research_passed": false,
+  "research_status": "needs_research_evidence"
+}

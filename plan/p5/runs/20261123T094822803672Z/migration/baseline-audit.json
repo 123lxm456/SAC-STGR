@@ -1,0 +1,1823 @@
+{
+  "passed": false,
+  "status": "needs_research_evidence",
+  "original_protocol_sha256": "e58c5b1bc7f77c0f7fd234889d8ca9096375ef42a9ce2a4bd7e532444be7dba8",
+  "assessed_protocol_sha256": "6a8407169867962225503ef00bafa480bc60f5a3db7e5fee3d0392b5370bb05a",
+  "scope_projected": true,
+  "primary_matrix_integrity_passed": true,
+  "missing_natural_risk_updates": [],
+  "system_references": {
+    "passed": false,
+    "missing": [
+      "ppo",
+      "fcfs",
+      "mixed"
+    ]
+  },
+  "aggregate": {
+    "offline": {
+      "b0": {
+        "auprc_average_precision": {
+          "n": 3,
+          "mean": 0.0028580382871487542,
+          "std": 0.0003424676464203892,
+          "bootstrap_mean_ci95": [
+            0.0025134537905400554,
+            0.0031983490831417973
+          ],
+          "seed_values": [
+            0.0025134537905400554,
+            0.002862311987764408,
+            0.0031983490831417978
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "auroc": {
+          "n": 3,
+          "mean": 0.7928542763049018,
+          "std": 0.07650817054925857,
+          "bootstrap_mean_ci95": [
+            0.7286273706682554,
+            0.8775003723562703
+          ],
+          "seed_values": [
+            0.7286273706682554,
+            0.7724350858901798,
+            0.8775003723562704
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "brier": {
+          "n": 3,
+          "mean": 0.020160146775755474,
+          "std": 0.001173989579222434,
+          "bootstrap_mean_ci95": [
+            0.018877100917163003,
+            0.021180611027269803
+          ],
+          "seed_values": [
+            0.02042272838283361,
+            0.018877100917163003,
+            0.021180611027269806
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "ece": {
+          "n": 3,
+          "mean": 0.023678252578736472,
+          "std": 0.0012770472839673003,
+          "bootstrap_mean_ci95": [
+            0.022203749952656074,
+            0.024430711447456746
+          ],
+          "seed_values": [
+            0.024430711447456746,
+            0.022203749952656074,
+            0.0244002963360966
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "false_negative_rate": {
+          "n": 3,
+          "mean": 0.9583333333333334,
+          "std": 0.0,
+          "bootstrap_mean_ci95": [
+            0.9583333333333334,
+            0.9583333333333334
+          ],
+          "seed_values": [
+            0.9583333333333334,
+            0.9583333333333334,
+            0.9583333333333334
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        }
+      },
+      "m1": {
+        "auprc_average_precision": {
+          "n": 3,
+          "mean": 0.0032634500273669696,
+          "std": 0.00022942762095389313,
+          "bootstrap_mean_ci95": [
+            0.0029997316916354454,
+            0.003417138368506347
+          ],
+          "seed_values": [
+            0.0033734800219591167,
+            0.003417138368506347,
+            0.0029997316916354454
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "auroc": {
+          "n": 3,
+          "mean": 0.880969491609572,
+          "std": 0.009753642065045797,
+          "bootstrap_mean_ci95": [
+            0.8716649290040711,
+            0.8911174411677093
+          ],
+          "seed_values": [
+            0.8911174411677093,
+            0.8716649290040711,
+            0.8801261046569357
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "brier": {
+          "n": 3,
+          "mean": 0.058849328132871026,
+          "std": 0.004695873995436854,
+          "bootstrap_mean_ci95": [
+            0.056053051930021434,
+            0.06427075619762843
+          ],
+          "seed_values": [
+            0.06427075619762843,
+            0.05622417627096321,
+            0.056053051930021434
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "ece": {
+          "n": 3,
+          "mean": 0.07213590296113272,
+          "std": 0.00344897566785556,
+          "bootstrap_mean_ci95": [
+            0.06954619086515232,
+            0.07605096445954265
+          ],
+          "seed_values": [
+            0.07605096445954265,
+            0.07081055355870317,
+            0.06954619086515232
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "false_negative_rate": {
+          "n": 3,
+          "mean": 0.75,
+          "std": 0.0,
+          "bootstrap_mean_ci95": [
+            0.75,
+            0.75
+          ],
+          "seed_values": [
+            0.75,
+            0.75,
+            0.75
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        }
+      },
+      "a_b": {
+        "auprc_average_precision": {
+          "n": 3,
+          "mean": 0.003121469141699707,
+          "std": 0.0005625180055342438,
+          "bootstrap_mean_ci95": [
+            0.0025775648668026185,
+            0.0037009153626063364
+          ],
+          "seed_values": [
+            0.0030859271956901664,
+            0.0037009153626063364,
+            0.0025775648668026185
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "auroc": {
+          "n": 3,
+          "mean": 0.8688470194949195,
+          "std": 0.010796470781950436,
+          "bootstrap_mean_ci95": [
+            0.8580528249429054,
+            0.8796457650680171
+          ],
+          "seed_values": [
+            0.8688424684738358,
+            0.8796457650680171,
+            0.8580528249429054
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "brier": {
+          "n": 3,
+          "mean": 0.052100641283395005,
+          "std": 0.008334866313058846,
+          "bootstrap_mean_ci95": [
+            0.04300232965378844,
+            0.05936743220514102
+          ],
+          "seed_values": [
+            0.05936743220514102,
+            0.05393216199125554,
+            0.04300232965378844
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "ece": {
+          "n": 3,
+          "mean": 0.06573061930250218,
+          "std": 0.0058125799164406985,
+          "bootstrap_mean_ci95": [
+            0.05997318312884994,
+            0.07159681656327248
+          ],
+          "seed_values": [
+            0.07159681656327248,
+            0.06562185821538412,
+            0.05997318312884993
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        },
+        "false_negative_rate": {
+          "n": 3,
+          "mean": 0.8194444444444445,
+          "std": 0.024056261216234453,
+          "bootstrap_mean_ci95": [
+            0.7916666666666666,
+            0.8333333333333334
+          ],
+          "seed_values": [
+            0.7916666666666666,
+            0.8333333333333334,
+            0.8333333333333334
+          ],
+          "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+        }
+      }
+    },
+    "closed_loop": {
+      "b0": {
+        "low": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 0.803587262589459,
+            "std": 0.4890542704889727,
+            "bootstrap_mean_ci95": [
+              0.24682700512278455,
+              1.163745085486505
+            ],
+            "seed_values": [
+              1.163745085486505,
+              0.24682700512278455,
+              1.0001896971590876
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.41132382955503916,
+            "std": 0.01727606815061094,
+            "bootstrap_mean_ci95": [
+              0.39177931666359767,
+              0.4245560777090971
+            ],
+            "seed_values": [
+              0.41763609429242265,
+              0.4245560777090971,
+              0.39177931666359767
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.4155507330246913,
+            "std": 0.024719344171022457,
+            "bootstrap_mean_ci95": [
+              0.3941059027777778,
+              0.4425868055555555
+            ],
+            "seed_values": [
+              0.3941059027777778,
+              0.4425868055555555,
+              0.40995949074074073
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 197.58618700167233,
+            "std": 42.64986417367729,
+            "bootstrap_mean_ci95": [
+              170.797927662038,
+              246.7686218171302
+            ],
+            "seed_values": [
+              175.1920115258488,
+              246.7686218171302,
+              170.797927662038
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.199917407566143,
+            "std": 0.025506509123963128,
+            "bootstrap_mean_ci95": [
+              1.1845844710392315,
+              1.2293613366730278
+            ],
+            "seed_values": [
+              1.2293613366730278,
+              1.1845844710392315,
+              1.1858064149861693
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "nominal": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.1008999327469067,
+            "std": 1.1996409567725612,
+            "bootstrap_mean_ci95": [
+              0.17711654268508678,
+              2.4567192598323384
+            ],
+            "seed_values": [
+              2.4567192598323384,
+              0.6688639957232948,
+              0.17711654268508678
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.41767288048492873,
+            "std": 0.022874662400998655,
+            "bootstrap_mean_ci95": [
+              0.3913255172731697,
+              0.4324628908941149
+            ],
+            "seed_values": [
+              0.4292302332875015,
+              0.4324628908941149,
+              0.3913255172731697
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.4452247299382716,
+            "std": 0.023235062765914093,
+            "bootstrap_mean_ci95": [
+              0.42353877314814814,
+              0.46974826388888885
+            ],
+            "seed_values": [
+              0.4423871527777778,
+              0.42353877314814814,
+              0.46974826388888885
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 216.59450832690257,
+            "std": 34.44703837119598,
+            "bootstrap_mean_ci95": [
+              187.5929856770806,
+              254.67030338541713
+            ],
+            "seed_values": [
+              207.52023591821003,
+              187.5929856770806,
+              254.67030338541713
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.111644306964924,
+            "std": 0.19917863312770598,
+            "bootstrap_mean_ci95": [
+              0.9178678786000224,
+              1.3158178871216208
+            ],
+            "seed_values": [
+              1.1012471551731293,
+              1.3158178871216208,
+              0.9178678786000224
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "high": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 0.7613082832244084,
+            "std": 0.3949059836731251,
+            "bootstrap_mean_ci95": [
+              0.3060052876817352,
+              1.0107570888166664
+            ],
+            "seed_values": [
+              1.0107570888166664,
+              0.9671624731748234,
+              0.3060052876817352
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.43345850016770465,
+            "std": 0.028089029983426345,
+            "bootstrap_mean_ci95": [
+              0.4125332361123302,
+              0.4653825766614446
+            ],
+            "seed_values": [
+              0.4653825766614446,
+              0.4224596877293392,
+              0.4125332361123302
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.4484760802469136,
+            "std": 0.042259731507234874,
+            "bootstrap_mean_ci95": [
+              0.4012384259259259,
+              0.48269386574074075
+            ],
+            "seed_values": [
+              0.4012384259259259,
+              0.46149594907407404,
+              0.48269386574074075
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 214.04767044431455,
+            "std": 40.653450304520554,
+            "bootstrap_mean_ci95": [
+              186.38076003086465,
+              260.7233176118804
+            ],
+            "seed_values": [
+              186.38076003086465,
+              260.7233176118804,
+              195.0389336901985
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.1844414617592833,
+            "std": 0.21624687800683268,
+            "bootstrap_mean_ci95": [
+              1.0184327634613797,
+              1.4289807802330803
+            ],
+            "seed_values": [
+              1.4289807802330803,
+              1.0184327634613797,
+              1.1059108415833898
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        }
+      },
+      "m1": {
+        "low": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.6097724769331592,
+            "std": 0.38540188159514605,
+            "bootstrap_mean_ci95": [
+              1.1682167660835692,
+              1.878571431878518
+            ],
+            "seed_values": [
+              1.1682167660835692,
+              1.878571431878518,
+              1.7825292328373905
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4121817559092474,
+            "std": 0.026054188137437456,
+            "bootstrap_mean_ci95": [
+              0.38485717926086266,
+              0.436745711662824
+            ],
+            "seed_values": [
+              0.38485717926086266,
+              0.436745711662824,
+              0.4149423768040556
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.40230034722222224,
+            "std": 0.08852456734699887,
+            "bootstrap_mean_ci95": [
+              0.32413483796296294,
+              0.49842881944444445
+            ],
+            "seed_values": [
+              0.49842881944444445,
+              0.3843373842592593,
+              0.32413483796296294
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 164.59979031635956,
+            "std": 82.52018214640216,
+            "bootstrap_mean_ci95": [
+              85.94751630015467,
+              250.5085990547874
+            ],
+            "seed_values": [
+              250.5085990547874,
+              157.34325559413662,
+              85.94751630015467
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.2990445532308994,
+            "std": 0.23126584960463875,
+            "bootstrap_mean_ci95": [
+              1.0329996758482973,
+              1.4520416160040834
+            ],
+            "seed_values": [
+              1.0329996758482973,
+              1.4520416160040834,
+              1.4120923678403177
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "nominal": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.7744317311339362,
+            "std": 0.7620577941298307,
+            "bootstrap_mean_ci95": [
+              1.02026254237148,
+              2.5441404557403167
+            ],
+            "seed_values": [
+              1.02026254237148,
+              1.758892195290011,
+              2.5441404557403167
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4113695361868914,
+            "std": 0.012534758746084278,
+            "bootstrap_mean_ci95": [
+              0.40062193789463096,
+              0.4251389904613417
+            ],
+            "seed_values": [
+              0.40834768020470164,
+              0.4251389904613417,
+              0.40062193789463096
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.43796296296296294,
+            "std": 0.05494601443862787,
+            "bootstrap_mean_ci95": [
+              0.3788599537037037,
+              0.48749421296296297
+            ],
+            "seed_values": [
+              0.4475347222222223,
+              0.48749421296296297,
+              0.3788599537037037
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 200.58535508294753,
+            "std": 85.54823257481745,
+            "bootstrap_mean_ci95": [
+              102.69607397762314,
+              261.0089581404331
+            ],
+            "seed_values": [
+              261.0089581404331,
+              238.0510331307864,
+              102.69607397762314
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.1428147436980671,
+            "std": 0.19816960139245762,
+            "bootstrap_mean_ci95": [
+              1.0247804991124523,
+              1.3716026783965203
+            ],
+            "seed_values": [
+              1.0320610535852286,
+              1.0247804991124523,
+              1.3716026783965203
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "high": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.1657066509381682,
+            "std": 0.33813013502044564,
+            "bootstrap_mean_ci95": [
+              0.8599795778996819,
+              1.5288799728156652
+            ],
+            "seed_values": [
+              0.8599795778996819,
+              1.1082604020991569,
+              1.5288799728156652
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4287142268913109,
+            "std": 0.02518350926389777,
+            "bootstrap_mean_ci95": [
+              0.4021155997410022,
+              0.4521916500224668
+            ],
+            "seed_values": [
+              0.4021155997410022,
+              0.4318354309104638,
+              0.4521916500224668
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.40705246913580245,
+            "std": 0.07674535504777125,
+            "bootstrap_mean_ci95": [
+              0.32953125,
+              0.4829976851851852
+            ],
+            "seed_values": [
+              0.4829976851851852,
+              0.4086284722222222,
+              0.32953125
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 184.95049069251536,
+            "std": 88.18684087972714,
+            "bootstrap_mean_ci95": [
+              84.958444878472,
+              251.62320346257658
+            ],
+            "seed_values": [
+              251.62320346257658,
+              218.26982373649744,
+              84.958444878472
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.190950920144416,
+            "std": 0.33670050292685666,
+            "bootstrap_mean_ci95": [
+              0.9012765641201295,
+              1.5603628168308445
+            ],
+            "seed_values": [
+              0.9012765641201295,
+              1.1112133794822738,
+              1.5603628168308445
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        }
+      },
+      "a_b": {
+        "low": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.1961753322428754,
+            "std": 0.9545771798022601,
+            "bootstrap_mean_ci95": [
+              0.0968429207824908,
+              1.8152589639823795
+            ],
+            "seed_values": [
+              0.0968429207824908,
+              1.6764241119637557,
+              1.8152589639823795
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4161417929532177,
+            "std": 0.027048648208437255,
+            "bootstrap_mean_ci95": [
+              0.3921768065817666,
+              0.4454704367512814
+            ],
+            "seed_values": [
+              0.3921768065817666,
+              0.4454704367512814,
+              0.41077813552660514
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.3792361111111111,
+            "std": 0.08691673801820862,
+            "bootstrap_mean_ci95": [
+              0.2963483796296296,
+              0.46968750000000004
+            ],
+            "seed_values": [
+              0.46968750000000004,
+              0.2963483796296296,
+              0.3716724537037037
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 173.70066274434183,
+            "std": 76.92975061739459,
+            "bootstrap_mean_ci95": [
+              96.27405767746932,
+              250.1237405478382
+            ],
+            "seed_values": [
+              250.1237405478382,
+              96.27405767746932,
+              174.704190007718
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.2335623748979356,
+            "std": 0.30891677688075403,
+            "bootstrap_mean_ci95": [
+              0.942104080452486,
+              1.557388748341637
+            ],
+            "seed_values": [
+              0.942104080452486,
+              1.557388748341637,
+              1.2011942958996835
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "nominal": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.1978597476371007,
+            "std": 0.9515205382338453,
+            "bootstrap_mean_ci95": [
+              0.592856084185564,
+              2.2946343663123474
+            ],
+            "seed_values": [
+              0.7060887924133906,
+              2.2946343663123474,
+              0.592856084185564
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4441605780393502,
+            "std": 0.036041066530667173,
+            "bootstrap_mean_ci95": [
+              0.4119810531716941,
+              0.4831045985258236
+            ],
+            "seed_values": [
+              0.4119810531716941,
+              0.4831045985258236,
+              0.437396082420533
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.384110725308642,
+            "std": 0.0912340854684341,
+            "bootstrap_mean_ci95": [
+              0.3083767361111111,
+              0.48539641203703704
+            ],
+            "seed_values": [
+              0.48539641203703704,
+              0.3083767361111111,
+              0.35855902777777776
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 167.42903097672243,
+            "std": 96.56534744640508,
+            "bootstrap_mean_ci95": [
+              79.02945987654336,
+              270.48459958526104
+            ],
+            "seed_values": [
+              270.48459958526104,
+              79.02945987654336,
+              152.77303346836297
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.3730676854301702,
+            "std": 0.48914207032931745,
+            "bootstrap_mean_ci95": [
+              0.9097742716025875,
+              1.8844989067368048
+            ],
+            "seed_values": [
+              0.9097742716025875,
+              1.8844989067368048,
+              1.324929877951118
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "high": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.4903180892413375,
+            "std": 0.8668886519387528,
+            "bootstrap_mean_ci95": [
+              0.6053167931952643,
+              2.3378810341493916
+            ],
+            "seed_values": [
+              0.6053167931952643,
+              1.5277564403793573,
+              2.3378810341493916
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4471197146816835,
+            "std": 0.007511799994295665,
+            "bootstrap_mean_ci95": [
+              0.44191206918292963,
+              0.4557308213783849
+            ],
+            "seed_values": [
+              0.44371625348373606,
+              0.4557308213783849,
+              0.44191206918292963
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.4063975694444444,
+            "std": 0.060860263560817696,
+            "bootstrap_mean_ci95": [
+              0.34889178240740737,
+              0.4701331018518518
+            ],
+            "seed_values": [
+              0.4701331018518518,
+              0.34889178240740737,
+              0.40016782407407403
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 146.10505222800884,
+            "std": 70.64711745797166,
+            "bootstrap_mean_ci95": [
+              103.8156597222226,
+              227.66266652198905
+            ],
+            "seed_values": [
+              227.66266652198905,
+              106.83683043981485,
+              103.8156597222226
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.3443609457142192,
+            "std": 0.2544866957388013,
+            "bootstrap_mean_ci95": [
+              1.0587307048461347,
+              1.5469673902202639
+            ],
+            "seed_values": [
+              1.0587307048461347,
+              1.4273847420762593,
+              1.5469673902202639
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        }
+      },
+      "s0": {
+        "low": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.3845642155900144,
+            "std": 0.7532852201709777,
+            "bootstrap_mean_ci95": [
+              0.572070316252125,
+              2.059751438520648
+            ],
+            "seed_values": [
+              0.572070316252125,
+              1.5218708919972703,
+              2.059751438520648
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.39720452576130477,
+            "std": 0.031691780053203666,
+            "bootstrap_mean_ci95": [
+              0.36282724649893244,
+              0.4252569090303115
+            ],
+            "seed_values": [
+              0.4035294217546704,
+              0.36282724649893244,
+              0.4252569090303115
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.4316020447530864,
+            "std": 0.11634997818988352,
+            "bootstrap_mean_ci95": [
+              0.3370688657407408,
+              0.5615422453703703
+            ],
+            "seed_values": [
+              0.39619502314814814,
+              0.5615422453703703,
+              0.3370688657407408
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 183.9061710069448,
+            "std": 84.12873683218032,
+            "bootstrap_mean_ci95": [
+              102.03443716242293,
+              270.1234773823314
+            ],
+            "seed_values": [
+              179.56059847608006,
+              270.1234773823314,
+              102.03443716242293
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.1254747516009311,
+            "std": 0.25699413377603386,
+            "bootstrap_mean_ci95": [
+              0.9013550482232624,
+              1.4059797092255668
+            ],
+            "seed_values": [
+              1.069089497353964,
+              0.9013550482232624,
+              1.4059797092255668
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "nominal": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.6364649325522616,
+            "std": 1.011801694688572,
+            "bootstrap_mean_ci95": [
+              0.4687496345783598,
+              2.2530854650044603
+            ],
+            "seed_values": [
+              0.4687496345783598,
+              2.1875596980739647,
+              2.2530854650044603
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.41492812917408156,
+            "std": 0.03418487078140107,
+            "bootstrap_mean_ci95": [
+              0.3825683089523266,
+              0.4506844770802491
+            ],
+            "seed_values": [
+              0.3825683089523266,
+              0.411531601489669,
+              0.4506844770802491
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.3874691358024691,
+            "std": 0.08291415097251119,
+            "bootstrap_mean_ci95": [
+              0.2954600694444444,
+              0.45639756944444443
+            ],
+            "seed_values": [
+              0.45639756944444443,
+              0.4105497685185185,
+              0.2954600694444444
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 146.94362282986057,
+            "std": 48.44581143564734,
+            "bootstrap_mean_ci95": [
+              100.83213189621831,
+              197.42735489004596
+            ],
+            "seed_values": [
+              197.42735489004596,
+              142.57138170331743,
+              100.83213189621831
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.249798211626449,
+            "std": 0.21905058364009863,
+            "bootstrap_mean_ci95": [
+              1.0401661837557061,
+              1.4771865220287135
+            ],
+            "seed_values": [
+              1.0401661837557061,
+              1.2320419290949278,
+              1.4771865220287135
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "high": {
+          "collision_events_per_1000_departed": {
+            "n": 3,
+            "mean": 1.4721576279492308,
+            "std": 0.7517345879156828,
+            "bootstrap_mean_ci95": [
+              0.6721794908599147,
+              2.163919083472321
+            ],
+            "seed_values": [
+              0.6721794908599147,
+              1.5803743095154565,
+              2.163919083472321
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "completion_fraction": {
+            "n": 3,
+            "mean": 0.4361143120999053,
+            "std": 0.024618363140898433,
+            "bootstrap_mean_ci95": [
+              0.4108146275891576,
+              0.45998949517325083
+            ],
+            "seed_values": [
+              0.4108146275891576,
+              0.4375388135373075,
+              0.45998949517325083
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "aql": {
+            "n": 3,
+            "mean": 0.36595100308641976,
+            "std": 0.10626055807316412,
+            "bootstrap_mean_ci95": [
+              0.2722309027777778,
+              0.48139467592592594
+            ],
+            "seed_values": [
+              0.48139467592592594,
+              0.34422743055555555,
+              0.2722309027777778
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "awt": {
+            "n": 3,
+            "mean": 146.2136996206274,
+            "std": 84.59916963230518,
+            "bootstrap_mean_ci95": [
+              72.34068441358046,
+              238.50454509066415
+            ],
+            "seed_values": [
+              238.50454509066415,
+              127.79586935763764,
+              72.34068441358046
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "mean_speed": {
+            "n": 3,
+            "mean": 1.2492468136234376,
+            "std": 0.2723409715647696,
+            "bootstrap_mean_ci95": [
+              0.9525229411310439,
+              1.4878074882903067
+            ],
+            "seed_values": [
+              0.9525229411310439,
+              1.3074100114489626,
+              1.4878074882903067
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        }
+      }
+    },
+    "paired_m1_minus_comparator": {
+      "b0": {
+        "offline": {
+          "auprc_average_precision": {
+            "n": 3,
+            "mean": 0.00040541174021821604,
+            "std": 0.0005449083695377475,
+            "bootstrap_mean_ci95": [
+              -0.0001986173915063524,
+              0.0008600262314190613
+            ],
+            "seed_values": [
+              0.0008600262314190613,
+              0.0005548263807419393,
+              -0.0001986173915063524
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "brier": {
+            "n": 3,
+            "mean": 0.03868918135711555,
+            "std": 0.004635863080054408,
+            "bootstrap_mean_ci95": [
+              0.03487244090275163,
+              0.04384802781479482
+            ],
+            "seed_values": [
+              0.04384802781479481,
+              0.037347075353800205,
+              0.03487244090275163
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "closed_loop": {
+          "low": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.8061852143437003,
+              "std": 0.8138984026836239,
+              "bootstrap_mean_ci95": [
+                0.004471680597064191,
+                1.6317444267557335
+              ],
+              "seed_values": [
+                0.004471680597064191,
+                1.6317444267557335,
+                0.782339535678303
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": -0.013250385802469124,
+              "std": 0.1027507150239768,
+              "bootstrap_mean_ci95": [
+                -0.08582465277777777,
+                0.10432291666666667
+              ],
+              "seed_values": [
+                0.10432291666666667,
+                -0.05824942129629627,
+                -0.08582465277777777
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": -32.986396685312755,
+              "std": 93.8210256034306,
+              "bootstrap_mean_ci95": [
+                -89.42536622299355,
+                75.31658752893858
+              ],
+              "seed_values": [
+                75.31658752893858,
+                -89.42536622299355,
+                -84.8504113618833
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": 0.0008579263542083023,
+              "std": 0.02964256811373477,
+              "bootstrap_mean_ci95": [
+                -0.03277891503155992,
+                0.023163060140457863
+              ],
+              "seed_values": [
+                -0.03277891503155992,
+                0.012189633953726964,
+                0.023163060140457863
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "nominal": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.6735317983870294,
+              "std": 1.935644121687788,
+              "bootstrap_mean_ci95": [
+                -1.4364567174608582,
+                2.36702391305523
+              ],
+              "seed_values": [
+                -1.4364567174608582,
+                1.0900281995667163,
+                2.36702391305523
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": -0.007261766975308624,
+              "std": 0.07816418905931016,
+              "bootstrap_mean_ci95": [
+                -0.09088831018518516,
+                0.06395543981481484
+              ],
+              "seed_values": [
+                0.005147569444444444,
+                0.06395543981481484,
+                -0.09088831018518516
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": -16.00915324395506,
+              "std": 117.75896016680436,
+              "bootstrap_mean_ci95": [
+                -151.97422940779396,
+                53.48872222222301
+              ],
+              "seed_values": [
+                53.48872222222301,
+                50.45804745370577,
+                -151.97422940779396
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.006303344298037263,
+              "std": 0.015115348642314877,
+              "bootstrap_mean_ci95": [
+                -0.020882553082799793,
+                0.009296420621461243
+              ],
+              "seed_values": [
+                -0.020882553082799793,
+                -0.007323900432773238,
+                0.009296420621461243
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "high": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.40439836771375964,
+              "std": 0.7236887657887907,
+              "bootstrap_mean_ci95": [
+                -0.15077751091698444,
+                1.2228746851339298
+              ],
+              "seed_values": [
+                -0.15077751091698444,
+                0.14109792892433354,
+                1.2228746851339298
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": -0.04142361111111109,
+              "std": 0.1178782990448114,
+              "bootstrap_mean_ci95": [
+                -0.15316261574074072,
+                0.0817592592592593
+              ],
+              "seed_values": [
+                0.0817592592592593,
+                -0.052867476851851856,
+                -0.15316261574074072
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": -29.09717975179915,
+              "std": 88.4212982704688,
+              "bootstrap_mean_ci95": [
+                -110.08048881172648,
+                65.24244343171195
+              ],
+              "seed_values": [
+                65.24244343171195,
+                -42.45349387538292,
+                -110.08048881172648
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.00474427327639376,
+              "std": 0.052895559057233775,
+              "bootstrap_mean_ci95": [
+                -0.06326697692044249,
+                0.0396584139101366
+              ],
+              "seed_values": [
+                -0.06326697692044249,
+                0.009375743181124607,
+                0.0396584139101366
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          }
+        }
+      },
+      "a_b": {
+        "offline": {
+          "auprc_average_precision": {
+            "n": 3,
+            "mean": 0.00014198088566726264,
+            "std": 0.00037481003360404874,
+            "bootstrap_mean_ci95": [
+              -0.0002837769940999893,
+              0.0004221668248328269
+            ],
+            "seed_values": [
+              0.00028755282626895034,
+              -0.0002837769940999893,
+              0.0004221668248328269
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          },
+          "brier": {
+            "n": 3,
+            "mean": 0.006748686849476024,
+            "std": 0.0056117263381324466,
+            "bootstrap_mean_ci95": [
+              0.0022920142797076687,
+              0.013050722276232996
+            ],
+            "seed_values": [
+              0.004903323992487406,
+              0.0022920142797076687,
+              0.013050722276232996
+            ],
+            "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+          }
+        },
+        "closed_loop": {
+          "low": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.4135971446902839,
+              "std": 0.5816308521549113,
+              "bootstrap_mean_ci95": [
+                -0.03272973114498893,
+                1.0713738453010784
+              ],
+              "seed_values": [
+                1.0713738453010784,
+                0.20214731991476229,
+                -0.03272973114498893
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": 0.02306423611111111,
+              "std": 0.06794143186328819,
+              "bootstrap_mean_ci95": [
+                -0.047537615740740745,
+                0.08798900462962962
+              ],
+              "seed_values": [
+                0.02874131944444445,
+                0.08798900462962962,
+                -0.047537615740740745
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": -9.10087242798226,
+              "std": 75.36200813750618,
+              "bootstrap_mean_ci95": [
+                -88.75667370756332,
+                61.06919791666732
+              ],
+              "seed_values": [
+                0.38485850694921925,
+                61.06919791666732,
+                -88.75667370756332
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.003960037043970293,
+              "std": 0.00707082022236642,
+              "bootstrap_mean_ci95": [
+                -0.00872472508845736,
+                0.004164241277450427
+              ],
+              "seed_values": [
+                -0.007319627320903947,
+                -0.00872472508845736,
+                0.004164241277450427
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "nominal": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.5765719834968352,
+              "std": 1.2641063565198651,
+              "bootstrap_mean_ci95": [
+                -0.5357421710223363,
+                1.9512843715547528
+              ],
+              "seed_values": [
+                0.3141737499580894,
+                -0.5357421710223363,
+                1.9512843715547528
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": 0.05385223765432101,
+              "std": 0.11231321196040218,
+              "bootstrap_mean_ci95": [
+                -0.03786168981481478,
+                0.17911747685185186
+              ],
+              "seed_values": [
+                -0.03786168981481478,
+                0.17911747685185186,
+                0.020300925925925955
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": 33.15632410622507,
+              "std": 110.8767895642988,
+              "bootstrap_mean_ci95": [
+                -50.07695949073985,
+                159.02157325424304
+              ],
+              "seed_values": [
+                -9.47564144482798,
+                159.02157325424304,
+                -50.07695949073985
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.03279104185245884,
+              "std": 0.02738424314916537,
+              "bootstrap_mean_ci95": [
+                -0.05796560806448194,
+                -0.003633372966992454
+              ],
+              "seed_values": [
+                -0.003633372966992454,
+                -0.05796560806448194,
+                -0.03677414452590213
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "high": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": -0.3246114383031697,
+              "std": 0.5381426482139889,
+              "bootstrap_mean_ci95": [
+                -0.8090010613337264,
+                0.2546627847044177
+              ],
+              "seed_values": [
+                0.2546627847044177,
+                -0.41949603828020043,
+                -0.8090010613337264
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": 0.0006548996913580268,
+              "std": 0.06603865735490315,
+              "bootstrap_mean_ci95": [
+                -0.07063657407407407,
+                0.059736689814814815
+              ],
+              "seed_values": [
+                0.012864583333333346,
+                0.059736689814814815,
+                -0.07063657407407407
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": 38.845438464506515,
+              "std": 66.40824349696297,
+              "bootstrap_mean_ci95": [
+                -18.8572148437506,
+                111.4329932966826
+              ],
+              "seed_values": [
+                23.96053694058754,
+                111.4329932966826,
+                -18.8572148437506
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.0184054877903726,
+              "std": 0.026372219448400357,
+              "bootstrap_mean_ci95": [
+                -0.0416006537427339,
+                0.010279580839537228
+              ],
+              "seed_values": [
+                -0.0416006537427339,
+                -0.023895390467921124,
+                0.010279580839537228
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          }
+        }
+      },
+      "s0": {
+        "closed_loop": {
+          "low": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.22520826134314484,
+              "std": 0.451288008477121,
+              "bootstrap_mean_ci95": [
+                -0.27722220568325767,
+                0.5961464498314442
+              ],
+              "seed_values": [
+                0.5961464498314442,
+                0.356700539881248,
+                -0.27722220568325767
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": -0.029301697530864198,
+              "std": 0.14043652043992394,
+              "bootstrap_mean_ci95": [
+                -0.1772048611111111,
+                0.10223379629629632
+              ],
+              "seed_values": [
+                0.10223379629629632,
+                -0.1772048611111111,
+                -0.012934027777777801
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": -19.306380690585218,
+              "std": 91.90641226114239,
+              "bootstrap_mean_ci95": [
+                -112.78022178819474,
+                70.94800057870734
+              ],
+              "seed_values": [
+                70.94800057870734,
+                -112.78022178819474,
+                -16.08692086226825
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": 0.014977230147942657,
+              "std": 0.05121537580778917,
+              "bootstrap_mean_ci95": [
+                -0.018672242493807705,
+                0.07391846516389157
+              ],
+              "seed_values": [
+                -0.018672242493807705,
+                0.07391846516389157,
+                -0.01031453222625589
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "nominal": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": 0.13796679858167432,
+              "std": 0.5077060224702256,
+              "bootstrap_mean_ci95": [
+                -0.4286675027839537,
+                0.5515129077931201
+              ],
+              "seed_values": [
+                0.5515129077931201,
+                -0.4286675027839537,
+                0.29105499073585656
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": 0.05049382716049385,
+              "std": 0.051505623684530905,
+              "bootstrap_mean_ci95": [
+                -0.008862847222222229,
+                0.0833998842592593
+              ],
+              "seed_values": [
+                -0.008862847222222229,
+                0.07694444444444447,
+                0.0833998842592593
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": 53.64173225308698,
+              "std": 47.592814958498906,
+              "bootstrap_mean_ci95": [
+                1.8639420814048318,
+                95.47965142746898
+              ],
+              "seed_values": [
+                63.58160325038711,
+                95.47965142746898,
+                1.8639420814048318
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.0035585929871900907,
+              "std": 0.040730848839425786,
+              "bootstrap_mean_ci95": [
+                -0.05006253918561817,
+                0.025779371252375154
+              ],
+              "seed_values": [
+                0.025779371252375154,
+                0.01360738897167274,
+                -0.05006253918561817
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          },
+          "high": {
+            "collision_events_per_1000_departed": {
+              "n": 3,
+              "mean": -0.30645097701106266,
+              "std": 0.4357169278318908,
+              "bootstrap_mean_ci95": [
+                -0.6350391106566559,
+                0.18780008703976736
+              ],
+              "seed_values": [
+                0.18780008703976736,
+                -0.4721139074162995,
+                -0.6350391106566559
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "aql": {
+              "n": 3,
+              "mean": 0.04110146604938273,
+              "std": 0.03439042064295341,
+              "bootstrap_mean_ci95": [
+                0.0016030092592593064,
+                0.06440104166666666
+              ],
+              "seed_values": [
+                0.0016030092592593064,
+                0.06440104166666666,
+                0.057300347222222214
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "awt": {
+              "n": 3,
+              "mean": 38.736791071887914,
+              "std": 44.806397701305144,
+              "bootstrap_mean_ci95": [
+                12.617760464891518,
+                90.4739543788598
+              ],
+              "seed_values": [
+                13.118658371912431,
+                90.4739543788598,
+                12.617760464891518
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            },
+            "completion_fraction": {
+              "n": 3,
+              "mean": -0.00740008520859439,
+              "std": 0.0015369229979735265,
+              "bootstrap_mean_ci95": [
+                -0.008699027848155424,
+                -0.005703382626843723
+              ],
+              "seed_values": [
+                -0.008699027848155424,
+                -0.005703382626843723,
+                -0.007797845150784022
+              ],
+              "definition": "training-seed unit, 10000 paired bootstrap resamples; small-n descriptive interval"
+            }
+          }
+        }
+      }
+    }
+  },
+  "scope": "Fixed-budget final checkpoints, common offline corpus, paired training seeds; effect direction does not control acceptance"
+}

@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / 'src/sac_rwb'))
 from algos.p4_data import sha_file, score_metrics, fit_calibration, apply_calibration
 from algos.p5_metrics import audit_physical
 from accept_p5 import protocol_hash, read, smoke_protocol
+from p5_storage import relocated, journal_exists
 
 
 def require(value, message):
@@ -50,7 +51,7 @@ def physical_digest(path, expected):
 
 def review(run):
     from p5_scope import projected, canonical_runtime
-    run = Path(run).resolve()
+    run = relocated(run, ROOT).resolve()
     plan = read(run / 'plan.json')
     protocol = plan['protocol']
     require(protocol_hash(protocol) == plan['protocol_sha256'], 'Protocol hash mismatch')
@@ -127,7 +128,7 @@ def review(run):
                                risk_update_attempts=result['risk_update_attempts'],
                                positive_windows=counts.get('positive', 0), windows=counts['windows'],
                                execution_confirmed=confirmed,
-                               raw_online_streams_present=all((folder / 'online-data' / p).is_file() for p in ('samples.jsonl', 'events.jsonl'))))
+                               raw_online_streams_present=all(journal_exists(folder / 'online-data' / p, ROOT) for p in ('samples.jsonl', 'events.jsonl'))))
         for variant in protocol['risk_variants']:
             folder = run / 'offline' / variant / str(seed)
             if folder / 'result.json' not in present_results:

@@ -53,7 +53,8 @@ def audit(output=None):
                 if suffix == '.sumocfg':
                     for element in tree.getroot().findall('./input/*'):
                         for name in element.get('value', '').split(','):
-                            if name and not (p.parent / name).is_file():
+                            from p5_storage import relocated
+                            if name and not relocated(p.parent / name, ROOT).is_file():
                                 raise ValueError('missing SUMO input ' + name)
             elif suffix == '.json':
                 json.loads(p.read_text(encoding='utf-8-sig'))

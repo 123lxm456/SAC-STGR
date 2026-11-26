@@ -1,0 +1,115 @@
+{
+  "historical_stages": {
+    "P0": "passed",
+    "P1": "passed",
+    "P2": "passed",
+    "P3": "passed",
+    "P4": "passed"
+  },
+  "historical_gpu_test_runs": [
+    35,
+    53,
+    74
+  ],
+  "reviewed_source_deltas": [
+    {
+      "path": "scripts/audit_p0123.py",
+      "scope": "pinned cold-archive retirement and P5 relocated-input handling only"
+    },
+    {
+      "path": "scripts/verify_plan.py",
+      "scope": "pinned P5 four-group document checks only"
+    },
+    {
+      "path": "src/sac_rwb/Env.py",
+      "scope": "unused imports and exact optional P5 physical-observer callback; legacy default unchanged"
+    },
+    {
+      "path": "src/sac_rwb/README.md",
+      "scope": "documentation status only"
+    },
+    {
+      "path": "src/sac_rwb/algos/p4_data.py",
+      "scope": "reader integrity checks and line-wise parsing only"
+    },
+    {
+      "path": "src/sac_rwb/core/costomized_data_structures.py",
+      "scope": "unused imports / uncalled timer only"
+    },
+    {
+      "path": "src/sac_rwb/core/monitor.py",
+      "scope": "unused imports / uncalled timer only"
+    },
+    {
+      "path": "src/sac_rwb/core/sumo_interface.py",
+      "scope": "unused imports / uncalled timer only"
+    },
+    {
+      "path": "src/sac_rwb/core/utils.py",
+      "scope": "unused imports / uncalled timer only"
+    }
+  ],
+  "frozen_metadata_fingerprints": 16,
+  "raw_streams_absent_locally": [
+    "plan\\p4\\runs\\20261121T115438612730Z\\b0\\validation-0\\samples.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\b0\\validation-0\\events.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\b0\\test-0\\samples.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\b0\\test-0\\events.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\m1\\validation-0\\samples.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\m1\\validation-0\\events.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\m1\\test-0\\samples.jsonl",
+    "plan\\p4\\runs\\20261121T115438612730Z\\m1\\test-0\\events.jsonl"
+  ],
+  "raw_reaudited": false,
+  "variants": {
+    "b0": {
+      "counts": {
+        "train": {
+          "positive": 145,
+          "negative": 82696,
+          "censored": 636,
+          "windows": 83477
+        },
+        "validation": {
+          "positive": 81,
+          "negative": 29968,
+          "censored": 512,
+          "windows": 30561
+        },
+        "test": {
+          "positive": 24,
+          "negative": 33570,
+          "censored": 419,
+          "windows": 34013
+        }
+      },
+      "frozen_evaluation_and_models_verified": true,
+      "strict_raw_reaudit_passed": false
+    },
+    "m1": {
+      "counts": {
+        "train": {
+          "positive": 175,
+          "negative": 29787,
+          "censored": 149,
+          "windows": 30111
+        },
+        "validation": {
+          "positive": 509,
+          "negative": 25784,
+          "censored": 485,
+          "windows": 26778
+        },
+        "test": {
+          "positive": 90,
+          "negative": 28885,
+          "censored": 538,
+          "windows": 29513
+        }
+      },
+      "frozen_evaluation_and_models_verified": true,
+      "strict_raw_reaudit_passed": false
+    }
+  },
+  "scope": "Historical SUMO/GPU executions + current tests; no fresh training trajectory"
+}

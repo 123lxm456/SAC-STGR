@@ -37,3 +37,6 @@ Thumbs.db
 
 # Raw compressed data stays on server
 /plan/p5/storage/**/objects/
+/plan/p5/runs/**/data/objects/
+/plan/p5/.storage-migration.lock
+/p5-analysis-*/

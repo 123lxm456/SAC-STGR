@@ -1,0 +1,35 @@
+Verifying compressed reader 1/30: plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/samples.jsonl
+Verifying compressed reader 2/30: plan/p5/runs/20261122T141242292188Z/online/m1/11/online-data/events.jsonl
+Verifying compressed reader 3/30: plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/samples.jsonl
+Verifying compressed reader 4/30: plan/p5/runs/20261122T141242292188Z/online/b0/11/online-data/events.jsonl
+Verifying compressed reader 5/30: plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/samples.jsonl
+Verifying compressed reader 6/30: plan/p5/runs/20261122T141242292188Z/online/s0/11/online-data/events.jsonl
+Verifying compressed reader 7/30: plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/samples.jsonl
+Verifying compressed reader 8/30: plan/p5/runs/20261122T144249871603Z/online/a_b/11/online-data/events.jsonl
+Verifying compressed reader 9/30: plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/samples.jsonl
+Verifying compressed reader 10/30: plan/p5/runs/20261122T144249871603Z/online/m1/11/online-data/events.jsonl
+Verifying compressed reader 11/30: plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/samples.jsonl
+Verifying compressed reader 12/30: plan/p5/runs/20261122T144249871603Z/online/b0/11/online-data/events.jsonl
+Verifying compressed reader 13/30: plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/samples.jsonl
+Verifying compressed reader 14/30: plan/p5/runs/20261122T144249871603Z/online/s0/11/online-data/events.jsonl
+Verifying compressed reader 15/30: plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/samples.jsonl
+Verifying compressed reader 16/30: plan/p5/runs/20261123T094822803672Z/online/a_b/23/online-data/events.jsonl
+Verifying compressed reader 17/30: plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/samples.jsonl
+Verifying compressed reader 18/30: plan/p5/runs/20261123T094822803672Z/online/a_b/37/online-data/events.jsonl
+Verifying compressed reader 19/30: plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/samples.jsonl
+Verifying compressed reader 20/30: plan/p5/runs/20261123T094822803672Z/online/m1/23/online-data/events.jsonl
+Verifying compressed reader 21/30: plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/samples.jsonl
+Verifying compressed reader 22/30: plan/p5/runs/20261123T094822803672Z/online/m1/37/online-data/events.jsonl
+Verifying compressed reader 23/30: plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/samples.jsonl
+Verifying compressed reader 24/30: plan/p5/runs/20261123T094822803672Z/online/b0/23/online-data/events.jsonl
+Verifying compressed reader 25/30: plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/samples.jsonl
+Verifying compressed reader 26/30: plan/p5/runs/20261123T094822803672Z/online/b0/37/online-data/events.jsonl
+Verifying compressed reader 27/30: plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/samples.jsonl
+Verifying compressed reader 28/30: plan/p5/runs/20261123T094822803672Z/online/s0/23/online-data/events.jsonl
+Verifying compressed reader 29/30: plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/samples.jsonl
+Verifying compressed reader 30/30: plan/p5/runs/20261123T094822803672Z/online/s0/37/online-data/events.jsonl
+Recomputing compressed-layout full audit ...
+Running target unit
+Running target static
+Running target p01234
+VERIFIED: /home/lab2439/Work/LXM/SAC-STGR/plan/p5/runs/20261123T094822803672Z/migration/verification-20261126T151320915954Z

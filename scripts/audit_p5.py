@@ -13,6 +13,7 @@ from algos.p5_experiment import paired_summary, corpus_fingerprint
 from algos.p4_data import sha_file, score_metrics, fit_calibration, apply_calibration
 from algos.p5_metrics import audit_physical
 from accept_p5 import protocol_hash, validate_protocol, read, common_corpus
+from p5_storage import relocated
 
 
 def require(condition, message):
@@ -67,7 +68,7 @@ def system_references(run, plan):
 
 def audit(run, require_full=True):
     from p5_scope import projected, included_job, canonical_runtime
-    run = Path(run).resolve()
+    run = relocated(run, ROOT).resolve()
     plan = read(run / 'plan.json')
     protocol = plan['protocol']
     require(protocol_hash(protocol) == plan['protocol_sha256'], 'Changed protocol')
