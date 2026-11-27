@@ -16,27 +16,10 @@ venv/
 .env.*
 !.env.example
 
-# Training artifacts and model weights
-
-# P4 raw datasets stay on the experiment server; commit audits and manifests.
-/plan/p4/runs/**/samples.jsonl
-/plan/p4/runs/**/events.jsonl
-
-# P5 online trajectory journals remain on the experiment server.
-/plan/p5/runs/**/online-data/samples.jsonl
-/plan/p5/runs/**/online-data/events.jsonl
-/plan/p5/returns/
-/plan/p5/.experiment.lock
-
-
 # Temporary files
 *.tmp
 
 .DS_Store
 Thumbs.db
 
-# Raw compressed data stays on server
-/plan/p5/storage/**/objects/
-/plan/p5/runs/**/data/objects/
-/plan/p5/.storage-migration.lock
 /p5-analysis-*/

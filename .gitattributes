@@ -2,3 +2,12 @@
 *.sha256 text eol=lf
 *.jsonl text eol=lf
 /references/** -text
+
+# Experiment data is versioned through Git LFS.
+plan/p4/runs/**/samples.jsonl filter=lfs diff=lfs merge=lfs -text
+plan/p4/runs/**/events.jsonl filter=lfs diff=lfs merge=lfs -text
+plan/p5/runs/**/online-data/samples.jsonl filter=lfs diff=lfs merge=lfs -text
+plan/p5/runs/**/online-data/events.jsonl filter=lfs diff=lfs merge=lfs -text
+plan/p5/runs/**/data/objects/*.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+plan/p5/storage/**/objects/*.jsonl.gz filter=lfs diff=lfs merge=lfs -text
+plan/p5/returns/*.tar.gz filter=lfs diff=lfs merge=lfs -text
