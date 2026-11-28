@@ -1,0 +1,82 @@
+{
+  "overall": {
+    "a_b": {
+      "collision_events_per_1000_departed": 1.2947843897071045,
+      "aql": 0.3899148019547325,
+      "awt": 162.41158198302438,
+      "mean_speed": 1.3169970020141082,
+      "arrived": 1841.222222222222
+    },
+    "b0": {
+      "collision_events_per_1000_departed": 0.8885984928535914,
+      "aql": 0.4364171810699588,
+      "awt": 209.40945525762982,
+      "mean_speed": 1.1653343920967834,
+      "arrived": 1714.7407407407406
+    },
+    "m1": {
+      "collision_events_per_1000_departed": 1.5166369530017543,
+      "aql": 0.41577192644032923,
+      "awt": 183.37854536394082,
+      "mean_speed": 1.2109367390244608,
+      "arrived": 1769.8888888888887
+    },
+    "s0": {
+      "collision_events_per_1000_departed": 1.4977289253638355,
+      "aql": 0.39500739454732514,
+      "awt": 159.0211644858109,
+      "mean_speed": 1.2081732589502727,
+      "arrived": 1823.1111111111113
+    }
+  },
+  "offline": [
+    {
+      "variant": "a_b",
+      "kind": "calibrated",
+      "auprc_average_precision": 0.003121469141699707,
+      "auroc": 0.8688470194949195,
+      "brier": 0.0007232576677783809,
+      "false_negative_rate": 1.0
+    },
+    {
+      "variant": "a_b",
+      "kind": "raw",
+      "auprc_average_precision": 0.003121469141699707,
+      "auroc": 0.8688470194949195,
+      "brier": 0.052100641283395,
+      "false_negative_rate": 0.8194444444444445
+    },
+    {
+      "variant": "b0",
+      "kind": "calibrated",
+      "auprc_average_precision": 0.0028580382871487534,
+      "auroc": 0.7928542763049019,
+      "brier": 0.0007215058590420248,
+      "false_negative_rate": 1.0
+    },
+    {
+      "variant": "b0",
+      "kind": "raw",
+      "auprc_average_precision": 0.0028580382871487534,
+      "auroc": 0.7928542763049019,
+      "brier": 0.020160146775755474,
+      "false_negative_rate": 0.9583333333333334
+    },
+    {
+      "variant": "m1",
+      "kind": "calibrated",
+      "auprc_average_precision": 0.0032634500273669696,
+      "auroc": 0.880969491609572,
+      "brier": 0.0007263993289001143,
+      "false_negative_rate": 1.0
+    },
+    {
+      "variant": "m1",
+      "kind": "raw",
+      "auprc_average_precision": 0.0032634500273669696,
+      "auroc": 0.880969491609572,
+      "brier": 0.058849328132871026,
+      "false_negative_rate": 0.75
+    }
+  ]
+}

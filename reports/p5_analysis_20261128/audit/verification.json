@@ -1,0 +1,10 @@
+{
+  "closed_loop_verified": 108,
+  "online_verified": 12,
+  "offline_verified": 9,
+  "prediction_arrays_recomputed": 18,
+  "initial_actors_paired": true,
+  "exitcodes_verified": 129,
+  "physical_curves_training_available": false,
+  "object_files_present": 30
+}

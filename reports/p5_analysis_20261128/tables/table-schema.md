@@ -1,0 +1,1 @@
+对比：B0/M1/S0；消融：M1/A-B/S0；分密度：全部四组。五指标均值±训练种子样本SD，先测试重复平均；粗体最优，下划线次优，仅描述。性能变化(M1-reference)/reference；另附绝对差及配对探索区间。原始计数求和另列。数据data/test_runs.csv、seed_density_means.csv、seed_equal_density_means.csv。

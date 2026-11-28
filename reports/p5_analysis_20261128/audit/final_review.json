@@ -1,0 +1,10 @@
+{
+  "pdf_pages": 14,
+  "all_pages_rendered_and_visually_reviewed": true,
+  "figures": 7,
+  "tables": 10,
+  "physical_runs_verified": 108,
+  "training_curve_gap_disclosed": true,
+  "independent_reviewer": "/root/audit",
+  "new_dynamics_checked_from_raw_logs": true
+}

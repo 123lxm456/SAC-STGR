@@ -1,0 +1,342 @@
+[
+  {
+    "path": "README.md",
+    "characters": 3131,
+    "sha256": "ed988ddff2cb236feaa3c30b2b3864ba44e2386771973842b787117a7b366a5d"
+  },
+  {
+    "path": "research_implementation_plan.md",
+    "characters": 7296,
+    "sha256": "fd68c43a8d59f7bae2897287bb65b55429d8c67dd20634296bf6de05c1381feb"
+  },
+  {
+    "path": "src\\sac_rwb\\Env.py",
+    "characters": 43497,
+    "sha256": "edc531f29f8ab4a614ed56a686c6f038626e26b1f9b54d5b12f12a5b1a3cc7e3"
+  },
+  {
+    "path": "src\\sac_rwb\\test_sac.py",
+    "characters": 4636,
+    "sha256": "c7bce0e0b13ed37daa381b5a19bf25d25cff18be922178bccae4aab0d41b68c2"
+  },
+  {
+    "path": "src\\sac_rwb\\train_sac.py",
+    "characters": 15322,
+    "sha256": "a9837db0826727ec8dd8decf40f1f413857c6ecdf0bdac7642373618e9c2974e"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\monitor.py",
+    "characters": 7696,
+    "sha256": "dd0658929dcc5fe869e157453b6f9d87f58e611f443c6db8dd40f538c54ff549"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\utils.py",
+    "characters": 8323,
+    "sha256": "81402cb3e9d0402376119130f0bcc130911a3e7cba462a85830037ecba7bef78"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\sumo_interface.py",
+    "characters": 6959,
+    "sha256": "d61b3f0e03de7854e2eca613f2a517dcddef98c8e5f44ef37b98419928d51014"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\__init__.py",
+    "characters": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\NetMap.py",
+    "characters": 19116,
+    "sha256": "bbaf57344c9b1cafcd8fa7f7b03ec4bda8fbc6b410a2596f21b92948d100dd73"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\costomized_data_structures.py",
+    "characters": 5118,
+    "sha256": "c8c7515bf9de898e73e0d12628b7e8a043a41fc933bc7c6e4306581e0b4b7568"
+  },
+  {
+    "path": "src\\sac_rwb\\core\\runtime.py",
+    "characters": 1358,
+    "sha256": "eac28f60ca7b3f9978ec721a5f20262b14b739bc624ea5917694530dfa4aa648"
+  },
+  {
+    "path": "src\\sac_rwb\\sac\\utils.py",
+    "characters": 2707,
+    "sha256": "8fc8a337a96a9b3fa0e6faa912267565ae69ee65261ae23a44026b1d36133a64"
+  },
+  {
+    "path": "src\\sac_rwb\\sac\\__init__.py",
+    "characters": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src\\sac_rwb\\sac\\SAC.py",
+    "characters": 5954,
+    "sha256": "6612b7ca9c01459e876751ba31278541d79dea666a3da524a0b10958b7cfa769"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\risk_training.py",
+    "characters": 2322,
+    "sha256": "8a05b90f0ee40cfd4646ea3aeade8a4136a2eca72fb38ef201c4af08c83a539a"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\transformer_risk_model.py",
+    "characters": 9714,
+    "sha256": "bce9a0d58f2d6e0f6f9f7693c9b1283db5aa44610c72e6c148cecee281abae20"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\horizon_risk.py",
+    "characters": 9222,
+    "sha256": "4db8c61760b9f13cd2bf72ddf9621a4020b2c0317c239f0ab84adf8e3fb90e55"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\online_risk.py",
+    "characters": 6341,
+    "sha256": "35b2b70212c565377e4ba27a5275edf03a636ae19ae4341dd1c8d0ab3639eae3"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\spatiotemporal_risk_model.py",
+    "characters": 7361,
+    "sha256": "be3f341bb1e5a0de2da2ca817d3f2a09e5d6f39bba655cd19918cb6a7ac781b0"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\__init__.py",
+    "characters": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\p4_data.py",
+    "characters": 22053,
+    "sha256": "0c90604cac4b72a7ad7b9128f57271b6111f1eb1d22b31f312a0fb5ccd79dec7"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\p5_models.py",
+    "characters": 1405,
+    "sha256": "235402a975b2ac59f447b017a9b882d602db6a03247a77c3d128f17c8269e833"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\p5_metrics.py",
+    "characters": 5043,
+    "sha256": "c4e69671f64b440fb2246570baed90b5507608d059539cb34cbb172815b13b4f"
+  },
+  {
+    "path": "src\\sac_rwb\\algos\\p5_experiment.py",
+    "characters": 8125,
+    "sha256": "d305d474167dea1e06b797d7b53773132a550a13838b5a55d37106da62d2e296"
+  },
+  {
+    "path": "scripts\\verify_p01234.py",
+    "characters": 22503,
+    "sha256": "9c7aa3a392e7f936fd5a9170d624bdd8a2072cd6cb6a2234d298871a00eb560d"
+  },
+  {
+    "path": "scripts\\audit_p5.py",
+    "characters": 15937,
+    "sha256": "df1ae92f51e54a28c653ba3364b5925923eb6707e5d3a1fc3e4c2c87b9616502"
+  },
+  {
+    "path": "scripts\\collect_p4.py",
+    "characters": 4800,
+    "sha256": "ef0bf235a17f37bb2279704427f826d8cffcdb1b27121bb2427d05afcef6e073"
+  },
+  {
+    "path": "scripts\\verify_plan.py",
+    "characters": 4808,
+    "sha256": "a69fe6a1b1a2ff0472e4a8f4e183bba4efd873025d96b8cce20665ba19c7fc6d"
+  },
+  {
+    "path": "scripts\\format_chapter_docx.py",
+    "characters": 2253,
+    "sha256": "61c8924977b5971fd6a97faa69a3989b3475a5c1b7a2a3e47358c4ba90a4f9b1"
+  },
+  {
+    "path": "scripts\\p0_snapshot.py",
+    "characters": 5990,
+    "sha256": "1591acc140b2361f59daa723f089dbd44536bd36eb83a07894e01e2d07b1adf0"
+  },
+  {
+    "path": "scripts\\accept_p3.py",
+    "characters": 7142,
+    "sha256": "45224e2cbfd7e5b6633b995ede3f267645dd6c4978c6d464b4d990464e87bf4b"
+  },
+  {
+    "path": "scripts\\p5_scope.py",
+    "characters": 2068,
+    "sha256": "fc40a4486e8c5eba35493255b778ccc4dd16f6e6a3822e846355ab1ccdb4304a"
+  },
+  {
+    "path": "scripts\\p5_worker.py",
+    "characters": 9687,
+    "sha256": "8cc64fdb1ffaf82f53fc436be72cbda3be59ca1d9f28e67cb77e07cd2a5ce66a"
+  },
+  {
+    "path": "scripts\\package_p5.py",
+    "characters": 2656,
+    "sha256": "7ac954f37b79c8529c1471f5bb46d6595ad2ac733efc5ceeced763fa5d5a5593"
+  },
+  {
+    "path": "scripts\\extend_p4_train.py",
+    "characters": 10753,
+    "sha256": "420d10c15d44fe816d5777bc5acf821aedf220d5489ac6c985a88a1f8b73c329"
+  },
+  {
+    "path": "scripts\\benchmark_risk.py",
+    "characters": 3368,
+    "sha256": "d64cb2dcd553b0996514e5a1e7f697a534485689e93ef1d0c9c456fc952bb37f"
+  },
+  {
+    "path": "scripts\\p5_reuse.py",
+    "characters": 12108,
+    "sha256": "fed78373674e79d2b9af8ec734d44cbd7c826ed8f08b9db500055654de1fa544"
+  },
+  {
+    "path": "scripts\\review_p5_progress.py",
+    "characters": 12615,
+    "sha256": "f06483362edf3935c85e4732ff8e3e9731c8a2c21fefad9dcc98188566af5be4"
+  },
+  {
+    "path": "scripts\\p5_storage.py",
+    "characters": 5430,
+    "sha256": "50dc3d9f154c054adec74d5ad2986d31e837a6e09e7ffa53c974016b878536b0"
+  },
+  {
+    "path": "scripts\\audit_p0123.py",
+    "characters": 10007,
+    "sha256": "6ca77a859f77b451cf4e5008f5a506baaea36327c813c4fd323cffd1e705e359"
+  },
+  {
+    "path": "scripts\\clean_retired_eval_work.py",
+    "characters": 2537,
+    "sha256": "5d86db53d121c0930a5ea8693bcbf1b89146a7f4e1a68e81848f593ebb559f9f"
+  },
+  {
+    "path": "scripts\\accept_p012.py",
+    "characters": 8237,
+    "sha256": "ff99467e37fc8dc77832a3c8c01ae3c275c9e234795fe63b681ee405c2eb050d"
+  },
+  {
+    "path": "scripts\\consolidate_p5.py",
+    "characters": 17819,
+    "sha256": "3c579e75084b56749343c57d2342a45094e15f4aa480d569e7f4a179aa14c32f"
+  },
+  {
+    "path": "scripts\\accept_p5.py",
+    "characters": 15119,
+    "sha256": "f729960232e126ad006fb52256d25ef5ec7d029b07020e925eaffb73833a7594"
+  },
+  {
+    "path": "scripts\\run_unit_checks.py",
+    "characters": 1314,
+    "sha256": "a4d28b771343018917bb90cab3d013ae455d27e5be2d506c25aeb838b377f165"
+  },
+  {
+    "path": "scripts\\accept_p4.py",
+    "characters": 9367,
+    "sha256": "e2a6cb9330b037828108f568bc19b83158ad1968a9bb97b7d1d0e7fe0304a17c"
+  },
+  {
+    "path": "scripts\\audit_p4.py",
+    "characters": 994,
+    "sha256": "b8d717216d74f87e2ff0978f091d2ee1a81a823a70443c6bcb85b65a54b9bb77"
+  },
+  {
+    "path": "scripts\\stage_p5_storage.py",
+    "characters": 5592,
+    "sha256": "d13f11929a1ac24e110e54dfe4040c1091c3268797216780fd210a3e939982c8"
+  },
+  {
+    "path": "scripts\\export_p5.py",
+    "characters": 1521,
+    "sha256": "457dae868ab8b9f1fd810f9208c096dea56d4baaab30b585c1a77f088160ad84"
+  },
+  {
+    "path": "chapters\\03_methods_experiments_brief.md",
+    "characters": 3836,
+    "sha256": "ef437599d77575b497ccce303d3e2a3e20535b11cfc3bc24d304615e114e038e"
+  },
+  {
+    "path": "chapters\\03_methods_experiments.md",
+    "characters": 4215,
+    "sha256": "6c390aae0e8daa72f10c94d4104b0553079aedcdd02d09c4a0f26903fe529aa8"
+  },
+  {
+    "path": "plan\\evidence-map.md",
+    "characters": 863,
+    "sha256": "1b9779c94b1197a8093bd66e2368035f680eca5e14358983265d61c251decd8e"
+  },
+  {
+    "path": "plan\\notes.md",
+    "characters": 119,
+    "sha256": "c4bbe398d20e477a48d69c8a03a5e6bd14de54ea676a5fdb2f4cd40a3a8f294c"
+  },
+  {
+    "path": "plan\\project-overview.md",
+    "characters": 1505,
+    "sha256": "77bfa03ed518648d50a992f3ad69022877466773dc53242ae2d58c5a357fa829"
+  },
+  {
+    "path": "plan\\experiment-protocol.md",
+    "characters": 1378,
+    "sha256": "46e889d125ed64bc9858951283ae2224bf0b2aaf4db748af45101cf0413f487a"
+  },
+  {
+    "path": "plan\\stage-gates.md",
+    "characters": 2184,
+    "sha256": "a0ddd6b83ef04d4b219b9af51928c291c68150df17ef31ee459934cfc3039952"
+  },
+  {
+    "path": "plan\\progress.md",
+    "characters": 15565,
+    "sha256": "d6ca7b337f7dd01760e5ad3dc547cbf1667f1995eb2205314c0e3881c8ab34fe"
+  },
+  {
+    "path": "plan\\outline.md",
+    "characters": 385,
+    "sha256": "148f0945ff325811fdbc0e33fffbdcea84ac82cfaf78032bb890e2b920020387"
+  },
+  {
+    "path": "plan\\p5\\smoke-repair-20261122.md",
+    "characters": 1568,
+    "sha256": "bb9cfff2669656024a0f38888fd8ddc5b55d288d737a132f9582de4ce0854261"
+  },
+  {
+    "path": "plan\\p5\\continuation-20261123.md",
+    "characters": 3518,
+    "sha256": "7052c12e4365193f3451f2950081ed8252803709eca1ef5d6ed93cd6f2841fc2"
+  },
+  {
+    "path": "plan\\p5\\review-20261123.md",
+    "characters": 3073,
+    "sha256": "5d7aae0b287fd47da58b80f45653603c90d86bd966fc4bc45df9049c006395e1"
+  },
+  {
+    "path": "plan\\p5\\smoke-feedback-20261122.md",
+    "characters": 1057,
+    "sha256": "5907a919bc0cd8a67813efa55df3b5fea4c20e87e9b81887edc4c0cdf30315c4"
+  },
+  {
+    "path": "plan\\p5\\README.md",
+    "characters": 6744,
+    "sha256": "9ac1d7ddb14f4d51b2e0273bcdee0cf907bc09e6cb4c0bbfe41a0e1bc6e13475"
+  },
+  {
+    "path": "plan\\p5\\scope-cleanup-20261126.md",
+    "characters": 5802,
+    "sha256": "28655b4d41e426dfb2d75d6df4ef66deaa7db241e3cdc62993dc13e5242b6692"
+  },
+  {
+    "path": "plan\\p5\\storage-migration-20261126.md",
+    "characters": 2709,
+    "sha256": "a56befef5ddd9f4dab0f3ceb4e3b6a3a952d779cb462280f79ef2739534d6856"
+  },
+  {
+    "path": "plan\\p5\\implementation-20261122.md",
+    "characters": 3783,
+    "sha256": "d5ce19382a20ca3cd30fd3dcaf447c66267d25ffb3e7aebde65a0a28175e4999"
+  },
+  {
+    "path": "plan\\review\\method-experiment-traceability.md",
+    "characters": 731,
+    "sha256": "3364ab7b193af2f966d21898412d4f330835cc9c2a8a12cf1fac5b59a9ef2a26"
+  }
+]
